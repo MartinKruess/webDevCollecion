@@ -23,3 +23,23 @@
 .react{
   background-color: #751b1b33;
 }
+
+.imgContainer{
+  height: 19rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.imgNormal{
+  width: 50%;
+  transition: 0.5s width;
+}
+
+.imgHover{
+  width: 97%;
+  height: auto;
+  position: absolute;
+  top: -18rem;
+  transition: 1.5s width;
+}
+    

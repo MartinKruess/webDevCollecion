@@ -112,6 +112,7 @@ export const IfElse = () => {
       <p className="pt-2 pb-4">
         Durch die Verwendung von "else if" spart man sich das Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
       </p>
+      <img src="./images/ifElse.png" alt="Image about if and nested if´s" />
     </article>
   )
 }

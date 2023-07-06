@@ -7,6 +7,7 @@ import './App.css'
 import { Navi } from './comps/reusables/navi'
 import { Landingpage } from './comps/pages/landingpage'
 import { BDL } from './comps/pages/bdl'
+import { PB } from './comps/pages/javascript'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,11 +15,12 @@ function App() {
   return (
     <>
       <Navi />
-      <main className="w-10/12 m-auto mt-8 border-2">
+      <main className="w-10/12 m-auto mt-8">
         
         <Routes>
           <Route exact path="/" element={<Landingpage />} />
           <Route exact path="/BDL" element={<BDL />} />
+          <Route exact path="/pb" element={<PB />} />
         </Routes>
       </main>
     </>
