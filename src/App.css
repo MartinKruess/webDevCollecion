@@ -32,7 +32,10 @@
 
 .imgNormal{
   width: 50%;
-  transition: 0.5s width;
+  position: absolute;
+  top: 0.75rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .imgHover{
@@ -40,6 +43,7 @@
   height: auto;
   position: absolute;
   top: -18rem;
-  transition: 1.5s width;
+  cursor: pointer;
+  transition: 1.5s;
 }
     

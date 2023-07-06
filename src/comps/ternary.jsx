@@ -12,7 +12,7 @@ export const Ternary = () => {
       <p className="py-4 code">
           const age = 13<br />
           let price = 0<br />
-          age >= 18 ? price = 12 : price = 18
+          age &gt;= 18 ? price = 12 : price = 18
       </p>
       <div className="py-10"></div>
       <h3>Anwendungsbeispiel in React</h3>

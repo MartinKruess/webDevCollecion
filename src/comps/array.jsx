@@ -20,21 +20,27 @@ export const Array = () => {
           const users = ["Sockenrocker83", "Nobody01", "Franzi", "Heardbreaker"]<br />
         </code>
       </pre>
-      <div className="imgContainer" >
-        {isWatched ? (
-          <img  className="imgHover" onClick={() => setIsWatched(!isWatched)}  src="./images/array.png" alt="" />
-        ) : (
-          <img  className="imgNormal" onClick={() => setIsWatched(!isWatched)}  src="./images/array.png" alt="" />
-        )}
-      </div>      
+           
       <h3 className="font-extrabold text-2xl my-5">Array Methods Grundlagen</h3>
       <pre className="code">
         <code>
           const users = ["Sockenrocker83", "Nobody01", "Franzi", "Heardbreaker"]<br />
         </code>
       </pre>
-
-      <a href="https://www.w3schools.com/jsref/jsref_splice.asp">Splice</a>
+      <div className="imgContainer" >
+        {isWatched ? (
+          <img  className="imgHover" onClick={() => setIsWatched(!isWatched)}  src="./images/array.png" alt="" />
+        ) : (
+          <img  className="imgNormal" onClick={() => setIsWatched(!isWatched)}  src="./images/array.png" alt="" />
+        )}
+      </div> 
+      <div className="flex flex-wrap gap-5 text-xl pb-10">
+        <a href="https://www.mediaevent.de/javascript/array.html" target="_blank" >Array (Infos 1)</a>
+        <a href="https://www.programiz.com/javascript/array" target="_blank" >Array (Infos 2)</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" >Slice</a>
+        <a href="https://www.w3schools.com/jsref/jsref_splice.asp" target="_blank" >Splice</a>
+      </div>
+      
     </article>
   )
 }

@@ -1,10 +1,15 @@
+import { useEffect, useState } from "react"
+
 export const IfElse = () => {
+  const [isWatched, setIsWatched] = useState(false)
+
+  useEffect(() => {}, [isWatched])
 
   return(
     <article className="p-4">
       <h2 className="font-extrabold text-2xl">Condiuional Statement (If-Else)</h2>
       <p className="pt-4 pb-2">
-        Das klassische If (wenn -> dann) ist ein logischer Operator bestehend aus:
+        Das klassische If (wenn -&gt; dann) ist ein logischer Operator bestehend aus:
       </p>
       <p className="code">
         <pre>
@@ -51,7 +56,7 @@ export const IfElse = () => {
       <p className="py-4 code">
         <pre>
           <code>
-            if(yourAge > myAge)&#123;<br />
+            if(yourAge &gt; myAge)&#123;<br />
               console.log("You are older than me.")<br />
             &#125; else &#123;<br />
               console.log("You are younger than me.")<br />
@@ -112,7 +117,13 @@ export const IfElse = () => {
       <p className="pt-2 pb-4">
         Durch die Verwendung von "else if" spart man sich das Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
       </p>
-      <img src="./images/ifElse.png" alt="Image about if and nested if´s" />
+      <div className="imgContainer" >
+        {isWatched ? (
+          <img  className="imgHover" onClick={() => setIsWatched(!isWatched)}  src="./images/ifElse.png" alt="Image about if and nested if´s" />
+        ) : (
+          <img  className="imgNormal" onClick={() => setIsWatched(!isWatched)}  src="./images/ifElse.png" alt="Image about if and nested if´s" />
+        )}
+      </div>
     </article>
   )
 }
