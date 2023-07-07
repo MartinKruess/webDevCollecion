@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+p{
+  padding: 1.5rem 0;
+}
+
 
 .code{
   background-color: #89898933;
