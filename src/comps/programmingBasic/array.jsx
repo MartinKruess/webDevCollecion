@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { arrayMethods } from "../assets/arrayMethods"
+import { arrayMethods } from "./assets/arrayMethods"
 
 export const Array = () => {
   const [isWatched, setIsWatched] = useState(false)
@@ -10,13 +10,13 @@ export const Array = () => {
     <article>
       {/* ------------- ARRAY ------------- */}
       <h2 className="font-extrabold text-3xl my-5">Array</h2>
-      <p className="my-4">
+      <div className="my-4">
         Ein Array kann man als eine Art Daten-Container verstehen, der einzelne Elemente in einem Cluster zusammenfasst. Der grundaufbau eines Arrays wird wie folgt aufgebaut
         <p className="code">
           const arrayName(s) = [ ]
         </p>
         Da ein Array eine Sammlung von Elementen ist wird, als Name des Arrays, oft die Mehrzahl von Etwas genommen. Beispiel: Franzi ist ein user und befindet sich im array mit dem Namen "users"
-      </p>
+      </div>
       <pre>
         <code>
           const users = ["Sockenrocker83", "Nobody01", "Franzi", "Heardbreaker"]<br />
@@ -59,6 +59,34 @@ export const Array = () => {
         ) : (
           <img  className="imgNormal" onClick={() => setIsWatched(!isWatched)}  src="./images/array.png" alt="" />
         )}
+      </div>
+      <div>
+        <h3>Slice und Splice</h3>
+        <p>
+          Die slice Methode wird verwendet um eine Teilkopie als neues Array auszugeben. Hierbei kann man folgendes Angeben:
+        </p>
+        <ul>
+          <li>Startwert - Endwert</li>
+          <li>Startwert</li>
+        </ul>
+          
+         <p className="code">
+          const arrayToSlice = [1, 2, 3, 4, 5]<br />
+          const startNegativ = arrayToSlice.slice(-3)<br />
+          const completeArray = arrayToSlice.slice()<br /><br />
+
+          // const example = arrayToSlice.slice(STARTINDEX, ENDINDEX);<br /><br />
+          const StartindexToEndOfArray = arrayToSlice.slice(2);<br />
+          const StartindexToEndindex = arrayToSlice.slice(1, 4);<br />
+          const StartindexRichtToEndOfArray = arrayToSlice.slice(-2);<br /><br />
+          constole.log(
+            `
+            Eine Kopie des gesamten Arrays um dieses Weiter zu verarbeiten ohne das Originale zu Verändern: &#36;&#123;completeArray&#125;
+            Array vom Startindex bis zum Ende: &#36;&#123;StartindexToEndOfArray&#125;
+            Ein festgelegter Bereich: &#36;&#123;StartindexToEndindex&#125;
+            Es werden immer die Letzten 2 Arrayeinträge ausgegeben: &#36;&#123;StartindexRichtToEndOfArray&#125;
+            `)
+         </p>
       </div>
 
       {/* ------------- LINKS ------------- */}
