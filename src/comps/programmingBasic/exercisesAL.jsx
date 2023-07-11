@@ -5,7 +5,7 @@ export const ArrayLoopExercise = () => {
       <p className="pt-4 pb-2">
         Hier sind ein paar zusätzliche Übungsaufgaben. Erstelle einfach eine index.js/main.js und arbeite so viele Aufgaben durch, wie du magst. Ich nehme gerne Spiele als Beispiele, da in der Spiele Entwicklung sehr viele Sinnvolle Loops und Functions angewendet werden.
       </p>
-      <div className="my-5 code">
+      <div className="my-5 p-5 code">
         <h3 className="font-extrabold text-xl">Schere, Stein, Papier (readline-sync)</h3>
         <p>
           Versuche das Spiel Schere, Stein, Papier zu erstellen in dem ein Spieler gegen den Computer spielt. Der Spieler soll eine Eingabe machen können ob er Schere, Stein oder Papier eingibt. Groß- und Kleinschreibung sollte bei der Eingabe egal sein. nach der Auswertung, der Runde sollte der Spieler gefragt werden ob er noch einmal spielen mag. Dann sollte das Spiel automatisch weiter laufen ohne, dass es neugestartet werden muss.
@@ -15,8 +15,8 @@ export const ArrayLoopExercise = () => {
           Versuche die "weiter spielen" Option zu ändern. Der Spieler sollte eingeben können, dass er weiter Spielen möchte für x Runden.
         </p>
       </div>
-      <div className="my-5 code">
-        <h3 className="font-extrabold text-2xl">Pokemon Spiel (Console Game)</h3>
+      <div className="my-5 p-5 code">
+        <h3 className="font-extrabold text-xl">Pokemon Spiel (Console Game)</h3>
         <pre>
           <code>
             const pikachu = [12, 137]

@@ -6,6 +6,7 @@ import { JSText } from "../programmingBasic/jsText"
 import { Loop } from "../programmingBasic/loop"
 import { NodeInstaller } from "../programmingBasic/node"
 import { ArrayLoopExercise } from "../programmingBasic/exercisesAL"
+import { Function } from "../programmingBasic/function"
 
 export const PB = () => {
 
@@ -51,7 +52,7 @@ export const PB = () => {
           <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("exerciseAL")}>
             Array/Loop Übungen
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("loop")}>
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("function")}>
             Functions
           </li>
         </ul>

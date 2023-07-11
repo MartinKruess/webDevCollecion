@@ -1,4 +1,4 @@
-export const Funktion = () => {
+export const Function = () => {
   return(
     <article className="p-4">
       <h2 className="font-extrabold text-2xl">Function in Javascript</h2>
