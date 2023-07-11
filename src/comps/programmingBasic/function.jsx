@@ -6,13 +6,13 @@ export const Funktion = () => {
         Unter einer Funktion versteht man einen Bereich
       </p>
       <div className="code">
-        <pre>
+        {/* <pre>
           <code>
             for(let i = 0; i &lt; 5; i++) &#123;<br />
             &#9;console.log("Do something", i+1, "times")<br />
             &#125;
           </code>
-        </pre>
+        </pre> */}
       </div>
     </article>
   )

@@ -20,7 +20,7 @@ export const ArrayLoopExercise = () => {
         <pre>
           <code>
             const pikachu = [12, 137]
-            const pikachuSkills = ["Tackel", "Eisenschweif", "Donnerschock"]
+            const pikachuSkills = ["Tackel", "Eisenschweif", "Donnerschock"]<br />
             const habitak = [13, 122]
             const habitakSkills = ["Tackel", "Flügelschlag"]
           </code>
