@@ -1,6 +1,6 @@
 #root {
-  
-
+  font-size: 110%;
+  line-height: 1.8rem;
 }
 
 *{
@@ -10,9 +10,13 @@
 }
 
 nav ul li{
-  min-width: 8rem;
+  min-width: 7rem;
   flex-grow: 1;
   text-align: center;
+}
+
+h3{
+  margin-top: 2.5rem;
 }
 
 .top-19{
@@ -26,7 +30,8 @@ p{
 
 .code{
   background-color: #89898933;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1.2rem;
+  margin: 0.3rem;
   box-shadow:
   inset 0.1rem 0.1rem 0.1rem #89898999,
   inset -0.1rem 0.1rem 0.1rem #89898999,
