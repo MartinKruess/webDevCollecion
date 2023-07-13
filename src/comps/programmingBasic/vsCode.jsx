@@ -63,21 +63,109 @@ export const VSCode = () => {
         />
       </div>
       <h3 className="font-extrabold text-xl">HTML Tags</h3>
+      <p>
+        Es ist relativ leicht den überblick bei öffnenden und schließenden Tags
+        zu verlieren. Daher arbeite ich ganz gerne mit der Extension "color the
+        tag name". Das tolle an der Extensio ist, dass sie auch in React und Vue
+        funktioniert.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/coloredTagName.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <h3 className="font-extrabold text-xl">CSS Frameworks</h3>
+      <p>
+        Spezielle CSS-Frameworks nutzen eigene Klassen und diese sind nicht in
+        VS-Code abrufbar. Daher gibt es für Frameworks wie Bootstrap und
+        Tailwind Extensions, die uns das Leben erleichtern.
+      </p>
+      <p>
+        ACHTUNG: Der Übersichthalber sollten diese Extensions nur aktiv sein,
+        wenn ihr mit einem der Frameworks in eurem Projekt arbeitet. Sollten
+        beide Extensions aktiv sein, werden auch auch beide Optionen angezeigt,
+        wodurch man leicht den Überblick verliert ob "flex" oder "d-flex" nun
+        zum einen oder anderen Framework gehört.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/bootstrapAutocomplete.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/tailwindCSS.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <p>
+        Andere CSS-Varianten wie SASS/SCSS benötigen einen Compiler. Der "Live
+        Sass Compiler" ist eine sehr zuverlässige Extension, die genau das
+        bietet. Durch diese Extension wird der "watch sass" button im Footer von
+        VS-Code hinzugefügt.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/liveSassCompiler.png"
+          alt="Github Extension preview"
+        />
+      </div>
       <h3 className="font-extrabold text-xl">
-        Curly Brackets/Geschweifte Klammern
+        Rainbow Brackets (Light Version in VS-Code)
       </h3>
-      <h3 className="font-extrabold text-xl">Github</h3>
-
-      <div className="code">
-        <pre>
-          <code>
-            for(let i = 0; i &lt; 5; i++) &#123;
-            <br />
-            &#9;console.log("Do something", i+1, "times")
-            <br />
-            &#125;
-          </code>
-        </pre>
+      <p>
+        Rainbow Brackets sorgt dafür, dass deine &#123;(&lt;&gt;)&#125;
+        unterschiedliche Farben bekommen, so erkennt man leicht ob die öffnende
+        &#123; auch eine schließende &#125; hat. Dies ist leider oft ein Problem
+        bei der Verschachtelung von Loops, Functions und mehr. Seit Anfang 2023
+        hat VS-Code diese Funktion als Lightversion implementiert. Daher ist
+        diese Extension nicht unbedingt nötig, aber wenn trotzdem ein paar mehr
+        Farben haben möchte, kann diese Extension gerne verwenden.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/rainbowBrackets.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <h3 className="font-extrabold text-xl">Prettier</h3>
+      <p>
+        Prettier setzt standards für die Code Formatierung. Gerne wird Prettier
+        verwendet um innerhalb eines größeren projektes Formatierungsfehler zu
+        vermeiden. Bei git zählt jedes von dir nicht gesetzte Simicolon oder
+        jedes nicht gemachte "Enter" in zum Beispiel einer CSS-Datei, dass ein
+        Teammitglied aber gesetzt hat als 1 Merge-Conflict. Das kann schnell bei
+        größeren projekten zu mehreren 1000. Fehlern führen, nur weil jede zeile
+        code, css, html etwas fehlt. Daher ist es von Vorteil, sich auf eine
+        Fotmatierungsart zu einigen. So sind schonmal Grundlegende Dinge wie
+        "nur 1x Enter im css", ein Simicolon hinter jeder Zeile Code, alle
+        Strings bekommen "" oder '' geklärt und erzeugen keine unnötigen
+        Konflikte.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/prettier.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <h3 className="font-extrabold text-xl">Language Pack (Deutsch)</h3>
+      <p>
+        Mit dem Language Pack ist es möglich VS-Code auf deutsch umzustellen.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/languagePack.png"
+          alt="Github Extension preview"
+        />
       </div>
     </article>
   );
