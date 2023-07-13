@@ -9,6 +9,7 @@ import { NodeInstaller } from "../programmingBasic/node";
 import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
 import { VSCode } from "../programmingBasic/vsCode";
+import { NPM } from "../programmingBasic/npm";
 
 export const PB = () => {
   const [theme, setTheme] = useState("");
@@ -91,6 +92,7 @@ export const PB = () => {
       </nav>
       <section className="w-10/12 m-auto mt-8">
         {!theme && <JSText />}
+        {theme === "npm" && <NPM />}
         {theme === "node" && <NodeInstaller />}
         {theme === "vs-code" && <VSCode />}
         {theme === "variables" && <Variable />}
