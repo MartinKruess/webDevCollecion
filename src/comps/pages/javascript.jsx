@@ -8,6 +8,7 @@ import { Loop } from "../programmingBasic/loop";
 import { NodeInstaller } from "../programmingBasic/node";
 import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
+import { VSCode } from "../programmingBasic/vsCode";
 
 export const PB = () => {
   const [theme, setTheme] = useState("");
@@ -39,7 +40,7 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables")}
+            onClick={() => loadTheme("vs-code")}
           >
             VS-Code
           </li>
@@ -91,6 +92,7 @@ export const PB = () => {
       <section className="w-10/12 m-auto mt-8">
         {!theme && <JSText />}
         {theme === "node" && <NodeInstaller />}
+        {theme === "vs-code" && <VSCode />}
         {theme === "variables" && <Variable />}
         {theme === "ifelse" && <IfElse />}
         {theme === "ternary" && <Ternary />}

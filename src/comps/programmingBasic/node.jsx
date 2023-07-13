@@ -1,21 +1,87 @@
 export const NodeInstaller = () => {
-  return(
+  return (
     <article>
-      Hallo Node!
+      <h2 className="font-extrabold text-2xl">NodeJS</h2>
       <p>
-        Node.js ist eine plattformübergreifende Open - Source- Serverumgebung, die unter Windows , Linux , Unix , macOS und mehr ausgeführt werden kann. Node.js ist eine Back-End- JavaScript- Laufzeitumgebung , läuft auf der V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines Webbrowsers aus.
+        Node.js ist eine plattformübergreifende Open - Source- Serverumgebung,
+        die unter Windows , Linux , Unix , macOS und mehr ausgeführt werden
+        kann. Node.js ist eine Back-End- JavaScript- Laufzeitumgebung , läuft
+        auf der V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines
+        Webbrowsers aus.
       </p>
+      <div>
+        <p>Node Version überprüfen</p>
+        <pre className="code">
+          <code>node -v</code>
+          <br />
+          <code>node --version</code>
+        </pre>
+      </div>
+      <div>
+        <p>
+          Bei vorhandener Node Version, lässt sich diese einfach auf die
+          aktuellest LTS-Version Updaten.
+        </p>
+        <pre className="code">
+          <code>npm i -g n lts</code>
+        </pre>
+      </div>
       <p>
-        Mit Node.js können Entwickler JavaScript zum Schreiben von Befehlszeilentools und für serverseitiges Scripting verwenden . Die Möglichkeit, JavaScript-Code auf dem Server auszuführen, wird häufig verwendet, um dynamische Webseiteninhalte zu generieren , bevor die Seite an den Webbrowser des Benutzers gesendet wird. Folglich stellt Node.js ein „JavaScript-überall“-Paradigma dar, [6] das die Entwicklung von Webanwendungen in einer einzigen Programmiersprache vereinheitlicht , anstatt unterschiedliche Sprachen für die server- und clientseitige Programmierung zu verwenden.
+        Das Ausführen, der Comandozeile startet den "Liveserver" für die
+        JS-Datei, die ausgeführt werden soll. Hierdurch lassen sich Webseiten
+        lokal ausführen und anzeigen. Bei der Installation von Node sollte
+        stehts darauf geachtet werden die LTS (LongTimeSupport) Version zu
+        nutzen.
       </p>
+      <div>
+        <p>Datei mit Node Ausführen</p>
+        <pre className="code">
+          <code>node index.js</code>
+        </pre>
+      </div>
+      <h2 className="font-extrabold text-2xl">Node Version Manager (nvm)</h2>
       <p>
-        Node.js verfügt über eine ereignisgesteuerte Architektur , die asynchrone E/A ermöglicht . Diese Designentscheidungen zielen darauf ab, den Durchsatz und die Skalierbarkeit in Webanwendungen mit vielen Eingabe-/Ausgabeoperationen sowie für Echtzeit-Webanwendungen (z. B. Echtzeit-Kommunikationsprogramme und Browserspiele ) zu optimieren. [7]
+        Der nvm ist ein hilfreiches Tool, womit du in der Lage bist verschiedene
+        Node Versionen Lokal für verschiedene Projekte zu installieren. Oft
+        brauchen ältere Libaries oder Projekte eine ältere oder sogar eine
+        bestimmte Node Version um fehlerfrei zu funtionieren. Hierbei hilft nvm.
+        Wahrend global auf deinem System die neuste LTS-Version läuft, so kann
+        durch die Verwendung von nvm Zeitgelich in verschiedenen Projekten mit
+        verschiedenen anderen Versionen gearbeitet werden.
       </p>
+      <a href="https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/">
+        Download Guide
+      </a>
+      <div>
+        <p>Installation </p>
+        <pre className="code">
+          <code>
+            curl -o-
+            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+            bash
+          </code>
+          <br />
+          oder
+          <br />
+          <code>
+            wget -qO-
+            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+            bash
+          </code>
+        </pre>
+      </div>
+
       <p>
-        Das verteilte Entwicklungsprojekt Node.js wurde zuvor von der Node.js Foundation [8] verwaltet und hat sich nun mit der JS Foundation zusammengeschlossen , um die OpenJS Foundation zu bilden . Die OpenJS Foundation wird durch das Collaborative Projects-Programm der Linux Foundation unterstützt .
+        <a href="https://nodejs.org/en/download" className="px-3">
+          Node
+        </a>
+        <a
+          href="https://github.com/coreybutler/nvm-windows#readme"
+          className="px-3"
+        >
+          Node Version Manager
+        </a>
       </p>
-      <a href="https://nodejs.org/en/download">Node</a>
-      
     </article>
-  )
-}
+  );
+};

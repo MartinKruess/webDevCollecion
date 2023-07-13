@@ -115,9 +115,8 @@ export const Function = () => {
             <br />
             const getRandomLetter = (index) =&gt; &#123;
             <br />
-            &#9;return = Math.floor(Math.round() * multiplicator) <br />
+            &#9;return = string[index] <br />
             &#125;
-            <br />
             <br />
             // get the Indexes of the chars of the string
             <br />
