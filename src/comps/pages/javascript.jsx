@@ -28,7 +28,7 @@ export const PB = () => {
         <ul className="text-2xl flex flex-wrap gap-5 p-2">
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables")}
+            onClick={() => loadTheme("npm")}
           >
             NPM
           </li>
