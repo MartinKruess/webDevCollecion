@@ -7,9 +7,32 @@ export const VSCode = () => {
       <p className="pt-4 pb-2">
         Unser Haupttool ist VS-Code und daher sollten wir unsere
         Entwicklungsumgebung auf unsere Bedürfnisse Anpassen. Es gibt einige
-        Extensions, die wir im Laufe der Zeit benötigen und aus denen wir
-        rauswachsen werden.
+        Extensions und Settings, die wir im Laufe der Zeit benötigen und aus
+        denen wir rauswachsen werden.
       </p>
+      <h3 className="font-extrabold text-xl">Settings</h3>
+      <div>
+        Zu erst befassen wir uns mit den grundlegenden Settings, die VS-Code mit
+        sich bringt. Die allgemeinen Settings ruft man sp auf:
+        <p className="code">File -&gt; Preferences -&gt; Settings</p>
+      </div>
+      <div className="imgContainer imgCollection">
+        <img
+          className="xsmall"
+          src="./images/autoSave.png"
+          alt="Github Extension preview"
+        />
+        <img
+          className="xsmall"
+          src="./images/worldWrap.png"
+          alt="Github Extension preview"
+        />
+        <img
+          className="xsmall"
+          src="./images/prettierSimi.png"
+          alt="Github Extension preview"
+        />
+      </div>
       <ul>
         <h3 className="font-extrabold text-xl">Vorteile</h3>
         <li>- keine extra Programme</li>
@@ -164,6 +187,20 @@ export const VSCode = () => {
         <img
           className="imgNormal"
           src="./images/languagePack.png"
+          alt="Github Extension preview"
+        />
+      </div>
+      <h3 className="font-extrabold text-xl">Quokka JS</h3>
+      <p>
+        Die Extension Quokka.js ist bietet eine Vorschau für Ausgaben via
+        console.log, result und mehr. Für plane JS/TS ist diese Extension sehr
+        nützlich, doch leider funktioniert die Erweitung in React nur in
+        seltenen Fällen.
+      </p>
+      <div className="imgContainer">
+        <img
+          className="imgNormal"
+          src="./images/quokka.png"
           alt="Github Extension preview"
         />
       </div>

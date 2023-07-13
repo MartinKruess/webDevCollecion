@@ -49,6 +49,12 @@ p{
   position: relative;
 }
 
+.imgCollection{
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .imgNormal{
   width: 50%;
   position: absolute;
@@ -59,6 +65,10 @@ p{
 
 .small{
   width: 40%;
+}
+
+.xsmall{
+  width: 30%;
 }
 
 .imgHover{
