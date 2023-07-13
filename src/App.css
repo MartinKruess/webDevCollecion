@@ -57,6 +57,10 @@ p{
   transition: 0.5s;
 }
 
+.small{
+  width: 40%;
+}
+
 .imgHover{
   width: 97%;
   height: auto;
