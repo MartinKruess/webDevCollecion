@@ -55,7 +55,7 @@ p{
 }
 
 .imgNormal{
-  width: 50%;
+  width: 40%;
   position: absolute;
   top: 0.75rem;
   cursor: pointer;
@@ -63,7 +63,7 @@ p{
 }
 
 .small{
-  width: 40%;
+  width: 35%;
 }
 
 .xsmall{
