@@ -59,7 +59,7 @@ export const Function = () => {
       <p>
         Seit ES6 gab es auch bei den Funktionen eine Veränderung. Die Klassische
         Funktion wurde an die Vorgaben von ES6 angepasst und es entspand eine
-        spezielle Art der Funktion, die Arror-Function.
+        spezielle Art der Funktion, die Arrow-Function.
       </p>
       <div className="code">
         <pre>
@@ -71,11 +71,14 @@ export const Function = () => {
           </code>
         </pre>
       </div>
-      <h3 className="mt-8 font-extrabold text-xl">Arror Function</h3>
+      <h3 className="mt-8 font-extrabold text-xl">Arrow Function</h3>
       <p>
-        Die Arror-Function ist die beliebteste Art eine Funtion zu schreiben.
+        Die Arrow-Function ist die beliebteste Art eine Funtion zu schreiben.
         Arrow-Function bieten eine kompakte Syntax und eine Kurzschreibweise
         (Einzeiler), die das Schreiben von Funktionen vereinfacht.
+      </p>
+      <p className="code">
+        const arrow = () =&gt; true ? 'true' : 'false'
       </p>
       <p>
         Callbacks Ein weiterer Vorteil ist die automatische Bindung des

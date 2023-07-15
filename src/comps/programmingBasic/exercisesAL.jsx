@@ -86,6 +86,33 @@ export const JSExercises = () => {
           Kampf.
         </p>
       </div>
+      <div className="my-5 p-5 code">
+        <h3 className="font-extrabold text-xl">
+          Galgenmännchen (readline-sync)
+        </h3>
+        <p>
+          Die Aufgabe ist es das Spiel Galgenmännchen nachzubauen. Der Computer picked sich ein Random Wort aus dem Array randomWords. Der Spieler kann dann via Terminaleingabe jede Runde einen Buchstaben eingeben. Der Computer schaut ob der Buchstabe im Wort enthalten ist. Sollte dieser enthalten sein, wird der Strich zu dem Buchstaben, wenn nicht wird der erste Buchstabe des loosterstrings ausgeben.
+          Achtung, sorge dafür, dass Spielereingaben nur akzeptiert werden, wenn diese aus einem Buchstaben bestehen.
+        </p>
+        <p className="code">
+          Beispiel Ausgabe: <br />
+          const word = "interesse" <br />
+          Start Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ _ _ _ <br />
+          Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _ <br />
+
+        </p>
+        <p className="code break-words">
+          const randomWords = ["importance","refrigerator","statement","conclusion","knowledge","opportunity","comparison","instruction","indication","criticism","consequence","contribution","childhood","president","difference","establishment","responsibility","reception","psychology","enthusiasm"] <br />
+          Normalmode: const looserString = "YOU FAILED!" //10 Versuche
+        </p>
+        <h3 className="font-extrabold text-xl">Advanced Upgrade!</h3>
+        <p>
+          Versuche einen Hardmode einzubauen, den der Spieler auswählen kann. Im Hardmode hat der Spieler nur 9 Versuche.
+          <span className="code">
+            Hardmode: const looserString = "YOU LOOSE!" // 9 Versuche
+          </span>
+        </p>
+      </div>
     </article>
   );
 };
