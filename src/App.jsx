@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navi />
-      <main className="bg-slate-900 text-slate-300 w-screen">
+      <main className="bg-slate-900 text-slate-300">
         <Routes>
           <Route exact path="/" element={<Landingpage />} />
           <Route exact path="/Git" element={<Git />} />

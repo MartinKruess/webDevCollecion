@@ -8,7 +8,7 @@ export const JSExercises = () => {
         nehme gerne Spiele als Beispiele, da in der Spiele Entwicklung sehr
         viele Sinnvolle Loops und Functions angewendet werden.
       </p>
-      <div className="my-5 p-5 code">
+      <div className="mt-5 p-5 bg-slate-800 border">
         <h3 className="font-extrabold text-xl">
           Schere, Stein, Papier (readline-sync)
         </h3>
@@ -27,7 +27,7 @@ export const JSExercises = () => {
           eingeben können, dass er weiter Spielen möchte für x Runden.
         </p>
       </div>
-      <div className="my-5 p-5 code">
+      <div className="mt-5 p-5 bg-slate-800 border">
         <h3 className="font-extrabold text-xl">Pokemon Spiel (Console Game)</h3>
         <pre>
           <code>
@@ -86,7 +86,7 @@ export const JSExercises = () => {
           Kampf.
         </p>
       </div>
-      <div className="my-5 p-5 code">
+      <div className="mt-5 p-5 bg-slate-800 border">
         <h3 className="font-extrabold text-xl">
           Galgenmännchen (readline-sync)
         </h3>
@@ -101,8 +101,8 @@ export const JSExercises = () => {
           Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _ <br />
 
         </p>
-        <p className="code break-words">
-          const randomWords = ["importance","refrigerator","statement","conclusion","knowledge","opportunity","comparison","instruction","indication","criticism","consequence","contribution","childhood","president","difference","establishment","responsibility","reception","psychology","enthusiasm"] <br />
+        <p className="code">
+          const randomWords = ["importance", "refrigerator", "statement", "conclusion","knowledge", "opportunity", "comparison", "instruction", "indication", "criticism", "consequence", "contribution", "childhood", "president", "difference", "establishment", "responsibility", "reception", "psychology", "enthusiasm"] <br />
           Normalmode: const looserString = "YOU FAILED!" //10 Versuche
         </p>
         <h3 className="font-extrabold text-xl">Advanced Upgrade!</h3>
