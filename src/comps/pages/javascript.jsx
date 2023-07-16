@@ -10,6 +10,7 @@ import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
 import { VSCode } from "../programmingBasic/vsCode";
 import { NPM } from "../programmingBasic/npm";
+import { Vite } from "../programmingBasic/vite";
 
 export const PB = () => {
   const [theme, setTheme] = useState("");
@@ -81,7 +82,12 @@ export const PB = () => {
           >
             Functions
           </li>
-
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("vite")}
+          >
+            Vite
+          </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => loadTheme("jsexercises")}
@@ -101,6 +107,7 @@ export const PB = () => {
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
         {theme === "function" && <Function />}
+        {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
       </section>
     </>
