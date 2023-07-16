@@ -31,14 +31,15 @@ export const JSExercises = () => {
         <h3 className="font-extrabold text-xl">Pokemon Spiel (Console Game)</h3>
         <pre>
           <code>
-            const pikachu = [12, 137] const pikachuSkills = ["Tackel",
+            const pikachu = [12, 137] <br />
+            const pikachuSkills = ["Tackel",
             "Eisenschweif", "Donnerschock"]
             <br />
-            const habitak = [13, 122] const habitakSkills = ["Tackel",
+            const habitak = [13, 122] <br />
+            const habitakSkills = ["Tackel",
             "Flügelschlag"]
           </code>
         </pre>
-
         <p>
           Kopiere dir die 4 Arrays und versuche einen Pokemonkampf in der
           Konsole zu simulieren. Der erste Wert eines Pokemons ist das Level und
@@ -53,8 +54,8 @@ export const JSExercises = () => {
             <tr>
               <th>Skill</th>
               <th>Schaden</th>
-              <th>Chance auf miss</th>
-              <th>Chance auf Kirt</th>
+              <th>Missing</th>
+              <th>Krit</th>
             </tr>
           </thead>
           <tbody>
@@ -94,23 +95,28 @@ export const JSExercises = () => {
           Die Aufgabe ist es das Spiel Galgenmännchen nachzubauen. Der Computer picked sich ein Random Wort aus dem Array randomWords. Der Spieler kann dann via Terminaleingabe jede Runde einen Buchstaben eingeben. Der Computer schaut ob der Buchstabe im Wort enthalten ist. Sollte dieser enthalten sein, wird der Strich zu dem Buchstaben, wenn nicht wird der erste Buchstabe des loosterstrings ausgeben.
           Achtung, sorge dafür, dass Spielereingaben nur akzeptiert werden, wenn diese aus einem Buchstaben bestehen.
         </p>
-        <p className="code">
-          Beispiel Ausgabe: <br />
-          const word = "interesse" <br />
-          Start Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ _ _ _ <br />
-          Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _ <br />
-
-        </p>
-        <p className="code">
-          const randomWords = ["importance", "refrigerator", "statement", "conclusion","knowledge", "opportunity", "comparison", "instruction", "indication", "criticism", "consequence", "contribution", "childhood", "president", "difference", "establishment", "responsibility", "reception", "psychology", "enthusiasm"] <br />
-          Normalmode: const looserString = "YOU FAILED!" //10 Versuche
-        </p>
+        <pre>
+          <code>
+            Beispiel Ausgabe: <br />
+            const word = "interesse" <br />
+            Start Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ _ _ _ <br />
+            Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _ <br />
+          </code>
+        </pre>
+        <pre>
+          <code>
+            const randomWords = ["importance", "refrigerator", "statement", "conclusion","knowledge", "opportunity", "comparison", "instruction", "indication", "criticism", "consequence", "contribution", "childhood", "president", "difference", "establishment", "responsibility", "reception", "psychology", "enthusiasm"] <br />
+            Normalmode: const looserString = "YOU FAILED!" //10 Versuche
+          </code>
+        </pre>
         <h3 className="font-extrabold text-xl">Advanced Upgrade!</h3>
         <p>
           Versuche einen Hardmode einzubauen, den der Spieler auswählen kann. Im Hardmode hat der Spieler nur 9 Versuche.
-          <span className="code">
-            Hardmode: const looserString = "YOU LOOSE!" // 9 Versuche
-          </span>
+          <pre>
+            <code>
+              Hardmode: const looserString = "YOU LOOSE!" // 9 Versuche
+            </code>
+          </pre>
         </p>
       </div>
     </article>

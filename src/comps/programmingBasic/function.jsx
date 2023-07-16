@@ -8,9 +8,9 @@ export const Function = () => {
       </p>
       <div className="pt-4 pb-2">
         Es gibt Funktionen, die Eingabewerte, auch Parameter genannt, benötigen
-        wie <span className="code">arr.slice(parameter1, parameter2)</span>{" "}
+        wie <pre><code>arr.slice(parameter1, parameter2)</code></pre>{" "}
         wiederum andere Funktionen benötigen keine Parameter wie in diesem
-        Beispiel: <span className="code">arr.pop()</span>
+        Beispiel: <pre><code>arr.pop()</code></pre>
         Wir haben bereits einige Funktionen kennengelernt, die zu diesen Gruppen
         gehören.
         <ul>
@@ -29,72 +29,68 @@ export const Function = () => {
         Beispiel mit dem Keyword 'super' verwendet. Siehe unter 'Klassen'! Auch
         ist die Verwendung von arguments und this in normalen Functions möglich.
       </p>
-      <div className="code">
-        <pre>
-          <code>
-            function getRandomNumber () &#123;
-            <br />
-            &#9;const randomNumber = Math.floor(Math.random() * 9)
-            <br />
-            &#9;return randomNumber
-            <br />
-            &#125;
-            <br />
-            <br />
-            function calcSum (p1, p2) &#123;
-            <br />
-            &#9;const sum = p1 * p2
-            <br />
-            &#9;return sum <br />
-            &#125;
-            <br />
-            <br />
-            const nextNumer = calcSum(2, 3) + getRandomNumber()
-            <br />
-            console.log(nextNumber)
-          </code>
-        </pre>
-      </div>
+      <pre>
+        <code>
+          function getRandomNumber () &#123;
+          <br />
+          &#9;const randomNumber = Math.floor(Math.random() * 9)
+          <br />
+          &#9;return randomNumber
+          <br />
+          &#125;
+          <br />
+          <br />
+          function calcSum (p1, p2) &#123;
+          <br />
+          &#9;const sum = p1 * p2
+          <br />
+          &#9;return sum <br />
+          &#125;
+          <br />
+          <br />
+          const nextNumer = calcSum(2, 3) + getRandomNumber()
+          <br />
+          console.log(nextNumber)
+        </code>
+      </pre>
       <h3 className="mt-8 font-extrabold text-xl">Function Expression</h3>
       <p>
         Seit ES6 gab es auch bei den Funktionen eine Veränderung. Die Klassische
         Funktion wurde an die Vorgaben von ES6 angepasst und es entspand eine
         spezielle Art der Funktion, die Arrow-Function.
       </p>
-      <div className="code">
-        <pre>
-          <code>
-            const myFunction = function (p3) &#123;
-            <br />
-            &#9;return = Number(p3) <br />
-            &#125;
-          </code>
-        </pre>
-      </div>
+      <pre>
+        <code>
+          const myFunction = function (p3) &#123;
+          <br />
+          &#9;return = Number(p3) <br />
+          &#125;
+        </code>
+      </pre>
       <h3 className="mt-8 font-extrabold text-xl">Arrow Function</h3>
       <p>
         Die Arrow-Function ist die beliebteste Art eine Funtion zu schreiben.
         Arrow-Function bieten eine kompakte Syntax und eine Kurzschreibweise
         (Einzeiler), die das Schreiben von Funktionen vereinfacht.
       </p>
-      <p className="code">
-        const arrow = () =&gt; true ? 'true' : 'false'
-      </p>
+      <pre>
+        <code>
+          const arrow = () =&gt; true ? 'true' : 'false'
+        </code>
+      </pre>
       <p>
         Callbacks Ein weiterer Vorteil ist die automatische Bindung des
         'this'-Wertes, wodurch der Wert nicht durch den Kontext der Funktion
         geändert wird.
       </p>
-      <div className="code">
-        <pre>
-          <code>
-            const myFunction = (p3) =&gt; &#123;
-            <br />
-            &#9;return = Number(p3) <br />
-            &#125;
-          </code>
-        </pre>
-      </div>
+      <pre>
+        <code>
+          const myFunction = (p3) =&gt; &#123;
+          <br />
+          &#9;return = Number(p3) <br />
+          &#125;
+        </code>
+      </pre>
       <h3 className="mt-8 font-extrabold text-xl">
         Die Wiederverwendbarkeit von Code
       </h3>
@@ -104,33 +100,31 @@ export const Function = () => {
         sollte daher so simpel wie möglich aufgebaut sein und es sollte nach
         Möglichkeit nur ein Feature in einer Function sein.
       </p>
-      <div className="code">
-        <pre>
-          <code>
-            const string = "abcdefghijklmnopqrstuvwxyz"
-            <br />
-            <br />
-            const getRandomNumber = (multiplicator) =&gt; &#123;
-            <br />
-            &#9;return = Math.floor(Math.round() * multiplicator) <br />
-            &#125;
-            <br />
-            <br />
-            const getRandomLetter = (index) =&gt; &#123;
-            <br />
-            &#9;return = string[index] <br />
-            &#125;
-            <br />
-            // get the Indexes of the chars of the string
-            <br />
-            const randomNumber = getRandomNumber(string.lengh-1)
-            <br />
-            const randomLetter = getRandomLetter(randomNumber)
-            <br />
-            console.log(randomLetter)
-          </code>
-        </pre>
-      </div>
+      <pre>
+        <code>
+          const string = "abcdefghijklmnopqrstuvwxyz"
+          <br />
+          <br />
+          const getRandomNumber = (multiplicator) =&gt; &#123;
+          <br />
+          &#9;return = Math.floor(Math.round() * multiplicator) <br />
+          &#125;
+          <br />
+          <br />
+          const getRandomLetter = (index) =&gt; &#123;
+          <br />
+          &#9;return = string[index] <br />
+          &#125;
+          <br />
+          // get the Indexes of the chars of the string
+          <br />
+          const randomNumber = getRandomNumber(string.lengh-1)
+          <br />
+          const randomLetter = getRandomLetter(randomNumber)
+          <br />
+          console.log(randomLetter)
+        </code>
+      </pre>
       <p>
         Natürlich kann man sich die getRandomNumber Function auch sparen und die
         eine Zeile Code innerhalb der getRandomLetter Function schreiben. Der
