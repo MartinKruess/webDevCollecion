@@ -10,6 +10,7 @@ import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
 import { VSCode } from "../programmingBasic/vsCode";
 import { NPM } from "../programmingBasic/npm";
+import { Objects } from "../programmingBasic/objects";
 
 export const PB = () => {
   const [theme, setTheme] = useState("");
@@ -81,7 +82,24 @@ export const PB = () => {
           >
             Functions
           </li>
-
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("objects")}
+          >
+            Objects
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("classes")}
+          >
+            Klassen
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("jsdom")}
+          >
+            JS-DOM
+          </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => loadTheme("jsexercises")}
@@ -100,7 +118,9 @@ export const PB = () => {
         {theme === "ternary" && <Ternary />}
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
-        {theme === "function" && <Function />}
+        {theme === "objects" && <Objects />}
+        {/* {theme === "classes" && <Classes />} */}
+        {/* {theme === "jsdom" && <JS-DOM />} */}
         {theme === "jsexercises" && <JSExercises />}
       </section>
     </>
