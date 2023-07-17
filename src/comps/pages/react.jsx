@@ -1,4 +1,4 @@
-export const UIUX = () => {
+export const React = () => {
   return(
     <>
       <nav className="bg-slate-800 w-screen pb-5 px-8 sticky z-10 top-19">
@@ -6,32 +6,29 @@ export const UIUX = () => {
           <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
             Grundstruktur
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("tags")}>
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("node")}>
             Tags
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("formular")}>
-            Formulare
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
+            React Hooks
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("table")}>
-            Tabelle
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("exerciseAL")}>
+            Callback
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("inline")}>
-            inline-block
-          </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("flex")}>
-            Flex
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("array")}>
+            Async Await
           </li>
           <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("loop")}>
-            Grid
+            Fetch
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("animation")}>
-            Animation
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
+            Globale&Local States
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("scss")}>
-            SCSS/SASS
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("ifelse")}>
+            JWT
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("frameworks")}>
-            CSS-Frameworks
+          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("ternary")}>
+            Bcrypt
           </li>
           
           
