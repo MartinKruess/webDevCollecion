@@ -11,9 +11,13 @@ export const Variable = () => {
         eine Variable mit einem bestimmten Namen verwenden möchten.
       </p>
       <p className="code">
-        let y;
-        <br />
-        const z;
+        <pre>
+          <code>
+            let y;
+            <br />
+            const z;
+          </code>
+        </pre>
       </p>
       <p>
         Die Initialisierung einer Variablen erfolgt, indem Sie ihr einen Wert
@@ -22,14 +26,19 @@ export const Variable = () => {
         verwenden können.
       </p>
       <p className="code">
-        var x; // Deklaration
-        <br />
-        x = 10; // Initialisierung
-        <br />
-        <br />
-        let y = "Hallo";
-        <br />
-        const z = true;
+        <pre>
+          <code>
+            var x; // Deklaration
+            <br />
+            x = 10; // Initialisierung
+            <br />
+            <br />
+            let y = "Hallo";
+            <br />
+            const z = true;
+          </code>
+        </pre>
+
       </p>
       <p className="pt-4 pb-2">
         Variablen können verschiedene Arten von Werten speichern, wie Zahlen,

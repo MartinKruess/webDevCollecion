@@ -11,7 +11,7 @@ export const NodeInstaller = () => {
       </p>
       <div>
         <p>Node Version überprüfen</p>
-        <pre className="code">
+        <pre>
           <code>node -v</code>
           <br />
           <code>node --version</code>
@@ -22,7 +22,7 @@ export const NodeInstaller = () => {
           Bei vorhandener Node Version, lässt sich diese einfach auf die
           aktuellest LTS-Version Updaten.
         </p>
-        <pre className="code">
+        <pre>
           <code>npm i -g n lts</code>
         </pre>
       </div>
@@ -35,7 +35,7 @@ export const NodeInstaller = () => {
       </p>
       <div>
         <p>Datei mit Node Ausführen</p>
-        <pre className="code">
+        <pre>
           <code>node index.js</code>
         </pre>
       </div>
@@ -54,23 +54,20 @@ export const NodeInstaller = () => {
       </a>
       <div>
         <p>Installation </p>
-        <pre className="code">
-          <code>
-            curl -o-
-            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
-            bash
-          </code>
-          <br />
-          oder
-          <br />
-          <code>
-            wget -qO-
-            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
-            bash
-          </code>
-        </pre>
+          <pre>
+            <code>
+              curl -o-
+              https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+              bash
+              <br />
+              oder
+              <br />
+              wget -qO-
+              https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+              bash
+            </code>
+          </pre>
       </div>
-
       <p>
         <a href="https://nodejs.org/en/download" className="px-3">
           Node

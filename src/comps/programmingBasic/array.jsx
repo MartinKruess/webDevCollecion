@@ -14,7 +14,7 @@ export const Array = () => {
         Ein Array kann man als eine Art Daten-Container verstehen, der einzelne
         Elemente in einem Cluster zusammenfasst. Der grundaufbau eines Arrays
         wird wie folgt aufgebaut
-        <p className="code">const arrayName(s) = [ ]</p>
+        <pre><code>const arrayName(s) = [ ]</code></pre>
         Da ein Array eine Sammlung von Elementen ist wird, als Name des Arrays,
         oft die Mehrzahl von Etwas genommen. Beispiel: Franzi ist ein user und
         befindet sich im array mit dem Namen "users"
@@ -39,7 +39,7 @@ export const Array = () => {
 
       {/* ------------- METHODS ------------- */}
       <h3 className="font-extrabold text-2xl my-5">Array Methods Grundlagen</h3>
-      <pre className="code">
+      <pre>
         <code>
           const users = ["Sockenrocker83", "Nobody01", "Franzi", "Heardbreaker"]
           <br />
@@ -48,7 +48,7 @@ export const Array = () => {
       <p>
         Unter dem Begriff Methods versteht man eine Funktion, die auf etwas
         angewendet werden kann. Die Anwendung wird eingeleitet durch{" "}
-        <span className="code">.methodName</span>
+        <pre><code>.methodName</code></pre>
       </p>
       <div className="my-8">
         <ul>
@@ -99,32 +99,34 @@ export const Array = () => {
           <li>Startwert</li>
         </ul>
 
-        <p className="code">
-          const arrayToSlice = [1, 2, 3, 4, 5]
-          <br />
-          const startNegativ = arrayToSlice.slice(-3)
-          <br />
-          const completeArray = arrayToSlice.slice()
-          <br />
-          <br />
-          // const example = arrayToSlice.slice(STARTINDEX, ENDINDEX);
-          <br />
-          <br />
-          const StartindexToEndOfArray = arrayToSlice.slice(2);
-          <br />
-          const StartindexToEndindex = arrayToSlice.slice(1, 4);
-          <br />
-          const StartindexRichtToEndOfArray = arrayToSlice.slice(-2);
-          <br />
-          <br />
-          constole.log( ` Eine Kopie des gesamten Arrays um dieses Weiter zu
-          verarbeiten ohne das Originale zu Verändern:
-          &#36;&#123;completeArray&#125; Array vom Startindex bis zum Ende:
-          &#36;&#123;StartindexToEndOfArray&#125; Ein festgelegter Bereich:
-          &#36;&#123;StartindexToEndindex&#125; Es werden immer die Letzten 2
-          Arrayeinträge ausgegeben: &#36;&#123;StartindexRichtToEndOfArray&#125;
-          `)
-        </p>
+        <pre>
+          <code>
+            const arrayToSlice = [1, 2, 3, 4, 5]
+            <br />
+            const startNegativ = arrayToSlice.slice(-3)
+            <br />
+            const completeArray = arrayToSlice.slice()
+            <br />
+            <br />
+            // const example = arrayToSlice.slice(STARTINDEX, ENDINDEX);
+            <br />
+            <br />
+            const StartindexToEndOfArray = arrayToSlice.slice(2);
+            <br />
+            const StartindexToEndindex = arrayToSlice.slice(1, 4);
+            <br />
+            const StartindexRichtToEndOfArray = arrayToSlice.slice(-2);
+            <br />
+            <br />
+            constole.log( ` Eine Kopie des gesamten Arrays um dieses Weiter zu
+            verarbeiten ohne das Originale zu Verändern:
+            &#36;&#123;completeArray&#125; Array vom Startindex bis zum Ende:
+            &#36;&#123;StartindexToEndOfArray&#125; Ein festgelegter Bereich:
+            &#36;&#123;StartindexToEndindex&#125; Es werden immer die Letzten 2
+            Arrayeinträge ausgegeben: &#36;&#123;StartindexRichtToEndOfArray&#125;
+            `)
+          </code>
+        </pre>
       </div>
 
       {/* ------------- LINKS ------------- */}

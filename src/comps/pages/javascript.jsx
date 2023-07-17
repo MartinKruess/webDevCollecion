@@ -10,7 +10,7 @@ import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
 import { VSCode } from "../programmingBasic/vsCode";
 import { NPM } from "../programmingBasic/npm";
-import { Objects } from "../programmingBasic/objects";
+import { Vite } from "../programmingBasic/vite";
 
 export const PB = () => {
   const [theme, setTheme] = useState("");
@@ -26,8 +26,8 @@ export const PB = () => {
 
   return (
     <>
-      <nav className="bg-slate-800 w-screen pb-5 px-8 sticky z-10 top-19">
-        <ul className="text-2xl flex flex-wrap gap-5 p-2">
+      <nav className="bg-slate-800 pb-5 px-8 sticky z-10 top-19">
+        <ul className="w-11/12 text-2xl flex flex-wrap gap-5 p-2 m-auto">
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => loadTheme("npm")}
@@ -84,21 +84,9 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("objects")}
+            onClick={() => loadTheme("vite")}
           >
-            Objects
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("classes")}
-          >
-            Klassen
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("jsdom")}
-          >
-            JS-DOM
+            Vite
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
@@ -118,9 +106,8 @@ export const PB = () => {
         {theme === "ternary" && <Ternary />}
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
-        {theme === "objects" && <Objects />}
-        {/* {theme === "classes" && <Classes />} */}
-        {/* {theme === "jsdom" && <JS-DOM />} */}
+        {theme === "function" && <Function />}
+        {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
       </section>
     </>
