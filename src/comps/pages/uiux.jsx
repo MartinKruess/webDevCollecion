@@ -1,37 +1,67 @@
+import { useState } from "react";
+import { loadTheme } from "../global/loadTheme";
+
 export const UIUX = () => {
-  return(
+  const [theme, setTheme] = useState("");
+
+  return (
     <>
       <nav className="bg-slate-800 w-screen pb-5 px-8 sticky z-10 top-19">
         <ul className="text-2xl flex flex-wrap gap-5 p-2">
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("variables")}
+          >
             Grundstruktur
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("node")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("node")}
+          >
             Tags
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("variables")}
+          >
             VS-Code
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("exerciseAL")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("exerciseAL")}
+          >
             inline-block
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("array")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("array")}
+          >
             Flex
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("loop")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("loop")}
+          >
             Grid
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("variables")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("variables")}
+          >
             Animation
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("ifelse")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("ifelse")}
+          >
             SCSS/SASS
           </li>
-          <li className="px-3 py-2 border rounded-lg hover:bg-red-800" onClick={() => loadTheme("ternary")}>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => loadTheme("frameworks", theme)}
+          >
             CSS-Frameworks
           </li>
-          
-          
         </ul>
       </nav>
       <section className="w-10/12 m-auto mt-8">
@@ -46,5 +76,5 @@ export const UIUX = () => {
         {/* {theme === "function" && <Function />} */}
       </section>
     </>
-  )
-}
+  );
+};
