@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ThemeContext, LoadTheme } from "../global/loadTheme";
 import { Variable } from "../programmingBasic/variable";
 import { IfElse } from "../programmingBasic/ifelse";
 import { Array } from "../programmingBasic/array";
@@ -11,11 +12,10 @@ import { JSExercises } from "../programmingBasic/exercisesAL";
 import { VSCode } from "../programmingBasic/vsCode";
 import { NPM } from "../programmingBasic/npm";
 import { Vite } from "../programmingBasic/vite";
-import { loadTheme } from "../global/loadTheme";
 
 export const PB = () => {
-  const [theme, setTheme] = useState("");
-  console.log(theme);
+  const { theme, setTheme } = useContext(ThemeContext);
+  // const [theme, setTheme] = useState("");
 
   return (
     <>
@@ -23,67 +23,67 @@ export const PB = () => {
         <ul className="w-11/12 text-2xl flex flex-wrap gap-5 p-2 m-auto">
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("npm", theme)}
+            onClick={() => setTheme("npm")}
           >
             NPM
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("node", theme)}
+            onClick={() => setTheme("node")}
           >
             NodeJS
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("vs-code", theme)}
+            onClick={() => setTheme("vs-code")}
           >
             VS-Code
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables", theme)}
+            onClick={() => setTheme("variables")}
           >
             Variables
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("ifelse", theme)}
+            onClick={() => setTheme("ifelse")}
           >
             If/Else
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("ternary", theme)}
+            onClick={() => setTheme("ternary")}
           >
             Ternary
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("array", theme)}
+            onClick={() => setTheme("array")}
           >
             Array
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("loop", theme)}
+            onClick={() => setTheme("loop")}
           >
             Loops
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("function", theme)}
+            onClick={() => setTheme("function")}
           >
             Functions
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("vite", theme)}
+            onClick={() => setTheme("vite")}
           >
             Vite
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("jsexercises", theme)}
+            onClick={() => setTheme("jsexercises")}
           >
             Bonus Übungen
           </li>

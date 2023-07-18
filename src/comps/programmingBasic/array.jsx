@@ -14,7 +14,9 @@ export const Array = () => {
         Ein Array kann man als eine Art Daten-Container verstehen, der einzelne
         Elemente in einem Cluster zusammenfasst. Der grundaufbau eines Arrays
         wird wie folgt aufgebaut
-        <pre><code>const arrayName(s) = [ ]</code></pre>
+        <pre>
+          <code>const arrayName(s) = [ ]</code>
+        </pre>
         Da ein Array eine Sammlung von Elementen ist wird, als Name des Arrays,
         oft die Mehrzahl von Etwas genommen. Beispiel: Franzi ist ein user und
         befindet sich im array mit dem Namen "users"
@@ -48,8 +50,10 @@ export const Array = () => {
       <p>
         Unter dem Begriff Methods versteht man eine Funktion, die auf etwas
         angewendet werden kann. Die Anwendung wird eingeleitet durch{" "}
-        <pre><code>.methodName</code></pre>
       </p>
+      <pre>
+        <code>.methodName</code>
+      </pre>
       <div className="my-8">
         <ul>
           {arrayMethods.map((method, i) => (
@@ -123,8 +127,8 @@ export const Array = () => {
             &#36;&#123;completeArray&#125; Array vom Startindex bis zum Ende:
             &#36;&#123;StartindexToEndOfArray&#125; Ein festgelegter Bereich:
             &#36;&#123;StartindexToEndindex&#125; Es werden immer die Letzten 2
-            Arrayeinträge ausgegeben: &#36;&#123;StartindexRichtToEndOfArray&#125;
-            `)
+            Arrayeinträge ausgegeben:
+            &#36;&#123;StartindexRichtToEndOfArray&#125; `)
           </code>
         </pre>
       </div>

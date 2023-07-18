@@ -32,12 +32,10 @@ export const JSExercises = () => {
         <pre>
           <code>
             const pikachu = [12, 137] <br />
-            const pikachuSkills = ["Tackel",
-            "Eisenschweif", "Donnerschock"]
+            const pikachuSkills = ["Tackel", "Eisenschweif", "Donnerschock"]
             <br />
             const habitak = [13, 122] <br />
-            const habitakSkills = ["Tackel",
-            "Flügelschlag"]
+            const habitakSkills = ["Tackel", "Flügelschlag"]
           </code>
         </pre>
         <p>
@@ -92,8 +90,14 @@ export const JSExercises = () => {
           Galgenmännchen (readline-sync)
         </h3>
         <p>
-          Die Aufgabe ist es das Spiel Galgenmännchen nachzubauen. Der Computer picked sich ein Random Wort aus dem Array randomWords. Der Spieler kann dann via Terminaleingabe jede Runde einen Buchstaben eingeben. Der Computer schaut ob der Buchstabe im Wort enthalten ist. Sollte dieser enthalten sein, wird der Strich zu dem Buchstaben, wenn nicht wird der erste Buchstabe des loosterstrings ausgeben.
-          Achtung, sorge dafür, dass Spielereingaben nur akzeptiert werden, wenn diese aus einem Buchstaben bestehen.
+          Die Aufgabe ist es das Spiel Galgenmännchen nachzubauen. Der Computer
+          picked sich ein Random Wort aus dem Array randomWords. Der Spieler
+          kann dann via Terminaleingabe jede Runde einen Buchstaben eingeben.
+          Der Computer schaut ob der Buchstabe im Wort enthalten ist. Sollte
+          dieser enthalten sein, wird der Strich zu dem Buchstaben, wenn nicht
+          wird der erste Buchstabe des loosterstrings ausgeben. Achtung, sorge
+          dafür, dass Spielereingaben nur akzeptiert werden, wenn diese aus
+          einem Buchstaben bestehen.
         </p>
         <pre>
           <code>
@@ -105,19 +109,23 @@ export const JSExercises = () => {
         </pre>
         <pre>
           <code>
-            const randomWords = ["importance", "refrigerator", "statement", "conclusion","knowledge", "opportunity", "comparison", "instruction", "indication", "criticism", "consequence", "contribution", "childhood", "president", "difference", "establishment", "responsibility", "reception", "psychology", "enthusiasm"] <br />
+            const randomWords = ["importance", "refrigerator", "statement",
+            "conclusion","knowledge", "opportunity", "comparison",
+            "instruction", "indication", "criticism", "consequence",
+            "contribution", "childhood", "president", "difference",
+            "establishment", "responsibility", "reception", "psychology",
+            "enthusiasm"] <br />
             Normalmode: const looserString = "YOU FAILED!" //10 Versuche
           </code>
         </pre>
         <h3 className="font-extrabold text-xl">Advanced Upgrade!</h3>
         <p>
-          Versuche einen Hardmode einzubauen, den der Spieler auswählen kann. Im Hardmode hat der Spieler nur 9 Versuche.
-          <pre>
-            <code>
-              Hardmode: const looserString = "YOU LOOSE!" // 9 Versuche
-            </code>
-          </pre>
+          Versuche einen Hardmode einzubauen, den der Spieler auswählen kann. Im
+          Hardmode hat der Spieler nur 9 Versuche.
         </p>
+        <pre>
+          <code>Hardmode: const looserString = "YOU LOOSE!" // 9 Versuche</code>
+        </pre>
       </div>
     </article>
   );

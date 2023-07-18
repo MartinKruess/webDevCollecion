@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { loadTheme } from "../global/loadTheme";
+import { useContext } from "react";
+import { ThemeContext } from "../global/loadTheme";
+import { Frameworks } from "../ui-basics/frameworks";
 
 export const UIUX = () => {
-  const [theme, setTheme] = useState("");
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <>
@@ -10,55 +11,55 @@ export const UIUX = () => {
         <ul className="text-2xl flex flex-wrap gap-5 p-2">
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables")}
+            onClick={() => setTheme("variables")}
           >
             Grundstruktur
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("node")}
+            onClick={() => setTheme("tags")}
           >
             Tags
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables")}
+            onClick={() => setTheme("vscode")}
           >
             VS-Code
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("exerciseAL")}
+            onClick={() => setTheme("exerciseAL")}
           >
             inline-block
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("array")}
+            onClick={() => setTheme("flex")}
           >
             Flex
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("loop")}
+            onClick={() => setTheme("grid")}
           >
             Grid
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("variables")}
+            onClick={() => setTheme("animation")}
           >
             Animation
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("ifelse")}
+            onClick={() => setTheme("sass")}
           >
             SCSS/SASS
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => loadTheme("frameworks", theme)}
+            onClick={() => setTheme("frameworks")}
           >
             CSS-Frameworks
           </li>
@@ -73,7 +74,7 @@ export const UIUX = () => {
         {/* {theme === "array" && <Array />} */}
         {/* {theme === "loop" && <Loop />} */}
         {/* {theme === "exerciseAL" && <ArrayLoopExercise />} */}
-        {/* {theme === "function" && <Function />} */}
+        {theme === "frameworks" && <Frameworks />}
       </section>
     </>
   );
