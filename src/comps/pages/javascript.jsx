@@ -1,5 +1,8 @@
 import { useContext, useState } from "react";
 import { ThemeContext, LoadTheme } from "../global/loadTheme";
+
+import { NPM } from "../programmingBasic/npm";
+import { VSCode } from "../programmingBasic/vsCode";
 import { Variable } from "../programmingBasic/variable";
 import { IfElse } from "../programmingBasic/ifelse";
 import { Array } from "../programmingBasic/array";
@@ -9,9 +12,9 @@ import { Loop } from "../programmingBasic/loop";
 import { NodeInstaller } from "../programmingBasic/node";
 import { Function } from "../programmingBasic/function";
 import { JSExercises } from "../programmingBasic/exercisesAL";
-import { VSCode } from "../programmingBasic/vsCode";
-import { NPM } from "../programmingBasic/npm";
+
 import { Vite } from "../programmingBasic/vite";
+import { Objects } from "../programmingBasic/objects";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -77,6 +80,24 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("objects")}
+          >
+            Objects
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("function")}
+          >
+            Higher Order Functions
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("classes")}
+          >
+            Classes
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => setTheme("vite")}
           >
             Vite
@@ -100,6 +121,7 @@ export const PB = () => {
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
         {theme === "function" && <Function />}
+        {theme === "object" && <Objects />}
         {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
       </section>

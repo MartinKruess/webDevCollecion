@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../global/loadTheme";
+
+import { SASS } from "../ui-basics/sass";
 import { Frameworks } from "../ui-basics/frameworks";
 
 export const UIUX = () => {
@@ -72,8 +74,9 @@ export const UIUX = () => {
         {/* {theme === "ifelse" && <IfElse />} */}
         {/* {theme === "ternary" && <Ternary />} */}
         {/* {theme === "array" && <Array />} */}
-        {/* {theme === "loop" && <Loop />} */}
+
         {/* {theme === "exerciseAL" && <ArrayLoopExercise />} */}
+        {theme === "sass" && <SASS />}
         {theme === "frameworks" && <Frameworks />}
       </section>
     </>
