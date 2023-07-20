@@ -10,51 +10,44 @@ export const Variable = () => {
         Mit der Deklaration teilen Sie dem JavaScript-Interpreter mit, dass Sie
         eine Variable mit einem bestimmten Namen verwenden möchten.
       </p>
-      <p className="code">
-        <pre>
-          <code>
-            let y;
-            <br />
-            const z;
-          </code>
-        </pre>
-      </p>
+      <pre>
+        <code>
+          let y;
+          <br />
+          const z;
+        </code>
+      </pre>
       <p>
         Die Initialisierung einer Variablen erfolgt, indem Sie ihr einen Wert
         zuweisen. Nach der Deklaration können Sie einer Variablen einen
         Anfangswert zuweisen, damit sie einen Wert enthält, den Sie später
         verwenden können.
       </p>
-      <p className="code">
-        <pre>
-          <code>
-            var x; // Deklaration
-            <br />
-            x = 10; // Initialisierung
-            <br />
-            <br />
-            let y = "Hallo";
-            <br />
-            const z = true;
-          </code>
-        </pre>
-
-      </p>
+      <pre>
+        <code>
+          var x; // Deklaration
+          <br />
+          x = 10; // Initialisierung
+          <br />
+          <br />
+          let y = "Hallo";
+          <br />
+          const z = true;
+        </code>
+      </pre>
       <p className="pt-4 pb-2">
         Variablen können verschiedene Arten von Werten speichern, wie Zahlen,
         Zeichenketten "", Booleans ture/false, Arrays [], Objekte {}. Sie dienen
         dazu, Daten während der Ausführung eines JavaScript-Programms zu
         speichern und zu verändern.
       </p>
-      <div className="code">
-        <pre>
-          <code>
-            const constantVariable = ""
-            <br />
-            let localVariable = ""
-          </code>
-        </pre>
-      </div>
+      <pre>
+        <code>
+          const constantVariable = ""
+          <br />
+          let localVariable = ""
+        </code>
+      </pre>
       <p>
         "const" ermöglicht die Deklaration von Variablen mit konstantem Wert.
         Sie haben auch einen Blockgültigkeitsbereich und können nicht erneut
