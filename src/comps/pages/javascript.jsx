@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext, LoadTheme } from "../global/loadTheme";
 
 import { NPM } from "../programmingBasic/npm";
@@ -18,7 +18,6 @@ import { Objects } from "../programmingBasic/objects";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-  // const [theme, setTheme] = useState("");
 
   return (
     <>
@@ -86,9 +85,9 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("function")}
+            onClick={() => setTheme("dom")}
           >
-            Higher Order Functions
+            DOM
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
@@ -121,7 +120,7 @@ export const PB = () => {
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
         {theme === "function" && <Function />}
-        {theme === "object" && <Objects />}
+        {theme === "objects" && <Objects />}
         {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
       </section>

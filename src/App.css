@@ -12,10 +12,11 @@
 }
 
 nav ul li{
-  min-width: 6.5rem;
+  min-width: 7.5rem;
   flex-grow: 1;
   text-align: center;
 }
+
 
 article h2, article h3{
   margin-top: 2.5rem;
