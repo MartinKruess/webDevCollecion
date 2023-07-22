@@ -129,7 +129,7 @@ export const Objects = () => {
             Funktionen, die innerhalb von Objekten aufgebaut werden, werden auch Methoden genannt. Wie beispielsweise Math.random(). Hier ist random() eine Function innerhalb des Math-Objektes. Wir haben bisher eine Methoden (String und Array Methoden) kennengelernt.
           </p>
           <p>
-            'this' wird verwendet um in externen Methoden jedes Objekt ansprechen zu können. Wobei sich 'this' immer auf das aktuell zu bearbeitende Objekt bezieht. Da 'this' etwas kompliziert ist um es einfahc so zu begreifen, hier ein kleines Beispiel.
+            'this' wird verwendet um in externen Methoden jedes Objekt ansprechen zu können. Wobei sich 'this' immer auf das aktuell zu bearbeitende Objekt bezieht. Da 'this' etwas kompliziert ist um es einfach so zu begreifen, hier ein kleines Beispiel.
           </p>
           <p>
             Die externe Methode (Funktion) wird in 5 verschiedenen Objekte eingebunden und soll in jedem Objekt den Vor- und Nachnamen als fullname ausgeben. Hierbei kommt 'this' zum einsatz. Sollten wir nun den fullname von Objekt 3 auslesen wollen, startet die Function und 'this' wird zu 'object3' und erstellt den Fullname aus 'objekt3.firstname' und 'objekt3.lastname'.
