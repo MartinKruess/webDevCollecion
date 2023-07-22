@@ -22,7 +22,7 @@ export const JSExercises = () => {
         viele Sinnvolle Loops und Functions angewendet werden.
       </p>
       <select
-        className="px-6 py-2 rounded-xl"
+        className="bg-slate-700 px-6 py-2 rounded-xl"
         name="exercises"
         id="exercises"
         onChange={(e) => getTypeTarget(e)}
