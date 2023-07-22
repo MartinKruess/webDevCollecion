@@ -47,4 +47,38 @@ export const jsExercises = [
     tools: ["readline-sync"],
     type: "objects",
   },
+  {
+    header: "Object Basics",
+    tasks: [
+      "Die Aufgabe ist es mehrere Objekte anzulegen von zwei Mitstudenten und eines von dir selbst. Die zu speichernden Daten sind: name, alter, stadt, gesprochene Sprachen. Finde heraus welche Mitstudenten aus Berlin kommen und gib aus:",
+    ],
+    advancedHeader: "",
+    advancedTask:
+      "Überprüfe abschließend wer die Sprache Spanisch kann und gibt diese Person aus, wenn keiner Spanisch spricht, gib aus.",
+    code: [
+      "console.log('Hans kommt aus Berlin!')",
+      "console.log('Niemand spricht Spanisch.')"
+    ],
+    output:
+      "",
+    tools: ["readline-sync"],
+    type: "objects",
+  },
+  {
+    header: "",
+    tasks: [
+      "",
+    ],
+    advancedHeader: "",
+    advancedTask:
+      "",
+    code: [
+      "",
+      ""
+    ],
+    output:
+      "",
+    tools: ["readline-sync"],
+    type: "objects",
+  },
 ];

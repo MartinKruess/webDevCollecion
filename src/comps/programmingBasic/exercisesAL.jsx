@@ -3,13 +3,16 @@ import { jsExercises } from "./assets/exercises";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
+  const [jsExercisesArr, setJSExercisesArr] = useState([])
 
   const getTypeTarget = (e) => {
     setType(e.target.value);
   };
 
   useEffect(() => {
-    console.log(type);
+    const filteredExercises = jsExercises && jsExercises.filter((execise => execise.type === type))
+    type === "default" ? setJSExercisesArr(jsExercises) : setJSExercisesArr(filteredExercises)
+    console.log("filteredExercises", filteredExercises, type)
   }, [type]);
 
   return (
@@ -21,19 +24,23 @@ export const JSExercises = () => {
         nehme gerne Spiele als Beispiele, da in der Spiele Entwicklung sehr
         viele Sinnvolle Loops und Functions angewendet werden.
       </p>
-      <select
-        className="bg-slate-700 px-6 py-2 rounded-xl"
-        name="exercises"
-        id="exercises"
-        onChange={(e) => getTypeTarget(e)}
-      >
-        <option value="default">Alle</option>
-        <option value="array">Array</option>
-        <option value="loops">Loop</option>
-        <option value="objects">Object</option>
-        <option value="arrayHigh">Array 2</option>
-      </select>
-      {jsExercises.map((exercise, i) => (
+      <div className="flex justify-between mt-10">
+        <select
+          className="bg-slate-700 px-10 py-2 rounded-xl"
+          name="exercises"
+          id="exercises"
+          onChange={(e) => getTypeTarget(e)}
+        >
+          <option value="default">Alle</option>
+          <option value="array" disabled>Array</option>
+          <option value="loops">Loop</option>
+          <option value="objects">Object</option>
+          <option value="arrayHigh" disabled>Array 2</option>
+        </select>
+        <p className="text-xl py-2" >Übungen Vorhanden: {jsExercisesArr.length}</p>
+      </div>
+      
+      {jsExercisesArr.map((exercise, i) => (
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
           <h3 className="font-extrabold text-xl">{exercise.header}</h3>
           <p>{exercise.tasks[0]}</p>
@@ -50,23 +57,6 @@ export const JSExercises = () => {
           <p>{exercise.advancedTask}</p>
         </div>
       ))}
-      <div className="mt-5 p-5 bg-slate-800 border">
-        <h3 className="font-extrabold text-xl">Objekte </h3>
-        <p>
-          Die Aufgabe ist es mehrere Objekte anzulegen von zwei Mitstudenten und
-          eines von dir selbst. Die zu speichernden Daten sind: name, alter,
-          stadt, gesprochene Sprachen
-        </p>
-        <p>
-          Finde heraus welche Mitstudenten aus Berlin kommen und gib aus:
-          .log("Hans kommt aus Berlin!")
-        </p>
-        <p>
-          Überprüfe abschließend wer die Sprache Spanisch kann und gibt diese
-          Person aus, wenn keiner Spanisch spricht, gibt "Niemand spricht
-          Spanisch." aus.
-        </p>
-      </div>
     </article>
   );
 };

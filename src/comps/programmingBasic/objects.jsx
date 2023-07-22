@@ -1,9 +1,4 @@
 export const Objects = () => {
-
-  
-
-  console.log( typeof a)
-
   return (
     <article className="p-4">
       <h2 className="font-extrabold text-2xl">Objekte - Daten in Relation</h2>
