@@ -1,7 +1,7 @@
 export const Vite = () => {
     return (
         <article className="p-4">
-            <h2 className="font-extrabold text-2xl">JS-DOM mit Vite Vanilla</h2>
+            <h2 className="font-extrabold text-2xl">DOM mit Vite Vanilla</h2>
             <div className="grid grid-cols-12 gap-x-20">
                 <img className="col-start-1 col-end-3" src="./images/viteLogo.png" alt="" />
                 <p className="col-start-5 col-end-13">

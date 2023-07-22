@@ -9,6 +9,7 @@ export const Navi = () => {
       <NavLink to="/react">REACT</NavLink>
       <NavLink to="/databases">DATABASE</NavLink>
       <NavLink to="/nodeJs">NODE EXPRESS</NavLink>
+      <NavLink to="/deployment">DEPLOYMENT</NavLink>
     </nav>
   );
 };
