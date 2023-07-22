@@ -134,6 +134,9 @@ export const Objects = () => {
           <p>
             Die externe Methode (Funktion) wird in 5 verschiedenen Objekte eingebunden und soll in jedem Objekt den Vor- und Nachnamen als fullname ausgeben. Hierbei kommt 'this' zum einsatz. Sollten wir nun den fullname von Objekt 3 auslesen wollen, startet die Function und 'this' wird zu 'object3' und erstellt den Fullname aus 'objekt3.firstname' und 'objekt3.lastname'.
           </p>
+          <p>
+            Für alle Pokemonfans unter uns habe ich ein sehr bildliches Beispiel: Stell dir vor du hast einen Pokeball mit einem Ditto drin. Der Pokeball ist deine Funktion und das Ditto ist 'this'. Nun rufst du: "Los Pikachu!", das ist dein Objekt und Ditto nimmt die Form von Pikachu an, beim nächsten mal sagst du: "Los Taubsi!" und 'this' nimmt die Eigenschaften des Taubsi-Objektes an.
+          </p>
           <h3 className="font-extrabold text-xl">
               Beispiel mit Arrow-Function (funktioniert nicht!)
             </h3>
