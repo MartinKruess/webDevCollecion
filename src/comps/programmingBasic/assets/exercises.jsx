@@ -24,9 +24,9 @@ export const jsExercises = [
       "const randomWords = ['importance', 'refrigerator', 'statement', 'conclusion','knowledge', 'opportunity', 'comparison','instruction', 'indication', 'criticism', 'consequence','contribution', 'childhood', 'president', 'difference','establishment', 'responsibility', 'reception', 'psychology','enthusiasm']",
       "Normalmode: const looserString = 'YOU FAILED!' //10 Versuche",
       "Hardmode: const looserString = 'YOU LOOSE!'",
-    ],
-    output:
       "Beispiel Ausgabe: <br />const word = 'interesse' <br />Start Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ _ _ _ <br />Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _",
+    ],
+    output: "",
     tools: ["readline-sync"],
     type: "loops",
   },
@@ -42,8 +42,7 @@ export const jsExercises = [
       "const pikachu = {level: 12, health: 137, skills: ['Tackel', 'Eisenschweif', 'Donnerschock']}",
       "const habitak = {level:13, health: 122,skills: ['Tackel', 'Flügelschlag']}",
     ],
-    output:
-      "Beispiel Ausgabe: <br />const word = 'interesse' <br />Start Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ _ _ _ <br />Erfolg Ausgabe: Das Geheime Wort ist: _ _ _ _ _ _ s s _ <br />",
+    output: "",
     tools: ["readline-sync"],
     type: "objects",
   },
@@ -59,26 +58,42 @@ export const jsExercises = [
       "console.log('Hans kommt aus Berlin!')",
       "console.log('Niemand spricht Spanisch.')"
     ],
-    output:
-      "",
+    output: "",
     tools: ["readline-sync"],
     type: "objects",
   },
   {
-    header: "",
+    header: "Filter ein ArrayOfObjets",
     tasks: [
-      "",
+      "Für diese Aufgabe müssen wir ein paar kleine Vorbereitungen treffen. Der erste Schritt ist, dass wir einen Ordner anlegen mit einer index.js. Das Zweite ist das herunterladen der Datei mit den Daten. Anschließend verschiebt diese Datei in unser Projekt. Nun kommen wir zu den unten stehenden Befehlen. Das installieren von es6 erlaubt uns die Benutzung von Modulen. Um den import Befehl nutzen zu können muss nun die package.json anpassen werden, indem 'type': 'module' eintragen wird. Abschließend kopiere den import befehl in deiner index.js und teste ob du mit console.log(ArrayOfObjects) eine Ausgabe erhälst.", "Füge jedem Objekt einen neuen key hinzu namens 'articleName' und den String 'company + size + type'. Erstelle einen Filter der ein Array erzeugt, dass nur Festplatten beinhaltet, die kleiner als 1TB sein. Gebe dieses Array mit Console.log aus. Am Ende füge den Artikel 'Kingston 2TB SSD' hinzu.",
     ],
-    advancedHeader: "",
+    advancedHeader: "Filter Article (filter Methode)",
+    advancedTask:
+      "Nutze die Filtermethode für dieses Ergebnis. Filtere mit der Bedingung company entweder nach 'Seagate' oder nach 'Western Digital'",
+    code: [
+      "npm i es6",
+      "{ 'type': module', 'dependencies': {'es6': '^0.0.7'}}",
+      "import { ArrayOfObjects } from './arrayOfObjects.js';"
+    ],
+    output: "./assets/arrayOfObjects.js",
+    tools: ["readline-sync"],
+    type: "objects",
+  },
+  {
+    header: "Datamanagement",
+    tasks: [
+      "Du erhälst den Auftrag die Daten eines Unternehmens zu sprtieren. Sie haben über Jahre hinweg all ihre Daten in einer Datenbank gespeichert ohne darauf zu achten ob diese Daten zusammen passen. Erstelle neue Arrays für bestimmte Datentypen und andere Unterschiede",
+    ],
+    advancedHeader: "Filter Article (filter Methode)",
     advancedTask:
       "",
     code: [
+      "const data = ['Nico', 2,'Adam', true, 17, 231, 'Heinrich', false, '10', {name: Fritz, age: 37,}, 'der Arzt', 'müde', 'Peter', 'traurig', 'der Klemptner', {name: Tina, age: 22,}, 'die Lehrerin', 'hungrig']",
       "",
       ""
     ],
-    output:
-      "",
+    output: "",
     tools: ["readline-sync"],
-    type: "objects",
+    type: "array",
   },
 ];

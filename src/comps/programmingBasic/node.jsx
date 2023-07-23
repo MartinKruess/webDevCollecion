@@ -4,8 +4,8 @@ export const NodeInstaller = () => {
       <h2 className="font-extrabold text-2xl">NodeJS</h2>
       <p>
         Node.js ist eine plattformübergreifende Open - Source- Serverumgebung,
-        die unter Windows , Linux , Unix , macOS und mehr ausgeführt werden
-        kann. Node.js ist eine Back-End- JavaScript- Laufzeitumgebung , läuft
+        die unter Windows, Linux, Unix, macOS und mehr ausgeführt werden
+        kann. Node.js ist eine Back-End- JavaScript- Laufzeitumgebung, läuft
         auf der V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines
         Webbrowsers aus.
       </p>

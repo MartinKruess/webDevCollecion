@@ -12,7 +12,7 @@ export const Vite = () => {
                     Der Haken dabei: Das Auflösen der Abhängigkeiten mit all den Importen und Exporten ist ein komplexer Vorgang, der einige Zeit erfordert. Für einen gelegentlichen Produktionsbuild (deployment) ist das verschmerzbar, aber während der Entwicklung mit dem DevServer (der ebenfalls Webpack einsetzt) ist eine kleine Änderung am Code bei großen Anwendungen erst nach einiger Zeit im Browser sichtbar.
                 </p>
                 <p className="col-start-7 col-end-13">
-                    Deshalb entschloss sich Evan You – der Entwickler hinter Vue.js – ein schnelleres Build-Tool für die Frontend-Webentwicklung (nicht nur für Vue.js!) zu programmieren. Diese Alternative, inzwischen in Version 2 verfügbar, heißt Vite und der (französische) Name verspricht nicht zu viel.
+                    Deshalb entschloss sich Evan You, der Entwickler hinter Vue.js, ein schnelleres Build-Tool für die Frontend-Webentwicklung (nicht nur für Vue.js!) zu programmieren. Diese Alternative, inzwischen in Version 2 verfügbar, heißt Vite und der (französische) Name verspricht nicht zu viel.
                 </p>
                 <p className="col-start-1 col-end-7">
                     Vite ist dramatisch schneller, je nach Größe der Anwendung um den Faktor 10 bis 100. Diese Performanceverbesserung wird unter anderem durch Nutzung der noch nicht allzu lange verfügbaren nativen ES-Script-Module des Browsers, der Unterteilung des Projektcodes in pre-gebundelte Dependencies und dem eigentlichen Quellcode sowie einem neuen DevServer mit schnellem Hot Module Replacement (HMR) erreicht.

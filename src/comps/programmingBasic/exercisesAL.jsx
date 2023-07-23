@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { jsExercises } from "./assets/exercises";
+import { arrayOfObjects } from "./assets/arrayOfObjects";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
@@ -32,7 +33,7 @@ export const JSExercises = () => {
           onChange={(e) => getTypeTarget(e)}
         >
           <option value="default">Alle</option>
-          <option value="array" disabled>Array</option>
+          <option value="array">Array</option>
           <option value="loops">Loop</option>
           <option value="objects">Object</option>
           <option value="arrayHigh" disabled>Array 2</option>
@@ -44,6 +45,7 @@ export const JSExercises = () => {
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
           <h3 className="font-extrabold text-xl">{exercise.header}</h3>
           <p>{exercise.tasks[0]}</p>
+          <p>{exercise.tasks[1]}</p>
           {exercise.code && (
             <pre>
               <code>{exercise.code[0]}</code>
@@ -55,8 +57,10 @@ export const JSExercises = () => {
           )}
           <h3 className="font-extrabold text-xl">{exercise.advancedHeader}</h3>
           <p>{exercise.advancedTask}</p>
+          {exercise.output && <a href={exercise.output} download={exercise.output}>Download</a>}
         </div>
       ))}
+      
     </article>
   );
 };

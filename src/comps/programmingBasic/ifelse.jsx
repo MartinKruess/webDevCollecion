@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { highlights } from "../../App"
 
 export const IfElse = () => {
   const [isWatched, setIsWatched] = useState(false)
@@ -9,7 +10,7 @@ export const IfElse = () => {
     <article className="p-4">
       <h2 className="font-extrabold text-2xl">Condiuional Statement (If-Else)</h2>
       <p className="pt-4 pb-2">
-        Das klassische If (wenn -&gt; dann) ist ein logischer Operator bestehend aus:
+        Das klassische <span className={highlights.code}>If (wenn -&gt; dann)</span> ist ein logischer Operator bestehend aus:
       </p>
       <pre>
         <code>
@@ -19,10 +20,10 @@ export const IfElse = () => {
         </code>
       </pre>
       <p className="pt-2 pb-4">
-        Wobei die Condition einen true/fals Wert zurück gibt. Sollte die Condition den Boolian true zurück geben wird der Code im inneren des if ausgeführt.
+        Wobei die Condition einen <span className={highlights.code}>true/fals</span> Wert zurück gibt. Sollte die Condition den Boolian true zurück geben wird der Code im inneren des if ausgeführt.
       </p>
       <div className="pt-4 pb-2">
-        Das Gegenstück zum if (wenn) ist das else (sonst). Während man das if auch ohne ein else Anwenden kann, so kann das else nur zusammen mit einem if verwendet werden. Der else Fall hat hierbei keine condition.
+        Das Gegenstück zum <span className={highlights.code}>if (wenn)</span> ist das <span className={highlights.code}>else (sonst)</span>. Während man das if auch ohne ein else Anwenden kann, so kann das else nur zusammen mit einem if verwendet werden. Der else Fall hat hierbei keine condition.
         <pre>
           <code>
             if(condition)&#123;<br />
@@ -35,7 +36,7 @@ export const IfElse = () => {
       </div>
       <h3 className="font-extrabold text-xl pt-8">Anwendungsbeispiel von If und If-Else</h3>
       <p className="pt-4 pb-2">
-        In diesem Fall wird geprüft ob du müde bist, wenn das zutrifft (true), dann kommt die Nachricht, "Go to bed!" Hier wird nur auf true geprüft, weshalb es keinen else-Fall gibt.
+        In diesem Fall wird geprüft ob du müde bist, wenn das zutrifft (<span className={highlights.code}>true</span>), dann kommt die Nachricht, "Go to bed!" Hier wird nur auf <span className={highlights.code}>true</span> geprüft, weshalb es keinen else-Fall gibt.
       </p>
       <pre>
         <code>
@@ -103,7 +104,7 @@ export const IfElse = () => {
         </code>
       </pre>
       <p className="pt-2 pb-4">
-        Durch die Verwendung von "else if" spart man sich das Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
+        Durch die Verwendung von <span className={highlights.code}>else if</span> spart man sich das Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
       </p>
       <div className="imgContainer" >
         {isWatched ? (

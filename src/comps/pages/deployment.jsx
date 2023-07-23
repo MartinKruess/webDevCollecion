@@ -1,6 +1,13 @@
 import { useContext } from "react";
 import { ThemeContext } from "../global/loadTheme";
 
+import { GHPages } from "../deployment/ghPages";
+import { Netlify } from "../deployment/netlify";
+import { Vercel } from "../deployment/vercel";
+import { Cyclic } from "../deployment/cyclic";
+import { Firebase } from "../deployment/firebase";
+import { TippsTricks } from "../deployment/tipps&tricks";
+
 export const Deployment = () => {
     const { theme, setTheme } = useContext(ThemeContext);
 
@@ -40,21 +47,20 @@ export const Deployment = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("tipps&zticks")}
+            onClick={() => setTheme("tipps&tricks")}
           >
             Tipps&Tricks
           </li>
         </ul>
       </nav>
     <section className="w-10/12 m-auto">
-    {!theme && <JSText />}
-        {theme === "npm" && <NPM />}
-        {theme === "ghPages" && <NodeInstaller />}
-        {theme === "netlify" && <VSCode />}
-        {theme === "vercel" && <Variable />}
-        {theme === "cyclic" && <IfElse />}
-        {theme === "firebase" && <Ternary />}
-        {theme === "tipps&tricks" && <Array />}
+        {/* {!theme && <JSText />} */}
+        {theme === "ghPages" && <GHPages />}
+        {theme === "netlify" && <Netlify />}
+        {theme === "vercel" && <Vercel />}
+        {theme === "cyclic" && <Cyclic />}
+        {theme === "firebase" && <Firebase />}
+        {theme === "tipps&tricks" && <TippsTricks />}
     </section>
     </>
   )

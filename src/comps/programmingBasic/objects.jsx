@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Objects = () => {
   return (
     <article className="p-4">
@@ -34,7 +36,7 @@ export const Objects = () => {
       </p>
       <p>
         Das Object besteht aus sogenannten Key-Value Paaren. Im obrigen Beispiel
-        gibt es den Key "price" über den man auf den Wert/Value zugreifen kann.
+        gibt es den Key <span className={highlights.code}>price</span> über den man auf den Wert/Value zugreifen kann.
       </p>
       <pre>
         <code>Dotnotation - console.log(graka.price)</code>
@@ -84,10 +86,10 @@ export const Objects = () => {
         eine Variable oder eine Funktion sein. Es gibt allerindgs ein paar Besonderheiten bei der Verwendung von Funktionen in einem Objekt.
       </p>
       <p>
-        Innerhalb von Objekten können nur basic Functions verwendet werden, da Arrow-Functions nicht mit 'this' arbeiten können. Innerhalb von Arrow-Functions entspricht 'this' 'undefined'.
+        Innerhalb von Objekten können nur basic Functions verwendet werden, da Arrow-Functions nicht mit <span className={highlights.code}>this</span> arbeiten können. Innerhalb von Arrow-Functions entspricht <span className={highlights.code}>this -&gt; undefined</span>.
       </p>
       <p>
-        Doch was genau ist eigl dieses 'this'? 'this' ist ein Verweis auf das Objekt, das die aktuelle Javascript-Funktion aufgerufen hat. 'this' ist ein Segen für die Flexiblität und ein sprudelnder Quell für Trugschlüsse. Jede Javascript-Funktion hat ein verstecktes Argument namens 'this'.
+        Doch was genau ist eigl dieses 'this'? <span className={highlights.code}>this</span> ist ein Verweis auf das Objekt, das die aktuelle Javascript-Funktion aufgerufen hat. 'this' ist ein Segen für die Flexiblität und ein sprudelnder Quell für Trugschlüsse. Jede Javascript-Funktion hat ein verstecktes Argument namens 'this'.
       </p>
           
           <pre>

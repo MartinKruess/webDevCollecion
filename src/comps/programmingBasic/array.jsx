@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { arrayMethods } from "./assets/arrayMethods";
+import { highlights } from "../../App";
 
 export const Array = () => {
   const [isWatched, setIsWatched] = useState(false);
@@ -19,7 +20,7 @@ export const Array = () => {
         </pre>
         Da ein Array eine Sammlung von Elementen ist wird, als Name des Arrays,
         oft die Mehrzahl von Etwas genommen. Beispiel: Franzi ist ein user und
-        befindet sich im array mit dem Namen "users"
+        befindet sich im array mit dem Namen <span className={highlights.code}>users</span>
       </div>
       <pre>
         <code>
@@ -28,7 +29,7 @@ export const Array = () => {
         </code>
       </pre>
       <p>
-        Ein Array sollte übrigens immer als const Variable erstellt werden und
+        Ein Array sollte übrigens immer als <span className={highlights.code}>const</span> Variable erstellt werden und
         dafür gibt es gute gründe. In einem Array sind wichtige Daten, die man
         nicht ausversehen überschreiben möchte und ein weiterer gute Punkt ist
         die Weiterverarbeitung. Bei der Weiterverarbeitung mit Methoden, in
@@ -49,7 +50,7 @@ export const Array = () => {
       </pre>
       <p>
         Unter dem Begriff Methods versteht man eine Funktion, die auf etwas
-        angewendet werden kann. Die Anwendung wird eingeleitet durch{" "}
+        angewendet werden kann. Die Anwendung wird eingeleitet durch <span className={highlights.code}>&#123;" "&#125;</span>
       </p>
       <pre>
         <code>.methodName</code>
@@ -99,8 +100,8 @@ export const Array = () => {
           auszugeben. Hierbei kann man folgendes Angeben:
         </p>
         <ul>
-          <li>Startwert - Endwert</li>
-          <li>Startwert</li>
+          <li>Startwert - Endwert: <span className={highlights.code}>slice(0, 5)</span> -&gt; Das bedeutet es wird Position 0-4 in ein neues Array/einen neuen String kopiert (exclusive 5)</li>
+          <li>Startwert: <span className={highlights.code}>slice(2)</span> -&gt; Das bedeutet es wird von Position 2 automatisch alles bis ans Ende in ein neues Array/einen neuen String kopiert</li>
         </ul>
 
         <pre>
