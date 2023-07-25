@@ -5,7 +5,7 @@ export const GHPages = () => {
         <article>
             <h2 className="font-extrabold text-2xl">Deployment mit Github Pages</h2>
             <p>
-                GitHub selbst hat eine Deploy Funktion, die für kleinere Frontend Webseiten genau das richtige ist. Die Funktion nennt sich <span className={highlights.directory}>Github Pages</span> und ist direkt im jeweiligen Repository zu finden. Github Pages eignet sich gut für die veröffentlichung deines Portfolios und Final Projects.
+                GitHub selbst hat eine Deploy Funktion, die für statische Frontend Webseiten genau das richtige ist. Die Funktion nennt sich <span className={highlights.directory}>Github Pages</span> und ist direkt im jeweiligen Repository zu finden. Github Pages eignet sich gut für die veröffentlichung deines Portfolios und Final Projects.
             </p>
             <div className="flex flex-wrap">
                 <div className="heightContainer xsmall">

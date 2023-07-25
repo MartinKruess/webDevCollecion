@@ -1,3 +1,7 @@
 export const Vercel = () => {
-    return "Hi"
+    return (
+        <article>
+            <h2 className="font-extrabold text-2xl">Deployment - Tipps und Tricks</h2>
+        </article>
+    )
 }
