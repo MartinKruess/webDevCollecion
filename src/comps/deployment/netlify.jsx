@@ -24,9 +24,7 @@ export const Netlify = () => {
                     <img className="imgHeight" src="./images/netlifyRepo.png" alt="" />
                 </div>
             </div>
-            <p>
-                
-            </p>
+            <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>
         </article>
     )
 }
