@@ -27,7 +27,12 @@ export const GHPages = () => {
                     <img className="imgHeight" src="./images/ghDeployment.png" alt="" />
                 </div>
             </div>
-            
+            <p className="flex justify-around py-5">
+                <a className="text-red-600" href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>
+                <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>
+                <a href="https://cyclic.sh/" target="_blank" rel="noopener noreferrer">Cyclic</a>
+            </p>
         </article>
     )
 }
