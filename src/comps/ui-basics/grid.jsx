@@ -1,3 +1,5 @@
+import { highlights } from "../../App"
+
 export const Grid = () => {
     return (
         <article>
@@ -26,7 +28,7 @@ export const Grid = () => {
                     &#9;display: grid;<br />
                     &#9;grid-template-columns: 1fr 1fr 1fr;<br />
                     &#9;grid-template-rows: 1fr 1fr 1fr;<br />
-                    &#9;display: grid;<br />
+                    &#9;gap: 1rem;<br />
                     &#125;<br />
                 </code>
                 <code className="w-2/6">
@@ -37,20 +39,22 @@ export const Grid = () => {
                     &#125;
                 </code>
                 <code className="w-2/6">
+                    Schreibweise:<br />
+                    <span className={highlights.code}>start: 2, end: 3 oder grid-column/grid-row: 1/2</span><br />
                     .elem1 &#123;<br />
                     &#9;grid-column-start: 2;<br />
                     &#9;grid-column-end: 3;<br />
-                    &#9;grid-row-start: 1;<br />
-                    &#9;grid-row-end: 2;<br />
+                    &#9;grid-row: 1/2;<br />
                     &#125;<br />
                 </code>
                 <code className="w-2/6">
+                    Shorthand:<br />
+                    <span className={highlights.code}>grid-area: col-start/row-start / col-end/row-end</span><br />
                     .elem2 &#123;<br />
                     &#9;grid-area: 2/3/4/4;<br />
                     &#125;<br />
                 </code>
             </pre>
-            
             <div className="flex gap-5 pb-10 pt-5">
                 <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">Grid Guide</a>
                 <a href="https://www.mediaevent.de/css/grid.html" target="_blank" rel="noopener noreferrer">Grid in vier Schritten</a>
