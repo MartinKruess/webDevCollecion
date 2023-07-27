@@ -11,7 +11,7 @@ export const Objects = () => {
         bestehen aus zwei Teilen, dem Key und dem Value. Den Key kann man als
         Adresse sehen und der value ist der Wert.
       </div>
-      <p>
+      <p className="pt-4 pb-2">
         Erstellen wir mal ein Objekt zum Thema Grafikkarte. Hierfür stellen wir
         uns als erstes die Frage, was die Eckpunkte einer Grafikkarte sind.
         Beispiel: Chipsatz, Anschlüsse, länge, breite und vieles mehr.
