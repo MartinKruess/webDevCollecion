@@ -135,7 +135,7 @@ export const Array = () => {
       </div>
 
       {/* ------------- LINKS ------------- */}
-      <div className="flex flex-wrap gap-5 text-xl pb-10">
+      <div className="flex flex-wrap gap-5 text-xl pb-10 pt-5">
         <a
           href="https://www.mediaevent.de/javascript/array.html"
           target="_blank"

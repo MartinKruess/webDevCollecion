@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext, LoadTheme } from "../global/loadTheme";
+import { ThemeContext } from "../global/loadTheme";
 
 import { NPM } from "../programmingBasic/npm";
 import { VSCode } from "../programmingBasic/vsCode";

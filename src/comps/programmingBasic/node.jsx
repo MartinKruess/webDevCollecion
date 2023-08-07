@@ -68,7 +68,7 @@ export const NodeInstaller = () => {
             </code>
           </pre>
       </div>
-      <p>
+      <div className="flex gap-5 pb-10 pt-5">
         <a href="https://nodejs.org/en/download" className="px-3">
           Node
         </a>
@@ -78,7 +78,7 @@ export const NodeInstaller = () => {
         >
           Node Version Manager
         </a>
-      </p>
+      </div>
     </article>
   );
 };
