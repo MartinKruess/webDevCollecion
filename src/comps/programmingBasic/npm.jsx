@@ -53,15 +53,15 @@ export const NPM = () => {
           </p>
         </div>
       </div>
-      <a className="p-5" href="https://www.npmjs.com/">
-        NPM
-      </a>{" "}
-      <a
-        className="p-5"
-        href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
-      >
-        NPM & Node Install
-      </a>
+      <div className="flex gap-5 pb-10 pt-5">
+        <a href="https://www.npmjs.com/">
+          NPM
+        </a>{" "}
+        <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
+        >
+          NPM & Node Install
+        </a>
+      </div>
     </article>
   );
 };
