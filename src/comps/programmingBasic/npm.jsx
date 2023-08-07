@@ -19,7 +19,7 @@ export const NPM = () => {
       <div>
         <p>
           Um NPM nutzen zu können solltest du es global installieren. Solltest
-          du bereits den "Node Version Manager" installiert haben kannst du
+          du bereits den <span className="text-green-200">Node Version Manager</span> installiert haben kannst du
           damit Probelmlos NPM installieren.
         </p>
         <pre>

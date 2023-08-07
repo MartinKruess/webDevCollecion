@@ -6,6 +6,15 @@ import { Landingpage } from "./comps/pages/landingpage";
 import { Git } from "./comps/pages/git";
 import { PB } from "./comps/pages/javascript";
 import { UIUX } from "./comps/pages/uiux";
+import { Deployment } from "./comps/pages/deployment";
+
+export const highlights = {
+errorCode: "text-red-400",
+program: "text-green-300",
+file: "text-orange-400",
+directory: "text-yellow-200",
+code: "text-blue-500",
+}
 
 function App() {
   return (
@@ -17,6 +26,7 @@ function App() {
           <Route exact path="/Git" element={<Git />} />
           <Route exact path="/html&css" element={<UIUX />} />
           <Route exact path="/programming-basic" element={<PB />} />
+          <Route exact path="/deployment" element={<Deployment />} />
         </Routes>
       </main>
     </>

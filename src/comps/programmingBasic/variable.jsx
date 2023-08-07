@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Variable = () => {
   return (
     <article className="p-4">
@@ -6,7 +8,7 @@ export const Variable = () => {
       </h2>
       <p>
         Die Deklaration einer Variablen erfolgt durch die Verwendung eines
-        Schlüsselworts wie "let" oder "const", gefolgt von einem Variablennamen.
+        Schlüsselworts wie <span className={highlights.code}>let</span> oder <span className={highlights.code}>const</span>, gefolgt von einem Variablennamen.
         Mit der Deklaration teilen Sie dem JavaScript-Interpreter mit, dass Sie
         eine Variable mit einem bestimmten Namen verwenden möchten.
       </p>
@@ -37,7 +39,7 @@ export const Variable = () => {
       </pre>
       <p className="pt-4 pb-2">
         Variablen können verschiedene Arten von Werten speichern, wie Zahlen,
-        Zeichenketten "", Booleans ture/false, Arrays [], Objekte {}. Sie dienen
+        Zeichenketten <span className={highlights.code}>""</span>, Booleans <span className={highlights.code}>true/false</span>, Arrays <span className={highlights.code}>[ ]</span>, Objekte <span className={highlights.code}>&#123; &#125;</span>. Sie dienen
         dazu, Daten während der Ausführung eines JavaScript-Programms zu
         speichern und zu verändern.
       </p>
@@ -49,27 +51,21 @@ export const Variable = () => {
         </code>
       </pre>
       <p>
-        "const" ermöglicht die Deklaration von Variablen mit konstantem Wert.
+      <span className={highlights.code}>const</span> ermöglicht die Deklaration von Variablen mit konstantem Wert.
         Sie haben auch einen Blockgültigkeitsbereich und können nicht erneut
         zugewiesen werden.
       </p>
       <p>
-        Mit ES6 wurde "let" eingeführt. Variablen, die mit "let" deklariert
-        werden, haben einen Blockgültigkeitsbereich und können nur einmal im
-        selben Block deklariert werden.
+        Mit ES6 wurde <span className={highlights.code}>let</span> eingeführt. Variablen, die mit "let" deklariert
+        werden, haben einen Blockgültigkeitsbereich und können nur einmal im selben Block deklariert werden.
       </p>
       <h2 className="font-extrabold text-2xl">Was vertseht man unter Scope</h2>
       <p>
-        Der Begriff "Scope" steht für den Gültigkeitsbereich/Wirkbereich einer
-        Variable. So ist eine Variable, die in einem If-Else, einer Loop oder
-        einer Function deklariert wurde nur innerhalb dieser
-        Gültig/abrufbar/ansprechbar.
+        Der Begriff <span className={highlights.code}>Scope</span> steht für den Gültigkeitsbereich/Wirkbereich einer Variable. So ist eine Variable, die in einem If-Else, einer Loop oder einer Function deklariert wurde nur innerhalb dieser Gültig/abrufbar/ansprechbar.
       </p>
       <h2 className="font-extrabold text-2xl">ACHTUNG VERALTET!</h2>
       <p>
-        Vor ES6 war "var" die übliche Art, Variablen zu deklarieren. Sie sind
-        funktions- oder global-sichtbar und können mehrmals im selben
-        Gültigkeitsbereich deklariert werden.
+        Vor ES6 war <span className={highlights.code}>var</span> die übliche Art, Variablen zu deklarieren. Sie sind funktions- oder global-sichtbar und können mehrmals im selben Gültigkeitsbereich deklariert werden, sowie überall überschrieben werden.
       </p>
     </article>
   );

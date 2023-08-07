@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { highlights } from "../../App";
 
 export const VSCode = () => {
   return (
@@ -14,7 +15,7 @@ export const VSCode = () => {
       <div>
         Zu erst befassen wir uns mit den grundlegenden Settings, die VS-Code mit
         sich bringt. Die allgemeinen Settings ruft man sp auf:
-        <p className="code">File -&gt; Preferences -&gt; Settings</p>
+        <p className={highlights.file}>File -&gt; Preferences -&gt; Settings</p>
       </div>
       <div className="imgContainer imgCollection">
         <img
@@ -56,7 +57,7 @@ export const VSCode = () => {
         zu holen.
       </p>
       <p>
-        Die "GitHub Pull request and Issues" Extension ist eine erweiterung, die
+        Die <span className={highlights.program}>GitHub Pull request and Issues</span> Extension ist eine erweiterung, die
         das Arbeiten mit Github direkt in VS-Code möglich macht. Über das Github
         Symbol am linken Rand kannst du nun deinen Github Account mit deinem
         VS-Code verknüpfen.
@@ -88,8 +89,7 @@ export const VSCode = () => {
       <h3 className="font-extrabold text-xl">HTML Tags</h3>
       <p>
         Es ist relativ leicht den überblick bei öffnenden und schließenden Tags
-        zu verlieren. Daher arbeite ich ganz gerne mit der Extension "color the
-        tag name". Das tolle an der Extensio ist, dass sie auch in React und Vue
+        zu verlieren. Daher arbeite ich ganz gerne mit der Extension <span  className={highlights.program}>color the tag name</span>. Das tolle an der Extensio ist, dass sie auch in React und Vue
         funktioniert.
       </p>
       <div className="imgContainer">
@@ -109,7 +109,7 @@ export const VSCode = () => {
         ACHTUNG: Der Übersichthalber sollten diese Extensions nur aktiv sein,
         wenn ihr mit einem der Frameworks in eurem Projekt arbeitet. Sollten
         beide Extensions aktiv sein, werden auch auch beide Optionen angezeigt,
-        wodurch man leicht den Überblick verliert ob "flex" oder "d-flex" nun
+        wodurch man leicht den Überblick verliert ob <span className={highlights.code}>flex oder d-flex</span> nun
         zum einen oder anderen Framework gehört.
       </p>
       <div className="imgContainer">
@@ -127,8 +127,7 @@ export const VSCode = () => {
         />
       </div>
       <p>
-        Andere CSS-Varianten wie SASS/SCSS benötigen einen Compiler. Der "Live
-        Sass Compiler" ist eine sehr zuverlässige Extension, die genau das
+        Andere CSS-Varianten wie SASS/SCSS benötigen einen Compiler. Der <span className={highlights.program}>Live Sass Compiler</span> ist eine sehr zuverlässige Extension, die genau das
         bietet. Durch diese Extension wird der "watch sass" button im Footer von
         VS-Code hinzugefügt.
       </p>
@@ -143,7 +142,7 @@ export const VSCode = () => {
         Rainbow Brackets (Light Version in VS-Code)
       </h3>
       <p>
-        Rainbow Brackets sorgt dafür, dass deine &#123;(&lt;&gt;)&#125;
+        <span className={highlights.program}>Rainbow Brackets</span> sorgt dafür, dass deine &#123;(&lt;&gt;)&#125;
         unterschiedliche Farben bekommen, so erkennt man leicht ob die öffnende
         &#123; auch eine schließende &#125; hat. Dies ist leider oft ein Problem
         bei der Verschachtelung von Loops, Functions und mehr. Seit Anfang 2023
@@ -160,7 +159,7 @@ export const VSCode = () => {
       </div>
       <h3 className="font-extrabold text-xl">Prettier</h3>
       <p>
-        Prettier setzt standards für die Code Formatierung. Gerne wird Prettier
+        <span className={highlights.program}>Prettier</span> setzt standards für die Code Formatierung. Gerne wird Prettier
         verwendet um innerhalb eines größeren projektes Formatierungsfehler zu
         vermeiden. Bei git zählt jedes von dir nicht gesetzte Simicolon oder
         jedes nicht gemachte "Enter" in zum Beispiel einer CSS-Datei, dass ein
@@ -192,7 +191,7 @@ export const VSCode = () => {
       </div>
       <h3 className="font-extrabold text-xl">Quokka JS</h3>
       <p>
-        Die Extension Quokka.js ist bietet eine Vorschau für Ausgaben via
+        Die Extension <span className={highlights.program}>Quokka</span> ist bietet eine Vorschau für Ausgaben via
         console.log, result und mehr. Für plane JS/TS ist diese Extension sehr
         nützlich, doch leider funktioniert die Erweitung in React nur in
         seltenen Fällen.

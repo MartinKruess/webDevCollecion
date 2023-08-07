@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Function = () => {
   return (
     <article className="p-4">
@@ -12,10 +14,7 @@ export const Function = () => {
         wiederum andere Funktionen benötigen keine Parameter wie in diesem
         Beispiel: <pre><code>arr.pop()</code></pre>
         Wir haben bereits einige Funktionen kennengelernt, die zu diesen Gruppen
-        gehören.
-        <ul>
-          <li>string.includes()</li>
-        </ul>
+        gehören. <span className={highlights.code}>string.includes()</span>
       </div>
       <div className="pt-4 pb-2">
         Nicht jede Funktion braucht Parameter, oft ist eine Funktion nur ein
@@ -26,7 +25,7 @@ export const Function = () => {
       <p>
         Die klassischen Functions werden zum Beispiel in Verbindung mit Klassen
         (classes) verwendet. Hierbei wird die Function als ConstructorClass zum
-        Beispiel mit dem Keyword 'super' verwendet. Siehe unter 'Klassen'! Auch
+        Beispiel mit dem Keyword <span className={highlights.code}>super</span> verwendet. Siehe unter <span className={highlights.code}>classes</span>! Auch
         ist die Verwendung von arguments und this in normalen Functions möglich.
       </p>
       <pre>

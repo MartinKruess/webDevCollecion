@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import { jsExercises } from "./assets/exercises";
+import { arrayOfObjects } from "./assets/arrayOfObjects";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
+  const [jsExercisesArr, setJSExercisesArr] = useState([]);
 
   const getTypeTarget = (e) => {
     setType(e.target.value);
   };
 
   useEffect(() => {
-    console.log(type);
+    const filteredExercises =
+      jsExercises && jsExercises.filter((execise) => execise.type === type);
+    type === "default"
+      ? setJSExercisesArr(jsExercises)
+      : setJSExercisesArr(filteredExercises);
+    console.log("filteredExercises", filteredExercises, type);
   }, [type]);
 
   return (
@@ -38,6 +45,7 @@ export const JSExercises = () => {
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
           <h3 className="font-extrabold text-xl">{exercise.header}</h3>
           <p>{exercise.tasks[0]}</p>
+          <p>{exercise.tasks[1]}</p>
           {exercise.code && (
             <pre>
               <code>{exercise.code[0]}</code>
@@ -49,25 +57,13 @@ export const JSExercises = () => {
           )}
           <h3 className="font-extrabold text-xl">{exercise.advancedHeader}</h3>
           <p>{exercise.advancedTask}</p>
+          {exercise.output && (
+            <a href={exercise.output} download={exercise.output}>
+              Download
+            </a>
+          )}
         </div>
       ))}
-      <div className="mt-5 p-5 bg-slate-800 border">
-        <h3 className="font-extrabold text-xl">Objekte </h3>
-        <p>
-          Die Aufgabe ist es mehrere Objekte anzulegen von zwei Mitstudenten und
-          eines von dir selbst. Die zu speichernden Daten sind: name, alter,
-          stadt, gesprochene Sprachen
-        </p>
-        <p>
-          Finde heraus welche Mitstudenten aus Berlin kommen und gib aus:
-          .log("Hans kommt aus Berlin!")
-        </p>
-        <p>
-          Überprüfe abschließend wer die Sprache Spanisch kann und gibt diese
-          Person aus, wenn keiner Spanisch spricht, gibt "Niemand spricht
-          Spanisch." aus.
-        </p>
-      </div>
     </article>
   );
 };

@@ -51,8 +51,20 @@ pre{
   background-color: #751b1b33;
 }
 
+.heightContainer{
+  height: 25rem;
+  padding: 1rem;
+  position: relative;
+}
+
 .imgContainer{
   height: 19rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.smallContainer{
+  height: 12rem;
   padding: 1rem;
   position: relative;
 }
@@ -69,6 +81,14 @@ pre{
   top: 0.75rem;
   cursor: pointer;
   transition: 0.5s;
+}
+
+.imgHeight{
+  height: 100%;
+}
+
+.medium{
+  width: 60%;
 }
 
 .small{

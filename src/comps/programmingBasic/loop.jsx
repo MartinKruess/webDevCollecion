@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Loop = () => {
   return (
     <article className="p-4">
@@ -7,7 +9,7 @@ export const Loop = () => {
       <p className="pt-4 pb-2">
         Unter einer Schleife (Loop) versteht man eine abgeschlossene, sich
         selbst wiederholende Codeabfolge, die solange ausgeführt wird, bis die
-        Bedingung nicht mehr "ture" ist.
+        Bedingung nicht mehr <span className={highlights.code}>true</span> ist.
       </p>
       <pre>
         <code>
@@ -20,7 +22,7 @@ export const Loop = () => {
       </pre>
       <p className="pt-2 pb-4">
         Wir unterscheiden zwischen drei verschiedenen Loops. Die wohl
-        verbreiteste Schleife ist die "for-loop", wie im obrigen Beispiel. Eine
+        verbreiteste Schleife ist die <span className={highlights.code}>for-loop</span>, wie im obrigen Beispiel. Eine
         ältere Alternative zur for-loop ist die while loop während die do-while
         loop sich gänzlich anders verhält.
       </p>
