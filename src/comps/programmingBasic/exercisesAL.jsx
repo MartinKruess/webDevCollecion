@@ -32,6 +32,7 @@ export const JSExercises = () => {
         <option value="loops">Loop</option>
         <option value="objects">Object</option>
         <option value="arrayHigh">Array 2</option>
+        <option value="this">this</option>
       </select>
       {jsExercises.map((exercise, i) => (
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
