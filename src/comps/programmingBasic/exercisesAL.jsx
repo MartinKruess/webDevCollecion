@@ -4,16 +4,19 @@ import { jsExercises } from "./assets/exercises";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
-  const [jsExercisesArr, setJSExercisesArr] = useState([])
+  const [jsExercisesArr, setJSExercisesArr] = useState([]);
 
   const getTypeTarget = (e) => {
     setType(e.target.value);
   };
 
   useEffect(() => {
-    const filteredExercises = jsExercises && jsExercises.filter((execise => execise.type === type))
-    type === "default" ? setJSExercisesArr(jsExercises) : setJSExercisesArr(filteredExercises)
-    console.log("filteredExercises", filteredExercises, type)
+    const filteredExercises =
+      jsExercises && jsExercises.filter((execise) => execise.type === type);
+    type === "default"
+      ? setJSExercisesArr(jsExercises)
+      : setJSExercisesArr(filteredExercises);
+    console.log("filteredExercises", filteredExercises, type);
   }, [type]);
 
   return (
@@ -27,21 +30,30 @@ export const JSExercises = () => {
       </p>
       <div className="flex justify-between mt-10">
         <select
-          className="bg-slate-700 px-10 py-2 rounded-xl"
+          className="px-6 py-2 rounded-xl"
           name="exercises"
           id="exercises"
           onChange={(e) => getTypeTarget(e)}
         >
           <option value="default">Alle</option>
-          <option value="array">Array</option>
-          <option value="loops">Loop</option>
+          <option value="array">Array Basic</option>
+          <option value="loops">Loop Basic</option>
           <option value="objects">Object</option>
-          <option value="arrayHigh" disabled>Array 2</option>
+          <option value="this" disabled>
+            this
+          </option>
+          <option value="arrayHigh" disabled>
+            Array Advanced
+          </option>
+          <option value="loopsHigh" disabled>
+            Loop Advanced
+          </option>
         </select>
-        <p className="text-xl py-2" >Übungen Vorhanden: {jsExercisesArr.length}</p>
+        <p className="text-xl py-2">
+          Übungen Vorhanden: {jsExercisesArr.length}
+        </p>
       </div>
-      
-      {jsExercisesArr.map((exercise, i) => (
+      {jsExercises.map((exercise, i) => (
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
           <h3 className="font-extrabold text-xl">{exercise.header}</h3>
           <p>{exercise.tasks[0]}</p>
@@ -57,10 +69,13 @@ export const JSExercises = () => {
           )}
           <h3 className="font-extrabold text-xl">{exercise.advancedHeader}</h3>
           <p>{exercise.advancedTask}</p>
-          {exercise.output && <a href={exercise.output} download={exercise.output}>Download</a>}
+          {exercise.output && (
+            <a href={exercise.output} download={exercise.output}>
+              Download
+            </a>
+          )}
         </div>
       ))}
-      
     </article>
   );
 };
