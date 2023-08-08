@@ -171,7 +171,7 @@ export const Objects = () => {
         </code>
       </pre>
       <p>
-        Nun haben wir das Array mit dem Namen children und inner dieses Arrays
+        Nun haben wir das Array mit dem Namen children und innerhalb dieses Arrays
         haben zwei childs Tim und Lisa, diese lassen sich, wie gewohnt, mit [i]
         ansprechen. Lasst uns dochmal den Satz bilden: "Tim kommt aus Hamburg."
       </p>
@@ -180,6 +180,7 @@ export const Objects = () => {
           console.log(children[0].name, "kommt aus", children[0].city + ".")
         </code>
       </pre>
+      <h2 className="font-extrabold text-xl">Advanced Object Methoden</h2>
       <a href="https://www.mediaevent.de/javascript/this.html" target="_blank" rel="noopener noreferrer">this (gut erklärt)</a>
     </article>
   );
