@@ -16,7 +16,6 @@ export const JSExercises = () => {
     type === "default"
       ? setJSExercisesArr(jsExercises)
       : setJSExercisesArr(filteredExercises);
-    console.log("filteredExercises", filteredExercises, type);
   }, [type]);
 
   return (
@@ -56,7 +55,7 @@ export const JSExercises = () => {
           Übungen Vorhanden: {jsExercisesArr.length}
         </p>
       </div>
-      {jsExercises.map((exercise, i) => (
+      {jsExercisesArr.map((exercise, i) => (
         <div className="mt-5 p-5 bg-slate-800 border" key={i}>
           <h3 className="font-extrabold text-xl">{exercise.header}</h3>
           <p>{exercise.tasks[0]}</p>
