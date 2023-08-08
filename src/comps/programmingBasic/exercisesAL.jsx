@@ -72,7 +72,11 @@ export const JSExercises = () => {
           <h3 className="font-extrabold text-xl">{exercise.advancedHeader}</h3>
           <p>{exercise.advancedTask}</p>
           {exercise.output && (
-            <a href={exercise.output} download={exercise.output}>
+            <a
+              href={exercise.output}
+              download={exercise.output}
+              target="_blank"
+            >
               Download
             </a>
           )}
