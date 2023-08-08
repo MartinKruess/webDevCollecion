@@ -48,6 +48,9 @@ export const JSExercises = () => {
           <option value="loopsHigh" disabled>
             Loop Advanced
           </option>
+          <option value="dom" disabled>
+            DOM Basic
+          </option>
         </select>
         <p className="text-xl py-2">
           Übungen Vorhanden: {jsExercisesArr.length}
