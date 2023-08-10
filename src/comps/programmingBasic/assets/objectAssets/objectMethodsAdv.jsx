@@ -10,10 +10,32 @@ export const ObjectMethodsAdv = () => {
           <span className={highlights.code}>Object.values(obj)</span>
         </p>
         <p className="col-start-4 col-end-11">Text zu values</p>
+        <pre className="col-span-5">
+          <code>
+            const obj = &#123;
+            <br />
+            &#9;firstName:&#9;<span className={highlights.code}>"Sarah"</span>,
+            <br />
+            &#9;lastName:&#9;<span className={highlights.code}>"Müller"</span>,
+            <br />
+            &#9;age:&#9;&#9;<span className={highlights.code}>"26"</span>,
+          </code>
+        </pre>
         <p className="col-start-1 col-end-3">
           <span className={highlights.code}>Object.keys(obj)</span>
         </p>
         <p className="col-start-4 col-end-11">Text zu keys</p>
+        <pre className="col-span-5">
+          <code>
+            const obj = &#123;
+            <br />
+            &#9;<span className={highlights.code}>firstName</span>&#9;: "Sarah",
+            <br />
+            &#9;<span className={highlights.code}>lastName</span>&#9;: "Müller",
+            <br />
+            &#9;<span className={highlights.code}>age</span>&#9;&#9;&#9;: 26,
+          </code>
+        </pre>
         <p className="col-start-1 col-end-3">
           <span className={highlights.code}>Object.entries(obj)</span>
         </p>
