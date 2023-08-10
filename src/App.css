@@ -11,6 +11,25 @@
   box-sizing: border-box;
 }
 
+.blinc {
+  animation: opacity 8s infinite;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 nav ul li{
   min-width: 7.5rem;
   flex-grow: 1;
