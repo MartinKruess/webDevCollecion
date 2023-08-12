@@ -19,6 +19,7 @@ export const ObjectsAdv = () => {
         </h3>
         <p className="col-start-1 col-end-11">
           Der Spread-Operator ist ein mächtiges Tool.
+          Kopie einer Arrays erstellen (Oberflächlich)
         </p>
         <pre className="col-start-1 col-end-8">
           <p>Rest Operator auf ein Objekt bezogen</p>
@@ -48,8 +49,7 @@ export const ObjectsAdv = () => {
           Der Rest-Operator wird verwendet um die Struktur von Arrays und
           Objekten aufzulösen. Mit dem Rest-Operator ist es also möglich
           gewollte Werte in Variablen und den Rest in einem Arrays zu speichern.
-          Hierbei ist es wichtig, für Objekte die{" "}
-          <span className={highlights.code}>&#123; &#125;</span> und für Arrays
+          Hierbei ist es wichtig, für Objekte die <span className={highlights.code}>&#123; &#125;</span> und für Arrays
           die <span className={highlights.code}>[ ]</span> Klammern zu
           verwenden.
         </p>
