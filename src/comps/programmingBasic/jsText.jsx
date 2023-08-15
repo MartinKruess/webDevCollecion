@@ -15,15 +15,6 @@ export const JSText = () => {
         Backend-Entwicklung durch Frameworks wie Node.js an Popularität
         gewonnen.
       </p>
-      <div className="textContainer">
-        <p className="neon">
-          <span className="text" data-text="Javascript ist nice!">
-            Javascript ist nice!
-          </span>
-          <span className="gradient"></span>
-          <span className="spotlight"></span>
-        </p>
-      </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Exercitationem, fuga. Cum corporis perspiciatis quas. Quo cum commodi

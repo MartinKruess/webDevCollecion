@@ -2,6 +2,16 @@ import { highlights } from "../../App";
 import { ObjectMethodsAdv } from "./assets/objectAssets/ObjectMethodsAdv";
 
 export const ObjectsAdv = () => {
+
+  function sum(...args) {
+    let sum = 0;
+    for (let arg of args) sum += arg;
+    return sum;
+  }
+  
+  let x = sum(4, 9, 5, 2, 10, 6, 7);
+  console.log(x)
+
   return (
     <article className="p-4">
       <ObjectMethodsAdv />
@@ -18,27 +28,47 @@ export const ObjectsAdv = () => {
           -Operator
         </h3>
         <p className="col-start-1 col-end-11">
-          Der Spread-Operator ist ein mächtiges Tool.
-          Kopie einer Arrays erstellen (Oberflächlich)
+        Der spread-Operator wandelt alles, was iterierbar ist, in ein Array: Strings, Map, Set und kombiniert Objekte und Arrays. Spread ist eine schnelle Syntax, die ein Element in ein Array einfügt, Arrays oder Objekte miteinander kombiniert und die Elemente eines Arrays auf die Argumente einer Funktion verteilt.
         </p>
         <pre className="col-start-1 col-end-8">
-          <p>Rest Operator auf ein Objekt bezogen</p>
+          <p>Spread Operator auf ein Objekt bezogen</p>
           <code>
-            const securitySusi = &#123;
+            const baseArticleData = &#123;
             <br />
-            &#9;firstName: "Susi",
+            &#9;articleTitle: "TestTitle",
             <br />
-            &#9;lastName: "Sorglos",
+            &#9;articleDescription: "TestDescription",
             <br />
-            &#9;department: "Security",
+            &#9;stock: 0,
             <br />
-            &#9;age: 33, &#9;
+            &#9;articlePriceIn: 16,43,
+            &#9;articlePriceOut: ,
             <br />
-            &#9;adress: "Köln", &#125;;
+            &#125;;
             <br />
+            <br />            
+            const userData = &#123;
             <br />
-            const &#123; firstName, department, ...restOfSusi &#125; =
-            securitySusi
+            &#9;...baseArticleData,
+            <br />
+            &#9;fullName: "Daniel Düsentrieb",
+            <br />
+            &#9;department: "Developer",
+            <br />
+            &#125;
+          </code>
+        </pre>
+        <pre className="col-start-1 col-end-8">
+          <p>Spread Operator angewendet auf ein Array, das in einzel Argumenten an eine Funktion übergeben wird.</p>
+          <code>
+            let args = [17, 4];
+            <br />
+            function sum (a, b) &#123;<br />
+            &#9;return a + b;<br />
+            &#125;<br /><br />
+            console.log("Sum ohne Spread:", sum (args)); // undefined<br />
+
+            console.log ("Sum mit Spread:", sum (...args)); // 17
           </code>
         </pre>
         <h3 className="font-extrabold text-xl col-start-1 col-end-12">
@@ -79,6 +109,20 @@ export const ObjectsAdv = () => {
             <br />
             <br />
             const [hr, secretary, ...prodEmployees] = employees
+          </code>
+        </pre>
+        <pre className="col-start-1 col-end-8">
+          Im Parameter bewirkt der ...Rest-Operator, dass eine Funktion beliebig viele Argumente annehmen kann und diese in Form eines Arrays innerhalb der Funktion verwendet werden können.
+          <br />
+          <br />
+          <code>
+          function sum(...args) &#123;<br />
+          &#9;let sum = 0;<br />
+          &#9;for (let arg of args) sum += arg;<br />
+          &#9;return sum;<br />
+          &#125;
+          <br /><br />
+          let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
           </code>
         </pre>
         <p className="col-start-8 col-end-12 px-8">Description</p>
@@ -151,16 +195,10 @@ export const ObjectsAdv = () => {
         <p className="col-start-8 col-end-12 px-8">Description</p>
       </div>
       {/* 
-        - POINTER
+        - POINTER + Datentypen
         - JSON
       */}
-      <a
-        href="https://www.mediaevent.de/javascript/this.html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        this (gut erklärt)
-      </a>
+
     </article>
   );
 };
