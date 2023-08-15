@@ -148,21 +148,15 @@ export const ObjectsAdv = () => {
         </pre>
         <p className="col-start-8 col-end-12 px-8">Description</p>
         <h3 className="font-extrabold text-xl col-start-1 col-end-12">
-          Destructuring mit{" "}
+          Deep-Copy mit{" "}
           <span className={highlights.code}>structuredClone()</span>
           -Operator
         </h3>
         <p className="col-start-1 col-end-11">
-          Der Rest-Operator wird verwendet um die Struktur von Arrays und
-          Objekten aufzulösen. Mit dem Rest-Operator ist es also möglich
-          gewollte Werte in Variablen und den Rest in einem Arrays zu speichern.
-          Hierbei ist es wichtig, für Objekte die{" "}
-          <span className={highlights.code}>&#123; &#125;</span> und für Arrays
-          die <span className={highlights.code}>[ ]</span> Klammern zu
-          verwenden.
+          Während der Spread-Operator nur in der Lage ist eine oberflächliche Kopie eines Arrays zu machen (first layer) ist structuredClone() seit 2021 eine sehr nützliche Funktion um eine Deep-Copy einer Array und/oder Objektstruktur zu machen. 
+          Wo man zuvor den genauen Aufbau einer Datenstruktur kennen musste um durch die verschiedenen Layer mit diversen For-Loops loopen zu könenn, bietet structuredClone() eine einfache Lösung.
         </p>
         <pre className="col-start-1 col-end-8">
-          <p>Rest Operator auf ein Array bezogen</p>
           <code>
             const allEmployees = [<br />
             &#9;&#123; firstName: "Thomas", lastName: "Tiger", department: "HR"
