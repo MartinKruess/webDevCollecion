@@ -16,6 +16,7 @@ import { JSExercises } from "../programmingBasic/exercisesAL";
 import { Vite } from "../programmingBasic/vite";
 import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
+import { Datentypen } from "../programmingBasic/datatype";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -56,12 +57,6 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("ternary")}
-          >
-            Ternary
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => setTheme("array")}
           >
             Array
@@ -77,6 +72,12 @@ export const PB = () => {
             onClick={() => setTheme("function")}
           >
             Functions
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("datatype")}
+          >
+            Datentypen
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
@@ -135,10 +136,10 @@ export const PB = () => {
         {theme === "vs-code" && <VSCode />}
         {theme === "variables" && <Variable />}
         {theme === "ifelse" && <IfElse />}
-        {theme === "ternary" && <Ternary />}
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
         {theme === "function" && <Function />}
+        {theme === "datatype" && <Datentypen />}
         {theme === "objects" && <Objects />}
         {theme === "objectsAdv" && <ObjectsAdv />}
         {theme === "vite" && <Vite />}

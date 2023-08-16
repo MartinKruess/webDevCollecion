@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { highlights } from "../../App";
+import { Ternary } from "./ternary";
 
 export const IfElse = () => {
   const [isWatched, setIsWatched] = useState(false);
@@ -189,6 +190,7 @@ export const IfElse = () => {
           />
         )}
       </div>
+      <Ternary />
     </article>
   );
 };
