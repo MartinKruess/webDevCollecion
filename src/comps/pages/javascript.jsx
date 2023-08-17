@@ -17,6 +17,7 @@ import { Vite } from "../programmingBasic/vite";
 import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
+import { SelfTest } from "../programmingBasic/jsSelfText";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -127,6 +128,12 @@ export const PB = () => {
           >
             Übungen
           </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("jsSelfTest")}
+          >
+            Selbst Test
+          </li>
         </ul>
       </nav>
       <section className="w-10/12 m-auto mt-8">
@@ -144,6 +151,7 @@ export const PB = () => {
         {theme === "objectsAdv" && <ObjectsAdv />}
         {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
+        {theme === "jsSelfTest" && <SelfTest />}
       </section>
     </>
   );
