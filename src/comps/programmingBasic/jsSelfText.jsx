@@ -7,21 +7,19 @@ export const SelfTest = () => {
   const questionIndex = [];
 
   const createTest = (questions) => {
-    const arrey = [];
+    const array = [];
     for (let i = 0; i < 10; i++)
       questionIndex.push(Math.floor(Math.random() * 30));
     console.log(questionIndex);
     for (let i = 0; i < questionIndex.length; i++) {
-      arr.push(questions[questionIndex[i]]);
+      array.push(questions[questionIndex[i]]);
     }
-    return arrey;
+    return array;
   };
 
   const storage = createTest(questions);
-
-  useEffect(() => {
-    //setArr(storage);
-  }, [arr]);
+  setArr(storage);
+  useEffect(() => {}, [arr]);
 
   console.log(arr);
 
