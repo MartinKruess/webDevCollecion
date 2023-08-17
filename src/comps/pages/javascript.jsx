@@ -17,6 +17,7 @@ import { Vite } from "../programmingBasic/vite";
 import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
+import { HigherOrderFunctions } from "../programmingBasic/higherOrderFunctions";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -93,6 +94,12 @@ export const PB = () => {
           </li>
           <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
+            onClick={() => setTheme("hofunction")}
+          >
+            Heigher order Functions
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => setTheme("objectsAdv")}
           >
             JSON
@@ -142,6 +149,7 @@ export const PB = () => {
         {theme === "datatype" && <Datentypen />}
         {theme === "objects" && <Objects />}
         {theme === "objectsAdv" && <ObjectsAdv />}
+        {theme === "hofunction" && <HigherOrderFunctions />}
         {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
       </section>
