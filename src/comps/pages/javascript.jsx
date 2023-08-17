@@ -128,12 +128,12 @@ export const PB = () => {
           >
             Übungen
           </li>
-          <li
+          {/* <li
             className="px-3 py-2 border rounded-lg hover:bg-red-800"
             onClick={() => setTheme("jsSelfTest")}
           >
             Selbst Test
-          </li>
+          </li> */}
         </ul>
       </nav>
       <section className="w-10/12 m-auto mt-8">
