@@ -110,6 +110,11 @@ pre{
   width: 60%;
 }
 
+.smallium{
+  min-width: 30rem;
+  width: 49%;
+}
+
 .small{
   width: 35%;
 }
