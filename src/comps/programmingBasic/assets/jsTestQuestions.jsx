@@ -167,7 +167,7 @@ export const TestQuestions = [
   {
     question: "Warum ergibt folgendes Ergebnis 'undefined'?",
     description:
-      "const func1 = (num) => {<br />sum = num + num;<br />}<br /><br />console.log(func1(7))",
+      "const func1 = (num) => {<br />sum = num + num;<br />}\<br /><br />console.log(func1(7))",
     answer: ["return"],
     correct: "Die Function hat keinen return.",
   },
