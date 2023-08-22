@@ -16,12 +16,13 @@ export const SelfTest = () => {
     answer8: "",
     answer9: "",
   });
-
   const questionIndex = [];
+  const wrongAnswers = []
+  let counter = 0
 
   const createTest = (questions) => {
-    const array = [23];
-    for (let i = 0; i < 9; i++)
+    const array = [];
+    for (let i = 0; i < 10; i++)
       questionIndex.push(Math.floor(Math.random() * 30));
     console.log(questionIndex);
     for (let i = 0; i < questionIndex.length; i++) {
@@ -34,24 +35,50 @@ export const SelfTest = () => {
     setArr(createTest(questions));
   }, []);
 
-  console.log(inputs);
+  // console.log(inputs);
 
-  const controllAnswers = (value) => {
+  const controllAnswers = (e) => {
+    e.preventDefault()
     
+    const inputsArr = Object.values(inputs)
+    
+    for (let i = 0; i < inputsArr.length; i++) {
+      let isCorrect = false;
+
+      // for (let a = 0; a < arr.length; a++) {
+      //   if(inputsArr[i].includes(arr[a].answer) && a < arr.length -1){
+      //     counter++
+      //   } else {
+      //     wrongAnswers.push(inputsArr[i])
+      //     wrongAnswers.push(arr[i].answer[a]) //change back to correct
+      //   }
+      // }
+
+      for (const answer of arr[i].answer) {
+        if(inputsArr[i].includes(answer)) {
+          isCorrect = true
+        } 
+      }
+      if(isCorrect){
+        counter = counter + 10
+      } else {
+        wrongAnswers.push(inputsArr[i])
+        wrongAnswers.push(arr[i].correct)
+      }
+    }
+    alert(
+      `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten: ${wrongAnswers}`
+    );
   }
 
   return (
     <article>
       <div className="questionContainer">
         <SelfTestText />
-        <form action="https://formspree.io/f/xpzbayoq" method="POST" className="w-full m-auto pb-20 flex flex-wrap gap-5">
-          <label className="flex items-center w-full">
-            <span>Email:</span>
-            <input
-              className="bg-orange-300 text-black block w-3/4 m-auto text-xl px-8 py-2 rounded-lg"
-              type="text" 
-            />
-          </label>
+        {/* action="https://formspree.io/f/xpzbayoq" method="POST" */}
+        <form  className="w-full m-auto pb-20 flex flex-wrap gap-5">
+          <label className="w-full">Punkte: {counter}</label>
+          <label className="w-full">{wrongAnswers}</label>
           {arr.map((task, i) => (
             <fieldset
               className="bg-slate-600 smallium p-10 rounded-2xl border"
@@ -64,16 +91,13 @@ export const SelfTest = () => {
               <label className="block text-xl text-center py-3">
                 {task.description}
               </label>
-              <label className="block text-xl text-center py-3 text-red-400">
-                {task.answer}
-              </label>
               <input
                 className="bg-orange-300 text-black block w-3/4 m-auto text-xl px-8 py-2 rounded-lg"
                 type="text" name={`answer${i}`} onChange={(e) => setInputs({...inputs, [e.target.name]: e.target.value})}
               />
             </fieldset>
           ))}
-          <button type="submit" className="bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small">Send</button>
+          <button className="bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small" onClick={(e) => controllAnswers(e)}>Send</button>
         </form>
       </div>
     </article>

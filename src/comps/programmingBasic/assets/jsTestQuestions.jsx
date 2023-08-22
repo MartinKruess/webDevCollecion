@@ -177,7 +177,7 @@ export const TestQuestions = [
     description: "const user = [...]",
     answer: ["user.filter((user) =>)", "user.filter(user =>)"],
     correct:
-      "Die map Syntax lautet: user.filter((user) =>) oder user.filter(user =>).",
+      "Die filter Syntax lautet: user.filter((user) =>) oder user.filter(user =>).",
   },
   {
     question:
