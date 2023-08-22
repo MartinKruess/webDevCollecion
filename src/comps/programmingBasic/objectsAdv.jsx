@@ -1,5 +1,5 @@
 import { highlights } from "../../App";
-import { ObjectMethodsAdv } from "./assets/objectAssets/objectMethodsAdv";
+import { ObjectMethodsAdv } from "./assets/objectAssets/objectMethodsAdvanced";
 
 export const ObjectsAdv = () => {
   function sum(...args) {
