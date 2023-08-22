@@ -1,5 +1,5 @@
 import { highlights } from "../../App";
-import { ObjectMethodsAdv } from "./assets/objectAssets/ObjectMethodsAdv";
+import { ObjectMethodsAdv } from "./assets/objectAssets/objectMethodsAdv";
 
 export const ObjectsAdv = () => {
   function sum(...args) {
@@ -210,10 +210,6 @@ export const ObjectsAdv = () => {
         </pre>
         <p className="col-start-8 col-end-12 px-8">Description</p>
       </div>
-      {/* 
-        - POINTER + Datentypen
-        - JSON
-      */}
     </article>
   );
 };
