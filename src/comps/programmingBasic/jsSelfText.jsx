@@ -63,12 +63,12 @@ export const SelfTest = () => {
       if (isCorrect) {
         counter = counter + 10;
       } else {
-        wrongAnswers.push(inputsArr[i]);
-        wrongAnswers.push(arr[i].correct);
+        wrongAnswers.push(`${inputsArr[i]} - `);
+        wrongAnswers.push(`${arr[i].correct}\n`);
       }
     }
     alert(
-      `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten: ${wrongAnswers}`
+      `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten:\n\n${wrongAnswers}\n\n`
     );
   };
 
