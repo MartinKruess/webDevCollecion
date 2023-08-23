@@ -2,14 +2,20 @@ export const TestQuestions = [
   {
     question: "Was versteht man unter dem Begriff 'Scope'?",
     description: "Nenne ein anderes Wort für 'Scope'.",
-    answer: ["gültigkeitsbereich", "wirkungsbereich"],
+    answer: [
+      "gültigkeitsbereich",
+      "wirkungsbereich",
+      "gültig",
+      "ansprech",
+      "aufruf",
+    ],
     correct:
       "Der Begriff Scope bezeichnet den Gültigkeitsbereich von JS Objekten.\n",
   },
   {
     question: "Was ist ein Pointer?",
     description: "Wie wird ein Pointer noch genannt?",
-    answer: ["zeiger", "verweis"],
+    answer: ["zeiger", "verweis", "verlinkung", "verknüpfung"],
     correct:
       "Ein Pointer ist der 'Zeiger' zwischen dem gespeicherten Namen und dem Wert/Value.\n",
   },
@@ -168,15 +174,17 @@ export const TestQuestions = [
   },
   {
     question: "Worauf bezieht sich diese Schreibweise?",
-    description: "arr.lenght() -1 oder string.lenght() -1",
+    description: "arr.lenght -1 oder string.lenght -1",
     answer: ["index"],
     correct:
       "Die lenght zählt die elemente von 1 an, der 'Index' begint allerdings bei 0.\n",
   },
   {
     question: "Warum ist folgendes Ergebnis 'undefined'?",
-    description:
-      "const func1 = (num) => {\nsum = num + num;\n}\nconsole.log(func1(7))",
+    description: `
+      const func1 = (num) => {sum = num + num;}
+      console.log(func1(7))
+      `,
     answer: ["return", "klammern", "brackets"],
     correct: "Die Function hat keinen return.\n",
   },
@@ -218,7 +226,7 @@ export const TestQuestions = [
   {
     question: "Wo liegt der Fehler in dieser Klasse?",
     description:
-      "class Car {\nconstructor(firstName, lastname){\nfirstName = firstname;\nlastName = lastName;\n}}",
+      "class Car {constructor(firstName, lastname){firstName = firstname;lastName = lastName;}}",
     answer: ["this"],
     correct:
       "Im Construtor muss 'this' verwendet werden um die Keys der Objekte zu erzeugen.\n",
@@ -227,10 +235,10 @@ export const TestQuestions = [
     question: "Schreibe die erste Zeile einer For Schleife '< arr'.",
     description: "const arr = []",
     answer: [
-      "for(let i = 0; i < arr.length(); i++)",
-      "for (let i = 0; i < arr.length(); i++)",
+      "for(let i = 0; i < arr.length; i++)",
+      "for (let i = 0; i < arr.length; i++)",
     ],
-    correct: "for(let i = 0; i < arr.length(); i++)\n",
+    correct: "for(let i = 0; i < arr.length; i++)\n",
   },
   {
     question: "Welches Keyword erzeugt eine neue Instanz aus einer Klasse?",
@@ -272,8 +280,8 @@ export const TestQuestions = [
       "Beim Umwandeln eines Arrays in einen String werden die Array typischen Kommatas mit der join() Methode ersetzt.\n",
   },
   {
-    question: "Wie nennen sich Funktionen innerhalb von Objekten?",
-    description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
+    question: "Wie werden Funktionen innerhalb von Objekten genannt?",
+    description: "",
     answer: ["methode", "methods", "methoden"],
     correct:
       "Funktionen, die sich innerhalb von Objekten befinden nennt man Methoden.\n",
