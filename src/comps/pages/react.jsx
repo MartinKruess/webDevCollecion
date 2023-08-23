@@ -34,7 +34,7 @@ export const React = () => {
           
         </ul>
       </nav>
-      <section className="w-10/12 m-auto mt-8">
+      <section className="w-10/12 m-auto">
         {/* {!theme && <JSText />} */}
         {/* {theme === "node" && <NodeInstaller />} */}
         {/* {theme === "variables" && <Variables />} */}

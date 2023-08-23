@@ -17,10 +17,11 @@ export const SelfTest = () => {
     answer9: "",
   });
   const [toggle, setToggle] = useState(false);
-  //const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
+  const [wrnAns, setWrnAns] = useState([]);
   const questionIndex = [];
   const wrongAnswers = [];
-  let counter = 0;
+  let count = 0;
 
   const createTest = (questions) => {
     const array = [];
@@ -42,7 +43,12 @@ export const SelfTest = () => {
 
   useEffect(() => {
     setArr(createTest(questions));
+    setCounter(count);
   }, []);
+
+  // useEffect(() => {
+  //   setCounter(count);
+  // }, [toggle]);
 
   const controllAnswers = (e) => {
     e.preventDefault();
@@ -58,33 +64,44 @@ export const SelfTest = () => {
         }
       }
       if (isCorrect) {
-        counter = counter + 10;
+        count = count + 10;
+        setCounter(count);
       } else {
         wrongAnswers.push(`${inputsArr[i]}`);
         wrongAnswers.push(` - ${arr[i].correct}\n`);
+        setWrnAns(wrongAnswers)
       }
     }
-    alert(
-      `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten:\n\n${wrongAnswers}\n\n`
-    );
-    //setCounter(count);
+    // alert(
+    //   `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten:\n\n${wrongAnswers}\n\n`
+    // );
     setToggle(true);
-    console.log();
   };
 
   return (
     <article>
       <div className="questionContainer">
         <SelfTestText />
-        <div className="flex flex-wrap">
+        {toggle && <div className="flex flex-wrap">
           <div className="w-full">Punkte: {counter}</div>
-          {toggle &&
-            wrongAnswers.map((answer, i) => (
-              <p key={i} className="w-1/2">
-                {answer}
-              </p>
-            ))}
-        </div>
+          <h2 className="text-xl border-b-2 w-1/2">
+              Falsche Antworten
+          </h2>
+          <h2 className="text-xl border-b-2 w-1/2">
+              Erklärung 
+          </h2>
+          {wrnAns.map((answer, i) => (
+            <p key={i} className="w-1/2 border-b border-blue-700">
+              {answer}
+            </p>
+          ))}
+          <button
+              className="bg-red-600 text-white text-xl m-auto my-10 p-2 border rounded-md small"
+              onClick={() => setToggle(!toggle)}
+            >
+              Neue Fragen
+          </button>
+        </div>}
         {!toggle && (
           <form className="w-full m-auto pb-20 flex flex-wrap gap-5">
             {arr.map((task, i) => (
