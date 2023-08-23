@@ -69,7 +69,7 @@ export const SelfTest = () => {
     );
     //setCounter(count);
     setToggle(true);
-    console.log(wrongAnswers);
+    console.log();
   };
 
   return (

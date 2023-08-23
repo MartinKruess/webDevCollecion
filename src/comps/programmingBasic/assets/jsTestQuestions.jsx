@@ -25,21 +25,21 @@ export const TestQuestions = [
     question:
       "Mit welcher Methode kann man das letzte Element eines Arrays löschen?",
     description: "",
-    answer: ["pop"],
+    answer: ["pop", "pop()"],
     correct: "Die Methode zum löschen des letzten Elementes heißt 'pop()'.\n",
   },
   {
     question:
       "Mit welcher Methode kann man das erste Element eines Arrays löschen?",
     description: "",
-    answer: ["shift"],
+    answer: ["shift", "shift()"],
     correct: "Die Methode zum löschen des ersten Elementes heißt 'shift()'.\n",
   },
   {
     question: "Was passiert hier?",
-    description: "string.slice(1)",
-    answer: ["bis ende", "1 bis ende", "1 - ende", "1-ende"],
-    correct: "Es wird von Buchstabe-Index '1 bis Ende' des Strings kopiert.\n",
+    description: "'Hallo'.slice(1)",
+    answer: ["bis ende", "1 bis ende", "1 - ende", "1-ende", "allo"],
+    correct: "Es wird von Index '1 bis Ende' des Strings kopiert.\n",
   },
   {
     question: "Was passiert hier?",
@@ -47,6 +47,7 @@ export const TestQuestions = [
     answer: [
       "element 4 wird gelöscht",
       "index 3 wird gelöscht",
+      "3. wird gelöscht",
       "3 wird gelöscht",
       "entfernt",
     ],
@@ -118,14 +119,14 @@ export const TestQuestions = [
     correct: "Strings erzeugt man seit ES6 mit `${firstName} ${lastName}`.\n",
   },
   {
-    question: "Wie schreibt man dieses Beispiel in der Bracketnotation?",
+    question: "Wie schreibt man dieses Beispiel mit der Bracketnotation?",
     description: "object.price",
     answer: ["object['price']"],
     correct: "Die Bracketnotation lautet object['price'].\n",
   },
   {
     question:
-      "Um eine externe Funktion in mehreren Objekten verwenden zu können wird welches Keyword verwendet?",
+      "Um in einer externen Funktion mehrere Objekten verwenden zu können wird welches Keyword verwendet?",
     description: "",
     answer: ["this"],
     correct: "'this' ist das gesuchte Wort.\n",
@@ -166,16 +167,16 @@ export const TestQuestions = [
       "Mit dem === Vergleich wird ebenfalls auf den 'datentype' geprüft, wodurch 'true' === true false ergibt.\n",
   },
   {
-    question: "Warum schreibt man folgende oft so?",
+    question: "Worauf bezieht sich diese Schreibweise?",
     description: "arr.lenght() -1 oder string.lenght() -1",
     answer: ["index"],
     correct:
-      "Die lenght zählt die elemente von 1 an, der Index begint allerdings bei 0.\n",
+      "Die lenght zählt die elemente von 1 an, der 'Index' begint allerdings bei 0.\n",
   },
   {
-    question: "Warum ergibt folgendes Ergebnis 'undefined'?",
+    question: "Warum ist folgendes Ergebnis 'undefined'?",
     description:
-      "const func1 = (num) => {sum = num + num;}\nconsole.log(func1(7))",
+      "const func1 = (num) => {\nsum = num + num;\n}\nconsole.log(func1(7))",
     answer: ["return", "klammern", "brackets"],
     correct: "Die Function hat keinen return.\n",
   },
@@ -193,7 +194,7 @@ export const TestQuestions = [
     description: "",
     answer: ["products.firstName = 'Michael'", "products.firstName='Michael'"],
     correct:
-      "Einen neues key-value pair legt man wie folgt an: products.firstname = 'Michael'\n",
+      "Einen neues key-value pair legt man wie folgt an: products.firstName = 'Michael'\n",
   },
   {
     question: "Was ist vereinfacht gesagt eine class in JS?",
@@ -217,18 +218,106 @@ export const TestQuestions = [
   {
     question: "Wo liegt der Fehler in dieser Klasse?",
     description:
-      "class Car {constructor(firstName, lastname){firstName = firstname; lastName = lastName;}}",
+      "class Car {\nconstructor(firstName, lastname){\nfirstName = firstname;\nlastName = lastName;\n}}",
     answer: ["this"],
     correct:
       "Im Construtor muss 'this' verwendet werden um die Keys der Objekte zu erzeugen.\n",
   },
   {
     question: "Schreibe die erste Zeile einer For Schleife '< arr'.",
-    description: "cons arr = []",
+    description: "const arr = []",
     answer: [
       "for(let i = 0; i < arr.length(); i++)",
       "for (let i = 0; i < arr.length(); i++)",
     ],
     correct: "for(let i = 0; i < arr.length(); i++)\n",
   },
+  {
+    question: "Welches Keyword erzeugt eine neue Instanz aus einer Klasse?",
+    description: "class Car = {...}",
+    answer: ["new"],
+    correct:
+      "Mit dem Keyword 'new' wird eine neue Instanz aus einer Klasse erzeugt.\n",
+  },
+  {
+    question: "Welcher Teil ist die 'Initialisierung' bei einer Variable?",
+    description: "const variable1 = 'Mein Wert'",
+    answer: ["const", "const variable1", "variable1"],
+    correct:
+      "Die Initialisierung einer Variable ist const variable1. Die Zuweisung ist = und die Variablendeklaration ist 'Mein Wert'.\n",
+  },
+  {
+    question: "Wie convertiert man den String zu einer Nummer?",
+    description: "'15'",
+    answer: [
+      "number",
+      "number()",
+      "number('15')",
+      "parseInt",
+      "parseInt()",
+      "parseInt('15')",
+      "parseFloat",
+      "parseFloat('15')",
+      "+'15'",
+    ],
+    correct:
+      "Um einen String zu einer Number zu convertieren gibt es verschiedene Wege. Number(), parseInt() oder parseFloat() sind die gängisten.\n",
+  },
+  {
+    question:
+      "Welche Methode wird verwendet ein Array als String folgendermaßen auszugeben?",
+    description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
+    answer: ["join", "join()", "join(' ')"],
+    correct:
+      "Beim Umwandeln eines Arrays in einen String werden die Array typischen Kommatas mit der join() Methode ersetzt.\n",
+  },
+  {
+    question: "Wie nennen sich Funktionen innerhalb von Objekten?",
+    description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
+    answer: ["methode", "methods", "methoden"],
+    correct:
+      "Funktionen, die sich innerhalb von Objekten befinden nennt man Methoden.\n",
+  },
+  {
+    question: "Welchen Boolian erhalten wir bei folgendem Code?",
+    description: "{name: 'Günther', age: 63} === {name: 'Günther', age: '63}",
+    answer: ["false", "falsch"],
+    correct:
+      "Objekte können identische Werte haben und sind dennoch unterschiedliche Objekte.\n",
+  },
+  {
+    question: "Welchen Boolian erzeugt diese Aussage?",
+    description: "' '",
+    answer: ["true", "wahr"],
+    correct:
+      "Auch ein Leerzeichen zählt als ein zeichen und damit handelt es sich nicht länger um einen EmptyString.\n",
+  },
+  {
+    question: "Wann wird counter +1 gerechnet?",
+    description: "toggle && counter++",
+    answer: ["true", "wahr"],
+    correct:
+      "Ähnlich einer If Bedingung kann durch diese Syntax die Bedingung toggle gesetzt werden.\n",
+  },
+  {
+    question: "Was kommt hier raus?",
+    description: "Number('3:13')",
+    answer: ["NaN", "not a number", "no number", "keine nummer"],
+    correct: "Das Ergebnis hier ist NaN.\n",
+  },
+  {
+    question: "Wodurch wurde ${code} eingeführt?",
+    description: "",
+    answer: ["ES6", "Ecmascript6", "Ecmascript 6", "Ecma script 6"],
+    correct:
+      "Mit der Einführung von ES6 wurden Template literals eingeführt.\n",
+  },
+  // {
+  //   question:
+  //     "Welche Methode wird verwendet ein Array als String folgendermaßen auszugeben?.",
+  //   description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
+  //   answer: ["join", "join()", "join(' ')"],
+  //   correct:
+  //     "Beim Umwandeln eines Arrays in einen String werden die Array typischen Kommatas mit der join() Methode ersetzt.\n",
+  // },
 ];
