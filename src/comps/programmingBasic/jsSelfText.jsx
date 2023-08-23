@@ -17,14 +17,15 @@ export const SelfTest = () => {
     answer9: "",
   });
   const questionIndex = [];
-  const wrongAnswers = []
-  let counter = 0
+  const wrongAnswers = [];
+  let counter = 0;
 
   const createTest = (questions) => {
     const array = [];
-    for (let i = 0; i < 10; i++)
+    for (let i = 0; i < 10; i++) {
       questionIndex.push(Math.floor(Math.random() * 30));
-    console.log(questionIndex);
+      console.log(questionIndex.includes(22));
+    }
     for (let i = 0; i < questionIndex.length; i++) {
       array.push(questions[questionIndex[i]]);
     }
@@ -38,10 +39,10 @@ export const SelfTest = () => {
   // console.log(inputs);
 
   const controllAnswers = (e) => {
-    e.preventDefault()
-    
-    const inputsArr = Object.values(inputs)
-    
+    e.preventDefault();
+
+    const inputsArr = Object.values(inputs);
+
     for (let i = 0; i < inputsArr.length; i++) {
       let isCorrect = false;
 
@@ -55,28 +56,28 @@ export const SelfTest = () => {
       // }
 
       for (const answer of arr[i].answer) {
-        if(inputsArr[i].includes(answer)) {
-          isCorrect = true
-        } 
+        if (inputsArr[i].includes(answer)) {
+          isCorrect = true;
+        }
       }
-      if(isCorrect){
-        counter = counter + 10
+      if (isCorrect) {
+        counter = counter + 10;
       } else {
-        wrongAnswers.push(inputsArr[i])
-        wrongAnswers.push(arr[i].correct)
+        wrongAnswers.push(inputsArr[i]);
+        wrongAnswers.push(arr[i].correct);
       }
     }
     alert(
       `Deine erreichten Punkte: ${counter} \n Fehlerhafte Antworten: ${wrongAnswers}`
     );
-  }
+  };
 
   return (
     <article>
       <div className="questionContainer">
         <SelfTestText />
         {/* action="https://formspree.io/f/xpzbayoq" method="POST" */}
-        <form  className="w-full m-auto pb-20 flex flex-wrap gap-5">
+        <form className="w-full m-auto pb-20 flex flex-wrap gap-5">
           <label className="w-full">Punkte: {counter}</label>
           <label className="w-full">{wrongAnswers}</label>
           {arr.map((task, i) => (
@@ -93,11 +94,20 @@ export const SelfTest = () => {
               </label>
               <input
                 className="bg-orange-300 text-black block w-3/4 m-auto text-xl px-8 py-2 rounded-lg"
-                type="text" name={`answer${i}`} onChange={(e) => setInputs({...inputs, [e.target.name]: e.target.value})}
+                type="text"
+                name={`answer${i}`}
+                onChange={(e) =>
+                  setInputs({ ...inputs, [e.target.name]: e.target.value })
+                }
               />
             </fieldset>
           ))}
-          <button className="bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small" onClick={(e) => controllAnswers(e)}>Send</button>
+          <button
+            className="bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small"
+            onClick={(e) => controllAnswers(e)}
+          >
+            Send
+          </button>
         </form>
       </div>
     </article>
