@@ -14,10 +14,12 @@ export const TestQuestions = [
       "Ein Pointer ist der 'Zeiger' zwischen dem gespeicherten Namen und dem Wert/Value.\n",
   },
   {
-    question: "Wie wird der Aufbau eines Objektes genannt?",
-    description: "Aus was besteht ein Objekt?",
-    answer: ["key/value", "key value", "key-value"],
-    correct: "Der Aufbau eines Objektes wird als 'Key-Value Pair' bezeichnet.\n",
+    question:
+      "Wie nennt sich die Property links, vom Doppelpunkt, innerhalb eines Objektes? ",
+    description: "name : 'Michael'",
+    answer: ["key", "property-key"],
+    correct:
+      "Der Aufbau eines Objektes wird als 'Key : Value Pair' bezeichnet.\n",
   },
   {
     question:
@@ -42,7 +44,12 @@ export const TestQuestions = [
   {
     question: "Was passiert hier?",
     description: "arr.splice(3, 1)",
-    answer: ["element 4 wird gelöscht", "index 3 wird gelöscht", "3 wird gelöscht", "entfernt"],
+    answer: [
+      "element 4 wird gelöscht",
+      "index 3 wird gelöscht",
+      "3 wird gelöscht",
+      "entfernt",
+    ],
     correct: "Element 4 mit dem Index 3 wird aus dem Array entfernt.\n",
   },
   {
@@ -99,10 +106,7 @@ export const TestQuestions = [
   {
     question: "Wie erzeuge ich eine Zufallszahl zwischen 0 und 10?",
     description: "Schreibe nur die Syntax (Code) auf.",
-    answer: [
-      "Math.floor(Math.random()*10)",
-      "Math.floor(Math.random() * 10)",
-    ],
+    answer: ["Math.floor(Math.random()*10)", "Math.floor(Math.random() * 10)"],
     correct:
       "Mit Math.floor(Math.random() * 10) erzeugen wir eine abgerundete Zufallszahl ZWISCHEN 0 und 10.\n",
   },
@@ -194,19 +198,26 @@ export const TestQuestions = [
   {
     question: "Was ist vereinfacht gesagt eine class in JS?",
     description: "class car...",
-    answer: ["blueprint", "blaupause", "bauplan", "schablone", "vorlage", "vordruck"],
+    answer: [
+      "blueprint",
+      "blaupause",
+      "bauplan",
+      "schablone",
+      "vorlage",
+      "vordruck",
+    ],
     correct: "Mit class baut man eine Art 'Blueprint' für Objekte auf.\n",
   },
   {
     question: "Was returned die map und filter Methode immer?",
     description: "Welchen Datentype returnen die oben genannten Methoden?",
     answer: ["array", "neues array"],
-    correct:
-      "Der return von map und filter ist immer ein 'neues Array'.\n",
+    correct: "Der return von map und filter ist immer ein 'neues Array'.\n",
   },
   {
     question: "Wo liegt der Fehler in dieser Klasse?",
-    description: "class Car {constructor(firstName, lastname){firstName = firstname; lastName = lastName;}}",
+    description:
+      "class Car {constructor(firstName, lastname){firstName = firstname; lastName = lastName;}}",
     answer: ["this"],
     correct:
       "Im Construtor muss 'this' verwendet werden um die Keys der Objekte zu erzeugen.\n",
@@ -214,7 +225,10 @@ export const TestQuestions = [
   {
     question: "Schreibe die erste Zeile einer For Schleife '< arr'.",
     description: "cons arr = []",
-    answer: ["for(let i = 0; i < arr.length(); i++)", "for (let i = 0; i < arr.length(); i++)"],
+    answer: [
+      "for(let i = 0; i < arr.length(); i++)",
+      "for (let i = 0; i < arr.length(); i++)",
+    ],
     correct: "for(let i = 0; i < arr.length(); i++)\n",
   },
 ];
