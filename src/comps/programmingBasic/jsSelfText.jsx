@@ -69,7 +69,7 @@ export const SelfTest = () => {
       } else {
         wrongAnswers.push(`${inputsArr[i]}`);
         wrongAnswers.push(` - ${arr[i].correct}\n`);
-        setWrnAns(wrongAnswers)
+        setWrnAns(wrongAnswers);
       }
     }
     // alert(
@@ -82,26 +82,24 @@ export const SelfTest = () => {
     <article>
       <div className="questionContainer">
         <SelfTestText />
-        {toggle && <div className="flex flex-wrap">
-          <div className="w-full">Punkte: {counter}</div>
-          <h2 className="text-xl border-b-2 w-1/2">
-              Falsche Antworten
-          </h2>
-          <h2 className="text-xl border-b-2 w-1/2">
-              Erklärung 
-          </h2>
-          {wrnAns.map((answer, i) => (
-            <p key={i} className="w-1/2 border-b border-blue-700">
-              {answer}
-            </p>
-          ))}
-          <button
+        {toggle && (
+          <div className="flex flex-wrap">
+            <div className="w-full">Punkte: {counter}</div>
+            <h2 className="text-xl border-b-2 w-1/2">Falsche Antworten</h2>
+            <h2 className="text-xl border-b-2 w-1/2">Erklärung</h2>
+            {wrnAns.map((answer, i) => (
+              <p key={i} className="w-1/2 border-b border-blue-700">
+                {answer}
+              </p>
+            ))}
+            <button
               className="bg-red-600 text-white text-xl m-auto my-10 p-2 border rounded-md small"
               onClick={() => setToggle(!toggle)}
             >
               Neue Fragen
-          </button>
-        </div>}
+            </button>
+          </div>
+        )}
         {!toggle && (
           <form className="w-full m-auto pb-20 flex flex-wrap gap-5">
             {arr.map((task, i) => (
