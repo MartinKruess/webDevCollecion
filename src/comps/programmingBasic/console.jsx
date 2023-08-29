@@ -76,6 +76,7 @@ export const Console = () => {
           <br />
           console.log("\u001b[1;36m Cyan message");
           <br />
+          <br />
           console.log("\u001b[1;41m Red background");
           <br />
           console.log("\u001b[1;42m Green background");
