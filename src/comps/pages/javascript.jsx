@@ -18,6 +18,7 @@ import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
+import { Console } from "../programmingBasic/console";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -49,6 +50,12 @@ export const PB = () => {
             onClick={() => setTheme("vite")}
           >
             Vite
+          </li>
+          <li
+            className="px-3 py-2 border rounded-lg bg-green-950 hover:bg-red-800"
+            onClick={() => setTheme("console")}
+          >
+            Consolen Tricks
           </li>
           <li
             className="px-3 py-2 border rounded-lg bg-blue-950 hover:bg-red-800"
@@ -122,6 +129,12 @@ export const PB = () => {
           >
             Selbst Test
           </li>
+          <li
+            className="px-3 py-2 border rounded-lg bg-red-950 hover:bg-red-800"
+            onClick={() => setTheme("projects")}
+          >
+            Projekt Ideen
+          </li>
         </ul>
       </nav>
       <section className="w-10/12 m-auto">
@@ -129,6 +142,7 @@ export const PB = () => {
         {theme === "npm" && <NPM />}
         {theme === "node" && <NodeInstaller />}
         {theme === "vs-code" && <VSCode />}
+        {theme === "console" && <Console />}
         {theme === "variables" && <Variable />}
         {theme === "ifelse" && <IfElse />}
         {theme === "array" && <Array />}

@@ -320,6 +320,25 @@ export const TestQuestions = [
     correct:
       "Mit der Einführung von ES6 wurden Template literals eingeführt.\n",
   },
+  {
+    question: "Was gibt dieser Code aus?.",
+    description: "console.log(new Date().toLocaleDateString('de-DE'))",
+    answer: [
+      "das Datum von heute",
+      "heute",
+      "datum heute",
+      "datum des Tages",
+      "aktuelles Datum",
+    ],
+    correct: "In der Konsole wird heutige Datum ausgeben.\n",
+  },
+  {
+    question: "Welche Array Methode würde sich hierfür anbieten?.",
+    description: "const arr = [1, 3, 5] Ausgabe: [2, 4, 6]",
+    answer: ["map", "reduce", "map()"],
+    correct:
+      "Um jedes Element in einem Array zu bearbeiten, bietet sich die Verwendung von map() an. Map verändert nicht die Anzahl sondern nur die Elemente selbst.\n",
+  },
   // {
   //   question:
   //     "Welche Methode wird verwendet ein Array als String folgendermaßen auszugeben?.",
