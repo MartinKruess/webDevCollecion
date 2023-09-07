@@ -23,7 +23,7 @@ function App() {
       <main className="bg-slate-900 text-slate-300 min-h-screen">
         <Routes>
           <Route exact path="/" element={<Landingpage />} />
-          <Route exact path="/html&css" element={<UIUX />} />
+          <Route exact path="/css" element={<UIUX />} />
           <Route exact path="/programming-basic" element={<PB />} />
           <Route exact path="/deployment" element={<Deployment />} />
         </Routes>
