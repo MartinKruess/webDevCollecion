@@ -18,6 +18,7 @@ import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
+import { Classes } from "../programmingBasic/classes";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -137,6 +138,7 @@ export const PB = () => {
         {theme === "datatype" && <Datentypen />}
         {theme === "objects" && <Objects />}
         {theme === "objectsAdv" && <ObjectsAdv />}
+        {theme === "classes" && <Classes />}
         {theme === "vite" && <Vite />}
         {theme === "jsexercises" && <JSExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
