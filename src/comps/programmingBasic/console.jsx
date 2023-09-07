@@ -1,18 +1,16 @@
 export const Console = () => {
-  const style = [
-    "background-color: #ff0000",
-    "color: yellow",
-    "font-size: 2rem",
-    "font-family: fantasy",
-  ].join(";");
-  console.log("%cEin weiterer Text", style);
-
+  // Strappi
   return (
     <article>
-      <h2></h2>
+      <h2 className="font-extrabold text-2xl">
+        Console.log styling und Besonderheiten
+      </h2>
+      <h3 className="font-extrabold text-xl">
+        Console.log in tabellarischer Form
+      </h3>
       <p>
-        Man kann Daten aus Objekten im Console.log in tabellarischer Form
-        darstellen.
+        Um Daten im Console.log in tabellarischer Form darstellen, gibt es die
+        möglichkeit console.table() zu verwenden, wie folgendes beispiel zeigt.
       </p>
       <pre>
         <code>
@@ -33,6 +31,15 @@ export const Console = () => {
       <div className="imgContainer mb-20">
         <img src="./images/consoleTable.png" alt="" className="medium m-auto" />
       </div>
+      <h3 className="font-extrabold text-xl">
+        Meta Daten aus dem window-Object
+      </h3>
+      <p>
+        Es ist möglich console.logs zu gruppieren. Durch die Verwendung von
+        console.group(), groupCollaps() und groupEnd() baut man die
+        Gruppenstruktor der console.logs auf und vereinfacht zusammenhängende
+        Daten übersichtlicher darzustellen.
+      </p>
       <pre>
         <code>
           console.group("URL Info");
@@ -62,6 +69,13 @@ export const Console = () => {
       <div className="imgContainer mb-20">
         <img src="./images/consoleGroup.png" alt="" className="medium m-auto" />
       </div>
+      <h3 className="font-extrabold text-xl">Schrift- und Hintergrundfarben</h3>
+      <p>
+        Um bestimmte console.logs hervorzuheben lassen sich die Schrift- und
+        Hintergrundfarbe individuell an passen. Neben der stylischen Aspekt,
+        helfen Farben auch der visuellen darstellung von Unterschieden und
+        Fehlern, sowie der Strukturierung von ausgebenen Daten.
+      </p>
       <pre>
         <code>
           console.log("\u001b[1;31m Red message");
@@ -98,6 +112,16 @@ export const Console = () => {
           className="imgHeight m-auto"
         />
       </div>
+      <h3 className="font-extrabold text-xl">
+        Anwendung von CSS im console.log
+      </h3>
+      <p>
+        Console.logs lassen sich ebenfalls mit einigen CSS-Eigenschaften
+        anpassen. So kann man nicht nur die Schriftfarbe, sobene ebenso die
+        größe, padding, decoration und mehr anpassen. Dadurch lassen sich
+        Programme, die ausschließlich innerhalb der Konsole laufen dennoch
+        optisch ein wenig aufwerten.
+      </p>
       <pre>
         <p>Code direkt im Console.log</p>
         <code className="my-3">
