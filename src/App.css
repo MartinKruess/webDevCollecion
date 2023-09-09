@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-/* main{
-  width: 100vw;
-} */
-
 .blinc {
   animation: opacity 8s infinite;
 }
@@ -115,7 +111,6 @@ pre{
 }
 
 .smallium{
-  min-width: 30rem;
   width: 49%;
 }
 
@@ -128,10 +123,10 @@ pre{
 }
 
 .imgHover{
-  width: 97%;
+  width: 100%;
   height: auto;
-  position: absolute;
-  top: -18rem;
+  position: relative;
+  top: 0;
   cursor: pointer;
   transition: 1.5s;
 }

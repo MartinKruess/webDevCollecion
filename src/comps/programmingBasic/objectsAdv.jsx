@@ -26,14 +26,14 @@ export const ObjectsAdv = () => {
           Verwenden des <span className={highlights.code}>...Spread</span>
           -Operator
         </h3>
-        <p className="col-start-1 col-end-11">
+        <p className="col-start-1 col-end-12">
           Der spread-Operator wandelt alles, was iterierbar ist, in ein Array:
           Strings, Map, Set und kombiniert Objekte und Arrays. Spread ist eine
           schnelle Syntax, die ein Element in ein Array einfügt, Arrays oder
           Objekte miteinander kombiniert und die Elemente eines Arrays auf die
           Argumente einer Funktion verteilt.
         </p>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>Spread Operator auf ein Objekt bezogen</p>
           <code>
             const baseArticleData = &#123;
@@ -60,7 +60,7 @@ export const ObjectsAdv = () => {
             &#125;
           </code>
         </pre>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>
             Spread Operator angewendet auf ein Array, das in einzel Argumenten
             an eine Funktion übergeben wird.
@@ -93,7 +93,7 @@ export const ObjectsAdv = () => {
           die <span className={highlights.code}>[ ]</span> Klammern zu
           verwenden.
         </p>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>Rest Operator auf ein Array bezogen</p>
           <code>
             const allEmployees = [<br />
@@ -121,7 +121,7 @@ export const ObjectsAdv = () => {
             const [hr, secretary, ...prodEmployees] = employees
           </code>
         </pre>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           Im Parameter bewirkt der ...Rest-Operator, dass eine Funktion beliebig
           viele Argumente annehmen kann und diese in Form eines Arrays innerhalb
           der Funktion verwendet werden können.
@@ -142,8 +142,7 @@ export const ObjectsAdv = () => {
             let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
           </code>
         </pre>
-        <p className="col-start-8 col-end-12 px-8">Description</p>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>Rest Operator auf ein Objekt bezogen</p>
           <code>
             const securitySusi = &#123;
@@ -163,13 +162,12 @@ export const ObjectsAdv = () => {
             securitySusi
           </code>
         </pre>
-        <p className="col-start-8 col-end-12 px-8">Description</p>
         <h3 className="font-extrabold text-xl col-start-1 col-end-12">
           Deep-Copy mit{" "}
           <span className={highlights.code}>structuredClone()</span>
           -Operator
         </h3>
-        <p className="col-start-1 col-end-11">
+        <p className="col-start-1 col-end-12">
           Während der Spread-Operator nur in der Lage ist eine oberflächliche
           Kopie eines Arrays zu machen (first layer) ist structuredClone() seit
           2021 eine sehr nützliche Funktion um eine Deep-Copy einer Array
@@ -178,7 +176,7 @@ export const ObjectsAdv = () => {
           diversen For-Loops loopen zu könenn, bietet structuredClone() eine
           einfache Lösung.
         </p>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <code>
             const allEmployees = [<br />
             &#9;&#123; firstName: "Thomas", lastName: "Tiger", department: "HR"
@@ -199,16 +197,14 @@ export const ObjectsAdv = () => {
             ];
           </code>
         </pre>
-        <p className="col-start-8 col-end-12 px-8">Description</p>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>structuredClone auf ein Array angewendet</p>
           <code>const arrDeepCopy = structuredClone(allEmployees)</code>
         </pre>
-        <pre className="col-start-1 col-end-8">
+        <pre className="col-start-1 col-end-12">
           <p>structuredClone auf ein Object angewendet</p>
           <code>const objDeepCopy = structuredClone(employee)</code>
         </pre>
-        <p className="col-start-8 col-end-12 px-8">Description</p>
       </div>
     </article>
   );

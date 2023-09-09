@@ -88,7 +88,7 @@ export const SelfTest = () => {
             <h2 className="text-xl border-b-2 w-1/2">Falsche Antworten</h2>
             <h2 className="text-xl border-b-2 w-1/2">Erklärung</h2>
             {wrnAns.map((answer, i) => (
-              <p key={i} className="w-1/2 border-b border-blue-700">
+              <p key={i} className="w-full md:w-1/2 border-b border-blue-700">
                 {answer}
               </p>
             ))}
@@ -104,18 +104,18 @@ export const SelfTest = () => {
           <form className="w-full m-auto pb-20 flex flex-wrap gap-5">
             {arr.map((task, i) => (
               <fieldset
-                className="bg-slate-600 smallium p-10 rounded-2xl border"
+                className="w-full lg:w-1/2 text-sm bg-slate-600 smallium p-10 rounded-2xl border"
                 key={i}
               >
                 <label>Aufgabe: {i + 1}</label>
-                <label className="block text-xl text-center py-3">
+                <label className="block text-md md:text-xl text-center py-3">
                   {task.question}
                 </label>
-                <label className="block text-xl text-center py-3">
+                <label className="block text-md md:text-xl text-center py-3">
                   {task.description}
                 </label>
                 <input
-                  className="bg-orange-300 text-black block w-3/4 m-auto text-xl px-8 py-2 rounded-lg"
+                  className="bg-orange-300 text-black block w-full md:w-3/4 m-auto text-md md:text-xl px-8 py-2 rounded-lg"
                   type="text"
                   name={`answer${i}`}
                   onChange={(e) =>

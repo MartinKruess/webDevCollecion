@@ -20,7 +20,7 @@ export const Datentypen = () => {
             <p>
                 Zu den primitiven Datentypen gehören string, number, boolean, null und undefined.
             </p>
-            <div className="imgContainer border">
+            <div className="imgContainer p-0 my-3">
                 <img
                     className="imgHeight"
                     onClick={() => setIsWatched("variable")}
@@ -28,7 +28,7 @@ export const Datentypen = () => {
                     alt="Image about if and nested if´s"
                 />
             </div>
-            <div className="heightContainer border">
+            <div className="heightContainer p-0 my-3">
                 <img
                     className="imgHeight"
                     onClick={() => setIsWatched("object")}
@@ -36,7 +36,7 @@ export const Datentypen = () => {
                     alt="Image about if and nested if´s"
                 />
             </div>
-            <div className="imgContainer border">
+            <div className="imgContainer p-0 my-2">
                 <img
                     className="imgHeight"
                     onClick={() => setIsWatched("copy")}

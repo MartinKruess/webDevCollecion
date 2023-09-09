@@ -184,7 +184,7 @@ export const IfElse = () => {
           />
         ) : (
           <img
-            className="imgNormal"
+            className="w-full md:w-10/12 lg:w-8/12"
             onClick={() => setIsWatched(!isWatched)}
             src="./images/ifElse.png"
             alt="Image about if and nested if´s"

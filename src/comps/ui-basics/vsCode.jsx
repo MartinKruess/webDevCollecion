@@ -16,19 +16,19 @@ export const VSCode = () => {
         sich bringt. Die allgemeinen Settings ruft man sp auf:
         <p className={highlights.file}>File -&gt; Preferences -&gt; Settings</p>
       </div>
-      <div className="imgContainer md:imgCollection">
+      <div className="lg:flex">
         <img
-          className="my-3 w-full md:xsmall"
+          className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
           src="./images/autoSave.png"
           alt="Github Extension preview"
         />
         <img
-          className="my-3 w-full md:xsmall"
+          className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
           src="./images/worldWrap.png"
           alt="Github Extension preview"
         />
         <img
-          className="my-3 w-full md:xsmall"
+          className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
           src="./images/prettierSimi.png"
           alt="Github Extension preview"
         />

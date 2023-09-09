@@ -58,10 +58,10 @@ export const Array = () => {
       <div className="my-8">
         <ul>
           {arrayMethods.map((method, i) => (
-            <div className="flex flex-wrap" key={i}>
-              <li className="w-2/5 py-2 font-bold">{method.command}</li>
-              <li className="w-2/5 py-2">{method.description}</li>
-              <li className="w-1/5 py-2 text-center">
+            <div className="flex flex-wrap border-b md:border-none" key={i}>
+              <li className="sm:w-2/5 py-2 font-bold">{method.command}</li>
+              <li className="sm:w-2/5 py-2">{method.description}</li>
+              <li className="sm:w-1/5 py-2 text-center">
                 <a href={method.url} target="_blank" rel="noopener noreferrer">
                   {method.urlName}
                 </a>
@@ -86,7 +86,7 @@ export const Array = () => {
           />
         ) : (
           <img
-            className="imgNormal"
+            className="w-full md:w-10/12 lg:w-8/12"
             onClick={() => setIsWatched(!isWatched)}
             src="./images/array.png"
             alt=""
