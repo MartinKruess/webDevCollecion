@@ -101,21 +101,20 @@ export const SelfTest = () => {
           </div>
         )}
         {!toggle && (
-          <form className="w-full m-auto pb-20 flex flex-wrap gap-5">
+          <form className="w-full m-auto pb-20 flex flex-wrap justify-center gap-5">
             {arr.map((task, i) => (
               <fieldset
-                className="w-full lg:w-1/2 text-sm bg-slate-600 smallium p-10 rounded-2xl border"
+                className="w-full lg:w-5/12 text-sm bg-slate-600 smallium px-10 py-5 rounded-2xl border-red-500"
                 key={i}
               >
                 <label>Aufgabe: {i + 1}</label>
-                <label className="block text-md md:text-xl text-center py-3">
-                  {task.question}
-                </label>
-                <label className="block text-md md:text-xl text-center py-3">
+                <label className="block text-sm md:text-base text-center py-3 h-40">
+                  {task.question}<br /><br />
+                
                   {task.description}
                 </label>
                 <input
-                  className="bg-orange-300 text-black block w-full md:w-3/4 m-auto text-md md:text-xl px-8 py-2 rounded-lg"
+                  className="bg-orange-300 text-black block w-full m-auto text-md md:text-xl px-8 py-2 rounded-lg"
                   type="text"
                   name={`answer${i}`}
                   onChange={(e) =>
