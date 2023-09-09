@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { highlights } from "../../App";
 
 export const VSCode = () => {
@@ -17,19 +16,19 @@ export const VSCode = () => {
         sich bringt. Die allgemeinen Settings ruft man sp auf:
         <p className={highlights.file}>File -&gt; Preferences -&gt; Settings</p>
       </div>
-      <div className="imgContainer imgCollection">
+      <div className="imgContainer md:imgCollection">
         <img
-          className="xsmall"
+          className="my-3 w-full md:xsmall"
           src="./images/autoSave.png"
           alt="Github Extension preview"
         />
         <img
-          className="xsmall"
+          className="my-3 w-full md:xsmall"
           src="./images/worldWrap.png"
           alt="Github Extension preview"
         />
         <img
-          className="xsmall"
+          className="my-3 w-full md:xsmall"
           src="./images/prettierSimi.png"
           alt="Github Extension preview"
         />
@@ -57,35 +56,20 @@ export const VSCode = () => {
         zu holen.
       </p>
       <p>
-        Die <span className={highlights.program}>GitHub Pull request and Issues</span> Extension ist eine erweiterung, die
-        das Arbeiten mit Github direkt in VS-Code möglich macht. Über das Github
-        Symbol am linken Rand kannst du nun deinen Github Account mit deinem
+        Die <span className={highlights.program}>Source-Controll</span> ist eine Möglichkeit,
+        direkt in VS-Code mit Github zu arbeiten. Über das Symbol am linken Rand kannst du deinen Github Account mit deinem
         VS-Code verknüpfen.
       </p>
-      <div className="imgContainer">
+      {/* <div className="imgContainer">
         <img
           className="imgNormal small"
           src="./images/extension-signin.png"
           alt="Github Extension preview"
         />
-      </div>
+      </div> */}
       <p>
-        Nach dem Einloggen und Authorisieren von Github für VS-Code kannst du
-        über diese Extension bequem git add, commit, push und pull verwenden.
-        Ebenfalls lassen sich dadurch mit zwei Klicks neue Repos auf Github
-        erstellen.
+        Nach dem Einloggen und Authorisieren von Github für VS-Code kannst du bequem git add, commit, push und pull über das vorhandene Interface verwenden. Ebenfalls lassen sich dadurch mit zwei Klicks neue Repos auf Github erstellen.
       </p>
-      <p>
-        Ergänzend dazu könnte man noch folgende Extension nutzen. Genaues über
-        diese Extension weiß ich leider aktuell nicht.
-      </p>
-      <div className="imgContainer">
-        <img
-          className="imgNormal"
-          src="./images/ghExtension.png"
-          alt="Github Extension preview"
-        />
-      </div>
       <h3 className="font-extrabold text-xl">HTML Tags</h3>
       <p>
         Es ist relativ leicht den überblick bei öffnenden und schließenden Tags

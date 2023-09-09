@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { ThemeContext } from "../global/loadTheme";
 
 import { NPM } from "../programmingBasic/npm";
-import { VSCode } from "../programmingBasic/vsCode";
 import { Variable } from "../programmingBasic/variable";
 import { IfElse } from "../programmingBasic/ifelse";
 import { Array } from "../programmingBasic/array";
@@ -18,7 +17,6 @@ import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
-import { Console } from "../programmingBasic/console";
 import { Electron } from "../programmingBasic/electron";
 
 export const PB = () => {
@@ -27,48 +25,48 @@ export const PB = () => {
   return (
     <>
       <nav className="bg-slate-800 pb-5 px-8 sticky z-10 top-24 sm:top-16">
-        <ul className="w-full text-sm sm:text-lg md:text-xl flex flex-wrap gap-2 sm:gap-4 pt-2 m-auto">
+        <ul className="w-full text-sm sm:text-lg md:text-xl flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto">
+          <li
+            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
+            onClick={() => setTheme("node")}
+          >
+            Node
+          </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
             onClick={() => setTheme("npm")}
           >
             NPM
           </li>
-          <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
-            onClick={() => setTheme("node")}
-          >
-            NodeJS
-          </li>
-          <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
-            onClick={() => setTheme("vs-code")}
-          >
-            VS-Code
-          </li>
-          <li
+          {/* <li
             className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
             onClick={() => setTheme("vite")}
           >
             Vite
-          </li>
-          <li
+          </li> */}
+          {/* <li
             className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
             onClick={() => setTheme("electron")}
           >
             Electron
-          </li>
+          </li> */}
           <li
             className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
-            onClick={() => setTheme("console")}
+            onClick={() => setTheme("objectsAdv")}
           >
-            Console
+            JSON
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
             onClick={() => setTheme("variables")}
           >
             Variables
+          </li>
+          <li
+            className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
+            onClick={() => setTheme("datatype")}
+          >
+            Datentypen
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
@@ -80,7 +78,7 @@ export const PB = () => {
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
             onClick={() => setTheme("array")}
           >
-            Array
+            Arrays
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
@@ -96,27 +94,15 @@ export const PB = () => {
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
-            onClick={() => setTheme("datatype")}
-          >
-            Datentypen
-          </li>
-          <li
-            className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
             onClick={() => setTheme("objects")}
           >
-            Objects Basics
+            Objects 
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
             onClick={() => setTheme("objectsAdv")}
           >
-            Objects Adv
-          </li>
-          <li
-            className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
-            onClick={() => setTheme("objectsAdv")}
-          >
-            JSON
+            Objects <span className="text-sm">(Adv)</span>
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"

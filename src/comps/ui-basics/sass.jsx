@@ -26,18 +26,18 @@ export const SASS = () => {
       </pre>
       <h3 className="font-extrabold text-xl my-5">Funktionen von SASS/SCSS</h3>
       <div className="flex flex-wrap">
-        <p className="w-6/12">
+        <p className="-my-4 md:w-6/12">
           SASS erlaubt das Verschachteln von Klassen und Pseudoklassen, was Redundanz verringert und weniger Schreibaufwand bedeutet. Ferner wird dabei auch die BEM-Methodik1 unterstützt.
         </p>
-        <p className="w-1/12"></p>
-        <p className="w-5/12">
+        <p className="-my-4 md:w-1/12"></p>
+        <p className="-my-4 md:w-5/12">
           In SASS lassen sich einfache Berechnungen wie +, -, * und / durchführen, sowie die Verwendung von Schleifen und Fallunterscheidungen womit sich Wiederholungen und Wenn-/Dann-Regeln umsetzen lassen.
         </p>
-        <p className="w-6/12">
+        <p className="-my-4 md:w-6/12">
           Eine @function kann mit Werten gefüttert werden, die sie verarbeitet und schliesslich das Resultat zurückgibt. Ein @mixin funktioniert ähnlich wie eine @function, unterscheidet sich aber dadurch, dass es CSS statt einem Wert zurückliefert. @extend ermöglicht es verschiedenen CSS-Klassen Eigenschaften miteinander zu teilen.
         </p>
-        <p className="w-1/12"></p>
-        <p className="w-5/12">
+        <p className="-my-4 md:w-1/12"></p>
+        <p className="-my-4 md:w-5/12">
           Die SASS-Befehle @import und @use erlauben es, den Code in Teildateien aufzuteilen, womit sich der Code besser strukturieren und in anderen Zusammenhängen wiederverwenden lässt. Im Gegensatz zum CSS-Import Befehl wird beim Seitenaufruf kein zusätzlicher HTTP-Request erzeugt.
         </p>
       </div>
@@ -48,20 +48,20 @@ export const SASS = () => {
         achten sollte.
       </p>
       <ul className="grid grid-cols-12 gap-10">
-        <li className="col-start-1 col-end-6">Bootstrap</li>
-        <li className="col-start-6 col-end-12">
+        <li className="col-start-1 col-end-4">Bootstrap</li>
+        <li className="col-start-4 col-end-8 sm:col-end-12">
           Bei der Arbeit mir Bootstrap wird gerne SCSS verwendet um das
           randomizen etwas zu vereinfachen.
         </li>
-        <li className="col-start-1 col-end-6">Tailwind</li>
-        <li className="col-start-6 col-end-12">
+        <li className="col-start-1 col-end-4">Tailwind</li>
+        <li className="col-start-4 col-end-8 sm:col-end-12">
           Tailwind und SCSS arbeiten gut zusammen, aber auch normal CSS langt
           zum Randomizen
         </li>
-        <li className="col-start-1 col-end-6">Javascript</li>
-        <li className="col-start-6 col-end-12"></li>
-        <li className="col-start-1 col-end-6">React</li>
-        <li className="col-start-6 col-end-12"></li>
+        <li className="col-start-1 col-end-4">Javascript</li>
+        <li className="col-start-4 col-end-8 sm:col-end-12"></li>
+        <li className="col-start-1 col-end-4">React</li>
+        <li className="col-start-4 col-end-8 sm:col-end-12"></li>
       </ul>
 
       <a href="https://www.webmasters-fernakademie.de/webmasters-fernakademie-leseprobe-scss-und-bootstrap.pdf">

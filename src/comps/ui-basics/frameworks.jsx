@@ -25,14 +25,14 @@ export const Frameworks = () => {
           Es gibt verschiedene Wege mit Bootstrap zu arbeiten. Neben der NPM
           Methode gibt es auch die Möglichkeit die CDN zu verwenden.
         </p>
-        <pre>
+        <pre className="w-10/12 m-auto">
           <code>npm i bootstrap</code>
         </pre>
         <p>
           Bei der CDN muss man einen &lt;Link&gt; und ein &lt;Script&gt; in den
           &lt;Head&gt; einbinden.
         </p>
-        <pre>
+        <pre className="w-10/12 m-auto">
           <code>
             &lt;link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -41,7 +41,7 @@ export const Frameworks = () => {
             crossorigin="anonymous"&gt;
           </code>
         </pre>
-        <pre>
+        <pre className="w-10/12 m-auto">
           <code>
             &lt;script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -91,23 +91,23 @@ export const Frameworks = () => {
           eines solchen Projektes (siehe Javascript - Vite) führen wir folgende
           Befehle im Terminal aus.
         </p>
-        <div className="grid grid-cols-12 gap-10">
-          <p className="col-start-1 col-end-6">
+        <div className="grid grid-cols-12 md:gap-10">
+          <p className="col-start-1 col-end-8 md:col-end-6">
             Installiere tailwindcss und erzeuge die Abhängigkeiten innerhalb des
             Projektes. Generiere die "tailwind.config.js" "postcss.config.js"
             Dateien.
           </p>
-          <pre className="col-start-6 col-end-12">
+          <pre className="col-start-1 md:col-start-6 col-end-12">
             <code>
               npm install -D tailwindcss postcss autoprefixer <br />
               npx tailwindcss init -p
             </code>
           </pre>
-          <p className="col-start-1 col-end-6">
+          <p className="col-start-1 col-end-8 md:col-end-6">
             Die Konfiguration der "tailwind.config.js", ist die Anpassung des
             Contents an das bestehende Projekt.
           </p>
-          <pre className="col-start-6 col-end-12">
+          <pre className="col-start-1 md:col-start-6 col-end-12">
             <code>
               /** @type {import("tailwindcss").Config} */ <br />
               export default &#123; <br />
@@ -122,21 +122,21 @@ export const Frameworks = () => {
               &#125;
             </code>
           </pre>
-          <p className="col-start-1 col-end-6">
+          <p className="col-start-1 col-end-8 md:col-end-6">
             Die Tailwind Dateien müssen der CSS Datei (index.css) hinzefügt
             werden.
           </p>
-          <pre className="col-start-6 col-end-12">
+          <pre className="col-start-1 md:col-start-6 col-end-12">
             <code>
               @tailwind base; <br />
               @tailwind components; <br />
               @tailwind utilities;
             </code>
           </pre>
-          <p className="col-start-1 col-end-6">
+          <p className="col-start-1 col-end-8 md:col-end-6">
             WICHTIG: Abschließend muss der terminal neu gestarten werden.
           </p>
-          <pre className="col-start-6 col-end-12">
+          <pre className="col-start-1 md:col-start-6 col-end-12">
             <code>npm run dev</code>
           </pre>
         </div>
