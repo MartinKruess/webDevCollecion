@@ -17,6 +17,8 @@ export const Landingpage = () => {
           <li className="w-1/2">90%</li>
           <li className="w-1/2">Javascript inkl. TS</li>
           <li className="w-1/2">65%</li>
+          <li className="w-1/2">DOM</li>
+          <li className="w-1/2">0%</li>
           <li className="w-1/2">React</li>
           <li className="w-1/2">0%</li>
           <li className="w-1/2">Node Express</li>

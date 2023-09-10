@@ -7,6 +7,7 @@ export const Navi = () => {
         <NavLink to=""></NavLink>
         <NavLink to="/css">CSS</NavLink>
         <NavLink to="/programming-basic">JAVASCRIPT</NavLink>
+        <NavLink to="/dom">SPA</NavLink>
         <NavLink to="/react">REACT</NavLink>
       </span>
       <span className="flex items-center flex-col sm:flex-row sm:justify-center space-x-4 sm:space-x-4 md:space-x-8">

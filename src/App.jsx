@@ -3,9 +3,10 @@ import "./App.css";
 
 import { Navi } from "./comps/reusables/navi";
 import { Landingpage } from "./comps/pages/landingpage";
-import { PB } from "./comps/pages/javascript";
 import { UIUX } from "./comps/pages/uiux";
+import { PB } from "./comps/pages/javascript";
 import { Deployment } from "./comps/pages/deployment";
+import { DOM } from "./comps/pages/dom";
 
 export const highlights = {
   errorCode: "text-red-400",
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/" element={<Landingpage />} />
           <Route exact path="/css" element={<UIUX />} />
           <Route exact path="/programming-basic" element={<PB />} />
+          <Route exact path="/dom" element={<DOM />} />
           <Route exact path="/deployment" element={<Deployment />} />
         </Routes>
       </main>
