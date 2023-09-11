@@ -49,9 +49,9 @@ export const ObjectInfo = () => {
         würde das ganze in etwa so aussehen. Da ist es doch um einiges schöner,
         dass es Objekte gibt, die eine gewisse Datenstruktur bereits mitbringen.
       </p>
-      <div className="imgContainer">
+      <div className="imgContainer flex items-center justify-center p-0 h-36 2xl:h-48">
         <img
-          className="small"
+          className="w-full md:w-8/12 lg:w-6/12"
           src="./images/arrayRelation.png"
           alt="Github Extension preview"
         />

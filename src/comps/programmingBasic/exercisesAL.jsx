@@ -27,9 +27,9 @@ export const JSExercises = () => {
         nehme gerne Spiele als Beispiele, da in der Spiele Entwicklung sehr
         viele Sinnvolle Loops und Functions angewendet werden.
       </p>
-      <div className="flex justify-between mt-10">
+      <div className="md:flex justify-between mt-10">
         <select
-          className="bg-slate-700 px-6 py-2 rounded-xl"
+          className="bg-slate-700 px-6 py-2 rounded-xl h-10 w-full md:flex md:justify-between md:w-1/6"
           name="exercises"
           id="exercises"
           onChange={(e) => getTypeTarget(e)}
@@ -51,8 +51,8 @@ export const JSExercises = () => {
             DOM Basic
           </option>
         </select>
-        <p className="text-xl py-2">
-          Übungen Vorhanden: {jsExercisesArr.length}
+        <p className="text-lg py-2 w-full text-right md:w-1/6">
+          Übungen: {jsExercisesArr.length}
         </p>
       </div>
       {jsExercisesArr.map((exercise, i) => (

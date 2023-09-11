@@ -111,7 +111,6 @@ pre{
 }
 
 .smallium{
-  min-width: 30rem;
   width: 49%;
 }
 
@@ -124,10 +123,10 @@ pre{
 }
 
 .imgHover{
-  width: 97%;
+  width: 100%;
   height: auto;
-  position: absolute;
-  top: -18rem;
+  position: relative;
+  top: 0;
   cursor: pointer;
   transition: 1.5s;
 }
@@ -143,9 +142,9 @@ td{
   border: solid 0.1rem;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1100px){
   :root{
-    font-size: 100%;
+    font-size: 130%;
   }
 
   nav a{
@@ -154,7 +153,7 @@ td{
   }
 
   nav ul li{
-    min-width: 3.5rem;
-    font-size: 1.6rem;
+    min-width: 3.4rem;
+    font-size: 1.1rem;
   }
 }

@@ -13,8 +13,8 @@ export const Grid = () => {
             <p className="pt-4 pb-2">
                 Mit diesem kleinen Beispiel lässt sich ein wenig herumbasteln um die Grid-Basics besser zu verstehen. Es gibt die start-end und die Kurzschreibweise um die Elemente einem Bereich im Grid zuzuweisen.
             </p>
-            <div className="heighContainer mb-8 mt-2">
-                <img className="medium" src="./images/gridExample.png" alt="" />
+            <div className="w-full md:heighContainer mb-8 mt-2">
+                <img className="md:medium" src="./images/gridExample.png" alt="" />
             </div>
             <pre className="flex flex-wrap gap-y-10">
                 <code className="w-2/6">

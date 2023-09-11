@@ -28,8 +28,8 @@ export const Console = () => {
           console.table(obj);
         </code>
       </pre>
-      <div className="imgContainer mb-20">
-        <img src="./images/consoleTable.png" alt="" className="medium m-auto" />
+      <div className="w-full md:imgContainer mt-5 mb-20">
+        <img src="./images/consoleTable.png" alt="" className="md:medium m-auto" />
       </div>
       <h3 className="font-extrabold text-xl">
         Meta Daten aus dem window-Object
@@ -66,8 +66,8 @@ export const Console = () => {
           <br />
         </code>
       </pre>
-      <div className="imgContainer mb-20">
-        <img src="./images/consoleGroup.png" alt="" className="medium m-auto" />
+      <div className="w-full md:imgContainer mt-5 mb-20">
+        <img src="./images/consoleGroup.png" alt="" className="md:medium m-auto" />
       </div>
       <h3 className="font-extrabold text-xl">Schrift- und Hintergrundfarben</h3>
       <p>
@@ -105,11 +105,11 @@ export const Console = () => {
           <br />
         </code>
       </pre>
-      <div className="imgContainer mb-20">
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
           src="./images/coloredConsoleLogs.png"
           alt=""
-          className="imgHeight m-auto"
+          className="md:imgHeight m-auto"
         />
       </div>
       <h3 className="font-extrabold text-xl">
@@ -136,11 +136,11 @@ export const Console = () => {
         <br />
         <br />
       </pre>
-      <div className="imgContainer mb-20">
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
           src="./images/consoleStyling.png"
           alt=""
-          className="medium m-auto"
+          className="md:medium m-auto"
         />
       </div>
       <pre>
@@ -158,11 +158,11 @@ export const Console = () => {
           console.log("%cEin weiterer Text", style);
         </code>
       </pre>
-      <div className="imgContainer mb-20">
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
           src="./images/consoleStyling2.png"
           alt=""
-          className="medium m-auto"
+          className="md:medium m-auto"
         />
       </div>
       <div>

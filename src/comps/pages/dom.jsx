@@ -19,7 +19,7 @@ import { Datentypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Electron } from "../programmingBasic/electron";
 
-export const PB = () => {
+export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (

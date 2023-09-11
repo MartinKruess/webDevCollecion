@@ -30,8 +30,8 @@ export const NPM = () => {
       <h3 className="font-extrabold text-xl my-5">
         Die Verwendung von NPM-Packages
       </h3>
-      <div className="flex gap-10">
-        <img className="xsmall" src="./images/npmInfos.png" alt="" />
+      <div className="flex flex-wrap md:flex-nowrap gap-10">
+        <img className="md:xsmall" src="./images/npmInfos.png" alt="" />
         <div>
           <p>
             Möchtest du das Bootstrap Paket herunterladen und verwenden,
