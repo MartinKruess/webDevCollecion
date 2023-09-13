@@ -1,7 +1,9 @@
 export const Querries = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>LOL</h2>
+      <h2 className='font-extrabold text-xl'>
+        Das selectieren von HTML-Elementen mit Javascript
+      </h2>
       <p></p>
       <div className='grid grid-cols-11 gap-5'>
         <div className='col-span-3'>.document</div>
