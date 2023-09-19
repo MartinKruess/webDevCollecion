@@ -18,6 +18,7 @@ import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { Datentypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Electron } from "../programmingBasic/electron";
+import { ABC } from "../dom/abc";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -58,9 +59,9 @@ export const DOM = () => {
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("abc")}
           >
-            Variables
+            testSide
           </li>
           <li
             className="p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800"
@@ -138,7 +139,7 @@ export const DOM = () => {
         {theme === "vite" && <Vite />}
         {theme === "electron" && <Electron />}
         {theme === "console" && <Console />}
-        {theme === "variables" && <Variable />}
+        {theme === "abc" && <ABC />}
         {theme === "ifelse" && <IfElse />}
         {theme === "array" && <Array />}
         {theme === "loop" && <Loop />}
