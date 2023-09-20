@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { jsExercises } from "./assets/exercises";
-// import { arrayOfObjects } from "./assets/arrayOfObjects";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
