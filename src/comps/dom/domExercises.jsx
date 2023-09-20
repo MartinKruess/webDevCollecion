@@ -48,7 +48,7 @@ export const DomExercises = () => {
             </ul>
             {exercise.commands && (<p>{exercise.commands}</p>)}
             {exercise.img && (<p>{exercise.img}</p>)}
-            {exercise.url && (<a src={exercise.url}>Zur Aufgabe</a>)}
+            {exercise.url && (<a href={exercise.url} target="_blank">Zur Aufgabe</a>)}
             {exercise.download && (
               <a
                 href={exercise.download}
