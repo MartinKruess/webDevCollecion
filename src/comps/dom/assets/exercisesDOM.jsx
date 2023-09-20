@@ -25,7 +25,7 @@ export const domExercises = [
     commands: "Benötigte Skills: HTML, CSS, Map/Filter, Umgang mit Arrays of Objekten, querySelector, innerHTML, Events",
     img: "",
     time: 2,
-    url: "https://drive.google.com/file/d/1MWYrLxLaxNcP410uqWCTiBnex8jU30TW/view?usp=drive_link",
+    url: "https://github.com/MartinKruess/domExercise.git",
     download: "",
     type: "dom",
   },
