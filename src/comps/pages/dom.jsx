@@ -5,12 +5,12 @@ import { DOMText } from "../dom/domText";
 import { Querries } from "../dom/querys";
 
 import { NPM } from "../programmingBasic/npm";
-import { JSExercises } from "../programmingBasic/exercisesAL";
 import { Vite } from "../programmingBasic/vite";
 
 import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Electron } from "../programmingBasic/electron";
 import { StartDom } from "../dom/startDom";
+import { DomExercises } from "../dom/domExercises";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -45,11 +45,11 @@ export const DOM = () => {
           </li>
           {/* <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
-            onClick={() => setTheme("jsexercises")}
+            onClick={() => setTheme("domexercises")}
           >
             Übungen
           </li>
-          <li
+          {/* <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("jsSelfTest")}
           >
@@ -64,6 +64,7 @@ export const DOM = () => {
         {theme === "querry" && <Querries />}
         {theme === "startDom" && <StartDom />}
         {theme === "jsexercises" && <JSExercises />}
+        {theme === "domexercises" && <DomExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
       </section>
     </>
