@@ -19,18 +19,18 @@ export const DOM = () => {
     <>
       <nav className='bg-slate-800 pb-5 px-8 sticky z-10 top-24 sm:top-16'>
         <ul className='w-full text-sm sm:text-lg md:text-xl flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
-          {/* <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
+          <li
+            className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("vite")}
           >
             Vite
-          </li> */}
-          {/* <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
+          </li>
+          <li
+            className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("electron")}
           >
             Electron
-          </li> */}
+          </li>
           <li
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("querry")}
@@ -43,7 +43,7 @@ export const DOM = () => {
           >
             Starten mit Dom
           </li>
-          {/* <li
+          <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("domexercises")}
           >
