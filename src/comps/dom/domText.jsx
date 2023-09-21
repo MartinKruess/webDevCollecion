@@ -24,6 +24,13 @@ export const DOMText = () => {
         dynamischem JavaScript. Alle Elemente werden zu Objekten, die dynamisch
         aufgerufen, verändert, hinzugefügt und gelöscht werden können.
       </p>
+      <p>
+        Das DOM besteht also aus der HTML-Grundstruktur (Baumstruktur), in dem
+        jedes Element als ein einzelnes Objekt angesprochen wird. Wir können
+        diese Elemente zum Beispiel mit dem querrySelector selektieren und mit
+        ihnen Arbeiten. Das ist die Art und Weise wie wir das DOM mit JS
+        manipulieren können.
+      </p>
     </article>
   );
 };

@@ -10,6 +10,7 @@ import { Vite } from "../programmingBasic/vite";
 
 import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Electron } from "../programmingBasic/electron";
+import { StartDom } from "../dom/startDom";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -36,6 +37,12 @@ export const DOM = () => {
           >
             Querry
           </li>
+          <li
+            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            onClick={() => setTheme("startDom")}
+          >
+            Starten mit Dom
+          </li>
           {/* <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("jsexercises")}
@@ -52,20 +59,10 @@ export const DOM = () => {
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <DOMText />}
-        {theme === "npm" && <NPM />}
-        {theme === "node" && <NodeInstaller />}
-        {theme === "vs-code" && <VSCode />}
         {theme === "vite" && <Vite />}
         {theme === "electron" && <Electron />}
         {theme === "querry" && <Querries />}
-        {theme === "variables" && <Variable />}
-        {theme === "ifelse" && <IfElse />}
-        {theme === "array" && <Array />}
-        {theme === "loop" && <Loop />}
-        {theme === "function" && <Function />}
-        {theme === "datatype" && <Datentypen />}
-        {theme === "objects" && <Objects />}
-        {theme === "objectsAdv" && <ObjectsAdv />}
+        {theme === "startDom" && <StartDom />}
         {theme === "jsexercises" && <JSExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
       </section>
