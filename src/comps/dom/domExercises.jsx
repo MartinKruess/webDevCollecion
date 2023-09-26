@@ -32,12 +32,7 @@ export const DomExercises = () => {
         >
           <option value='default'>Alle</option>
           <option value='dom'>DOM Manipulation</option>
-          <option value='async' disabled>
-            Async Übungen
-          </option>
-          <option value='web' disabled>
-            Advanced Webseiten
-          </option>
+          <option value='fetch'>Fetch Übungen</option>
         </select>
         <p className='text-lg py-2 w-full text-right md:w-1/6'>
           Übungen: {domExercisesArr.length}
