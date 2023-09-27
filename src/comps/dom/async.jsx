@@ -130,10 +130,12 @@ export const Async = () => {
         sogenannte Event Loop darum, dass der Code ausgeführt wird, sobald
         dieser ausgeführt werden kann.
         <br />
-        3. Die Event Loop: Die Event Loop kümmert sich um Asynchonen Code und
-        sorgt dafür, dass dieser auch nach der Beendigung des eigentlichen
-        Hauptcodes (Main-Thread) noch ausgeführt werden können. Beispiele die
-        wir bisher kennen sind
+        3. Asynchoner Code wird automatisch in die Warteschlange gesetzt bis
+        dieser ausgeben werden kann oder getriggert wird. Mit der Beendigung des
+        Hauptcodes (Main-Thred) wird automatisch der getriggerte oder
+        auszuführnde Code zum neuen Main Thread, während der nicht aufgerufene
+        Code weiterehin in der Warteschange wartet. Asynchrone Beispiele die wir
+        bisher kennen sind
         <span className={highlights.code}> setTimeout</span>,
         <span className={highlights.code}> addEventListener</span> und
         <span className={highlights.code}> Fetch</span>.
@@ -141,10 +143,12 @@ export const Async = () => {
       <p>
         <span className={highlights.errorCode}>
           Daher ist es wichtig zu wissen, dass die 20 Millisekunden des Timers
-          nicht bedeutet, dieser wird nach 20 Millisekunden beendet, sondern in
-          frühestens 20 Millisekunden kann der Timer beendet werden!
+          nicht bedeutet, dieser wird nach 20 Millisekunden ausgeführt und
+          beendet, sondern nach frühestens 20 Millisekunden kann der Timer
+          ausgeführt und beendet werden!
         </span>
       </p>
+      <h4 className='font-extrabold text-lg'>Was ist die Event-Loop?</h4>
       <div className='flex flex-wrap justify-around text-lg'>
         <a
           href='https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick'
