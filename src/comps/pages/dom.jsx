@@ -11,6 +11,7 @@ import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Electron } from "../programmingBasic/electron";
 import { StartDom } from "../dom/startDom";
 import { DomExercises } from "../dom/domExercises";
+import { Async } from "../dom/async";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -44,6 +45,13 @@ export const DOM = () => {
             Starten mit Dom
           </li>
           <li
+
+            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            onClick={() => setTheme("async")}
+          >
+            Async
+          </li>
+          <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("domexercises")}
           >
@@ -63,6 +71,7 @@ export const DOM = () => {
         {theme === "electron" && <Electron />}
         {theme === "querry" && <Querries />}
         {theme === "startDom" && <StartDom />}
+        {theme === "async" && <Async />}
         {theme === "jsexercises" && <JSExercises />}
         {theme === "domexercises" && <DomExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
