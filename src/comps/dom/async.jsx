@@ -148,16 +148,6 @@ export const Async = () => {
           ausgeführt und beendet werden!
         </span>
       </p>
-      <h4 className='font-extrabold text-lg'>Was ist die Event-Loop?</h4>
-      <div className='flex flex-wrap justify-around text-lg'>
-        <a
-          href='https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Event Loop
-        </a>
-      </div>
       <h3 className='font-extrabold text-xl'>Was ist ein Promis?</h3>
       <p>
         Ein <span className={highlights.code}>Promise</span> wird immer dann
