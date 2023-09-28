@@ -12,6 +12,7 @@ import { Electron } from "../programmingBasic/electron";
 import { StartDom } from "../dom/startDom";
 import { DomExercises } from "../dom/domExercises";
 import { Async } from "../dom/async";
+import { AsyncAdv } from "../dom/asyncAdvanced";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -52,6 +53,12 @@ export const DOM = () => {
             Async
           </li>
           <li
+            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            onClick={() => setTheme("asyncadv")}
+          >
+            Hintergrund: Asynchrones Arbeiten
+          </li>
+          <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("domexercises")}
           >
@@ -72,6 +79,7 @@ export const DOM = () => {
         {theme === "querry" && <Querries />}
         {theme === "startDom" && <StartDom />}
         {theme === "async" && <Async />}
+        {theme === "asyncadv" && <AsyncAdv />}
         {theme === "jsexercises" && <JSExercises />}
         {theme === "domexercises" && <DomExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
