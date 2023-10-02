@@ -151,7 +151,9 @@ export const Async = () => {
       <h3 className='font-extrabold text-xl'>Was ist ein Promis?</h3>
       <p>
         Ein <span className={highlights.code}>Promise</span> wird immer dann
-        erzeugt, wenn
+        erzeugt, wenn asynchroner Code verwendet wird. Das bedeutet es wird aus
+        irgedneinem Grund auf die Antwort gewartet. Gründe hierfür können Ajax-
+        oder Fetch-Abfragen, Timer (setTimeout..) oder Callbacks sein.
       </p>
       <p>
         Der Begriff <span className={highlights.code}>Promise</span> kann man
