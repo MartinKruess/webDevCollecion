@@ -2,8 +2,8 @@ import { highlights } from "../../App";
 
 export const Variable = () => {
   return (
-    <article className="p-4">
-      <h2 className="font-extrabold text-2xl">
+    <article className='p-4'>
+      <h2 className='font-extrabold text-2xl'>
         Variablen - Das Speichern von Werten unter einem Namen
       </h2>
       <p>
@@ -27,7 +27,7 @@ export const Variable = () => {
         Anfangswert zuweisen, damit sie einen Wert enthält, den Sie später
         verwenden können.
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>
           var x; // Deklaration
           <br />
@@ -39,7 +39,7 @@ export const Variable = () => {
           const z = true;
         </code>
       </pre>
-      <p className="pt-4 pb-2">
+      <p className='pt-4 pb-2'>
         Variablen können verschiedene Arten von Werten speichern, wie Zahlen,
         Zeichenketten <span className={highlights.code}>""</span>, Booleans{" "}
         <span className={highlights.code}>true/false</span>, Arrays{" "}
@@ -66,23 +66,23 @@ export const Variable = () => {
         Blockgültigkeitsbereich und können nur einmal im selben Block deklariert
         werden.
       </p>
-      <h3 className="font-extrabold text-xl">ACHTUNG VERALTET!</h3>
+      <h3 className='font-extrabold text-xl'>ACHTUNG VERALTET!</h3>
       <p>
         Vor ES6 war <span className={highlights.code}>var</span> die übliche
         Art, Variablen zu deklarieren. Sie sind funktions- oder global-sichtbar
         und können mehrmals im selben Gültigkeitsbereich deklariert werden,
         sowie überall überschrieben werden.
       </p>
-      <h2 className="font-extrabold text-2xl">Was vertseht man unter Scope</h2>
+      <h2 className='font-extrabold text-2xl'>Was vertseht man unter Scope</h2>
       <p>
         Der Begriff <span className={highlights.code}>Scope</span> steht für den
         Gültigkeitsbereich/Wirkbereich einer Variable. So ist eine Variable, die
         in einem If-Else, einer Loop oder einer Function deklariert wurde nur
         innerhalb dieser Gültig/abrufbar/ansprechbar.
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>
-          <pre className="bg-slate-800">
+          <pre className='bg-slate-800'>
             Scope / Gültigkeitsbereich
             <br />
             &#123;
@@ -102,11 +102,11 @@ export const Variable = () => {
         </code>
       </pre>
 
-      <h2 className="font-extrabold text-2xl">
+      <h2 className='font-extrabold text-2xl'>
         Was vertseht man unter Closure
       </h2>
       <p>Folgt...</p>
-      <pre>
+      <pre className='text-sm'>
         <code>
           function createGreeting(greeting) &#123;
           <br />

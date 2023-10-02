@@ -1,14 +1,14 @@
 export const ArrayOfObjects = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-xl">Ein Array of Objects</h2>
+      <h2 className='font-extrabold text-xl'>Ein Array of Objects</h2>
       <p>
         Wie bei Numbers, Stings und Boolians, kann man auch Objekte in einem
         Array speichern. Dies hat den Vorteil, dass man große Datenmengen des
         selben Typs strukturieren kann. Nehmen wir hierfür ein weiteres
         Beispiel: Tim und Lisa
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>
           const children = [<br />
           &#9;&#123; <br />

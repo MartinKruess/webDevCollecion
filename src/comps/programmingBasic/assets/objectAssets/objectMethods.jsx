@@ -3,7 +3,7 @@ import { highlights } from "../../../../App";
 export const ObjectMethods = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-xl">Arbeiten mit Objekt-Methoden</h2>
+      <h2 className='font-extrabold text-xl'>Arbeiten mit Objekt-Methoden</h2>
       <p>
         Der Value eines Objektes kann nicht nur ein fester Wert sondern auch
         eine Variable oder eine Funktion sein. Es gibt allerindgs ein paar
@@ -24,7 +24,7 @@ export const ObjectMethods = () => {
         namens 'this'.
       </p>
 
-      <pre>
+      <pre className='text-sm'>
         <code>
           const graka = &#123; <br />
           &#9;name: "RTX 3060", <br />
@@ -44,7 +44,7 @@ export const ObjectMethods = () => {
           console.log(graka.title())
           <br />
           <br />
-          <h3 className="font-extrabold text-xl">
+          <h3 className='font-extrabold text-xl'>
             Kurzschreibweise einer Function in einem Object
           </h3>
           <br />
@@ -101,10 +101,10 @@ export const ObjectMethods = () => {
         beim nächsten mal sagst du: "Los Taubsi!" und 'this' nimmt die
         Eigenschaften des Taubsi-Objektes an.
       </p>
-      <h3 className="font-extrabold text-xl">
+      <h3 className='font-extrabold text-xl'>
         Beispiel mit Arrow-Function (funktioniert nicht!)
       </h3>
-      <pre>
+      <pre className='text-sm'>
         <code>
           Fehler: this bezieht sich auf global nicht auf das Objekt (zum Testen)
           <br />

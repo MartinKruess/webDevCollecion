@@ -2,33 +2,41 @@ import { highlights } from "../../App";
 
 export const Function = () => {
   return (
-    <article className="p-4">
-      <h2 className="font-extrabold text-2xl">Function in Javascript</h2>
-      <p className="pt-4 pb-2">
+    <article className='p-4'>
+      <h2 className='font-extrabold text-2xl'>Function in Javascript</h2>
+      <p className='pt-4 pb-2'>
         Unter einer Funktion kann man sich einen Bereich vorstellen, in dem der
         Code ignoriert wird bis diese Funktion aufgerufen wird.
       </p>
-      <div className="pt-4 pb-2">
+      <div className='pt-4 pb-2'>
         Es gibt Funktionen, die Eingabewerte, auch Parameter genannt, benötigen
-        wie <pre><code>arr.slice(parameter1, parameter2)</code></pre>{" "}
+        wie{" "}
+        <pre>
+          <code>arr.slice(parameter1, parameter2)</code>
+        </pre>{" "}
         wiederum andere Funktionen benötigen keine Parameter wie in diesem
-        Beispiel: <pre><code>arr.pop()</code></pre>
+        Beispiel:{" "}
+        <pre>
+          <code>arr.pop()</code>
+        </pre>
         Wir haben bereits einige Funktionen kennengelernt, die zu diesen Gruppen
         gehören. <span className={highlights.code}>string.includes()</span>
       </div>
-      <div className="pt-4 pb-2">
+      <div className='pt-4 pb-2'>
         Nicht jede Funktion braucht Parameter, oft ist eine Funktion nur ein
         Ausgelagerter Code, der nur in bestimmten Situationen angewendet werden
         soll. So eine Situation kann ein click, hover oder eine Eingabe sein.
       </div>
-      <h3 className="mt-8 font-extrabold text-xl">Function Declaration</h3>
+      <h3 className='mt-8 font-extrabold text-xl'>Function Declaration</h3>
       <p>
         Die klassischen Functions werden zum Beispiel in Verbindung mit Klassen
         (classes) verwendet. Hierbei wird die Function als ConstructorClass zum
-        Beispiel mit dem Keyword <span className={highlights.code}>super</span> verwendet. Siehe unter <span className={highlights.code}>classes</span>! Auch
-        ist die Verwendung von arguments und this in normalen Functions möglich.
+        Beispiel mit dem Keyword <span className={highlights.code}>super</span>{" "}
+        verwendet. Siehe unter <span className={highlights.code}>classes</span>!
+        Auch ist die Verwendung von arguments und this in normalen Functions
+        möglich.
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>
           function getRandomNumber () &#123;
           <br />
@@ -52,7 +60,7 @@ export const Function = () => {
           console.log(nextNumber)
         </code>
       </pre>
-      <h3 className="mt-8 font-extrabold text-xl">Function Expression</h3>
+      <h3 className='mt-8 font-extrabold text-xl'>Function Expression</h3>
       <p>
         Seit ES6 gab es auch bei den Funktionen eine Veränderung. Die Klassische
         Funktion wurde an die Vorgaben von ES6 angepasst und es entspand eine
@@ -66,16 +74,14 @@ export const Function = () => {
           &#125;
         </code>
       </pre>
-      <h3 className="mt-8 font-extrabold text-xl">Arrow Function</h3>
+      <h3 className='mt-8 font-extrabold text-xl'>Arrow Function</h3>
       <p>
         Die Arrow-Function ist die beliebteste Art eine Funtion zu schreiben.
         Arrow-Function bieten eine kompakte Syntax und eine Kurzschreibweise
         (Einzeiler), die das Schreiben von Funktionen vereinfacht.
       </p>
       <pre>
-        <code>
-          const arrow = () =&gt; true ? 'true' : 'false'
-        </code>
+        <code>const arrow = () =&gt; true ? 'true' : 'false'</code>
       </pre>
       <p>
         Callbacks Ein weiterer Vorteil ist die automatische Bindung des
@@ -90,7 +96,7 @@ export const Function = () => {
           &#125;
         </code>
       </pre>
-      <h3 className="mt-8 font-extrabold text-xl">
+      <h3 className='mt-8 font-extrabold text-xl'>
         Die Wiederverwendbarkeit von Code
       </h3>
       <p>
@@ -99,7 +105,7 @@ export const Function = () => {
         sollte daher so simpel wie möglich aufgebaut sein und es sollte nach
         Möglichkeit nur ein Feature in einer Function sein.
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>
           const string = "abcdefghijklmnopqrstuvwxyz"
           <br />
