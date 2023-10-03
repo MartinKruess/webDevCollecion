@@ -1,15 +1,17 @@
 import { highlights } from "../../App";
 
 export const AsyncAdv = () => {
+  const HE = highlights.errorCode
+
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>
         Hintergrundwissen über die Arbeitsweise von Javascript in Bezug auf die
         Verarbeitung von Asynchronen Ereignissen
       </h2>
-      <p>
-        <span className={highlights.errorCode}>WARNHINWEIS: </span>
-        Diese Themen sind absolut Advenced und nicht Teil des Curriculums.
+      <p className="text-lg">
+        <span className={HE}><strong className="pr-3">WARNHINWEIS:</strong></span>
+        Diese Themen sind absolut Advanced und nicht Teil des Curriculums.
         Sollte man diese Themen nicht behandeln/verstehen, ist das überhaupt
         nicht schlimm. Dieser kleine Ausblick soll zeigen, dass hinter JS viel
         mehr steckt als man auf Anhieb sieht und bietet einen wesendlich
@@ -18,10 +20,8 @@ export const AsyncAdv = () => {
         guter Programmierer zu sein. Dennoch ist es ein interesantes Thema für
         alle, die ein tieferes Verständnis für JS erlangen wollen.
       </p>
-      <p>
-        <span className={highlights.errorCode}>
-          Das Hauptthema ist Event-Loop:{" "}
-        </span>
+      <p className="text-lg">
+        <span className={HE}><strong className="pr-3">Das Hauptthema ist Event-Loop:</strong></span> 
         Um die Event-Loop richtig verstehen zu können ist es wichtig vorab etwas
         über die Arbeitsweise von Javascript zu verstehen.
       </p>
