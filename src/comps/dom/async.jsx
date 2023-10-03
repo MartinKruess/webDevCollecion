@@ -165,18 +165,65 @@ export const Async = () => {
         wird, bis die Daten da sind.
       </p>
       <img src='' alt='' />
-      <h3 className='font-extrabold text-xl'>
-        Anwendungsbeispiel für Asynchronem-Code
-      </h3>
       <p></p>
       <h3 className='font-extrabold text-xl'>
         Wie wird .then, .try, .catch angewendet?
       </h3>
       <p>.then ist ...</p>
-      <h3 className='font-extrabold text-xl'>Anwendung der Keywords 'async'</h3>
       <pre>
         <code>
-          const myFunction = async () =&gt; "Das ist eine Async-Function"
+          fetch('fetchURL')<br />
+          &#9;.then(response =&gt; &#123;<br />
+          &#9;&#9;if (response.ok) &#123;<br />
+          &#9;&#9;&#9;return response.json();<br />
+          &#9;&#9;&#125;<br />
+          &#9;&#9;throw new Error('Something went wrong');<br />
+          &#9;)&#125;<br />
+          &#9;.then(data =&gt; &#123;<br />
+          &#9;&#9;// Do something with the response<br />
+          &#9;)&#125;<br />
+          &#9;.catch((error) =&gt; &#123;<br />
+          &#9;&#9;console.log(error)<br />
+          &#9;&#125;);<br />
+        </code>
+      </pre>
+      <h3 className='font-extrabold text-xl'>Anwendung der Keywords 'async' und 'await'</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi dolorum corporis fuga nam corrupti libero deserunt ab ad officiis eaque doloremque consectetur dolorem adipisci voluptates enim facere dolore, est distinctio.
+      </p>
+      <pre>
+        <code>
+          async function fetchData () &#123;<br />
+          &#9;const response = await fetch('fetchURL')<br />
+          &#9;try&#123;<br />
+          &#9;&#9;const data = await response.json()<br />
+          &#9;&#9;console.log(data)<br />
+          &#9;&#125;<br />
+          &#9;.catch((error) =&gt; &#123;<br />
+          &#9;&#9;console.log(error)<br />
+          &#9;&#125;);<br />
+          &#125;
+        </code>
+      </pre>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quibusdam unde molestiae sapiente aut vel commodi dolorem eligendi, quasi aperiam? Magnam delectus quam animi vero minus corporis dicta laudantium porro.
+      </p>
+      <pre>
+        // Das ist eine Async-Function<br />
+        // Die ganze Funktion ist Asynchron wodurch der return dieser Funktion ein Promis ist<br />
+        // async = Behandle diesen Code als Asynchron<br />
+        // await = Warte bis der Promis erfüllt ist (bis die Daten da sind)<br /><br />
+        <code>
+          const myFunction = async () =&gt; &#123;<br />
+          &#9;const response = await fetch('fetchURL') // Fetch gibt einen promis zurück, daher wird awit angewendet<br />
+          &#9;try&#123;<br />
+          &#9;&#9;const data = await response.json()<br />
+          &#9;&#9;console.log(data)<br />
+          &#9;&#125;<br />
+          &#9;.catch((error) =&gt; &#123;<br />
+          &#9;&#9;console.log(error)<br />
+          &#9;&#125;);<br />
+          &#125;
         </code>
       </pre>
     </article>
