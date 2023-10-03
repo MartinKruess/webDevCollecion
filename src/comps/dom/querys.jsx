@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Querries = () => {
   return (
     <article>
@@ -52,7 +54,24 @@ export const Querries = () => {
             </code>
           </pre>
         </div>
-
+        <p className='col-span-12'>
+          Heutzutage langt es vollkommen, wenn man nur noch mit den sogenannten
+          'querySelectoren' arbeitet. Diese können alles was die oben genannten
+          'getElement/sBy...' ebenfalls können und mehr. Beispielweise kann man
+          sämtliche CSS-Selektoren innerhalb des qs verwenden. Ein wichtiger
+          Hinweis ist, dass bei der Verwendung von querrySelectoren die
+          jeweiligen CSS-Operatoren mitangegeben werden müssen.
+        </p>
+        <pre className='col-span-12'>
+          <code>
+            document.querySelector('<span className={highlights.error}>#</span>
+            container')
+            <br />
+            document.querySelector('<span className={highlights.error}>.</span>
+            container')
+            <br />
+          </code>
+        </pre>
         <div className='col-span-3'>.document.querrySelector('')</div>
         <div className='col-span-5'>
           Der querrySelector wählt das erste Element aus, dass mit den
@@ -166,8 +185,8 @@ export const Querries = () => {
         </pre>
 
         <p>
-          setAttribute(), getAttribute(), classListe.add(), classList.remove(),
-          classListe.toggle()
+          FOLGEN IN KÜRZE: setAttribute(), getAttribute(), classListe.add(),
+          classList.remove(), classListe.toggle()
         </p>
       </div>
     </article>

@@ -4,7 +4,6 @@ import { ThemeContext } from "../global/loadTheme";
 import { DOMText } from "../dom/domText";
 import { Querries } from "../dom/querys";
 
-import { NPM } from "../programmingBasic/npm";
 import { Vite } from "../programmingBasic/vite";
 
 import { SelfTest } from "../programmingBasic/jsSelfText";
@@ -37,16 +36,21 @@ export const DOM = () => {
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("querry")}
           >
-            Querry
+            Selectoren
           </li>
           <li
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("startDom")}
           >
-            Starten mit Dom
+            Text & Context Erzeugen
           </li>
           <li
-
+            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            onClick={() => setTheme("event")}
+          >
+            Events
+          </li>
+          <li
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("async")}
           >
