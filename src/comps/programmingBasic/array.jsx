@@ -97,24 +97,43 @@ export const Array = () => {
         )}
       </div>
       <div>
-        <h3>Slice und Splice</h3>
+        <h3 className='font-extrabold text-xl'>Slice und Splice</h3>
         <p>
           Die slice Methode wird verwendet um eine Teilkopie als neues Array
-          auszugeben. Hierbei kann man folgendes Angeben:
+          auszugeben. Bei dieser Methode wird das Ausgangsa-Array/der
+          Ausgangs-String nicht verändert, sondern der ausgewählte Bereich in
+          einem neuen Array/String gespeichert. Die Slice Methode nimmt bis zu 2
+          Parameter an (Start- und Endwert).
         </p>
         <ul>
           <li>
-            Startwert - Endwert:{" "}
-            <span className={highlights.code}>slice(0, 5)</span> -&gt; Das
+            Startwert - Endwert:
+            <span className={highlights.code}> slice(0, 5)</span> -&gt; Das
             bedeutet es wird Position 0-4 in ein neues Array/einen neuen String
             kopiert (exclusive 5)
+            <pre>
+              <code>
+                'Javascript' -&gt; 'Java'
+                <br />
+                [1, 2, 3, 4, 5, 6] -&gt; [1, 2, 3, 4]
+              </code>
+            </pre>
           </li>
           <li>
             Startwert: <span className={highlights.code}>slice(2)</span> -&gt;
             Das bedeutet es wird von Position 2 automatisch alles bis ans Ende
             in ein neues Array/einen neuen String kopiert
+            <pre>
+              <code>
+                'Javascript' -&gt; 'vascript'
+                <br />
+                [1, 2, 3, 4, 5, 6] -&gt; [3, 4, 5, 6]
+              </code>
+            </pre>
           </li>
         </ul>
+
+        <p>Hier sind einige Beispiele der Slice Methode.</p>
 
         <pre className='text-sm'>
           <code>
@@ -135,13 +154,19 @@ export const Array = () => {
             const StartindexRichtToEndOfArray = arrayToSlice.slice(-2);
             <br />
             <br />
-            constole.log( ` Eine Kopie des gesamten Arrays um dieses Weiter zu
-            verarbeiten ohne das Originale zu Verändern:
-            &#36;&#123;completeArray&#125; Array vom Startindex bis zum Ende:
-            &#36;&#123;StartindexToEndOfArray&#125; Ein festgelegter Bereich:
-            &#36;&#123;StartindexToEndindex&#125; Es werden immer die Letzten 2
-            Arrayeinträge ausgegeben:
-            &#36;&#123;StartindexRichtToEndOfArray&#125; `)
+            console.log( `<br />
+            &#9;Eine Kopie des gesamten Arrays um dieses Weiter zu verarbeiten
+            ohne das Originale zu Verändern:) &#36;&#123;completeArray&#125;
+            <br />
+            &#9;Array vom Startindex bis zum Ende:
+            &#36;&#123;StartindexToEndOfArray&#125;
+            <br />
+            &#9;Ein festgelegter Bereich: &#36;&#123;StartindexToEndindex&#125;
+            <br />
+            &#9;Es werden immer die Letzten 2 Arrayeinträge ausgegeben:
+            &#36;&#123;StartindexRichtToEndOfArray&#125;
+            <br />
+            `)
           </code>
         </pre>
       </div>

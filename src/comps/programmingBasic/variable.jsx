@@ -80,14 +80,26 @@ export const Variable = () => {
         in einem If-Else, einer Loop oder einer Function deklariert wurde nur
         innerhalb dieser Gültig/abrufbar/ansprechbar.
       </p>
+      <p>
+        Generell unterscheidet man zwischen globalen und lokalen Variablen.
+        Globale Variablen sind überall gültig, während lokale Variablen nur eine
+        lokale Gültigkeit haben zum Beispiel innerhalb einer Funktion oder eines
+        If-Statements. Da in den Code Beispielen immer nur Teil-Codes zu sehen
+        sind, reden wir der Einfachheithalber von übergeordneten Variablen.
+      </p>
       <pre className='text-sm'>
         <code>
+          // Diese übergeordnete Variable ist in untergeordneten Scopes
+          aufrufbar
+          <br /> const firstName = 'Otto'
           <pre className='bg-slate-800'>
             Scope / Gültigkeitsbereich
             <br />
             &#123;
             <br />
-            &#9;const myVariable = "Hallo"
+            // Dies ist eine lokale Variable, die nur innerhalb des
+            vordefinierten Scopes &#123; &#125; gültig ist. &#9;const myVariable
+            = "Hallo" + ' ' + firstName
             <br />
             // Innerhalb des Scopes -&gt; Zugriff
             <br />
