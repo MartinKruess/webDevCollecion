@@ -60,7 +60,7 @@ export const DOM = () => {
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("asyncadv")}
           >
-            Hintergrund: Asynchrones Arbeiten
+            Asynchrones Arbeiten (Advanced)
           </li>
           <li
             className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
