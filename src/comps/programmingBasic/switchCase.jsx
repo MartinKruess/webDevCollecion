@@ -40,7 +40,7 @@ export const SwitchCase = () => {
             &#125;
           </code>
         </pre>
-        <div className='w-1/2'>
+        <div className='w-2/3'>
           <p className='p-0'>
             In diesem Beispiel sieht man den Grundaufbau von Switch. Wie der
             Name schon sagt funktioniert der programmierte Switch wie ein

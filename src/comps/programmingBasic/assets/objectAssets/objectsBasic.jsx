@@ -1,8 +1,8 @@
 export const ObjectBasic = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-xl">Arbeiten mit Objekten</h2>
-      <pre>
+      <h2 className='font-extrabold text-xl'>Arbeiten mit Objekten</h2>
+      <pre className='text-sm'>
         <code>
           const graka = &#123; <br />
           &#9;name: "RTX 3060", <br />
@@ -17,7 +17,7 @@ export const ObjectBasic = () => {
         Es gibt verschiedene Arten ein Objekt zu bearbeiten. Create, add,
         change, delete und die Anwndung von Methoden.
       </p>
-      <pre>
+      <pre className='text-sm'>
         <code>Create: const obj = &#123; &#125;</code>
         <br />
         <code>Add: graka.title = ""</code>
