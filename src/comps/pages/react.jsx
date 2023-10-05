@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
+import { ReactStart } from "../react/reactStart";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -55,14 +56,8 @@ export const React = () => {
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <ReactIntro />}
-        {theme === "reactBasics" && <ReactIntro />}
+        {theme === "reactBasics" && <ReactStart />}
         {/* {theme === "variables" && <Variables />} */}
-        {/* {theme === "ifelse" && <IfElse />} */}
-        {/* {theme === "ternary" && <Ternary />} */}
-        {/* {theme === "array" && <Array />} */}
-        {/* {theme === "loop" && <Loop />} */}
-        {/* {theme === "exerciseAL" && <ArrayLoopExercise />} */}
-        {/* {theme === "function" && <Function />} */}
       </section>
     </>
   );

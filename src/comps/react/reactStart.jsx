@@ -1,6 +1,6 @@
 import { highlights } from "../../App";
 
-export const ReactIntro = () => {
+export const ReactStart = () => {
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>Wir starten mit React</h2>
