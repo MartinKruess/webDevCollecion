@@ -56,7 +56,7 @@ export const jsExercises = [
       "Überprüfe abschließend wer die Sprache Spanisch kann und gibt diese Person aus, wenn keiner Spanisch spricht, gib aus.",
     code: [
       "console.log('Hans kommt aus Berlin!')",
-      "console.log('Niemand spricht Spanisch.')"
+      "console.log('Niemand spricht Spanisch.')",
     ],
     output: "",
     tools: ["readline-sync"],
@@ -65,7 +65,8 @@ export const jsExercises = [
   {
     header: "Filter ein ArrayOfObjets",
     tasks: [
-      "Für diese Aufgabe müssen wir ein paar kleine Vorbereitungen treffen. Der erste Schritt ist, dass wir einen Ordner anlegen mit einer index.js. Das Zweite ist das herunterladen der Datei harddrives.js mit den Daten. Anschließend füge diese Datei im Projekt hinzu. Nun kommen wir zu den unten stehenden Befehlen. Das installieren von es6 erlaubt uns die Benutzung von Modulen. Um den import Befehl nutzen zu können muss nun die package.json anpassen werden, indem 'type': 'module' eintragen wird. Abschließend kopiere den import befehl in deiner index.js und teste ob du mit console.log(ArrayOfObjects) eine Ausgabe erhälst.", "Füge jedem Objekt einen neuen key hinzu namens 'articleName' und den String 'company + size + type'. Erstelle einen Filter der ein Array erzeugt, dass nur Festplatten beinhaltet, die kleiner als 1TB sein. Gebe dieses Array mit Console.log aus. Am Ende füge den Artikel 'Kingston 2TB SSD' hinzu.",
+      "Für diese Aufgabe müssen wir ein paar kleine Vorbereitungen treffen. Der erste Schritt ist, dass wir einen Ordner anlegen mit einer index.js. Das Zweite ist das herunterladen der Datei harddrives.js mit den Daten. Anschließend füge diese Datei im Projekt hinzu. Nun kommen wir zu den unten stehenden Befehlen. Das installieren von es6 erlaubt uns die Benutzung von Modulen. Um den import Befehl nutzen zu können muss nun die package.json anpassen werden, indem 'type': 'module' eintragen wird. Abschließend kopiere den import befehl in deiner index.js und teste ob du mit console.log(ArrayOfObjects) eine Ausgabe erhälst.",
+      "Füge jedem Objekt einen neuen key hinzu namens 'articleName' und den String 'company + size + type'. Erstelle einen Filter der ein Array erzeugt, dass nur Festplatten beinhaltet, die kleiner als 1TB sein. Gebe dieses Array mit Console.log aus. Am Ende füge den Artikel 'Kingston 2TB SSD' hinzu.",
     ],
     advancedHeader: "Filter Article (filter Methode)",
     advancedTask:
@@ -73,9 +74,10 @@ export const jsExercises = [
     code: [
       "npm i es6",
       "{ 'type': module', 'dependencies': {'es6': '^0.0.7'}}",
-      "import { ArrayOfObjects } from './arrayOfObjects.js';"
+      "import { ArrayOfObjects } from './arrayOfObjects.js';",
     ],
-    output: "https://drive.google.com/file/d/1MWYrLxLaxNcP410uqWCTiBnex8jU30TW/view?usp=drive_link",
+    output:
+      "https://drive.google.com/file/d/1MWYrLxLaxNcP410uqWCTiBnex8jU30TW/view?usp=drive_link",
     tools: ["readline-sync"],
     type: "objects",
   },
@@ -85,12 +87,11 @@ export const jsExercises = [
       "Du erhälst den Auftrag die Daten eines Unternehmens zu sprtieren. Sie haben über Jahre hinweg all ihre Daten in einer Datenbank gespeichert ohne darauf zu achten ob diese Daten zusammen passen. Erstelle neue Arrays für bestimmte Datentypen und andere Unterschiede",
     ],
     advancedHeader: "Filter Article (filter Methode)",
-    advancedTask:
-      "",
+    advancedTask: "",
     code: [
       "const data = ['Nico', 2,'Adam', true, 17, 231, 'Heinrich', false, '10', {name: Fritz, age: 37,}, 'der Arzt', 'müde', 'Peter', 'traurig', 'der Klemptner', {name: Tina, age: 22,}, 'die Lehrerin', 'hungrig']",
       "",
-      ""
+      "",
     ],
     output: "",
     tools: ["readline-sync"],
@@ -102,14 +103,14 @@ export const jsExercises = [
       "Du erhälst den Auftrag die Daten eines Unternehmens zu sprtieren. Sie haben über Jahre hinweg all ihre Daten in einer Datenbank gespeichert ohne darauf zu achten ob diese Daten zusammen passen. Erstelle neue Arrays für bestimmte Datentypen und andere Unterschiede",
     ],
     advancedHeader: "Filter Article (filter Methode)",
-    advancedTask:
-      "",
+    advancedTask: "",
     code: [
       "const data = ['Nico', 2,'Adam', true, 17, 231, 'Heinrich', false, '10', {name: Fritz, age: 37,}, 'der Arzt', 'müde', 'Peter', 'traurig', 'der Klemptner', {name: Tina, age: 22,}, 'die Lehrerin', 'hungrig']",
       "",
-      ""
+      "",
     ],
-    output: "https://drive.google.com/file/d/1_eB4Ji_zFTqY0Ev1DjrbZOUK2Ars9h4o/view?usp=drive_link",
+    output:
+      "https://drive.google.com/file/d/1_eB4Ji_zFTqY0Ev1DjrbZOUK2Ars9h4o/view?usp=drive_link",
     tools: ["readline-sync"],
     type: "array",
   },

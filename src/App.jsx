@@ -7,6 +7,7 @@ import { UIUX } from "./comps/pages/uiux";
 import { PB } from "./comps/pages/javascript";
 import { Deployment } from "./comps/pages/deployment";
 import { DOM } from "./comps/pages/dom";
+import { React } from "./comps/pages/react";
 
 export const highlights = {
   errorCode: "text-red-400",
@@ -21,13 +22,14 @@ function App() {
   return (
     <>
       <Navi />
-      <main className="bg-slate-900 text-slate-300 min-h-screen">
+      <main className='bg-slate-900 text-slate-300 min-h-screen'>
         <Routes>
-          <Route exact path="/" element={<Landingpage />} />
-          <Route exact path="/css" element={<UIUX />} />
-          <Route exact path="/programming-basic" element={<PB />} />
-          <Route exact path="/dom" element={<DOM />} />
-          <Route exact path="/deployment" element={<Deployment />} />
+          <Route exact path='/' element={<Landingpage />} />
+          <Route exact path='/css' element={<UIUX />} />
+          <Route exact path='/programming-basic' element={<PB />} />
+          <Route exact path='/dom' element={<DOM />} />
+          <Route exact path='/react' element={<React />} />
+          <Route exact path='/deployment' element={<Deployment />} />
         </Routes>
       </main>
     </>
