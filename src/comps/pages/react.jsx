@@ -1,3 +1,5 @@
+import { ReactIntro } from "../react/reactIntro"
+
 export const React = () => {
   return(
     <>
@@ -35,7 +37,7 @@ export const React = () => {
         </ul>
       </nav>
       <section className="w-10/12 m-auto">
-        {/* {!theme && <JSText />} */}
+        {!theme && <ReactIntro />}
         {/* {theme === "node" && <NodeInstaller />} */}
         {/* {theme === "variables" && <Variables />} */}
         {/* {theme === "ifelse" && <IfElse />} */}
