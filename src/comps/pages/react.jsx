@@ -53,9 +53,15 @@ export const React = () => {
           </li>
         </ul>
       </nav>
+<<<<<<< HEAD
       <section className='w-10/12 m-auto'>
         {!theme && <ReactIntro />}
         {theme === "reactBasics" && <ReactIntro />}
+=======
+      <section className="w-10/12 m-auto">
+        {!theme && <ReactIntro />}
+        {/* {theme === "node" && <NodeInstaller />} */}
+>>>>>>> react
         {/* {theme === "variables" && <Variables />} */}
         {/* {theme === "ifelse" && <IfElse />} */}
         {/* {theme === "ternary" && <Ternary />} */}
