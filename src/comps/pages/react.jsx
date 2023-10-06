@@ -18,39 +18,33 @@ export const React = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("node")}
+            onClick={() => setTheme("comps")}
           >
-            Tags
+            Compoments
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("props")}
+          >
+            Props
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("hooks")}
           >
             React Hooks
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("loop")}
+            onClick={() => setTheme("useState")}
           >
-            Fetch
+            useState/ref
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("useContext")}
           >
-            Globale&Local States
-          </li>
-          <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ifelse")}
-          >
-            JWT
-          </li>
-          <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ternary")}
-          >
-            Bcrypt
+            useContext
           </li>
         </ul>
       </nav>

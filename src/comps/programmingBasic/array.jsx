@@ -97,10 +97,10 @@ export const Array = () => {
         )}
       </div>
       <div>
-        <h3 className='font-extrabold text-xl'>Slice und Splice</h3>
+        <h3 className='font-extrabold text-xl mt-24'>Die Slice-Methode</h3>
         <p>
           Die slice Methode wird verwendet um eine Teilkopie als neues Array
-          auszugeben. Bei dieser Methode wird das Ausgangsa-Array/der
+          auszugeben. Bei dieser Methode wird das Ausgangs-Array/der
           Ausgangs-String nicht verändert, sondern der ausgewählte Bereich in
           einem neuen Array/String gespeichert. Die Slice Methode nimmt bis zu 2
           Parameter an (Start- und Endwert).
@@ -166,6 +166,32 @@ export const Array = () => {
             &#9;Es werden immer die Letzten 2 Arrayeinträge ausgegeben:
             &#36;&#123;StartindexRichtToEndOfArray&#125;
             <br />
+            `)
+          </code>
+        </pre>
+      </div>
+      <div>
+        <h3 className='font-extrabold text-xl'>Die Splice-Methode</h3>
+        <p>
+          Die splice Methode wird verwendet um ein Array zu bearbeiten. Bei dieser Methode wird das Ausgangs-Array verändert!
+        </p>
+        <p>Hier sind einige Beispiele der Splice Methode.</p>
+        <pre className='text-sm'>
+          <code>
+            const arrayToSplice = [Tobi, Lisa, Marc, Nina, Christian]
+            <br /><br />
+            // Löscht 1 Element an Index 2<br />
+            const removed_I = arrayToSplice.splice(2, 1)
+            <br /><br />
+            // Löscht alle Elemente ab Index 2<br />
+            const removed_II = arrayToSplice.splice(2)
+            <br /><br />
+            // Löscht 2 Elemente ab Index 0 und ersetzt diese durch "Hans", "Sabrina" und "Otto"<br />
+            const replace = arrayToSplice.splice(0, 2, "Hans", "Sabrina", "Otto");
+            <br /><br />
+            // Lösche 0 Elemente und Füge an Index 2 "Tina" und "Gaby" ein
+            <br />
+            const StartindexToEndOfArray = arrayToSplice.splice(2, 0, "Tina", "Gaby");
             `)
           </code>
         </pre>

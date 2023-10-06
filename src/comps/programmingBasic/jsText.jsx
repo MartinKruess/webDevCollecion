@@ -19,16 +19,12 @@ export const JSText = () => {
       <ul>
         <li>Variables - Closure (Erläuterung)</li>
         <li>Datentypen - Referenziale Datentypen und Pointer (Ergänzungen)</li>
-        <li>Array - Splice (Komplett)</li>
-        <li>Objects - Review</li>
         <p>SPA</p>
         <li>
           Selectoren - setAttribute(), getAttribute(), classListe.add(),
           classList.remove(), classListe.toggle()
         </li>
         <li>Events (Komplett)</li>
-        <li></li>
-        <li></li>
       </ul>
     </article>
   );

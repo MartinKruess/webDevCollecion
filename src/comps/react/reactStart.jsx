@@ -57,7 +57,7 @@ export const ReactStart = () => {
       <h3 className='font-extrabold text-xl'>Was ist React?</h3>
       <p>
         React, oder auch <strong>ReactJS</strong>, ist eine populäre
-        <span className={highlights.code}>JavaScript-Bibliothek</span>, die von
+        <span className={highlights.code}> JavaScript-Bibliothek</span>, die von
         Facebook entwickelt wurde und zur Entwicklung von Benutzeroberflächen
         für Webanwendungen und mobile Anwendungen verwendet wird. React wurde
         erstmals 2013 veröffentlicht und hat sich seitdem zu einem wichtigen
@@ -113,7 +113,7 @@ export const ReactStart = () => {
       >
         Babel - Next Generation JS Compiler
       </a>
-      <pre>
+      <pre className="text-sm">
         <code>
           // JSX Syntax
           <br />
@@ -126,6 +126,19 @@ export const ReactStart = () => {
           <br /> &#9;&lt;/div&gt;
           <br />
           &#125;
+          <br />
+          <br />
+          import &#123; jsx as _jsx &#125; from "react/jsx-runtime";<br />
+          import &#123; jsxs as _jsxs &#125; from "react/jsx-runtime";<br /><br />
+          const App = () =&gt; &#123;<br />
+          &#9;return /*#__PURE__*/_jsxs("main", &#123;<br />
+          &#9;&#9;children: [/*#__PURE__*/_jsx("div", &#123;<br />
+          &#9;&#9;&#9;children: "Hello World!"<br />
+          &#9;&#9;&#9;&#125;), /*#__PURE__*/_jsx("div", &#123;<br />
+          &#9;&#9;&#9;children: "Hallo Welt!"<br />
+          &#9;&#9;&#125;)]<br />
+          &#9;&#125;);<br />
+          &#125;;
           <br />
           <br />
           // Classic Syntax
