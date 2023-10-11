@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
+import { JSXAdvanced } from "../react/jsxAdvanced";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -13,7 +14,13 @@ export const React = () => {
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("reactBasics")}
           >
-            React im Allgemeinen
+            JSX
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("jsxAdv")}
+          >
+            JSX Advanced
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
@@ -56,7 +63,7 @@ export const React = () => {
       <section className='w-10/12 m-auto'>
         {!theme && <ReactIntro />}
         {theme === "reactBasics" && <ReactIntro />}
-        {/* {theme === "variables" && <Variables />} */}
+        {theme === "jsxAdv" && <JSXAdvanced />}
       </section>
     </>
   );

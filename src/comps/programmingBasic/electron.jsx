@@ -3,7 +3,7 @@ import { highlights } from "../../App";
 export const Electron = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-2xl">Electron</h2>
+      <h2 className='font-extrabold text-2xl'>Electron</h2>
       <p>
         ElectronJS ist eine Platform übergreifende Lösung zum erstellen von
         Desktopanwendungen für Windows, MacOS und Linux. Im Hintergrund der
@@ -12,7 +12,7 @@ export const Electron = () => {
         es ebenfalls möglich CSS-Frameworks wie SCSS, Tailwind, Bootstrap,
         MaterialIO... und JS-Frameworks wie React, Vite, Vue... zu verwenden.
       </p>
-      <h3 className="font-extrabold text-xl">
+      <h3 className='font-extrabold text-xl'>
         Variante 1: Wir installieren ElectronJS global
       </h3>
       <pre>
@@ -26,7 +26,7 @@ export const Electron = () => {
         <code>electron index.js</code>
       </pre>
 
-      <h3 className="font-extrabold text-xl">
+      <h3 className='font-extrabold text-xl'>
         Variante 2: ElectronJS in einem Projekt verwenden (JS)
       </h3>
       <p>
@@ -36,27 +36,29 @@ export const Electron = () => {
         Installation sofort ausgeführt.
       </p>
       <pre>
-        <p className="p-0">Installiere in Verzeichnis "my-app"</p>
+        <p className='p-0'>Installiere in Verzeichnis "my-app"</p>
         <code>npx create-electron-app my-app</code>
         <br />
         <br />
-        <p className="p-0">Installiere im aktuellen Verzeichnis</p>
+        <p className='p-0'>Installiere im aktuellen Verzeichnis</p>
         <code>npx create-electron-app .</code>
       </pre>
       <p></p>
       <pre>
         <code>electron index.js</code>
       </pre>
-      <div className="img">
-        <img src="./electron_js" alt="" />
+      <div className='img'>
+        <img src='./electron_js' alt='' />
       </div>
-      <a
-        href="https://www.electronjs.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Electron
-      </a>
+      <div className='linkContainer'>
+        <a
+          href='https://www.electronjs.org/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Electron
+        </a>
+      </div>
     </article>
   );
 };

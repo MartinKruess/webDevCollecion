@@ -1,8 +1,7 @@
 export const Classes = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-3xl my-5'>Array</h2>
-      <h3 className='font-extrabold text-xl my-5'>Was sind Klassen?</h3>
+      <h2 className='font-extrabold text-2xl my-5'>Was sind Klassen?</h2>
       <p>
         In JavaScript sind Klassen eine Möglichkeit, Objekte zu erstellen und
         sie zu organisieren. Es gibt sie seit der Einführung von ES6. Eine
@@ -25,7 +24,9 @@ export const Classes = () => {
       <h3 className='font-extrabold text-xl my-5'>
         JavaScript-Frameworks, die Klassen verwenden
       </h3>
-      <p className='w-1/4'>REACT</p>
+      <p className='w-1/4 text-lg'>
+        <strong>REACT</strong>
+      </p>
       <p className='w-3/4'>
         Die Verwendung von Klassen oder Funktionen ist möglich React ist ein
         Frontend-Framework, das Komponenten als Klassen oder Funktionen
@@ -33,13 +34,17 @@ export const Classes = () => {
         Verwendung von Funktionen für die Komponentenerstellung fördern.
         Trotzdem können immer noch Klassenkomponenten verwendet werden.
       </p>
-      <p className='w-1/4'>Vue.js</p>
+      <p className='w-1/4 text-lg'>
+        <strong>Vue.js</strong>
+      </p>
       <p className='w-3/4'>
         Ermöglicht die Erstellung von Komponenten sowohl mit Klassen als auch
         mit Objekten, die Eigenschaften und Methoden enthalten. Es besteht die
         Wahl zwischen verschiedenen Ansätzen, je nach Vorlieben.
       </p>
-      <p className='w-1/4'>Angular</p>
+      <p className='w-1/4 text-lg'>
+        <strong>Angular</strong>
+      </p>
       <p className='w-3/4'>
         Verwendet Klassen für die Definition von Komponenten und Services. Das
         Framework basiert auf einem komponentenbasierten Ansatz und verwendet
@@ -52,7 +57,9 @@ export const Classes = () => {
       <h3 className='font-extrabold text-xl my-5'>
         JavaScript-Framework, die keine Klassen verwenden
       </h3>
-      <p className='w-1/4'>Express</p>
+      <p className='w-1/4 text-lg'>
+        <strong>Express</strong>
+      </p>
       <p className='w-3/4'>
         Express.js ist ein Backend-Framework für Node.js, das auf Funktionen und
         Middleware setzt, um Routen und Endpunkte zu definieren. Es verwendet

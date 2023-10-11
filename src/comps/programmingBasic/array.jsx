@@ -173,32 +173,40 @@ export const Array = () => {
       <div>
         <h3 className='font-extrabold text-xl'>Die Splice-Methode</h3>
         <p>
-          Die splice Methode wird verwendet um ein Array zu bearbeiten. Bei dieser Methode wird das Ausgangs-Array verändert!
+          Die splice Methode wird verwendet um ein Array zu bearbeiten. Bei
+          dieser Methode wird das Ausgangs-Array verändert!
         </p>
         <p>Hier sind einige Beispiele der Splice Methode.</p>
         <pre className='text-sm'>
           <code>
             const arrayToSplice = [Tobi, Lisa, Marc, Nina, Christian]
-            <br /><br />
+            <br />
+            <br />
             // Löscht 1 Element an Index 2<br />
             const removed_I = arrayToSplice.splice(2, 1)
-            <br /><br />
+            <br />
+            <br />
             // Löscht alle Elemente ab Index 2<br />
             const removed_II = arrayToSplice.splice(2)
-            <br /><br />
-            // Löscht 2 Elemente ab Index 0 und ersetzt diese durch "Hans", "Sabrina" und "Otto"<br />
-            const replace = arrayToSplice.splice(0, 2, "Hans", "Sabrina", "Otto");
-            <br /><br />
+            <br />
+            <br />
+            // Löscht 2 Elemente ab Index 0 und ersetzt diese durch "Hans",
+            "Sabrina" und "Otto"
+            <br />
+            const replace = arrayToSplice.splice(0, 2, "Hans", "Sabrina",
+            "Otto");
+            <br />
+            <br />
             // Lösche 0 Elemente und Füge an Index 2 "Tina" und "Gaby" ein
             <br />
-            const StartindexToEndOfArray = arrayToSplice.splice(2, 0, "Tina", "Gaby");
-            `)
+            const StartindexToEndOfArray = arrayToSplice.splice(2, 0, "Tina",
+            "Gaby"); `)
           </code>
         </pre>
       </div>
 
       {/* ------------- LINKS ------------- */}
-      <div className='flex flex-wrap gap-5 text-xl pb-10 pt-5'>
+      <div className='linkContainer'>
         <a
           href='https://www.mediaevent.de/javascript/array.html'
           target='_blank'
