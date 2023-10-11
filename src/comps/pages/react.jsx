@@ -57,12 +57,6 @@ export const React = () => {
         {!theme && <ReactIntro />}
         {theme === "reactBasics" && <ReactIntro />}
         {/* {theme === "variables" && <Variables />} */}
-        {/* {theme === "ifelse" && <IfElse />} */}
-        {/* {theme === "ternary" && <Ternary />} */}
-        {/* {theme === "array" && <Array />} */}
-        {/* {theme === "loop" && <Loop />} */}
-        {/* {theme === "exerciseAL" && <ArrayLoopExercise />} */}
-        {/* {theme === "function" && <Function />} */}
       </section>
     </>
   );
