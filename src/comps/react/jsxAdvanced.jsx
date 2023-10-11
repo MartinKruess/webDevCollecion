@@ -149,7 +149,7 @@ export const JSXAdvanced = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          Babel - Next Generation JS Compiler
+          Babel - Next Gen. JS Compiler
         </a>
       </div>
     </article>

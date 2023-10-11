@@ -24,39 +24,39 @@ export const React = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("node")}
+            onClick={() => setTheme("components")}
           >
-            Tags
+            Components & Props
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("rEvents")}
           >
-            React Hooks
+            Events
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("loop")}
+            onClick={() => setTheme("hooks")}
           >
-            Fetch
+            Hooks & Refs
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("router")}
           >
-            Globale&Local States
+            React Router
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ifelse")}
+            onClick={() => setTheme("context")}
           >
-            JWT
+            Reducer & Context
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ternary")}
+            onClick={() => setTheme("redux")}
           >
-            Bcrypt
+            Redux
           </li>
         </ul>
       </nav>

@@ -42,7 +42,7 @@ export const DOM = () => {
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("startDom")}
           >
-            Text & Context Erzeugen
+            Text Erzeugen
           </li>
           <li
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
