@@ -98,7 +98,7 @@ export const ReactIntro = () => {
         Entwicklergemeinschaft.
       </p>
 
-      <h3 className='font-extrabold text-xl'>React Behind the Sceens</h3>
+      <h3 className='font-extrabold text-xl'>React Behind the Scenes</h3>
       <p>
         React verwendet JSX (JavaScript Syntax Extension), um
         Benutzeroberflächenelemente in JavaScript-Code einzufügen. JSX
@@ -117,7 +117,7 @@ export const ReactIntro = () => {
         <code>
           // JSX Syntax
           <br />
-          const App = () =&gt; &#123;
+          const JSXComponent = () =&gt; &#123;
           <br />
           &#9;&lt;div&gt;
           <br /> &#9;&#9;&lt;div&gt;Hello World!&lt;/div&gt;
@@ -127,10 +127,19 @@ export const ReactIntro = () => {
           <br />
           &#125;
           <br />
+          export default JSXComponent
+        </code>
+      </pre>
+      <h4>
+        <strong>Classic Version</strong>
+      </h4>
+      <pre className='text-sm'>
+        <code>
+          import React from 'react';
           <br />
-          // Classic Syntax
+          // React-Komponente mit JSX in der Classic-Version
           <br />
-          const App = () =&gt; &#123;
+          const ClassicComponent = () =&gt; &#123;
           <br />
           &#9;/*#__PURE__*/React.createElement("div", null,
           <br />
@@ -139,8 +148,57 @@ export const ReactIntro = () => {
           &#9;&#9;/*#__PURE__*/React.createElement("div", null, "Hallo Welt!"));
           <br />
           &#125;
+          <br />
+          export default ClassicComponent;
         </code>
       </pre>
+      <p>
+        In der "Classic"-Version von React importieren Sie das React-Modul und
+        erstellen eine Klasse, die von React.Component erbt. Die JSX-Syntax wird
+        direkt in der render-Methode der Komponente verwendet.
+      </p>
+      <h4>
+        <strong>JSX-Runtime Version</strong>
+      </h4>
+      <pre className='text-sm'>
+        <code>
+          import &#123; jsx as _jsx &#125; from 'react/jsx-runtime';
+          <br />
+          import &#123; jsxs as _jsxs &#125; from 'react/jsx-runtime';
+          <br />
+          // React-Komponente mit JSX in der jsx-runtime-Version
+          <br />
+          const JsxRuntimeComponent = () =&gt; &#123;
+          <br />
+          const App = () =&lt; &#123;
+          <br />
+          &#9;return /*#__PURE__*/_jsxs("div", &#123;
+          <br />
+          &#9;&#9;children: [
+          <br />
+          &#9;&#9;&#9;/*#__PURE__*/_jsx("p", &#123; children: "Hello
+          World!"&#125;),
+          <br />
+          &#9;&#9;&#9;/*#__PURE__*/_jsx("p", &#125; children: "Hallo
+          Welt!"&#125;)
+          <br />
+          &#9;&#9;]
+          <br />
+          &#9;&#125;);
+          <br />
+          &#125;;
+          <br />
+          <br />
+          export default JsxRuntimeComponent;
+        </code>
+      </pre>
+      <p>
+        In der "jsx-runtime"-Version verwenden Sie die jsx-Funktion aus dem
+        react/jsx-runtime-Modul, um JSX in JavaScript umzuwandeln. Beachten Sie,
+        wie das children-Attribut verwendet wird, um die Elemente zu definieren,
+        die im &lt;div&gt;-Element enthalten sind. Dies ist eine häufige Praxis
+        bei Verwendung der "jsx-runtime"-Variante.
+      </p>
 
       <h3 className='font-extrabold text-xl'>
         Das erste React-Projekt - npm create-react-app VS npm create vite
