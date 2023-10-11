@@ -1,7 +1,6 @@
 import { highlights } from "../../App";
 
 export const StartDom = () => {
-  const link = "https://github.com/MartinKruess/domExercise";
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>Erzeugen von Content</h2>
