@@ -1,10 +1,15 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
 import { JSXAdvanced } from "../react/jsxAdvanced";
+import { Components } from "../react/components";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>
@@ -64,6 +69,7 @@ export const React = () => {
         {!theme && <ReactIntro />}
         {theme === "reactBasics" && <ReactIntro />}
         {theme === "jsxAdv" && <JSXAdvanced />}
+        {theme === "components" && <Components />}
       </section>
     </>
   );

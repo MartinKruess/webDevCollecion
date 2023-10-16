@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../global/loadTheme";
 
 import { DOMText } from "../dom/domText";
@@ -15,6 +15,10 @@ import { AsyncAdv } from "../dom/asyncAdvanced";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>

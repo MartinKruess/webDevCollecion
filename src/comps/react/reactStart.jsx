@@ -113,7 +113,7 @@ export const ReactStart = () => {
       >
         Babel - Next Generation JS Compiler
       </a>
-      <pre className="text-sm">
+      <pre className='text-sm'>
         <code>
           // JSX Syntax
           <br />
@@ -128,16 +128,27 @@ export const ReactStart = () => {
           &#125;
           <br />
           <br />
-          import &#123; jsx as _jsx &#125; from "react/jsx-runtime";<br />
-          import &#123; jsxs as _jsxs &#125; from "react/jsx-runtime";<br /><br />
-          const App = () =&gt; &#123;<br />
-          &#9;return /*#__PURE__*/_jsxs("main", &#123;<br />
-          &#9;&#9;children: [/*#__PURE__*/_jsx("div", &#123;<br />
-          &#9;&#9;&#9;children: "Hello World!"<br />
-          &#9;&#9;&#9;&#125;), /*#__PURE__*/_jsx("div", &#123;<br />
-          &#9;&#9;&#9;children: "Hallo Welt!"<br />
-          &#9;&#9;&#125;)]<br />
-          &#9;&#125;);<br />
+          import &#123; jsx as _jsx &#125; from "react/jsx-runtime";
+          <br />
+          import &#123; jsxs as _jsxs &#125; from "react/jsx-runtime";
+          <br />
+          <br />
+          const App = () =&gt; &#123;
+          <br />
+          &#9;return /*#__PURE__*/_jsxs("main", &#123;
+          <br />
+          &#9;&#9;children: [/*#__PURE__*/_jsx("div", &#123;
+          <br />
+          &#9;&#9;&#9;children: "Hello World!"
+          <br />
+          &#9;&#9;&#9;&#125;), /*#__PURE__*/_jsx("div", &#123;
+          <br />
+          &#9;&#9;&#9;children: "Hallo Welt!"
+          <br />
+          &#9;&#9;&#125;)]
+          <br />
+          &#9;&#125;);
+          <br />
           &#125;;
           <br />
           <br />
@@ -158,9 +169,9 @@ export const ReactStart = () => {
       <h3 className='font-extrabold text-xl'>
         Das erste React-Projekt - npm create-react-app VS npm create vite
       </h3>
-      <div class='grid grid-cols-2 gap-4'>
-        <div class='border p-4'>
-          <h4 class='text-lg font-semibold'>Build-Tool</h4>
+      <div className='grid grid-cols-2 gap-4'>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Build-Tool</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>
@@ -180,8 +191,8 @@ export const ReactStart = () => {
           </p>
         </div>
 
-        <div class='border p-4'>
-          <h4 class='text-lg font-semibold'>Schnelligkeit</h4>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Schnelligkeit</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>
