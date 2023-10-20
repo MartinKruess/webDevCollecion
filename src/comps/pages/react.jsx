@@ -3,6 +3,7 @@ import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
 import { JSXAdvanced } from "../react/jsxAdvanced";
 import { Components } from "../react/components";
+import { Hooks } from "../react/hooks";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -70,6 +71,7 @@ export const React = () => {
         {theme === "reactBasics" && <ReactIntro />}
         {theme === "jsxAdv" && <JSXAdvanced />}
         {theme === "components" && <Components />}
+        {theme === "hooks" && <Hooks />}
       </section>
     </>
   );
