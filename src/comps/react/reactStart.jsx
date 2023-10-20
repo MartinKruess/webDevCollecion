@@ -1,6 +1,16 @@
 import { highlights } from "../../App";
 
 export const ReactStart = () => {
+
+  const copyToClipboard = (e) => {
+    // This is just personal preference.
+    // I prefer to not show the whole text area selected.
+    console.log("Target", e.target)
+    e.target.focus();
+    console.log(e.target.closest('pre'))
+    return "Test"
+  };
+
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>Wir starten mit React</h2>
@@ -114,6 +124,7 @@ export const ReactStart = () => {
         Babel - Next Generation JS Compiler
       </a>
       <pre className="text-sm">
+        <i className="fa-regular fa-copy" onClick={() => {navigator.clipboard.writeText(e => e.target.closest('pre'))}}></i>
         <code>
           // JSX Syntax
           <br />
@@ -158,9 +169,9 @@ export const ReactStart = () => {
       <h3 className='font-extrabold text-xl'>
         Das erste React-Projekt - npm create-react-app VS npm create vite
       </h3>
-      <div class='grid grid-cols-2 gap-4'>
-        <div class='border p-4'>
-          <h4 class='text-lg font-semibold'>Build-Tool</h4>
+      <div className='grid grid-cols-2 gap-4'>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Build-Tool</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>
@@ -180,8 +191,8 @@ export const ReactStart = () => {
           </p>
         </div>
 
-        <div class='border p-4'>
-          <h4 class='text-lg font-semibold'>Schnelligkeit</h4>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Schnelligkeit</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>

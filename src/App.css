@@ -63,6 +63,7 @@ pre{
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
+  position: relative;
 }
 
 .react{
@@ -155,4 +156,17 @@ td{
     min-width: 3.4rem;
     font-size: 1.1rem;
   }
+}
+
+
+i{
+  	color: #760314;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+i:hover{
+  color:#a7051d;
 }
