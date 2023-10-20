@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../global/loadTheme";
 
 import { NPM } from "../programmingBasic/npm";
@@ -22,6 +22,10 @@ import { Classes } from "../programmingBasic/classes";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>

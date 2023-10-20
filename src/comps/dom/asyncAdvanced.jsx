@@ -1,7 +1,7 @@
 import { highlights } from "../../App";
 
 export const AsyncAdv = () => {
-  const HE = highlights.errorCode
+  const HE = highlights.errorCode;
 
   return (
     <article>
@@ -9,8 +9,10 @@ export const AsyncAdv = () => {
         Hintergrundwissen über die Arbeitsweise von Javascript in Bezug auf die
         Verarbeitung von Asynchronen Ereignissen
       </h2>
-      <p className="text-lg">
-        <span className={HE}><strong className="pr-3">WARNHINWEIS:</strong></span>
+      <p className='text-lg'>
+        <span className={HE}>
+          <strong className='pr-3'>WARNHINWEIS:</strong>
+        </span>
         Diese Themen sind absolut Advanced und nicht Teil des Curriculums.
         Sollte man diese Themen nicht behandeln/verstehen, ist das überhaupt
         nicht schlimm. Dieser kleine Ausblick soll zeigen, dass hinter JS viel
@@ -20,8 +22,10 @@ export const AsyncAdv = () => {
         guter Programmierer zu sein. Dennoch ist es ein interesantes Thema für
         alle, die ein tieferes Verständnis für JS erlangen wollen.
       </p>
-      <p className="text-lg">
-        <span className={HE}><strong className="pr-3">Das Hauptthema ist Event-Loop:</strong></span> 
+      <p className='text-lg'>
+        <span className={HE}>
+          <strong className='pr-3'>Das Hauptthema ist Event-Loop:</strong>
+        </span>
         Um die Event-Loop richtig verstehen zu können ist es wichtig vorab etwas
         über die Arbeitsweise von Javascript zu verstehen.
       </p>
@@ -168,7 +172,7 @@ export const AsyncAdv = () => {
           className='w-full'
         />
       </div>
-      <div className='flex flex-wrap justify-around text-lg pb-10 pt-3'>
+      <div className='linkContainer'>
         <a
           href='https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick'
           target='_blank'

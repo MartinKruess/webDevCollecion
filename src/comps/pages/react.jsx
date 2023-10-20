@@ -1,9 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
+import { JSXAdvanced } from "../react/jsxAdvanced";
+import { Components } from "../react/components";
+import { Hooks } from "../react/hooks";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>
@@ -13,50 +20,58 @@ export const React = () => {
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("reactBasics")}
           >
-            React im Allgemeinen
+            JSX
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("node")}
+            onClick={() => setTheme("jsxAdv")}
           >
-            Tags
+            JSX Advanced
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("components")}
           >
-            React Hooks
+            Components & Props
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("loop")}
+            onClick={() => setTheme("rEvents")}
           >
-            Fetch
+            Events
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("variables")}
+            onClick={() => setTheme("hooks")}
           >
-            Globale&Local States
+            Hooks & Refs
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ifelse")}
+            onClick={() => setTheme("router")}
           >
-            JWT
+            React Router
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("ternary")}
+            onClick={() => setTheme("context")}
           >
-            Bcrypt
+            Reducer & Context
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("redux")}
+          >
+            Redux
           </li>
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <ReactIntro />}
         {theme === "reactBasics" && <ReactIntro />}
-        {/* {theme === "variables" && <Variables />} */}
+        {theme === "jsxAdv" && <JSXAdvanced />}
+        {theme === "components" && <Components />}
+        {theme === "hooks" && <Hooks />}
       </section>
     </>
   );

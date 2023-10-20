@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../global/loadTheme";
 
 import { DOMText } from "../dom/domText";
@@ -15,6 +15,10 @@ import { AsyncAdv } from "../dom/asyncAdvanced";
 
 export const DOM = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>
@@ -42,7 +46,7 @@ export const DOM = () => {
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("startDom")}
           >
-            Text & Context Erzeugen
+            Text Erzeugen
           </li>
           <li
             className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'

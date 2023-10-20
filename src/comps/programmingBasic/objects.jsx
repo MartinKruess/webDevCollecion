@@ -6,18 +6,20 @@ import { ObjectBasic } from "./assets/objectAssets/objectsBasic";
 
 export const Objects = () => {
   return (
-    <article className="p-4">
+    <article className='p-4'>
       {<ObjectInfo />}
       {<ObjectBasic />}
       {<ObjectMethods />}
       {<ArrayOfObjects />}
-      <a
-        href="https://www.mediaevent.de/javascript/this.html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        this (gut erklärt)
-      </a>
+      <div className='linkContainer'>
+        <a
+          href='https://www.mediaevent.de/javascript/this.html'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          this (gut erklärt)
+        </a>
+      </div>
     </article>
   );
 };
