@@ -1,10 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
-import { ReactStart } from "../react/reactStart";
+import { JSXAdvanced } from "../react/jsxAdvanced";
+import { Components } from "../react/components";
+import { Hooks } from "../react/hooks";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    setTheme("");
+  }, []);
 
   return (
     <>
@@ -14,44 +20,58 @@ export const React = () => {
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("reactBasics")}
           >
-            React im Allgemeinen
+            JSX
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("comps")}
+            onClick={() => setTheme("jsxAdv")}
           >
-            Compoments
+            JSX Advanced
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("props")}
+            onClick={() => setTheme("components")}
           >
-            Props
+            Components & Props
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("rEvents")}
+          >
+            Events
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("hooks")}
           >
-            React Hooks
+            Hooks & Refs
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("useState")}
+            onClick={() => setTheme("router")}
           >
-            useState/ref
+            React Router
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("useContext")}
+            onClick={() => setTheme("context")}
           >
-            useContext
+            Reducer & Context
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("redux")}
+          >
+            Redux
           </li>
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <ReactIntro />}
-        {theme === "reactBasics" && <ReactStart />}
-        {/* {theme === "variables" && <Variables />} */}
+        {theme === "reactBasics" && <ReactIntro />}
+        {theme === "jsxAdv" && <JSXAdvanced />}
+        {theme === "components" && <Components />}
+        {theme === "hooks" && <Hooks />}
       </section>
     </>
   );

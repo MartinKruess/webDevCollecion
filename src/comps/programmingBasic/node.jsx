@@ -1,12 +1,12 @@
 export const NodeInstaller = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-2xl">NodeJS</h2>
+      <h2 className='font-extrabold text-2xl'>NodeJS</h2>
       <p>
         Node.js ist eine plattformübergreifende Open - Source- Serverumgebung,
-        die unter Windows, Linux, Unix, macOS und mehr ausgeführt werden
-        kann. Node.js ist eine Back-End- JavaScript- Laufzeitumgebung, läuft
-        auf der V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines
+        die unter Windows, Linux, Unix, macOS und mehr ausgeführt werden kann.
+        Node.js ist eine Back-End- JavaScript- Laufzeitumgebung, läuft auf der
+        V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines
         Webbrowsers aus.
       </p>
       <div>
@@ -39,7 +39,7 @@ export const NodeInstaller = () => {
           <code>node index.js</code>
         </pre>
       </div>
-      <h2 className="font-extrabold text-2xl">Node Version Manager (nvm)</h2>
+      <h2 className='font-extrabold text-2xl'>Node Version Manager (nvm)</h2>
       <p>
         Der nvm ist ein hilfreiches Tool, womit du in der Lage bist verschiedene
         Node Versionen Lokal für verschiedene Projekte zu installieren. Oft
@@ -49,32 +49,34 @@ export const NodeInstaller = () => {
         durch die Verwendung von nvm Zeitgelich in verschiedenen Projekten mit
         verschiedenen anderen Versionen gearbeitet werden.
       </p>
-      <a href="https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/">
-        Download Guide
-      </a>
+      <div className='linkContainer'>
+        <a href='https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/'>
+          Download Guide
+        </a>
+      </div>
       <div>
         <p>Installation </p>
-          <pre>
-            <code>
-              curl -o-
-              https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
-              bash
-              <br />
-              oder
-              <br />
-              wget -qO-
-              https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
-              bash
-            </code>
-          </pre>
+        <pre>
+          <code>
+            curl -o-
+            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+            bash
+            <br />
+            oder
+            <br />
+            wget -qO-
+            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+            bash
+          </code>
+        </pre>
       </div>
-      <div className="flex gap-5 pb-10 pt-5">
-        <a href="https://nodejs.org/en/download" className="px-3">
+      <div className='linkContainer'>
+        <a href='https://nodejs.org/en/download' className='px-3'>
           Node
         </a>
         <a
-          href="https://github.com/coreybutler/nvm-windows#readme"
-          className="px-3"
+          href='https://github.com/coreybutler/nvm-windows#readme'
+          className='px-3'
         >
           Node Version Manager
         </a>

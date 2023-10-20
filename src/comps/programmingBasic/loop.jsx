@@ -243,7 +243,7 @@ export const Loop = () => {
           Objects -&gt; Advanced Object Methoden
         </span>
       </p>
-      <div className='flex gap-5 pb-10 pt-5'>
+      <div className='linkContainer'>
         <a href='https://bitsofco.de/for-in-vs-for-of/' className='px-3'>
           For-In VS For-Of
         </a>

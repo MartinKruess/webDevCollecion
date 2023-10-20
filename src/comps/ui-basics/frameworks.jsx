@@ -1,7 +1,7 @@
 export const Frameworks = () => {
   return (
     <article>
-      <h2 className="font-extrabold text-2xl my-5">
+      <h2 className='font-extrabold text-2xl my-5'>
         Bootstrap und Tailwind die CSS-Frameworks
       </h2>
       <p>
@@ -19,20 +19,20 @@ export const Frameworks = () => {
         <li>ähnlich wie ein Baukastensytsem</li>
         <li>schnelleres Prototyping</li>
       </ul>
-      <h3 className="font-extrabold text-xl my-5">Bootstrap Framework</h3>
+      <h3 className='font-extrabold text-xl my-5'>Bootstrap Framework</h3>
       <div>
         <p>
           Es gibt verschiedene Wege mit Bootstrap zu arbeiten. Neben der NPM
           Methode gibt es auch die Möglichkeit die CDN zu verwenden.
         </p>
-        <pre className="w-10/12 m-auto">
+        <pre className='w-10/12 m-auto'>
           <code>npm i bootstrap</code>
         </pre>
         <p>
           Bei der CDN muss man einen &lt;Link&gt; und ein &lt;Script&gt; in den
           &lt;Head&gt; einbinden.
         </p>
-        <pre className="w-10/12 m-auto">
+        <pre className='w-10/12 m-auto'>
           <code>
             &lt;link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -41,7 +41,7 @@ export const Frameworks = () => {
             crossorigin="anonymous"&gt;
           </code>
         </pre>
-        <pre className="w-10/12 m-auto">
+        <pre className='w-10/12 m-auto'>
           <code>
             &lt;script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -49,9 +49,11 @@ export const Frameworks = () => {
             crossorigin="anonymous" &gt;&lt;/script&gt;
           </code>
         </pre>
-        <a href="https://getbootstrap.com/">Bootstrap</a>
+        <div className='linkContainer'>
+          <a href='https://getbootstrap.com/'>Bootstrap</a>
+        </div>
       </div>
-      <h2 className="font-extrabold text-2xl my-5">Tailwind Framework</h2>
+      <h2 className='font-extrabold text-2xl my-5'>Tailwind Framework</h2>
       <div>
         <p>
           Tailwind ist ein Utility-First-CSS-Framework, das seinen Nutzern
@@ -65,7 +67,7 @@ export const Frameworks = () => {
           lassen sich in Tailwind inline stylen, weshalb es nicht mehr nötig
           ist, eine separate CSS Datei anzulegen.
         </p>
-        <h3 className="font-extrabold text-xl my-5">
+        <h3 className='font-extrabold text-xl my-5'>
           Die Vorteile von Tailwind
         </h3>
         <p>
@@ -84,30 +86,30 @@ export const Frameworks = () => {
           dass man sich ohne große Probleme in neue Tailwind-Projekte
           einarbeiten kann.
         </p>
-        <h3 className="font-extrabold text-xl my-5">Tailwind Installation</h3>
+        <h3 className='font-extrabold text-xl my-5'>Tailwind Installation</h3>
         <p>
           Dieses beispiel bezieht sich auf die Einbindung von Tailwind in ein
           bestehendes Vite Vanilla oder Vite React Projekt. Nach der Erstellung
           eines solchen Projektes (siehe Javascript - Vite) führen wir folgende
           Befehle im Terminal aus.
         </p>
-        <div className="grid grid-cols-12 md:gap-10">
-          <p className="col-start-1 col-end-8 md:col-end-6">
+        <div className='grid grid-cols-12 md:gap-10'>
+          <p className='col-start-1 col-end-8 md:col-end-6'>
             Installiere tailwindcss und erzeuge die Abhängigkeiten innerhalb des
             Projektes. Generiere die "tailwind.config.js" "postcss.config.js"
             Dateien.
           </p>
-          <pre className="col-start-1 md:col-start-6 col-end-12">
+          <pre className='col-start-1 md:col-start-6 col-end-12'>
             <code>
               npm install -D tailwindcss postcss autoprefixer <br />
               npx tailwindcss init -p
             </code>
           </pre>
-          <p className="col-start-1 col-end-8 md:col-end-6">
+          <p className='col-start-1 col-end-8 md:col-end-6'>
             Die Konfiguration der "tailwind.config.js", ist die Anpassung des
             Contents an das bestehende Projekt.
           </p>
-          <pre className="col-start-1 md:col-start-6 col-end-12">
+          <pre className='col-start-1 md:col-start-6 col-end-12'>
             <code>
               /** @type {import("tailwindcss").Config} */ <br />
               export default &#123; <br />
@@ -122,28 +124,30 @@ export const Frameworks = () => {
               &#125;
             </code>
           </pre>
-          <p className="col-start-1 col-end-8 md:col-end-6">
+          <p className='col-start-1 col-end-8 md:col-end-6'>
             Die Tailwind Dateien müssen der CSS Datei (index.css) hinzefügt
             werden.
           </p>
-          <pre className="col-start-1 md:col-start-6 col-end-12">
+          <pre className='col-start-1 md:col-start-6 col-end-12'>
             <code>
               @tailwind base; <br />
               @tailwind components; <br />
               @tailwind utilities;
             </code>
           </pre>
-          <p className="col-start-1 col-end-8 md:col-end-6">
+          <p className='col-start-1 col-end-8 md:col-end-6'>
             WICHTIG: Abschließend muss der terminal neu gestarten werden.
           </p>
-          <pre className="col-start-1 md:col-start-6 col-end-12">
+          <pre className='col-start-1 md:col-start-6 col-end-12'>
             <code>npm run dev</code>
           </pre>
         </div>
-        <a href="https://tailwindcss.com/docs/guides/vite">Tailwind</a>
-        <a href="https://nerdcave.com/tailwind-cheat-sheet">
-          Tailwind Cheat Sheet
-        </a>
+        <div className='linkContainer'>
+          <a href='https://tailwindcss.com/docs/guides/vite'>Tailwind</a>
+          <a href='https://nerdcave.com/tailwind-cheat-sheet'>
+            Tailwind Cheat Sheet
+          </a>
+        </div>
       </div>
     </article>
   );
