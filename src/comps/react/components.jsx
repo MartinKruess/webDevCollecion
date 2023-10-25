@@ -81,13 +81,21 @@ export const Components = () => {
       <h3 className='font-extrabold text-xl'>Anwendung von Props</h3>
       <p>
         Die sogennanten 'props' (Properties) werden verwendet um Daten von einer
-        Eltern-Component an das Child-Component weiter zu geben. Props sind
+        Parent-Component an das Child-Component weiter zu geben. Props sind
         schlicht JavaScript-Objekte, die Informationen oder Konfigurationsdaten
         enthalten.
         <br />
         <span className={highlights.code}>
           Parent-Component -&gt; Child-Component = unidirektionaler Datenfluss
         </span>
+      </p>
+      <p>
+        Man versteht unter{" "}
+        <span className={highlights.code}>unidirektionaler Datenfluss</span>,
+        dass die Kommunikation zwischen zwei Components nicht bidirektional (in
+        beide Richtungen) stattfindet, sondern dass ein Kommunikationsteilnehmer
+        nur Daten in eine Richtung an einen oder mehrere andere Empfänger
+        sendet.
       </p>
       <pre className='text-sm'>
         <code>
@@ -102,7 +110,7 @@ export const Components = () => {
         </code>
       </pre>
       <p>
-        Die Props werden in einem Parent-Component definiert und an eine
+        Die Props werden in einer Parent-Component definiert und an eine
         Child-Component übergeben, indem sie als Attribute in JSX-Tags verwendet
         werden.
       </p>
@@ -127,10 +135,9 @@ export const Components = () => {
         </code>
       </pre>
       <p>
-        Im Child-Component kannst du auf diese Props zugreifen, indem du sie als
-        Parameter der Funktion (bei funktionellen Components) oder als
-        Eigenschaften des this.props-Objekts (bei Klassenkomponenten)
-        verwendest.
+        In der Child-Component kannst du auf diese Props zugreifen, indem du sie
+        als Parameter der Funktion (bei Function-Components) oder als
+        Eigenschaften des this.props-Objekts (bei Class-Components) verwendest.
       </p>
       <pre className='text-sm'>
         // Variante 2 Destructuring

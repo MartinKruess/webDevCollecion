@@ -1,6 +1,16 @@
 import { highlights } from "../../App";
 
 export const ReactStart = () => {
+
+  const copyToClipboard = (e) => {
+    // This is just personal preference.
+    // I prefer to not show the whole text area selected.
+    console.log("Target", e.target)
+    e.target.focus();
+    console.log(e.target.closest('pre'))
+    return "Test"
+  };
+
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>Wir starten mit React</h2>
