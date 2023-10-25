@@ -156,10 +156,10 @@ export const ReactIntro = () => {
           </code>
         </div>
       </pre>
+      <p></p>
+      {/* <h3 className='font-extrabold text-xl'>Vite</h3>
 
-      <h3 className='font-extrabold text-xl'>Vite</h3>
-
-      <h3 className='font-extrabold text-xl'>Worauf sollte man achten?</h3>
+      <h3 className='font-extrabold text-xl'>Worauf sollte man achten?</h3> */}
     </article>
   );
 };
