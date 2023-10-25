@@ -80,20 +80,20 @@ export const SelfTest = () => {
 
   return (
     <article>
-      <div className="questionContainer">
+      <div className='questionContainer'>
         <SelfTestText />
         {toggle && (
-          <div className="flex flex-wrap">
-            <div className="w-full">Punkte: {counter}</div>
-            <h2 className="text-xl border-b-2 w-1/2">Falsche Antworten</h2>
-            <h2 className="text-xl border-b-2 w-1/2">Erklärung</h2>
+          <div className='flex flex-wrap'>
+            <div className='w-full'>Punkte: {counter}</div>
+            <h2 className='text-xl border-b-2 w-1/2'>Falsche Antworten</h2>
+            <h2 className='text-xl border-b-2 w-1/2'>Erklärung</h2>
             {wrnAns.map((answer, i) => (
-              <p key={i} className="w-full md:w-1/2 border-b border-blue-700">
+              <p key={i} className='w-full md:w-1/2 border-b border-blue-700'>
                 {answer}
               </p>
             ))}
             <button
-              className="bg-red-600 text-white text-xl m-auto my-10 p-2 border rounded-md small"
+              className='bg-red-600 text-white text-xl m-auto my-10 p-2 border rounded-md small'
               onClick={() => setToggle(!toggle)}
             >
               Neue Fragen
@@ -101,21 +101,23 @@ export const SelfTest = () => {
           </div>
         )}
         {!toggle && (
-          <form className="w-full m-auto pb-20 flex flex-wrap justify-center gap-5">
+          <form className='w-full m-auto pb-20 flex flex-wrap justify-center gap-5'>
             {arr.map((task, i) => (
               <fieldset
-                className="w-full lg:w-5/12 text-sm bg-slate-600 smallium px-10 py-5 rounded-2xl border-red-500"
+                className='w-full lg:w-5/12 text-sm bg-slate-600 smallium px-10 py-5 rounded-2xl border-red-500'
                 key={i}
               >
                 <label>Aufgabe: {i + 1}</label>
-                <label className="block text-sm md:text-base text-center py-3 h-40">
-                  {task.question}<br /><br />
-                
+                <label className='block text-sm md:text-base text-center py-3 h-40'>
+                  {task.question}
+                  <br />
+                  <br />
+
                   {task.description}
                 </label>
                 <input
-                  className="bg-orange-300 text-black block w-full m-auto text-md md:text-xl px-8 py-2 rounded-lg"
-                  type="text"
+                  className='bg-orange-300 text-black block w-full m-auto text-md md:text-xl px-8 py-2 rounded-lg'
+                  type='text'
                   name={`answer${i}`}
                   onChange={(e) =>
                     setInputs({ ...inputs, [e.target.name]: e.target.value })
@@ -124,7 +126,7 @@ export const SelfTest = () => {
               </fieldset>
             ))}
             <button
-              className="bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small"
+              className='bg-red-600 text-white text-xl m-auto mt-10 p-2 border rounded-md small'
               onClick={(e) => controllAnswers(e)}
             >
               Send

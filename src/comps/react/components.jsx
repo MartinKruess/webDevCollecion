@@ -159,6 +159,15 @@ export const Components = () => {
         Child-Components verändert werden, was die Vorhersagbarkeit und den
         Zustand der Anwendung verbessert.
       </p>
+      <p className='w-8/12 m-auto text-lg'>
+        <span className={highlights.errorCode}>
+          Die Themen Components und Props bieten noch ein paar Kleinigkeiten,
+          die in besonderen Fällen zu beachten sind. Weitere Hinweise auf das
+          Arbeiten mit Components und Props gibt es in
+          <span className={highlights.code}> Hooks & Refs</span>, sowei in
+          <span className={highlights.code}> React Router</span>
+        </span>
+      </p>
       <div className='linkContainer'>
         <a
           href='https://react.dev/learn/passing-props-to-a-component'

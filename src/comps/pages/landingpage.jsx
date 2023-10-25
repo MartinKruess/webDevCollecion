@@ -16,7 +16,7 @@ export const Landingpage = () => {
         </p>
         <ul className='flex flex-wrap w-80 text-sm'>
           <li className='w-1/2'>CSS</li>
-          <li className='w-1/2 text-yellow-500'>
+          <li className='w-1/2 text-green-600'>
             75%
             <ul className='w-full'>
               <li>Flex</li>
@@ -33,24 +33,32 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>DOM</li>
-          <li className='w-1/2 text-red-700'>
-            25%
+          <li className='w-1/2 text-yellow-300'>
+            50%
             <ul className='w-full'>
               <li>set/get</li>
-              <li>Selector</li>
               <li>Events</li>
-              <li>Async</li>
               <li>Import/Export/Modules/Components</li>
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-red-900'>0%</li>
+          <li className='w-1/2 text-yellow-600'>
+            25%
+            <ul className='w-full'>
+              <li>useState</li>
+              <li>useEffect</li>
+              <li>useRef</li>
+              <li>router 6.17 & 6.4 inkl. privatRoute</li>
+              <li>useContext</li>
+              <li>useReducer</li>
+            </ul>
+          </li>
           <li className='w-1/2'>Node Express</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Database</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-red-700'>
+          <li className='w-1/2 text-yellow-600'>
             25%
             <ul className='w-full'>
               <li>Vercel</li>
