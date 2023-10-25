@@ -38,13 +38,13 @@ export const DomExercises = () => {
           Übungen: {domExercisesArr.length}
         </p>
       </div>
-      {domExercisesArr.map((exercise, i) => (
-        <div className='mt-5 p-5 bg-slate-800 border' key={i}>
+      {domExercisesArr.map((exercise) => (
+        <div className='mt-5 p-5 bg-slate-800 border' key={exercise.id}>
           <h3 className='font-extrabold text-xl'>{exercise.header}</h3>
           <p>{exercise.description}</p>
           <ul>
-            {exercise.tasks.map((task) => (
-              <li>{task}</li>
+            {exercise.tasks.map((task, i) => (
+              <li key={i}>{task}</li>
             ))}
           </ul>
           {exercise.commands && <p>{exercise.commands}</p>}
