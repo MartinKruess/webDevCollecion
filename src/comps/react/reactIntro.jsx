@@ -100,9 +100,9 @@ export const ReactIntro = () => {
       <h3 className='font-extrabold text-xl'>
         Das erste React-Projekt - npm create-react-app VS npm create vite
       </h3>
-      <div classname='grid grid-cols-2 gap-4'>
-        <div classname='border p-4'>
-          <h4 classname='text-lg font-semibold'>Build-Tool</h4>
+      <div className='grid grid-cols-2 gap-4'>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Build-Tool</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>
@@ -122,8 +122,8 @@ export const ReactIntro = () => {
           </p>
         </div>
 
-        <div classname='border p-4'>
-          <h4 classname='text-lg font-semibold'>Schnelligkeit</h4>
+        <div className='border p-4'>
+          <h4 className='text-lg font-semibold'>Schnelligkeit</h4>
           <h5>
             <strong>create-react-app</strong>
           </h5>
