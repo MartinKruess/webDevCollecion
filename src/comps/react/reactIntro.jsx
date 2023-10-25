@@ -97,14 +97,14 @@ export const ReactIntro = () => {
         Desktop-Anwendungen eingesetzt und hat eine große und aktive
         Entwicklergemeinschaft.
       </p>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className='font-extrabold text-xl pb-5'>
         Das erste React-Projekt - npm create-react-app VS npm create vite
       </h3>
       <div className='grid grid-cols-2 gap-4'>
         <div className='border p-4'>
           <h4 className='text-lg font-semibold'>Build-Tool</h4>
           <h5>
-            <strong>create-react-app</strong>
+            <strong>react-app</strong>
           </h5>
           <p>
             Verwendet standardmäßig Webpack als Build-Tool. Webpack ist ein
@@ -112,7 +112,7 @@ export const ReactIntro = () => {
             Entwicklungs- und Produktionsbuilds.
           </p>
           <h5>
-            <strong>create-vite</strong>
+            <strong>vite</strong>
           </h5>
           <p>
             Verwendet Vite, was sich von Webpack unterscheidet. Vite ist ein
@@ -125,14 +125,14 @@ export const ReactIntro = () => {
         <div className='border p-4'>
           <h4 className='text-lg font-semibold'>Schnelligkeit</h4>
           <h5>
-            <strong>create-react-app</strong>
+            <strong>react-app</strong>
           </h5>
           <p>
             Kann in Bezug auf die Build-Zeiten etwas langsamer sein,
             insbesondere in größeren Projekten.
           </p>
           <h5>
-            <strong>create-vite</strong>
+            <strong>vite</strong>
           </h5>
           <p>
             Ist in der Regel schneller beim Erstellen von Projekten und beim
@@ -141,8 +141,20 @@ export const ReactIntro = () => {
           </p>
         </div>
       </div>
-      <pre>
-        <code>npm create-react-app myProject</code>
+      <pre className='flex justify-between text-lg'>
+        <code>
+          <span className={highlights.code}>npx create-react-app </span>
+          myProjectName
+        </code>
+        <div>
+          <code>
+            <span className={highlights.code}>npm create vite</span>
+          </code>
+          <span> oder </span>
+          <code>
+            <span className={highlights.code}>npm create vite@latest</span>
+          </code>
+        </div>
       </pre>
 
       <h3 className='font-extrabold text-xl'>Vite</h3>
