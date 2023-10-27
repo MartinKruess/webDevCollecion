@@ -90,7 +90,12 @@ export const Components = () => {
         </span>
       </p>
       <p>
-        Man versteht unter <span className={highlights.code}>unidirektionaler Datenfluss</span>, dass die Kommunikation zwischen zwei Components nicht bidirektional (in beide Richtungen) stattfindet, sondern dass ein Kommunikationsteilnehmer nur Daten in eine Richtung an einen oder mehrere andere Empfänger sendet.
+        Man versteht unter{" "}
+        <span className={highlights.code}>unidirektionaler Datenfluss</span>,
+        dass die Kommunikation zwischen zwei Components nicht bidirektional (in
+        beide Richtungen) stattfindet, sondern dass ein Kommunikationsteilnehmer
+        nur Daten in eine Richtung an einen oder mehrere andere Empfänger
+        sendet.
       </p>
       <pre className='text-sm'>
         <code>
@@ -98,6 +103,8 @@ export const Components = () => {
           <br />
           const name = "Max"
           <br />
+          <br />
+          // Beim Aufruf der Komponente werden die Props als Attribute übergeben
           <br />
           &lt;ChildComponent name=&#123;name&#125; age=&#123;30&#125; /&gt;
         </code>
@@ -128,10 +135,9 @@ export const Components = () => {
         </code>
       </pre>
       <p>
-        In der Child-Component kannst du auf diese Props zugreifen, indem du sie als
-        Parameter der Funktion (bei Function-Components) oder als
-        Eigenschaften des this.props-Objekts (bei Class-Components)
-        verwendest.
+        In der Child-Component kannst du auf diese Props zugreifen, indem du sie
+        als Parameter der Funktion (bei Function-Components) oder als
+        Eigenschaften des this.props-Objekts (bei Class-Components) verwendest.
       </p>
       <pre className='text-sm'>
         // Variante 2 Destructuring
@@ -159,6 +165,15 @@ export const Components = () => {
         zu gestalten. Sie sind schreibgeschützt und können nicht innerhalb des
         Child-Components verändert werden, was die Vorhersagbarkeit und den
         Zustand der Anwendung verbessert.
+      </p>
+      <p className='w-8/12 m-auto text-lg'>
+        <span className={highlights.errorCode}>
+          Die Themen Components und Props bieten noch ein paar Kleinigkeiten,
+          die in besonderen Fällen zu beachten sind. Weitere Hinweise auf das
+          Arbeiten mit Components und Props gibt es in
+          <span className={highlights.code}> Hooks & Refs</span>, sowei in
+          <span className={highlights.code}> React Router</span>
+        </span>
       </p>
       <div className='linkContainer'>
         <a

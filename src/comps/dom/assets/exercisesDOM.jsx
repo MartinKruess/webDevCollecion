@@ -1,5 +1,6 @@
 export const domExercises = [
   {
+    id: 100,
     header: "Rezeptseite mit Funktionen",
     description:
       "Im HTML & CSS Modul hast du eine Rezeptseite aufgebaut, du kannst diese verwenden oder zur Übung eine neue Rezeptseite aufbauen. In diesem Projekt geht es zwar nicht in erster Linie um das Styling, dennoch kann eine kleine Auffrischung nicht schaden. Das Ziel dieser Aufgabe ist eine Rezeptseite aufzubauen, die mit dynamischen Daten gefüllt ist und auf Userinteraktionen reagiert.",
@@ -33,6 +34,7 @@ export const domExercises = [
     type: "dom",
   },
   {
+    id: 200,
     header: "Meine Wetter-App",
     description:
       "Das Zeil dieser Übung ist es eine Webseite zu erstellen, die Daten aus einer Wetter API holt und diese auf der Seite ausgibt. Wichige Informationen auf der Seite sind: 'Wetter Heute' und 'Wetter der Woche'. Die Daten sollten auch etwas gestylt werden.",
@@ -56,6 +58,7 @@ export const domExercises = [
     type: "fetch",
   },
   {
+    id: 300,
     header: "Create a Game",
     description:
       "Für diese Aufgabe ist ein Backend vorhanden mit einigen API´s. Diese können individuell angesprochen werden um die verschiedenen Daten zu erhalten. Ziel der Übung ist es aus den vorhandenen Daten ein Spiel zu erstellen. Wie die grafische Oberfläche ist, ist dabei dir überlassen. Natürlich lässt sich mit den Daten auch in der Console arbeiten.",
@@ -83,6 +86,7 @@ export const domExercises = [
     type: "fetch",
   },
   {
+    id: 400,
     header: "Arbeiten mit Components und Props (Simple)",
     description:
       "Dies ist eine simple Übung um erstmal zu verstehen wie man Daten auslagert und damit arbeiten kann.",
