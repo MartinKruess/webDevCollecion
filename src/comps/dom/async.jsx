@@ -4,7 +4,7 @@ export const Async = () => {
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>
-        Synchoner und Asynchroner Code (Promis, .then, .try, .catch mit und ohne
+        Synchoner und Asynchroner Code (Promise, .then, .try, .catch mit und ohne
         Aysnc)
       </h2>
       <h3 className='font-extrabold text-xl'>
@@ -139,7 +139,7 @@ export const Async = () => {
           ausgeführt und beendet werden!
         </span>
       </p>
-      <h3 className='font-extrabold text-xl'>Was ist ein Promis?</h3>
+      <h3 className='font-extrabold text-xl'>Was ist ein Promise?</h3>
       <p>
         Ein <span className={highlights.code}>Promise</span> wird immer dann
         erzeugt, wenn asynchroner Code verwendet wird. Das bedeutet es wird aus
@@ -233,18 +233,18 @@ export const Async = () => {
         // Das ist eine Async-Function
         <br />
         // Die ganze Funktion ist Asynchron wodurch der return dieser Funktion
-        ein Promis ist
+        ein Promise ist
         <br />
         // async = Behandle diesen Code als Asynchron
         <br />
-        // await = Warte bis der Promis erfüllt ist (bis die Daten da sind)
+        // await = Warte bis der Promise erfüllt ist (bis die Daten da sind)
         <br />
         <br />
         <code>
           const myFunction = async () =&gt; &#123;
           <br />
           &#9;const response = await fetch('fetchURL') // Fetch gibt einen
-          promis zurück, daher wird awit angewendet
+          promise zurück, daher wird awit angewendet
           <br />
           &#9;try&#123;
           <br />
