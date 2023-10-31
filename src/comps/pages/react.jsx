@@ -1,9 +1,12 @@
 import { useContext, useEffect } from "react";
+import { ReactEinleitung } from "../react/reactEinleitung";
 import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
 import { JSXAdvanced } from "../react/jsxAdvanced";
 import { Components } from "../react/components";
 import { Hooks } from "../react/hooks";
+import { Router } from "../react/router";
+import { RouterV6 } from "../react/routerV6";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -48,9 +51,15 @@ export const React = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("router")}
+            onClick={() => setTheme("routerV5")}
           >
-            React Router
+            React Router v.5
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("routerV6")}
+          >
+            React Router v.6
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
@@ -67,11 +76,14 @@ export const React = () => {
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
-        {!theme && <ReactIntro />}
+        {!theme && <ReactEinleitung />}
         {theme === "reactBasics" && <ReactIntro />}
         {theme === "jsxAdv" && <JSXAdvanced />}
         {theme === "components" && <Components />}
         {theme === "hooks" && <Hooks />}
+        {theme === "routerV5" && <Router />}
+        {theme === "routerV6" && <RouterV6 />}
+        {theme === "routerBonus" && <RouterBonus />}
       </section>
     </>
   );
