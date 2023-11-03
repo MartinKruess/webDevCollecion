@@ -19,38 +19,35 @@ export const Landingpage = () => {
           <li className='w-1/2 text-green-600'>
             75%
             <ul className='w-full'>
-              <li>Flex</li>
-              <li>Animation</li>
+              <li>Flex 20%</li>
+              <li>Animation 5%</li>
             </ul>
           </li>
           <li className='w-1/2'>Javascript</li>
           <li className='w-1/2 text-green-400'>
-            90%
+            92%
             <ul className='w-full'>
-              <li>Callback</li>
-              <li>Übungen</li>
-              <li>Test</li>
+              <li>Callback 8%</li>
             </ul>
           </li>
           <li className='w-1/2'>DOM</li>
           <li className='w-1/2 text-yellow-300'>
-            50%
+            60%
             <ul className='w-full'>
-              <li>set/get</li>
-              <li>Events</li>
-              <li>Import/Export/Modules/Components</li>
+              <li>set/get 10%</li>
+              <li>Events 20%</li>
+              <li>Import/Export/Modules 10%</li>
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-yellow-600'>
-            25%
+          <li className='w-1/2 text-yellow-500'>
+            35%
             <ul className='w-full'>
-              <li>useState</li>
-              <li>useEffect</li>
-              <li>useRef</li>
-              <li>router 6.17 & 6.4 inkl. privatRoute</li>
-              <li>useContext</li>
-              <li>useReducer</li>
+              <li>useRef 5%</li>
+              <li>router 6.4 20%</li>
+              <li>privatRoute 10%</li>
+              <li>useContext 15%</li>
+              <li>useReducer 15%</li>
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
@@ -58,14 +55,13 @@ export const Landingpage = () => {
           <li className='w-1/2'>Database</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-600'>
-            25%
+          <li className='w-1/2 text-yellow-400'>
+            50%
             <ul className='w-full'>
-              <li>Vercel</li>
-              <li>Cyclic</li>
-              <li>Render</li>
-              <li>Hetzner</li>
-              <li>Altmodisch via FTP</li>
+              <li>Vercel 5%</li>
+              <li>Cyclic 5%</li>
+              <li>Render 5%</li>
+              <li>Hetzner 35%</li>
             </ul>
           </li>
         </ul>
