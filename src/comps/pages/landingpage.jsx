@@ -32,21 +32,22 @@ export const Landingpage = () => {
           </li>
           <li className='w-1/2'>DOM</li>
           <li className='w-1/2 text-yellow-300'>
-            55%
+            60%
             <ul className='w-full'>
-              <li>set/get</li>
-              <li>Events</li>
-              <li>Import/Export/Modules</li>
+              <li>set/get 10%</li>
+              <li>Events 20%</li>
+              <li>Import/Export/Modules 10%</li>
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-yellow-400'>
-            35%
+          <li className='w-1/2 text-yellow-300'>
+            50%
             <ul className='w-full'>
-              <li>router 6.17 & 6.4 inkl. privatRoute</li>
-              <li>useContext</li>
-              <li>useReducer</li>
-              <li>useRef (als letztes)</li>
+              <li>router 6 15%</li>
+              <li>privatRoute 5%</li>
+              <li>useContext 15%</li>
+              <li>useReducer 10%</li>
+              <li>useRef (als letztes) 5%</li>
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
@@ -54,8 +55,8 @@ export const Landingpage = () => {
           <li className='w-1/2'>Database</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-600'>
-            25%
+          <li className='w-1/2 text-yellow-400'>
+            50%
             <ul className='w-full'>
               <li>Vercel 5%</li>
               <li>Cyclic 5%</li>

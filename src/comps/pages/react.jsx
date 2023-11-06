@@ -37,12 +37,12 @@ export const React = () => {
           >
             Components & Props
           </li>
-          <li
+          {/* <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("rEvents")}
           >
             Events
-          </li>
+          </li> */}
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("hooks")}
