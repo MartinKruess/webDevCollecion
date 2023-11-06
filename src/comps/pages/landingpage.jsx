@@ -40,10 +40,10 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-yellow-300'>
-            50%
+          <li className='w-1/2 text-yellow-200'>
+            60%
             <ul className='w-full'>
-              <li>router 6 15%</li>
+              <li>Nested Routing 5%</li>
               <li>privatRoute 5%</li>
               <li>useContext 15%</li>
               <li>useReducer 10%</li>
