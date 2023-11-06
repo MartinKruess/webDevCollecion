@@ -27,27 +27,26 @@ export const Landingpage = () => {
           <li className='w-1/2 text-green-400'>
             92%
             <ul className='w-full'>
-              <li>Callback 8%</li>
+              <li>Callback</li>
             </ul>
           </li>
           <li className='w-1/2'>DOM</li>
           <li className='w-1/2 text-yellow-300'>
-            60%
+            55%
             <ul className='w-full'>
-              <li>set/get 10%</li>
-              <li>Events 20%</li>
-              <li>Import/Export/Modules 10%</li>
+              <li>set/get</li>
+              <li>Events</li>
+              <li>Import/Export/Modules</li>
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-yellow-500'>
+          <li className='w-1/2 text-yellow-400'>
             35%
             <ul className='w-full'>
-              <li>useRef 5%</li>
-              <li>router 6.4 20%</li>
-              <li>privatRoute 10%</li>
-              <li>useContext 15%</li>
-              <li>useReducer 15%</li>
+              <li>router 6.17 & 6.4 inkl. privatRoute</li>
+              <li>useContext</li>
+              <li>useReducer</li>
+              <li>useRef (als letztes)</li>
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
@@ -55,8 +54,8 @@ export const Landingpage = () => {
           <li className='w-1/2'>Database</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-400'>
-            50%
+          <li className='w-1/2 text-yellow-600'>
+            25%
             <ul className='w-full'>
               <li>Vercel 5%</li>
               <li>Cyclic 5%</li>
