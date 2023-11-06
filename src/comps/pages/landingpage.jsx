@@ -25,32 +25,28 @@ export const Landingpage = () => {
           </li>
           <li className='w-1/2'>Javascript</li>
           <li className='w-1/2 text-green-400'>
-            90%
+            92%
             <ul className='w-full'>
               <li>Callback</li>
-              <li>Übungen</li>
-              <li>Test</li>
             </ul>
           </li>
           <li className='w-1/2'>DOM</li>
           <li className='w-1/2 text-yellow-300'>
-            50%
+            55%
             <ul className='w-full'>
               <li>set/get</li>
               <li>Events</li>
-              <li>Import/Export/Modules/Components</li>
+              <li>Import/Export/Modules</li>
             </ul>
           </li>
           <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-yellow-600'>
-            25%
+          <li className='w-1/2 text-yellow-400'>
+            35%
             <ul className='w-full'>
-              <li>useState</li>
-              <li>useEffect</li>
-              <li>useRef</li>
               <li>router 6.17 & 6.4 inkl. privatRoute</li>
               <li>useContext</li>
               <li>useReducer</li>
+              <li>useRef (als letztes)</li>
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
