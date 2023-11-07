@@ -56,65 +56,7 @@ export const PB = () => {
             Electron
           </li> */}
           <li
-<<<<<<< HEAD
             className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
-=======
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("variables")}
-          >
-            Variables
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("ifelse")}
-          >
-            If/Else
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("array")}
-          >
-            Array
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("loop")}
-          >
-            Loops
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("function")}
-          >
-            Functions
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("datatype")}
-          >
-            Datentypen
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("objects")}
-          >
-            Objects Basics
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("objectsAdv")}
-          >
-            Objects Advanced
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
-            onClick={() => setTheme("hofunction")}
-          >
-            Heigher order Functions
-          </li>
-          <li
-            className="px-3 py-2 border rounded-lg hover:bg-red-800"
->>>>>>> higherOrderFunctions
             onClick={() => setTheme("objectsAdv")}
           >
             JSON
@@ -209,12 +151,7 @@ export const PB = () => {
         {theme === "datatype" && <Datentypen />}
         {theme === "objects" && <Objects />}
         {theme === "objectsAdv" && <ObjectsAdv />}
-<<<<<<< HEAD
         {theme === "classes" && <Classes />}
-=======
-        {theme === "hofunction" && <HigherOrderFunctions />}
-        {theme === "vite" && <Vite />}
->>>>>>> higherOrderFunctions
         {theme === "jsexercises" && <JSExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
       </section>
