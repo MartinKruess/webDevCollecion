@@ -41,9 +41,8 @@ export const Landingpage = () => {
           </li>
           <li className='w-1/2'>React</li>
           <li className='w-1/2 text-green-600'>
-            70%
+            75%
             <ul className='w-full'>
-              <li>Nested Routing 5%</li>
               <li>privatRoute 5%</li>
               <li>useReducer 10%</li>
               <li>useRef (als letztes) 5%</li>

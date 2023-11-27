@@ -90,7 +90,7 @@ export const Grid = () => {
           Shorthand:
           <br />
           <span className={highlights.code}>
-            grid-area: col-start/row-start / col-end/row-end
+            grid-area: row-start/col-start / row-end/col-end
           </span>
           <br />
           .elem2 &#123;
