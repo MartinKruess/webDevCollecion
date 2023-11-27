@@ -8,6 +8,7 @@ import { Hooks } from "../react/hooks";
 import { Router } from "../react/router";
 import { RouterV6 } from "../react/routerV6";
 import { Context } from "../react/context";
+import { RouterBonus } from "../react/routerBonus";
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -64,16 +65,22 @@ export const React = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("routerBonus")}
+          >
+            React Router Additionals
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("context")}
           >
             Global Context
           </li>
-          <li
+          {/* <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("redux")}
           >
             Redux
-          </li>
+          </li> */}
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
