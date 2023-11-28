@@ -8,6 +8,7 @@ import { PB } from "./comps/pages/javascript";
 import { Deployment } from "./comps/pages/deployment";
 import { DOM } from "./comps/pages/dom";
 import { React } from "./comps/pages/react";
+import { Node } from "./comps/pages/node";
 
 export const highlights = {
   errorCode: "text-red-400",
@@ -29,6 +30,7 @@ function App() {
           <Route exact path='/programming-basic' element={<PB />} />
           <Route exact path='/dom' element={<DOM />} />
           <Route exact path='/react' element={<React />} />
+          <Route exact path='/backend' element={<Node />} />
           <Route exact path='/deployment' element={<Deployment />} />
         </Routes>
       </main>

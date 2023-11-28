@@ -50,6 +50,12 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
+          <li>Allgemeine Info 5%</li>
+          <li>Server Aufbau 10%</li>
+          <li>API-Basics Aufbau 5%</li>
+          <li>Bcrypt 10%</li>
+          <li>JWT 10%</li>
+          <li>API-Adv. Middleware 10%</li>
           <li className='w-1/2 text-red-900'>0%</li>
           <li className='w-1/2'>Database</li>
           <li className='w-1/2 text-red-900'>0%</li>
