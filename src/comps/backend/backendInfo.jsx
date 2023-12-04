@@ -39,7 +39,7 @@ export const BackendInfo = () => {
         zur Verfügung stellen kann.
       </p>
       <p>
-        Mitleriwele gibt es immer mehr Frontend-frameworks die bereits ein
+        Mittlerweile gibt es immer mehr Frontend-Frameworks die bereits ein
         rudimentäres Backend anbieten. Ein dafür bekanntes Framework ist das
         react-Framework NextJS, aber auch React/Vite selbst hat oder wird dieses
         implementieren. Allerdings sind diese Techniken, für die meisten
@@ -49,9 +49,13 @@ export const BackendInfo = () => {
         oder Express. Allerdings benötigt man weitere Erweiterungen um
         Komplexere Backend aufzubauen.
       </p>
+      <pre className='text-sm'>
+        <code></code>
+      </pre>
       <p>
         In NextJS ist die Ordnerstruktur vorgebene, das bedeute, dass das
-        Routing sich an der Ordnerstruktur orientiert und nicht
+        Routing sich an der Ordnerstruktur orientiert und es keinen extra Router
+        gibt.
       </p>
       <h4 className='font-extrabold text-lg'>
         Ordnerstruktur: NextJS Frontend
@@ -106,9 +110,6 @@ export const BackendInfo = () => {
             <br />- server.js
           </span>
         </code>
-      </pre>
-      <pre className='text-sm'>
-        <code></code>
       </pre>
       <h3 className='font-extrabold text-xl'>Warum lernen wir Node?</h3>
       <p>
