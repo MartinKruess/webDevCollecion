@@ -10,6 +10,9 @@ import { RouterV6 } from "../react/routerV6";
 import { Context } from "../react/context";
 import { RouterBonus } from "../react/routerBonus";
 import { BackendInfo } from "../backend/backendInfo";
+import { Express } from "../backend/express";
+import { NodeBasics } from "../backend/nodeBasics";
+import { API } from "../backend/api";
 
 export const Node = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -36,16 +39,23 @@ export const Node = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("api")}
+          >
+            API
+          </li>
+          {/* <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("hooks")}
           >
             GraphQL
-          </li>
+          </li> */}
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <BackendInfo />}
-        {theme === "reactBasics" && <ReactIntro />}
-        {theme === "jsxAdv" && <JSXAdvanced />}
+        {theme === "node" && <NodeBasics />}
+        {theme === "express" && <Express />}
+        {theme === "api" && <API />}
       </section>
     </>
   );
