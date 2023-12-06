@@ -13,6 +13,7 @@ import { BackendInfo } from "../backend/backendInfo";
 import { Express } from "../backend/express";
 import { NodeBasics } from "../backend/nodeBasics";
 import { API } from "../backend/api";
+import { Security } from "../backend/security";
 
 export const Node = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -43,6 +44,12 @@ export const Node = () => {
           >
             API
           </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("security")}
+          >
+            Security
+          </li>
           {/* <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("hooks")}
@@ -56,6 +63,7 @@ export const Node = () => {
         {theme === "node" && <NodeBasics />}
         {theme === "express" && <Express />}
         {theme === "api" && <API />}
+        {theme === "security" && <Security />}
       </section>
     </>
   );
