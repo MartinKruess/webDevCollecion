@@ -76,7 +76,41 @@ export const API = () => {
         - Integration ist ebenfalls ein wichtiges Thema um verschiedene
         Dateiformate aneinander anzupassen.
       </p>
-      <h3 className='font-extrabold text-lg'>Grundaufbau einer Middelware</h3>
+      <h3 className='font-extrabold text-lg'>Wie arbeitet Middelware?</h3>
+      <div className='flex gap-5'>
+        <div className='w-1/2 text-sm'>
+          <pre>
+            <code>
+              export const authEmployee = (req, res, next) =&gt; &#123;
+              <br />
+              &#9;const user = users.find(user =&gt; &#123;
+              <br />
+              &#9;&#9;user.username === req.body.user.username &&
+              <br />
+              &#9;&#9;user.password === req.body.user.password
+              <br />
+              &#9;&#125;)
+              <br /> &#9;next()
+              <br />
+              &#125;
+            </code>
+          </pre>
+          <pre className='my-3'>
+            <code>
+              app.use.(authEmployee)
+              <br />
+              app.get("employees", authEmployee (req, res) =&gt; &#123;
+              <br />
+              &#9;res.send("You are welcome, employee 'Jack'")
+              <br />
+              &#125;)
+            </code>
+          </pre>
+        </div>
+        <div className='w-1/2'>
+          <img src='./images/apiMiddelwareFetch.png' alt='' />
+        </div>
+      </div>
       <h2 className='font-extrabold text-xl'>
         Step by Step: Aufbau einer API ink. Fake User Validierung (ohne DB)
       </h2>
