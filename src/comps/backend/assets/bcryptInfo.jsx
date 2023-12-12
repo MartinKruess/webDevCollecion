@@ -1,4 +1,4 @@
-export const Bcrypt = () => {
+export const BcryptInfo = () => {
   return (
     <>
       <h3 className='font-extrabold text-xl'>Was ist 'bcrypt'?</h3>
