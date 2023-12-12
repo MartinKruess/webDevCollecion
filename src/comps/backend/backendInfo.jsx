@@ -38,8 +38,30 @@ export const BackendInfo = () => {
         das Frontend bestimmte Daten oder Funktionen nur mit Hilfe eines Servers
         zur Verfügung stellen kann.
       </p>
+      <div className='flex'>
+        <div className='w-1/3 h-88'>
+          <img
+            src='./images/frontBackStructure.PNG'
+            alt=''
+            className='h-full'
+          />
+        </div>
+        <div className='w-2/3'>
+          <p>
+            Eine gängige Praxis um ein unabhängiges Backend aufzubauen ist die
+            Verwendung eines gesonderten Repositorys. Anders als bei Frameworks
+            ist das Backend, damit auch von mehreren Applications verwendbar.
+          </p>
+          <p>
+            Oft werden Front- und Backend zusammen in einem Ordner/ in einer
+            Organisation erstellt um die Zusammenarbeit und Zugehörigkeit zu
+            demonstrieren. Hierbei ist jedem selbst überlassen ob man Front- und
+            backend in einem VS-Code öffnet oder VS-Code mehrfach öffnet.
+          </p>
+        </div>
+      </div>
       <p>
-        Mitleriwele gibt es immer mehr Frontend-frameworks die bereits ein
+        Mittlerweile gibt es immer mehr Frontend-Frameworks die bereits ein
         rudimentäres Backend anbieten. Ein dafür bekanntes Framework ist das
         react-Framework NextJS, aber auch React/Vite selbst hat oder wird dieses
         implementieren. Allerdings sind diese Techniken, für die meisten
@@ -51,7 +73,8 @@ export const BackendInfo = () => {
       </p>
       <p>
         In NextJS ist die Ordnerstruktur vorgebene, das bedeute, dass das
-        Routing sich an der Ordnerstruktur orientiert und nicht
+        Routing sich an der Ordnerstruktur orientiert und es keinen extra Router
+        gibt.
       </p>
       <h4 className='font-extrabold text-lg'>
         Ordnerstruktur: NextJS Frontend
@@ -106,9 +129,6 @@ export const BackendInfo = () => {
             <br />- server.js
           </span>
         </code>
-      </pre>
-      <pre className='text-sm'>
-        <code></code>
       </pre>
       <h3 className='font-extrabold text-xl'>Warum lernen wir Node?</h3>
       <p>
