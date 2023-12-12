@@ -1,4 +1,3 @@
-import { highlights } from "../../App";
 import { BcryptInfo } from "./assets/bcryptInfo";
 import { Cors } from "./assets/cors";
 import { SecurityInfo } from "./assets/securityInfo";
