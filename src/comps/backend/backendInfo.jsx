@@ -38,7 +38,6 @@ export const BackendInfo = () => {
         das Frontend bestimmte Daten oder Funktionen nur mit Hilfe eines Servers
         zur Verfügung stellen kann.
       </p>
-
       <div className='flex'>
         <div className='w-1/3 h-88'>
           <img
