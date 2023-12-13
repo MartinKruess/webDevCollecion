@@ -2,10 +2,7 @@ import { useContext, useEffect } from "react";
 import { DatabaseInfo } from "../database/databaseInfo";
 import { InstallMongo } from "../database/installMongo";
 import { ThemeContext } from "../global/loadTheme";
-<<<<<<< HEAD
 import { MongoSchemas } from "../database/mongoSchemas";
-=======
->>>>>>> d76bfbe032cff71d4ceaf74f9cc2b8cdd2b3a038
 
 export const Database = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -53,10 +50,7 @@ export const Database = () => {
       <section className='w-10/12 m-auto'>
         {!theme && <DatabaseInfo />}
         {theme === "installMongo" && <InstallMongo />}
-<<<<<<< HEAD
         {theme === "schemas" && <MongoSchemas />}
-=======
->>>>>>> d76bfbe032cff71d4ceaf74f9cc2b8cdd2b3a038
       </section>
     </>
   );
