@@ -51,6 +51,10 @@ export const MongoSchemas = () => {
           &#125;);
         </code>
       </pre>
+      <p>
+        Hier ist ein komplettes Beispiel wie ein Schema in Mongoose definiert
+        wird.
+      </p>
       <pre className='text-sm'>
         <code>
           import mongoose from "mongoose";
