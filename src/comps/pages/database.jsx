@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { DatabaseInfo } from "../database/databaseInfo";
 import { InstallMongo } from "../database/installMongo";
 import { ThemeContext } from "../global/loadTheme";
+import { MongoSchemas } from "../database/mongoSchemas";
 
 export const Database = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -24,25 +25,32 @@ export const Database = () => {
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("express")}
           >
-            Express
+            Mongo Compass
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("api")}
           >
-            API
+            MongoDB
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("security")}
+            onClick={() => setTheme("mongoose")}
           >
-            Security
+            Mongoose
           </li> */}
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("schemas")}
+          >
+            Schemas
+          </li>
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <DatabaseInfo />}
         {theme === "installMongo" && <InstallMongo />}
+        {theme === "schemas" && <MongoSchemas />}
       </section>
     </>
   );

@@ -1,14 +1,5 @@
 import { useContext, useEffect } from "react";
-import { ReactEinleitung } from "../react/reactEinleitung";
-import { ReactIntro } from "../react/reactIntro";
 import { ThemeContext } from "../global/loadTheme";
-import { JSXAdvanced } from "../react/jsxAdvanced";
-import { Components } from "../react/components";
-import { Hooks } from "../react/hooks";
-import { Router } from "../react/router";
-import { RouterV6 } from "../react/routerV6";
-import { Context } from "../react/context";
-import { RouterBonus } from "../react/routerBonus";
 import { BackendInfo } from "../backend/backendInfo";
 import { Express } from "../backend/express";
 import { NodeBasics } from "../backend/nodeBasics";
