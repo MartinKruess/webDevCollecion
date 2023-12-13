@@ -214,9 +214,6 @@ export const API = () => {
           <img src='./images/apiMiddelwareFetch.png' alt='' />
         </div>
       </div>
-      <h2 className='font-extrabold text-xl'>
-        Step by Step: Aufbau einer API ink. Fake User Validierung (ohne DB)
-      </h2>
     </article>
   );
 };
