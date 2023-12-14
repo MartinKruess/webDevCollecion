@@ -28,8 +28,12 @@ export const Netlify = () => {
         />
       </div>
       <div className='flex my-5'>
-        <div className='heightContainer small'>
-          <img className='imgHeight' src='./images/netlifyImport.png' alt='' />
+        <div className='heightContainer small overflow-hidden'>
+          <img
+            className='w-full scale-125'
+            src='./images/netlifyImport.png'
+            alt=''
+          />
         </div>
         <p className='w-2/6 mx-10 text-center'>
           Das Importieren ist eine Möglichkeit direkt von Github oder anderen
@@ -38,8 +42,12 @@ export const Netlify = () => {
           Repos mit Netlify, aktualisiert sich die Veröffentlichte Webseite
           automatisch nach jedem Push.
         </p>
-        <div className='heightContainer small'>
-          <img className='imgHeight' src='./images/netlifyRepo.png' alt='' />
+        <div className='heightContainer small overflow-hidden'>
+          <img
+            className='w-full scale-125'
+            src='./images/netlifyRepo.png'
+            alt=''
+          />
         </div>
       </div>
       <p className='flex justify-around py-5'>

@@ -3,6 +3,7 @@ import { DatabaseInfo } from "../database/databaseInfo";
 import { InstallMongo } from "../database/installMongo";
 import { ThemeContext } from "../global/loadTheme";
 import { MongoSchemas } from "../database/mongoSchemas";
+import { MongoDB } from "../database/mongoDB";
 
 export const Database = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -32,13 +33,13 @@ export const Database = () => {
             onClick={() => setTheme("api")}
           >
             MongoDB
-          </li>
+          </li>*/}
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("mongoose")}
+            onClick={() => setTheme("atlas")}
           >
-            Mongoose
-          </li> */}
+            MongoDB Atlas (Mongoose)
+          </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("schemas")}
@@ -51,6 +52,7 @@ export const Database = () => {
         {!theme && <DatabaseInfo />}
         {theme === "installMongo" && <InstallMongo />}
         {theme === "schemas" && <MongoSchemas />}
+        {theme === "atlas" && <MongoDB />}
       </section>
     </>
   );

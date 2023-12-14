@@ -51,6 +51,11 @@ export const MongoSchemas = () => {
           &#125;);
         </code>
       </pre>
+      <p>
+        Hier ist ein komplettes Beispiel wie ein Schema in Mongoose definiert
+        wird. In diesem Schema wird ein wiederverwendbares Pattern definiert und
+        verwendet (required String).
+      </p>
       <pre className='text-sm'>
         <code>
           import mongoose from "mongoose";
