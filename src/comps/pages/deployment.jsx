@@ -5,7 +5,6 @@ import { GHPages } from "../deployment/ghPages";
 import { Netlify } from "../deployment/netlify";
 import { Vercel } from "../deployment/vercel";
 import { Cyclic } from "../deployment/cyclic";
-import { Firebase } from "../deployment/firebase";
 import { TippsTricks } from "../deployment/tipps&tricks";
 
 export const Deployment = () => {
@@ -41,12 +40,6 @@ export const Deployment = () => {
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("firebase")}
-          >
-            Firebase
-          </li>
-          <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("tipps&tricks")}
           >
             Tipps&Tricks
@@ -59,7 +52,6 @@ export const Deployment = () => {
         {theme === "netlify" && <Netlify />}
         {theme === "vercel" && <Vercel />}
         {theme === "cyclic" && <Cyclic />}
-        {theme === "firebase" && <Firebase />}
         {theme === "tipps&tricks" && <TippsTricks />}
       </section>
     </>

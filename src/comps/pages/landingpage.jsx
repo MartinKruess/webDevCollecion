@@ -61,24 +61,23 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>Database</li>
-          <li className='w-1/2 text-red-600'>
-            15%
+          <li className='w-1/2 text-yellow-700'>
+            25%
             <li>Mongo 15%</li>
             <li>Compass 10%</li>
             <li>MongoDB 5%</li>
-            <li>Mongoose 5%</li>
-            <li>Schemas 10%</li>
+            <li>Mongoose 10%</li>
             <li>Models 10%</li>
             <li>SQL 25%</li>
           </li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-400'>
-            50%
+          <li className='w-1/2 text-yellow-300'>
+            60%
             <ul className='w-full'>
               <li>Vercel 5%</li>
               <li>Cyclic 5%</li>
               <li>Render 5%</li>
-              <li>Hetzner 35%</li>
+              <li>Hetzner 25%</li>
             </ul>
           </li>
         </ul>
