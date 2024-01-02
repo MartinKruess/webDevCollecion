@@ -39,6 +39,7 @@ export const Bcrypt = () => {
           <br />
           // Hash the password
           <br />
+
           const hashedPassword = bcrypt.hash
           <span className={highlights.code}>Sync</span>(password, salt);
           <br />
