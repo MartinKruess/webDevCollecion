@@ -4,8 +4,22 @@ export const NodeExpress = () => {
   return (
     <>
       <h2 className='font-extrabold text-xl py-2 my-2'>
-        Pure Node und Node Express
+        Pure Node vs Node Express
       </h2>
+      <p>
+        Express erleichtert uns den Umgang mit NodeJS.
+        <br />
+        <br />
+        In pure NodeJS muss das http Modul importiert werden ohne es6 Module
+        wird require dafür verwendet
+        <br />
+        const http = require('http');
+        <br />
+        <br />
+        Mit es6 Modulen wird import verwendet
+        <br />
+        import express from 'express';
+      </p>
       <pre className='text-sm flex justify-between'>
         <code>
           <h3 className='font-extrabold text-lg py-2 my-2'>Pure NodeJS</h3>
@@ -43,7 +57,8 @@ export const NodeExpress = () => {
         </code>
         <code>
           <h3 className='font-extrabold text-lg py-2 my-2'>NodeJS + Express</h3>
-          const express = require('express');
+          import express from 'express';
+          <br />
           <br />
           const app = express();
           <br />
