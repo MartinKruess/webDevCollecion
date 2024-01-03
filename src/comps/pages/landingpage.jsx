@@ -31,7 +31,7 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>DOM</li>
-          <li className='w-1/2 text-yellow-300'>
+          <li className='w-1/2 text-green-300'>
             60%
             <ul className='w-full'>
               <li>set/get 10%</li>
@@ -50,28 +50,24 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className='w-1/2'>Node Express</li>
-          <li className='w-1/2 text-yellow-600'>
-            40%
+          <li className='w-1/2 text-yellow-300'>
+            55%
             <ul className='w-full'>
-              <li>API-Adv. 5%</li>
-              <li>Bcrypt 10%</li>
               <li>JWT 10%</li>
               <li>Data-Management 10%</li>
               <li>Other Stuff 20%</li>
             </ul>
           </li>
           <li className='w-1/2'>Database</li>
-          <li className='w-1/2 text-yellow-700'>
-            25%
-            <li>Mongo 15%</li>
+          <li className='w-1/2 text-yellow-300'>
+            55%
+            <li>Mongo 5%</li>
             <li>Compass 10%</li>
             <li>MongoDB 5%</li>
-            <li>Mongoose 10%</li>
-            <li>Models 10%</li>
             <li>SQL 25%</li>
           </li>
           <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-300'>
+          <li className='w-1/2 text-green-300'>
             60%
             <ul className='w-full'>
               <li>Vercel 5%</li>

@@ -1,6 +1,6 @@
 import { NestedRouteCode } from "./assets/nestedRouteCode";
 import { NestedRouteText } from "./assets/nestedrouteText";
-import { PrivateRouteText } from "./assets/privaterouteText";
+import { PrivateRoute } from "./assets/privateRoute";
 
 export const RouterBonus = () => {
   return (
@@ -8,7 +8,7 @@ export const RouterBonus = () => {
       <h2 className='font-extrabold text-2xl'>Nesting und Privat Routes</h2>
       <NestedRouteText />
       <NestedRouteCode />
-      <PrivateRouteText />
+      <PrivateRoute />
     </article>
   );
 };
