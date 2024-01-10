@@ -1,3 +1,5 @@
+import { highlights } from "../../App";
+
 export const Bcrypt = () => {
   return (
     <article>
@@ -14,6 +16,13 @@ export const Bcrypt = () => {
         gewährleisten, aber auch die Leistung nicht zu beeinträchtigen. Eine
         gute Anzahl an Runden ist 12-14.
       </p>
+      <p>
+        Einen hash mit bcrypt zu erzeugen dauert seine Zeit, daher ist bcrypt
+        eigentlich eine Art asynchroner Code. Allerdings gibt es auch eine
+        Schreibweise um bcrypt synchron zu nutzen. Dazu wird einfach das "Sync"
+        an den Funktionsnamen angehängt. Das ist aber nicht zu empfehlen, da es
+        die Performance stark beeinträchtigt.
+      </p>
       <pre className='text-sm'>
         <code>
           const passwordFromFrontend = 'password123';
@@ -24,17 +33,21 @@ export const Bcrypt = () => {
           <br />
           // Generate salt
           <br />
-          const salt = bcrypt.genSaltSync(saltRounds);
+          const salt = bcrypt.genSalt
+          <span className={highlights.code}>Sync</span>(saltRounds);
           <br />
           <br />
           // Hash the password
           <br />
-          const hashedPassword = bcrypt.hashSync(password, salt);
+          const hashedPassword = bcrypt.hash
+          <span className={highlights.code}>Sync</span>(password, salt);
           <br />
           <br />
           // Compare passwords
           <br />
-          const isMatch = bcrypt.compareSync(password, hashedPassword);
+          const isMatch = bcrypt.compare
+          <span className={highlights.code}>Sync</span>(password,
+          hashedPassword);
         </code>
       </pre>
       <h3 className='font-extrabold text-lg'>Bcrypt Salt</h3>
