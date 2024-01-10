@@ -8,6 +8,7 @@ import { Security } from "../backend/security";
 import { Encrypt } from "../backend/encrypt";
 import { Bcrypt } from "../backend/bcrypt";
 import { Middleware } from "../backend/middleware";
+import { Validation } from "../backend/validation";
 
 export const Node = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -43,6 +44,12 @@ export const Node = () => {
             onClick={() => setTheme("middleware")}
           >
             Middleware
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("validation")}
+          >
+            Validation
           </li>
           <li
             className='px-3 py-2 border rounded-lg hover:bg-red-800'
@@ -91,6 +98,7 @@ export const Node = () => {
         {theme === "security" && <Security />}
         {theme === "encrypt" && <Encrypt />}
         {theme === "bcrypt" && <Bcrypt />}
+        {theme === "validation" && <Validation />}
         {/* {theme === "jwt" && <JWT />} */}
       </section>
     </>

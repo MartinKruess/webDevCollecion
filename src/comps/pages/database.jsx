@@ -4,6 +4,7 @@ import { InstallMongo } from "../database/installMongo";
 import { ThemeContext } from "../global/loadTheme";
 import { MongoSchemas } from "../database/mongoSchemas";
 import { MongoDB } from "../database/mongoDB";
+import { MongoRefs } from "../database/assets/mongorefs";
 
 export const Database = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -46,12 +47,19 @@ export const Database = () => {
           >
             Schemas
           </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("references")}
+          >
+            Schema References
+          </li>
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
         {!theme && <DatabaseInfo />}
         {theme === "installMongo" && <InstallMongo />}
         {theme === "schemas" && <MongoSchemas />}
+        {theme === "references" && <MongoRefs />}
         {theme === "atlas" && <MongoDB />}
       </section>
     </>

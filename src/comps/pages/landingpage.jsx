@@ -14,24 +14,24 @@ export const Landingpage = () => {
           Die Seite befindet sich noch im Aufbau, daher erhaltet ihr hier eine
           kleine Übersicht über den aktuellen Stand der Webseite.
         </p>
-        <ul className='flex flex-wrap w-80 text-sm'>
-          <li className='w-1/2'>CSS</li>
-          <li className='w-1/2 text-green-600'>
+        <ul className='flex flex-wrap w-1/2 text-sm m-auto px-10 gap-5'>
+          <li className='w-1/3'>CSS</li>
+          <li className='w-1/3 text-green-600'>
             75%
             <ul className='w-full'>
               <li>Flex 20%</li>
               <li>Animation 5%</li>
             </ul>
           </li>
-          <li className='w-1/2'>Javascript</li>
-          <li className='w-1/2 text-green-400'>
+          <li className='w-1/3'>Javascript</li>
+          <li className='w-1/3 text-green-400'>
             92%
             <ul className='w-full'>
               <li>Callback</li>
             </ul>
           </li>
-          <li className='w-1/2'>DOM</li>
-          <li className='w-1/2 text-yellow-300'>
+          <li className='w-1/3'>DOM</li>
+          <li className='w-1/3 text-green-300'>
             60%
             <ul className='w-full'>
               <li>set/get 10%</li>
@@ -39,47 +39,51 @@ export const Landingpage = () => {
               <li>Import/Export/Modules 10%</li>
             </ul>
           </li>
-          <li className='w-1/2'>React</li>
-          <li className='w-1/2 text-green-600'>
-            75%
+          <li className='w-1/3'>React</li>
+          <li className='w-1/3 text-green-600'>
+            80%
             <ul className='w-full'>
-              <li>privatRoute 5%</li>
               <li>useReducer 10%</li>
               <li>useRef (als letztes) 5%</li>
               <li>Formular 5%</li>
             </ul>
           </li>
-          <li className='w-1/2'>Node Express</li>
-          <li className='w-1/2 text-yellow-600'>
-            40%
+          <li className='w-1/3'>Node Express</li>
+          <li className='w-1/3 text-green-600'>
+            80%
             <ul className='w-full'>
-              <li>API-Adv. 5%</li>
-              <li>Bcrypt 10%</li>
               <li>JWT 10%</li>
-              <li>Data-Management 10%</li>
-              <li>Other Stuff 20%</li>
+              <li>Cookies 10%</li>
             </ul>
           </li>
-          <li className='w-1/2'>Database</li>
-          <li className='w-1/2 text-yellow-700'>
-            25%
-            <li>Mongo 15%</li>
+          <li className='w-1/3'>Database</li>
+          <li className='w-1/3 text-yellow-300'>
+            55%
             <li>Compass 10%</li>
-            <li>MongoDB 5%</li>
-            <li>Mongoose 10%</li>
-            <li>Models 10%</li>
+            <li>MongoDB Commands 10%</li>
             <li>SQL 25%</li>
           </li>
-          <li className='w-1/2'>Deployment</li>
-          <li className='w-1/2 text-yellow-300'>
-            60%
+          <li className='w-1/3'>Deployment</li>
+          <li className='w-1/3 text-green-300'>
+            65%
             <ul className='w-full'>
-              <li>Vercel 5%</li>
-              <li>Cyclic 5%</li>
-              <li>Render 5%</li>
+              <li>Vercel, Render, Cyclic 10%</li>
               <li>Hetzner 25%</li>
             </ul>
           </li>
+          <li className='w-1/3'>Sonderthemen</li>
+          <li className='w-1/3 text-red-900'>
+            0%
+            <ul className='w-full'>
+              <li>oAuth/Passport 20%</li>
+              <li>BigO 10%</li>
+              <li>Paymentsystem 15%</li>
+              <li>Socket IO 25%</li>
+              <li>Cloudinary 15%</li>
+              <li>FileSystem 10%</li>
+            </ul>
+          </li>
+          <li>Gesamt: {(75 + 92 + 60 + 80 + 80 + 55 + 65 + 0) / 8}%</li>
         </ul>
       </article>
     </section>
