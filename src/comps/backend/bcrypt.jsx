@@ -28,7 +28,9 @@ export const Bcrypt = () => {
           const passwordFromFrontend = 'password123';
           <br />
           <br />
-          // Wie viele Runden sollen durchlaufen werden const saltRounds = 12;
+          // Wie viele Runden sollen durchlaufen werden
+          <br />
+          const saltRounds = 12;
           <br />
           <br />
           // Generate salt
@@ -93,16 +95,32 @@ export const Bcrypt = () => {
       <h3 className='font-extrabold text-lg'>Bcrypt Besonderheiten</h3>
       <div className='grid columns-12'>
         <p classname='col-start-1 col-end-2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          consequatur nisi iste, facere autem laboriosam pariatur nobis vero
-          deserunt nostrum voluptatum! Aliquam provident eum impedit hic libero
-          dolor sit repellendus!
+          Bcrypt ist absichtlich so konzipiert, dass es eine langsame
+          Hash-Funktion ist. Dies bedeutet, dass es mehr Rechenleistung
+          erfordert, um einen Hash zu berechnen. Diese Verzögerung, auch als
+          "Cost Factor" bezeichnet, macht es schwieriger für Angreifer,
+          brute-force-Angriffe durchzuführen, bei denen sie versuchen, alle
+          möglichen Passwortkombinationen auszuprobieren.
         </p>
         <p classname='col-start-2 col-end-3'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-          accusantium quod voluptate quis asperiores, nisi libero fugit quo
-          itaque quaerat dignissimos temporibus repellendus praesentium culpa
-          eos aut sint adipisci rem?
+          Salting: Bcrypt beinhaltet automatisch die Verwendung von sogenannten
+          Salts. Ein Salt ist eine zufällige Zeichenkette, die zu jedem Passwort
+          hinzugefügt wird, bevor es gehasht wird. Dadurch wird verhindert, dass
+          Angreifer mit vorberechneten Tabellen (Rainbow Tables) arbeiten
+          können, um Passwort-Hashes zu brechen.
+        </p>
+        <p classname='col-start-2 col-end-3'>
+          Adaptiver Algorithmus: Bcrypt ist adaptiv, was bedeutet, dass der
+          Algorithmus an die steigende Rechenleistung von Computern angepasst
+          werden kann. Dies ermöglicht es, die Sicherheit des Hash-Verfahrens im
+          Laufe der Zeit aufrechtzuerhalten, ohne die gespeicherten Passwörter
+          zu ändern.
+        </p>
+        <p classname='col-start-2 col-end-3'>
+          Widerstandsfähigkeit gegenüber Hardware-Beschleunigung: Bcrypt wurde
+          entwickelt, um den Einsatz von Hardware wie GPUs (Graphics Processing
+          Units) und ASICs (Application-Specific Integrated Circuits) zur
+          Beschleunigung von Angriffen zu erschweren.
         </p>
       </div>
       <h3 className='font-extrabold text-lg'>Bcrypt Register</h3>
