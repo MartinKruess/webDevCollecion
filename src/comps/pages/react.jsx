@@ -19,64 +19,64 @@ export const React = () => {
 
   return (
     <>
-      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-11'>
-        <ul className='w-11/12 text-2xl flex flex-wrap gap-5 p-2 m-auto'>
+      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-24 sm:top-8'>
+        <ul className='w-full text-xs sm:text-sm lg:text-base lg:leading-5 flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("reactBasics")}
           >
             JSX
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("jsxAdv")}
           >
             JSX Advanced
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("components")}
           >
             Components & Props
           </li>
           {/* <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("rEvents")}
           >
             Events
           </li> */}
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("hooks")}
           >
             Hooks & Refs
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("routerV5")}
           >
             React Router v.5
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("routerV6")}
           >
             React Router v.6
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("routerBonus")}
           >
             React Router Additionals
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("context")}
           >
             Global Context
           </li>
           {/* <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("redux")}
           >
             Redux

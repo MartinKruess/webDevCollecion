@@ -31,7 +31,7 @@
 }
 
 nav ul li{
-  min-width: 3.5rem;
+  min-width: 3.2rem;
   flex-grow: 1;
   text-align: center;
 }
@@ -180,4 +180,38 @@ i{
 
 i:hover{
   color:#a7051d;
+}
+
+.bite{
+  background-color: #09192a;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1rem 0 1rem 1rem;
+}
+
+.biteZero{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.biteOne{
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+.biteTwo{
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.biteThree{
+  position: absolute;
+  top: -1rem;
+  right: 1.25rem;
+}
+.biteFour{
+  position: absolute;
+  top: 1.25rem;
+  right: -1rem;
 }

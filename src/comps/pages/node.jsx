@@ -9,6 +9,7 @@ import { Encrypt } from "../backend/encrypt";
 import { Bcrypt } from "../backend/bcrypt";
 import { Middleware } from "../backend/middleware";
 import { Validation } from "../backend/validation";
+import { Cookies } from "../backend/cookies";
 
 export const Node = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -19,74 +20,75 @@ export const Node = () => {
 
   return (
     <>
-      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-11'>
-        <ul className='w-11/12 text-2xl flex flex-wrap gap-5 p-2 m-auto'>
+      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-24 sm:top-8'>
+        <ul className='w-full text-xs sm:text-sm lg:text-base lg:leading-5 flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("node")}
           >
             Node
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("express")}
           >
             Express
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("api")}
           >
             API
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("middleware")}
           >
             Middleware
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("validation")}
           >
             Validation
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("security")}
           >
             Security
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("encrypt")}
           >
             Encrypt
           </li>
           <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("bcrypt")}
           >
             Bcrypt
           </li>
+          <li
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("cookies")}
+          >
+            Cookies & Sessions
+          </li>
           {/* <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("jwt")}
           >
             JWT
           </li> */}
           {/* <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("oath")}
           >
             OAuth
           </li>
-          <li
-            className='px-3 py-2 border rounded-lg hover:bg-red-800'
-            onClick={() => setTheme("cookies")}
-          >
-            Cookies & Sessions
-          </li> */}
+           */}
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
@@ -99,6 +101,7 @@ export const Node = () => {
         {theme === "encrypt" && <Encrypt />}
         {theme === "bcrypt" && <Bcrypt />}
         {theme === "validation" && <Validation />}
+        {theme === "cookies" && <Cookies />}
         {/* {theme === "jwt" && <JWT />} */}
       </section>
     </>

@@ -10,6 +10,7 @@ import { DOM } from "./comps/pages/dom";
 import { React } from "./comps/pages/react";
 import { Node } from "./comps/pages/node";
 import { Database } from "./comps/pages/database";
+import { Fullstack } from "./comps/pages/fullstack";
 
 export const highlights = {
   errorCode: "text-red-400",
@@ -33,6 +34,7 @@ function App() {
           <Route exact path='/react' element={<React />} />
           <Route exact path='/backend' element={<Node />} />
           <Route exact path='/databases' element={<Database />} />
+          <Route exact path='/fullstack' element={<Fullstack />} />
           <Route exact path='/deployment' element={<Deployment />} />
         </Routes>
       </main>

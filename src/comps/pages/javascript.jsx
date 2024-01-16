@@ -29,110 +29,92 @@ export const PB = () => {
 
   return (
     <>
-      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-24 sm:top-11'>
-        <ul className='w-full text-sm sm:text-lg md:text-xl flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
+      <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-24 sm:top-8'>
+        <ul className='w-full text-xs sm:text-sm lg:text-base lg:leading-5 flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("node")}
           >
             Node
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("npm")}
           >
             NPM
           </li>
-          {/* <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
-            onClick={() => setTheme("vite")}
-          >
-            Vite
-          </li> */}
-          {/* <li
-            className="p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800"
-            onClick={() => setTheme("electron")}
-          >
-            Electron
-          </li> */}
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-green-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("objectsAdv")}
           >
             JSON
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("variables")}
           >
             Variables
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("datatype")}
           >
             Datentypen
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("ifelse")}
           >
             If/Else
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("array")}
           >
             Arrays
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("loop")}
           >
             Loops
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("function")}
           >
             Functions
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("objects")}
           >
             Objects
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("objectsAdv")}
           >
             Objects <span className='text-sm'>(Adv)</span>
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-blue-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme("classes")}
           >
             Classes
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("jsexercises")}
           >
             Übungen
           </li>
           <li
-            className='p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800'
+            className='p-1 sm:py-1 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("jsSelfTest")}
           >
             Selbst Test
           </li>
-          {/* <li
-            className="p-1 sm:p-2 border rounded-lg bg-red-950 hover:bg-red-800"
-            onClick={() => setTheme("projects")}
-          >
-            Projekt Ideen
-          </li> */}
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
