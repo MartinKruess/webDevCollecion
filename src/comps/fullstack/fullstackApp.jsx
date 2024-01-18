@@ -7,7 +7,7 @@ export const FullstackApp = () => {
 
   const clickHandler = (e) => {
     console.log(e);
-    if (count < 29 && e.button === 0) {
+    if (count < 31 && e.button === 0) {
       setCount(count + 1);
     } else if (count > 0 && e.button === 2) {
       setCount(count - 1);
@@ -77,6 +77,32 @@ export const FullstackApp = () => {
                 &#125;
                 <br />
                 <br />
+              </code>
+            )}
+          </pre>
+          <pre>
+            {count >= 29 && count < 31 && (
+              <code>
+                // console.log(req.headers) (POST)
+                <br />
+                &#123;
+                <br />
+                &#32;'content-length': '17',
+                <br />
+                &#32;'accept-encoding': 'gzip, deflate, br',
+                <br />
+                &#32; accept: '*/*',
+                <br />
+                &#32;'user-agent': 'Thunder Client
+                (https://www.thunderclient.com)',
+                <br />
+                &#32;'content-type': 'application/json',
+                <br />
+                &#32;host: 'localhost:5000',
+                <br />
+                &#32;connection: 'close'
+                <br />
+                &#125;
               </code>
             )}
           </pre>
@@ -330,6 +356,28 @@ export const FullstackApp = () => {
                 &#125;)
                 <br />
                 <br />
+              </code>
+            )}
+          </pre>
+          <pre>
+            {count >= 29 && count < 31 && (
+              <code>
+                // console.log(req.headers) (GET)
+                <br />
+                &#123;
+                <br />
+                &#32;'accept-encoding': 'gzip, deflate, br',
+                <br />
+                &#32; accept: '*/*',
+                <br />
+                &#32;'user-agent':'Thunder
+                Client(https://www.thunderclient.com)',
+                <br />
+                &#32;host: 'localhost:5000',
+                <br />
+                &#32;connection: 'close'
+                <br />
+                &#125;
               </code>
             )}
           </pre>
