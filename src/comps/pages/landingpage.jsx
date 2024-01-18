@@ -71,6 +71,16 @@ export const Landingpage = () => {
               <li>Hetzner 25%</li>
             </ul>
           </li>
+          <li className='w-1/3'>Fullstack</li>
+          <li className='w-1/3 text-red-900'>
+            0%
+            <ul className='w-full'>
+              <li>Einleitung 20%</li>
+              <li>Frontend/Backend 50%</li>
+              <li>Erklärungen 20%</li>
+              <li>Animation 10%</li>
+            </ul>
+          </li>
           <li className='w-1/3'>Sonderthemen</li>
           <li className='w-1/3 text-red-900'>
             0%
@@ -83,6 +93,7 @@ export const Landingpage = () => {
               <li>FileSystem 10%</li>
             </ul>
           </li>
+
           <li>Gesamt: {(75 + 92 + 60 + 80 + 80 + 55 + 65 + 0) / 8}%</li>
         </ul>
       </article>

@@ -12,6 +12,7 @@ import { StartDom } from "../dom/startDom";
 import { DomExercises } from "../dom/domExercises";
 import { Async } from "../dom/async";
 import { AsyncAdv } from "../dom/asyncAdvanced";
+import { FullstackApp } from "../fullstack/fullstackApp";
 
 export const Fullstack = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -28,68 +29,27 @@ export const Fullstack = () => {
             className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("vite")}
           >
-            Vite
+            Title 1
           </li>
           <li
             className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
             onClick={() => setTheme("electron")}
           >
-            Electron
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
-            onClick={() => setTheme("querry")}
-          >
-            Selectoren
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
-            onClick={() => setTheme("startDom")}
-          >
-            Text Erzeugen
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
-            onClick={() => setTheme("event")}
-          >
-            Events
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
-            onClick={() => setTheme("async")}
-          >
-            Async
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
-            onClick={() => setTheme("asyncadv")}
-          >
-            Asynchrones Arbeiten (Advanced)
+            Title 2
           </li>
           <li
             className='p-1 sm:py-1 border rounded-lg bg-red-950 hover:bg-red-800'
-            onClick={() => setTheme("domexercises")}
+            onClick={() => setTheme("fullexercises")}
           >
             Übungen
           </li>
-          {/* <li
-            className='p-1 sm:py-1 border rounded-lg bg-red-950 hover:bg-red-800'
-            onClick={() => setTheme("jsSelfTest")}
-          >
-            Selbst Test
-          </li> */}
         </ul>
       </nav>
-      <section className='w-10/12 m-auto'>
-        {!theme && <DOMText />}
+      <section className='w-11/12 m-auto fullstackSection'>
+        {!theme && <FullstackApp />}
         {theme === "vite" && <Vite />}
         {theme === "electron" && <Electron />}
-        {theme === "querry" && <Querries />}
-        {theme === "startDom" && <StartDom />}
-        {theme === "async" && <Async />}
-        {theme === "asyncadv" && <AsyncAdv />}
-        {theme === "jsexercises" && <JSExercises />}
-        {theme === "domexercises" && <DomExercises />}
+        {theme === "fullexercises" && <DomExercises />}
         {theme === "jsSelfTest" && <SelfTest />}
       </section>
     </>
