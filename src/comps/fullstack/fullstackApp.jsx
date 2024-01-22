@@ -68,7 +68,15 @@ export const FullstackApp = () => {
                 <br />
                 &#9;<span className='text-violet-400'>methode: "POST"</span>,
                 <br />
-                &#125;);
+                &#9;headers: &#123;
+                <br />
+                &#9;&#9;"Content-Type": "application/json"
+                <br />
+                &#9;&#125;,
+                <br />
+                &#9;body: JSON.stringify(user),
+                <br />
+                &#32;&#125;);
                 <br />
                 &#32;const data = await res.json();
                 <br />
@@ -137,7 +145,7 @@ export const FullstackApp = () => {
                 <br />
                 <br />
                 <span className='text-violet-400'>
-                  Methode: POST
+                  method: POST,
                   <br />
                   Die default Methode ist GET, daher muss diese nicht angeben
                   werden. Um Daten zu senden, muss die Methode auf POST geändert
@@ -321,7 +329,7 @@ export const FullstackApp = () => {
                 // Ausgelagert in dbConection.js
                 <br />
                 <code>
-                  mongoose.connect (mongodb+srv://
+                  mongoose.connect(mongodb+srv://
                   $&#123;process.env.DB_OWNER&#125;:$&#123;process.env.DB_PASSWORD&#125;@cluster0.zg8ms.mongodb.net/$&#123;DB_NAME&#125;
                   ?retryWrites=true&w=majority), &#123;
                   <br />
