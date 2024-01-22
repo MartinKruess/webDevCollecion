@@ -22,7 +22,7 @@ export const FullstackApp = () => {
         onMouseDown={(e) => clickHandler(e)}
         onContextMenu={(e) => e.preventDefault()}
       >
-        <div className='frontend'>
+        <div className='frontend text-sm'>
           <pre>
             // Allgemeiner GET Fetch
             <br />
@@ -115,7 +115,7 @@ export const FullstackApp = () => {
             )}
           </pre>
         </div>
-        <div className='feDescription left-60'>
+        <div className='feDescription left-60 text-sm'>
           {count === 11 && (
             <pre className='bg-green-800 text-blue-400 rounded-lg'>
               <code>
@@ -390,7 +390,7 @@ export const FullstackApp = () => {
             )}
           </pre>
         </div>
-        <div className='beDescription right-4'>
+        <div className='beDescription right-4 text-sm'>
           {count >= 2 && count < 3 && (
             <pre className='bg-red-800 text-yellow-400 rounded-lg'>
               <code>

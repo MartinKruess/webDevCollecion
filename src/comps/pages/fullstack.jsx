@@ -26,31 +26,23 @@ export const Fullstack = () => {
       <nav className='bg-slate-800 pb-3 px-8 pt-2 sticky z-10 top-24 sm:top-8'>
         <ul className='w-full text-xs sm:text-sm lg:text-base lg:leading-5 flex flex-wrap gap-2 sm:gap-3 pt-2 m-auto'>
           <li
-            className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
-            onClick={() => setTheme("vite")}
+            className='p-1 sm:py-1 border rounded-lg bg-green-900 hover:bg-red-800'
+            onClick={() => setTheme("full")}
           >
-            Title 1
-          </li>
-          <li
-            className='p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800'
-            onClick={() => setTheme("electron")}
-          >
-            Title 2
+            Preview (Fullstack)
           </li>
           <li
             className='p-1 sm:py-1 border rounded-lg bg-red-950 hover:bg-red-800'
             onClick={() => setTheme("fullexercises")}
           >
-            Übungen
+            Der letzte Schliff (Übungen)
           </li>
         </ul>
       </nav>
       <section className='w-11/12 m-auto fullstackSection'>
         {!theme && <FullstackApp />}
-        {theme === "vite" && <Vite />}
-        {theme === "electron" && <Electron />}
-        {theme === "fullexercises" && <DomExercises />}
-        {theme === "jsSelfTest" && <SelfTest />}
+        {theme === "full" && <FullstackApp />}
+        {theme === "fullexercises" && <p>Folgt in Kürze!</p>}
       </section>
     </>
   );
