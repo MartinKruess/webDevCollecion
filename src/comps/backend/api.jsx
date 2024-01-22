@@ -6,7 +6,7 @@ export const API = () => {
     <article>
       <h2 className='font-extrabold text-xl'>Was ist eine API?</h2>
       <p>
-        Eien API (Application Programming Interface) ist eine
+        Eine API (Application Programming Interface) ist eine
         programmübergreifende Schnittstelle um Daten mit standartisierten
         Datenstrukturen (Beispiel: xml, json) zwischen verschiedenen Systemen zu
         kommunizieren. Allerdings gibt es auch weitere Aufgaben, die eine API
@@ -167,6 +167,50 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
+      <p className='text-sm'>
+        Die API kann nun mit einem Client (z.B. React) verbunden werden. Dafür
+        wird die API in einem Terminal gestartet und der Client in einem
+        anderen. Die Kommunikation zwischen beiden erfolgt über den
+        <span className={highlights.code}> fetch</span> Befehl.
+      </p>
+      <h3 className='font-extrabold text-lg'>Warum nutzen wir REST-API?</h3>
+      <p className='text-sm'>
+        REST steht für Representational State Transfer und ist ein
+        Architekturstil für die Entwicklung von Netzwerkanwendungen. Eine
+        RESTful API (Application Programming Interface) basiert auf den
+        Prinzipien von REST und ermöglicht die Kommunikation zwischen
+        verschiedenen Systemen über das HTTP-Protokoll. Hier sind einige
+        grundlegende Prinzipien von RESTful APIs:
+        <br />
+        <br />
+        Alles in einer RESTful API wird als Ressource betrachtet, sei es ein
+        Dokument, ein Bild oder eine Dienstleistung. Ressourcen werden durch
+        eindeutige URIs (Uniform Resource Identifiers) identifiziert.
+        <br />
+        <br />
+        Ressourcen können in verschiedenen Darstellungen (Repräsentationen)
+        existieren, z. B. als XML, JSON oder HTML. Der Client kann die
+        bevorzugte Darstellung in den Anfragen und Antworten spezifizieren. In
+        den meisten Fällen wird JSON (JavaScript Object Notation) verwendet.
+        <br />
+        <br />
+        Jede Anfrage vom Client an den Server muss alle erforderlichen
+        Informationen enthalten, um die Anfrage zu verstehen und zu verarbeiten.
+        Der Server speichert keinen Zustand über den Client.
+        <br />
+        <br />
+        Clients interagieren mit der API durch die Manipulation von Ressourcen.
+        Operationen sind ressourcenorientiert und nicht aktionsorientiert.
+        <br />
+        <br />
+        Die Einhaltung dieser Prinzipien ermöglicht eine einfache und
+        skalierbare Architektur für verteilte Systeme. RESTful APIs sind weit
+        verbreitet, insbesondere im Web, und werden oft in Kombination mit dem
+        HTTP-Protokoll verwendet. Sie sind jedoch nicht auf HTTP beschränkt und
+        können auch mit anderen Protokollen wie SMTP (Simple Mail Transfer
+        Protocol) oder XMPP (Extensible Messaging and Presence Protocol)
+        verwendet werden.
+      </p>
       <h2 className='font-extrabold text-xl'>Was ist die Middleware?</h2>
       <p>
         Die Middelware ist eine Logik Function, die sich zwischen dem Client und
