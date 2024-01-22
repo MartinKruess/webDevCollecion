@@ -24,7 +24,7 @@ export const Navi = () => {
       <NavLink to='/react'>REACT</NavLink>
       <NavLink to='/backend'>NODE-EXPRESS</NavLink>
       <NavLink to='/databases'>DATABASE</NavLink>
-      <NavLink to='/fullstack'>FULLSTCK</NavLink>
+      <NavLink to='/fullstack'>FULLSTACK</NavLink>
       <NavLink to='/deployment'>DEPLOYMENT</NavLink>
     </nav>
   );

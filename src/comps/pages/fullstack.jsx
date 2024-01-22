@@ -13,6 +13,7 @@ import { DomExercises } from "../dom/domExercises";
 import { Async } from "../dom/async";
 import { AsyncAdv } from "../dom/asyncAdvanced";
 import { FullstackApp } from "../fullstack/fullstackApp";
+import { FullstackInfo } from "../fullstack/fullstackInfo";
 
 export const Fullstack = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -40,7 +41,7 @@ export const Fullstack = () => {
         </ul>
       </nav>
       <section className='w-11/12 m-auto fullstackSection'>
-        {!theme && <FullstackApp />}
+        {!theme && <FullstackInfo />}
         {theme === "full" && <FullstackApp />}
         {theme === "fullexercises" && <p>Folgt in Kürze!</p>}
       </section>

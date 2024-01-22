@@ -16,7 +16,6 @@ export const FullstackApp = () => {
 
   return (
     <article>
-      <h2 className='font-bold text-2xl'>Fullstack WebDev</h2>
       <section
         className='livePreview'
         onMouseDown={(e) => clickHandler(e)}
