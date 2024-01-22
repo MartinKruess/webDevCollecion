@@ -14,7 +14,7 @@ export const FullstackInfo = () => {
         In diesem Beispiel wird Schritt für Schritt mit kleinen Kommentaren
         gezeigt wie die Verbindung von Front- und Backend funktioniert.
       </p>
-      <h3 className='font-bold text-xl'>Bedienung</h3>
+      <h3 className='font-bold text-xl'>Aufbau und Bedienung</h3>
       <ul>
         <li>
           Diese Vorschau geht nicht detailliert auf tiefergehende Techniken wie
@@ -33,14 +33,16 @@ export const FullstackInfo = () => {
           In diesem Beispiel ist das Frontend links und das Bakcend rechts
         </li>
         <li>
-          <strong>Links Klick</strong>: Mit einem Linksklick auf den Container
-          wird der nächste Schritt ausgeführt
+          <strong className='text-green-500'>Links Klick</strong>: Mit einem
+          Linksklick auf den Container wird der nächste Schritt ausgeführt
         </li>
         <li>
-          <strong>Rechts Klick</strong>: Mit einem Rechtsklick auf den Container
-          wird zum vorherigen Schritt gewechselt
+          <strong className='text-red-500'>Rechts Klick</strong>: Mit einem
+          Rechtsklick auf den Container wird zum vorherigen Schritt gewechselt
         </li>
       </ul>
+      <br />
+      <br />
     </article>
   );
 };
