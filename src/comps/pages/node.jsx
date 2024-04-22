@@ -10,6 +10,7 @@ import { Bcrypt } from "../backend/bcrypt";
 import { Middleware } from "../backend/middleware";
 import { Validation } from "../backend/validation";
 import { Cookies } from "../backend/cookies";
+import { EmailVerification } from "../fullstack/emailVerification";
 
 export const Node = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -89,6 +90,12 @@ export const Node = () => {
             OAuth
           </li>
            */}
+          <li
+            className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("verifyMail")}
+          >
+            E-Mail Verfication
+          </li>
         </ul>
       </nav>
       <section className='w-10/12 m-auto'>
@@ -103,6 +110,7 @@ export const Node = () => {
         {theme === "validation" && <Validation />}
         {theme === "cookies" && <Cookies />}
         {/* {theme === "jwt" && <JWT />} */}
+        {theme === "verifyMail" && <EmailVerification />}
       </section>
     </>
   );

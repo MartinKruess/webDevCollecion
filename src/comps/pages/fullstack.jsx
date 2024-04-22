@@ -1,19 +1,8 @@
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../global/loadTheme";
-
-import { DOMText } from "../dom/domText";
-import { Querries } from "../dom/querys";
-
-import { Vite } from "../programmingBasic/vite";
-
-import { SelfTest } from "../programmingBasic/jsSelfText";
-import { Electron } from "../programmingBasic/electron";
-import { StartDom } from "../dom/startDom";
-import { DomExercises } from "../dom/domExercises";
-import { Async } from "../dom/async";
-import { AsyncAdv } from "../dom/asyncAdvanced";
 import { FullstackApp } from "../fullstack/fullstackApp";
 import { FullstackInfo } from "../fullstack/fullstackInfo";
+import { ErrorHandling } from "../fullstack/errorHandling";
 
 export const Fullstack = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -43,7 +32,7 @@ export const Fullstack = () => {
       <section className='w-11/12 m-auto fullstackSection'>
         {!theme && <FullstackInfo />}
         {theme === "full" && <FullstackApp />}
-        {theme === "fullexercises" && <p>Folgt in Kürze!</p>}
+        {theme === "fullexercises" && <ErrorHandling />}
       </section>
     </>
   );
