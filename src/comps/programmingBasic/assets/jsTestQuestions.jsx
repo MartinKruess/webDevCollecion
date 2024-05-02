@@ -399,7 +399,7 @@ export const TestQuestions = [
   },
   {
     question: "Wie überprüft man ob ein Wert in einem Array vorhanden ist?",
-    description: "arr.splice(3, 1) vs arr.slice(3, 1)",
+    description: "",
     answer: ["includes", "includes()"],
     correct:
       "Mit includes kann man überprüfen ob ein Array einen bestimmten Wert beinhaltet. \n",
