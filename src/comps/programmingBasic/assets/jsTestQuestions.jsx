@@ -144,7 +144,8 @@ export const TestQuestions = [
   {
     question:
       "Wie erzeugt man ein Array, das nur aus den Werten eines Objektes besteht?",
-    description: "cons arr = {obj}",
+    description:
+      "const obj = {firstname: 'Max', age: 30} -> const arr = ['Max', 30]",
     answer: ["Object.values(obj)"],
     correct:
       "Mit der Object Methode Object.values(obj) erhält man ein Array mit den Values.\n",
