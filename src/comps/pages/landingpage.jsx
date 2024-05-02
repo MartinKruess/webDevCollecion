@@ -19,10 +19,9 @@ export const Landingpage = () => {
           <li className='w-1/3 text-green-600'>
             50%
             <ul className='w-full'>
-              <li>VS-Code Update 5%</li>
               <li>CSS-Besonderheiten 20%</li>
               <li>Flex 20%</li>
-              <li>Animation 5%</li>
+              <li>Animation 10%</li>
             </ul>
           </li>
           <li className='w-1/3'>Javascript</li>

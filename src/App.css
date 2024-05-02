@@ -343,3 +343,58 @@ i:hover{
   border-radius: 0.5rem;
   border: solid;
 }
+
+/* CSS-Animationen */
+
+/* Robby */
+
+.helperSpace{
+  width: 50%;
+  display: flex;
+}
+
+.helper{
+  width: 8rem;
+
+  img{
+    width: 100%;
+  }
+}
+
+.helper:hover + .talkbubble{
+  display: block;
+}
+
+.talkbubble {
+  background: #ededed;
+  color: #09192a;
+  width: 10rem;
+  height: fit-content;
+  padding: 0.8rem;
+  display: none;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #ededed;
+  border-bottom: 13px solid transparent;
+}
+
+.animationBox{
+  display: flex;
+
+  .animationContentBox{
+    height: 50vh;
+    overflow: auto;
+    border: solid;
+  }
+}

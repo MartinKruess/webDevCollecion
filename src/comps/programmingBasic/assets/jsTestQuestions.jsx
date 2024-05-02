@@ -21,7 +21,7 @@ export const TestQuestions = [
   },
   {
     question:
-      "Wie nennt sich die Property links, vom Doppelpunkt, innerhalb eines Objektes? ",
+      "Wie nennt sich die 'name' Property, links vom Doppelpunkt, innerhalb eines Objektes? ",
     description: "name : 'Michael'",
     answer: ["key", "property-key"],
     correct:
@@ -31,7 +31,7 @@ export const TestQuestions = [
     question:
       "Mit welcher Methode kann man das letzte Element eines Arrays löschen?",
     description: "",
-    answer: ["pop", "pop()"],
+    answer: ["pop", "pop()", ".pop", ".pop()"],
     correct: "Die Methode zum löschen des letzten Elementes heißt 'pop()'.\n",
   },
   {
@@ -55,7 +55,11 @@ export const TestQuestions = [
       "index 3 wird gelöscht",
       "3. wird gelöscht",
       "3 wird gelöscht",
-      "entfernt",
+      "entfernt 3",
+      "löscht 3",
+      "löscht element 3",
+      "löscht index 3",
+      "löscht das 3. element",
     ],
     correct: "Element 4 mit dem Index 3 wird aus dem Array entfernt.\n",
   },
@@ -76,7 +80,7 @@ export const TestQuestions = [
   {
     question:
       "Wende die Syntax (Code) der map Methode auf das Array an. (nur den Anfang)",
-    description: "const users = [...]",
+    description: "const users = ['Tim','Tom','Max', ...]. Nutze die Einzahl!",
     answer: ["users.map((user) =>)", "users.map(user =>)"],
     correct:
       "Die map Syntax (Code) lautet: users.map((user) =>) oder users.map(user =>).\n",
@@ -85,7 +89,7 @@ export const TestQuestions = [
     question:
       "Welche Methode kann man verwenden um ein einziges gesuchtes Element aus einem Array zu bekommen.",
     description: "Wie findet man ein Element in einem Array?",
-    answer: ["find", "find()"],
+    answer: ["find", "find()", ".find", ".find()"],
     correct:
       "Um nur ein Element in einem Array zu erhalten finden wird die 'find()' Methode verwendet.\n",
   },
@@ -153,7 +157,7 @@ export const TestQuestions = [
   },
   {
     question:
-      "Wie kann eine Funktion eine beliebe Anzahl an Argumenten annehmen?",
+      "Wie kann eine Funktion eine beliebige Anzahl an Argumenten annehmen?",
     description: "Schreibe den Code auf und nutze als Parameternamen: 'args'!",
     answer: ["(...args)", "...args"],
     correct:
@@ -167,7 +171,7 @@ export const TestQuestions = [
   },
   {
     question: "Was vergleicht ===, das == nicht vergleicht?",
-    description: "'1' === 1",
+    description: "Beispiel: '1' === 1",
     answer: ["type", "datentypen"],
     correct:
       "Mit dem === Vergleich wird ebenfalls auf den 'datentype' geprüft, wodurch 'true' === true false ergibt.\n",
@@ -177,7 +181,7 @@ export const TestQuestions = [
     description: "arr.lenght -1 oder string.lenght -1",
     answer: ["index"],
     correct:
-      "Die lenght zählt die elemente von 1 an, der 'Index' begint allerdings bei 0.\n",
+      "Die lenght zählt die Elemente von 1 an, der 'Index' begint allerdings bei 0.\n",
   },
   {
     question: "Warum ist folgendes Ergebnis 'undefined'?",
@@ -186,27 +190,28 @@ export const TestQuestions = [
       console.log(func1(7))
       `,
     answer: ["return", "klammern", "brackets"],
-    correct: "Die Function hat keinen return.\n",
+    correct:
+      "Die Function hat keinen return. Man kann entweder in die Curly-Bracktes ein return setzen oder die Curly-Bracktes entfernen. \n",
   },
   {
     question:
       "Wende die Syntax (Code) der filter Methode auf das Array an. (nur den Anfang)",
-    description: "const users = [...]",
+    description: "const users = ['Anton', 'Alf', 'Berta', 'Charlotte']",
     answer: ["users.filter((user) =>)", "users.filter(user =>)"],
     correct:
       "Die filter Syntax (Code) lautet: users.filter((user) =>) oder users.filter(user =>).\n",
   },
   {
     question:
-      "Wie legt man ein neues Key-Value Pair im Objekt products, mit dem Namen firstName: 'Michael', an?",
+      "Wie legt man ein neues Key-Value Pair im Objekt users, mit dem Namen firstName: 'Michael', an?",
     description: "",
-    answer: ["products.firstName = 'Michael'", "products.firstName='Michael'"],
+    answer: ["users.firstName = 'Michael'", "users.firstName='Michael'"],
     correct:
-      "Einen neues key-value pair legt man wie folgt an: products.firstName = 'Michael'\n",
+      "Einen neues key-value pair legt man wie folgt an: users.firstName = 'Michael'\n",
   },
   {
     question: "Was ist vereinfacht gesagt eine class in JS?",
-    description: "class car...",
+    description: "class Car...",
     answer: [
       "blueprint",
       "blaupause",
@@ -214,13 +219,17 @@ export const TestQuestions = [
       "schablone",
       "vorlage",
       "vordruck",
+      "object factory",
+      "objektfabrik",
+      "objekt fabrik",
     ],
-    correct: "Mit class baut man eine Art 'Blueprint' für Objekte auf.\n",
+    correct:
+      "Mit class baut man eine Art 'Blueprint' oder 'object factory' für Objekte auf.\n",
   },
   {
     question: "Was returned die map und filter Methode immer?",
     description: "Welchen Datentype returnen die oben genannten Methoden?",
-    answer: ["array", "neues array"],
+    answer: ["array", "neues array", "gleichgroßes array"],
     correct: "Der return von map und filter ist immer ein 'neues Array'.\n",
   },
   {
@@ -233,7 +242,7 @@ export const TestQuestions = [
   },
   {
     question: "Schreibe die erste Zeile einer For Schleife '< arr'.",
-    description: "const arr = []",
+    description: "const arr = ['a', 'b', 'c']",
     answer: [
       "for(let i = 0; i < arr.length; i++)",
       "for (let i = 0; i < arr.length; i++)",
@@ -269,7 +278,7 @@ export const TestQuestions = [
       "+'15'",
     ],
     correct:
-      "Um einen String zu einer Number zu convertieren gibt es verschiedene Wege. Number(), parseInt() oder parseFloat() sind die gängisten.\n",
+      "Um einen String zu einer Number zu convertieren gibt es verschiedene Wege. Number(), parseInt() oder parseFloat() sind die gängisten. Seltener sieht man 5 + +'15'. \n",
   },
   {
     question:
@@ -291,14 +300,15 @@ export const TestQuestions = [
     description: "{name: 'Günther', age: 63} === {name: 'Günther', age: '63}",
     answer: ["false", "falsch"],
     correct:
-      "Objekte können identische Werte haben und sind dennoch unterschiedliche Objekte.\n",
+      "Objekte können identische Werte haben und sind dennoch unterschiedliche Objekte. Siehe Pointer \n",
   },
   {
-    question: "Welchen Boolian erzeugt diese Aussage?",
-    description: "' '",
+    question: "Welchen Boolian erhalten wir, wenn wir folgenden Code Testen?",
+    description:
+      "const name = ' '; if(name) {console.log('true')}else{console.log('false')}",
     answer: ["true", "wahr"],
     correct:
-      "Auch ein Leerzeichen zählt als ein zeichen und damit handelt es sich nicht länger um einen EmptyString.\n",
+      "Auch ein Leerzeichen zählt als ein Zeichen und damit handelt es sich nicht länger um einen EmptyString.\n",
   },
   {
     question: "Wann wird counter +1 gerechnet?",
@@ -310,13 +320,22 @@ export const TestQuestions = [
   {
     question: "Was kommt hier raus?",
     description: "Number('3:13')",
-    answer: ["NaN", "not a number", "no number", "keine nummer"],
+    answer: ["NaN", "not a number", "no number", "keine nummer", "nan"],
     correct: "Das Ergebnis hier ist NaN.\n",
   },
   {
-    question: "Wodurch wurde ${code} eingeführt?",
+    question: "Mit welcher großen Neuerung wurde ${code} eingeführt?",
     description: "",
-    answer: ["ES6", "Ecmascript6", "Ecmascript 6", "Ecma script 6"],
+    answer: [
+      "ES6",
+      "Ecmascript6",
+      "Ecmascript 6",
+      "Ecma script 6",
+      "Ecma script6",
+      "es6",
+      "literal",
+      "template string",
+    ],
     correct:
       "Mit der Einführung von ES6 wurden Template literals eingeführt.\n",
   },
@@ -330,21 +349,68 @@ export const TestQuestions = [
       "datum des Tages",
       "aktuelles Datum",
     ],
-    correct: "In der Konsole wird heutige Datum ausgeben.\n",
+    correct: "In der Konsole wird das heutige Datum ausgeben.\n",
   },
   {
     question: "Welche Array Methode würde sich hierfür anbieten?.",
     description: "const arr = [1, 3, 5] Ausgabe: [2, 4, 6]",
-    answer: ["map", "reduce", "map()"],
+    answer: ["map", "reduce", "map()", "reduce(), forEach", "for"],
     correct:
       "Um jedes Element in einem Array zu bearbeiten, bietet sich die Verwendung von map() an. Map verändert nicht die Anzahl sondern nur die Elemente selbst.\n",
   },
-  // {
-  //   question:
-  //     "Welche Methode wird verwendet ein Array als String folgendermaßen auszugeben?.",
-  //   description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
-  //   answer: ["join", "join()", "join(' ')"],
-  //   correct:
-  //     "Beim Umwandeln eines Arrays in einen String werden die Array typischen Kommatas mit der join() Methode ersetzt.\n",
-  // },
+  {
+    question: "Was ist die Besonderheit an folgender function?",
+    description: "const myFunc = () => { return 'Hallo' }",
+    answer: ["oneliner", "return nicht notwendig", "arrow function"],
+    correct:
+      "Hierbei handelt es sich um eine Arrow Function, diese lässts cih zu einem Oneliner abkürzen. Daher ist in diesem Fall das return nicht notwendig. \n",
+  },
+  {
+    question: "Was bedeutet die Abkürzung 'DOM'?",
+    description: "",
+    answer: ["Document Object Model"],
+    correct: "Die Abkürzung DOM steht für Document Object Model. \n",
+  },
+  {
+    question:
+      "Welches Attribut muss im Script-Tag stehen um dieses im Head verwenden zu können?",
+    description: "",
+    answer: ["defer"],
+    correct:
+      "Um den Script-Tag statt im body im head verwednen zu können müssen wir dem Script-Tag das Attribut defer geben. \n",
+  },
+  {
+    question: "Was ist der Unterschied zwischen 'let' und 'const'?",
+    description: "",
+    answer: [
+      "let veränderbar, const unveränderbar",
+      "let = veränderbar, const = unveränderbar",
+      "const = constante",
+    ],
+    correct:
+      "let ist überschreibbar und const nicht. Const steht für Constante. \n",
+  },
+  {
+    question: "Was ist der Unterschied zwischen splice und slice?",
+    description: "arr.splice(3, 1) vs arr.slice(3, 1)",
+    answer: ["splice verändert", "das original Array", "slice kopiert"],
+    correct:
+      "Splice verändert das original Array, während slice nur eine Kopie der Auswahl erstellt. \n",
+  },
+  {
+    question: "Wie überprüft man ob ein Wert in einem Array vorhanden ist?",
+    description: "arr.splice(3, 1) vs arr.slice(3, 1)",
+    answer: ["includes", "includes()"],
+    correct:
+      "Mit includes kann man überprüfen ob ein Array einen bestimmten Wert beinhaltet. \n",
+  },
 ];
+
+// {
+//   question:
+//     "Welche Methode wird verwendet ein Array als String folgendermaßen auszugeben?.",
+//   description: "['Anton', 'Berta', 'Christina'] -> 'Anton Berta Christian'",
+//   answer: ["join", "join()", "join(' ')"],
+//   correct:
+//     "Beim Umwandeln eines Arrays in einen String werden die Array typischen Kommatas mit der join() Methode ersetzt.\n",
+// },
