@@ -5,7 +5,7 @@
   line-height: 1.8rem;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,71 +30,70 @@
   }
 }
 
-nav ul li{
+nav ul li {
   min-width: 3.2rem;
   flex-grow: 1;
   text-align: center;
 }
 
-article h2, article h3{
+article h2,
+article h3 {
   margin-top: 2.5rem;
 }
 
-.top-19{
- top: 4.5rem;
+.top-19 {
+  top: 4.5rem;
 }
 
-p{
+p {
   padding: 1.5rem 0;
 }
 
-pre{
+pre {
   background-color: #89898933;
   margin: 1rem 0;
   padding: 0.3rem 1.2rem;
-  box-shadow:
-  inset 0.1rem 0.1rem 0.1rem #89898999,
-  inset -0.1rem 0.1rem 0.1rem #89898999,
-  inset 0.1rem -0.1rem 0.1rem #89898999,
-  inset -0.1rem -0.1rem 0.1rem #89898999;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #89898999,
+    inset -0.1rem 0.1rem 0.1rem #89898999, inset 0.1rem -0.1rem 0.1rem #89898999,
+    inset -0.1rem -0.1rem 0.1rem #89898999;
 
   word-wrap: break-word;
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
   position: relative;
 }
 
-.react{
+.react {
   background-color: #751b1b33;
 }
 
-.heightContainer{
+.heightContainer {
   height: 25rem;
   padding: 1rem;
   position: relative;
 }
 
-.imgContainer{
+.imgContainer {
   height: 19rem;
   padding: 1rem;
   position: relative;
 }
 
-.smallContainer{
+.smallContainer {
   height: 12rem;
   padding: 1rem;
   position: relative;
 }
 
-.imgCollection{
+.imgCollection {
   height: 8rem;
   display: flex;
   justify-content: space-between;
 }
 
-.imgNormal{
+.imgNormal {
   width: 40%;
   position: absolute;
   top: 0.75rem;
@@ -102,27 +101,28 @@ pre{
   transition: 0.5s;
 }
 
-.imgHeight{
+.imgHeight {
   height: 100%;
 }
 
-.medium{
+.medium {
   width: 60%;
 }
 
-.smallium{
+.smallium {
   width: 49%;
 }
 
-.small{
+.small {
   width: 35%;
 }
 
-.xsmall{
+.xsmall {
   width: 30%;
 }
 
-.imgHover, .imgNormal:hover{
+.imgHover,
+.imgNormal:hover {
   width: 100%;
   height: auto;
   position: relative;
@@ -131,36 +131,36 @@ pre{
   transition: 1.5s;
 }
 
-th{
+th {
   padding: 0 1rem;
   border: solid 0.1rem;
 }
 
-td{
+td {
   padding: 0 1rem;
   text-align: center;
   border: solid 0.1rem;
 }
 
-.linkContainer{
+.linkContainer {
   font-size: 1rem;
   display: flex;
   gap: 2rem;
   padding: 1.25rem 0 2.5rem 0;
 }
 
-.linkContainer a{
+.linkContainer a {
   color: #0f53d0;
 }
 
 /* Live preview */
 
-.fullstackSection{
+.fullstackSection {
   width: 95vw;
   padding: 0.2rem;
 }
 
-.livePreview{
+.livePreview {
   background-color: #0f53d033;
   width: 100%;
   height: 80vh;
@@ -172,7 +172,8 @@ td{
   gap: 1rem;
 }
 
-.frontend, .backend{
+.frontend,
+.backend {
   background-color: #0f53d033;
   color: rgb(16, 235, 16);
   width: 50%;
@@ -180,75 +181,76 @@ td{
   overflow: auto;
 }
 
-.frontend code, .backend code{
+.frontend code,
+.backend code {
   color: #dedede;
 }
 
-.feDescription, .beDescription{
+.feDescription,
+.beDescription {
   padding: 1rem 0;
   width: 30%;
   position: absolute;
   z-index: 1;
 }
 
-@media screen and (min-width: 1100px){
-  :root{
+@media screen and (min-width: 1100px) {
+  :root {
     font-size: 130%;
   }
 
-  nav a{
+  nav a {
     /* font-size: 1.2rem; */
     margin: 0;
   }
 
-  nav ul li{
+  nav ul li {
     min-width: 3.4rem;
     font-size: 1.1rem;
   }
 }
 
-
-i{
-  	color: #760314;
-    font-size: 1.6rem;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+i {
+  color: #760314;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
-i:hover{
-  color:#a7051d;
+i:hover {
+  color: #a7051d;
 }
 
-.bite{
+.bite {
   background-color: #09192a;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 1rem 0 1rem 1rem;
 }
 
-.biteZero{
+.biteZero {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.biteOne{
+.biteOne {
   position: absolute;
   top: 1rem;
   right: 0;
 }
-.biteTwo{
+.biteTwo {
   position: absolute;
   top: 0;
   right: 1rem;
 }
-.biteThree{
+.biteThree {
   position: absolute;
   top: -1rem;
   right: 1.25rem;
 }
-.biteFour{
+.biteFour {
   position: absolute;
   top: 1.25rem;
   right: -1rem;
@@ -256,7 +258,7 @@ i:hover{
 
 /* ErrorHandling*/
 
-.errorCard{
+.errorCard {
   background-color: #0f53d033;
   width: 100%;
   height: 80vh;
@@ -269,30 +271,31 @@ i:hover{
   gap: 2rem;
 }
 
-.errorCard h2{
+.errorCard h2 {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
   border: solid;
 }
 
-.errorCard p{
+.errorCard p {
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
 }
 
-.errorCard div{
+.errorCard div {
   height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: start;
   gap: 1.7rem;
-  border:solid;
+  border: solid;
 }
 
-.errorCard .errCode, .errorCard .errMsg{
+.errorCard .errCode,
+.errorCard .errMsg {
   width: 50%;
   height: 100%;
   padding: 0.8rem;
@@ -300,15 +303,16 @@ i:hover{
   border-radius: 1rem;
 }
 
-.errCode{
+.errCode {
   background-color: #0f3c8f;
 }
 
-.errMsg{
+.errMsg {
   background-color: #772809;
 }
 
-.errorCard form, .errorCard .formControll{
+.errorCard form,
+.errorCard .formControll {
   height: 15rem;
   width: 70%;
   display: flex;
@@ -318,23 +322,24 @@ i:hover{
   gap: 0.5rem;
 }
 
-.errorCard .formControll p{
+.errorCard .formControll p {
   font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-.errorCard label, .errorCard input{
+.errorCard label,
+.errorCard input {
   width: 90%;
 }
 
-.errorCard form input{
+.errorCard form input {
   height: 2.2rem;
   padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
 }
 
-.errorCard .check{
+.errorCard .check {
   background-color: #a7051d;
   width: 6rem;
   height: 2.5rem;
@@ -348,20 +353,20 @@ i:hover{
 
 /* Robby */
 
-.helperSpace{
+.helperSpace {
   width: 50%;
   display: flex;
 }
 
-.helper{
+.helper {
   width: 8rem;
 
-  img{
+  img {
     width: 100%;
   }
 }
 
-.helper:hover + .talkbubble{
+.helper:hover + .talkbubble {
   display: block;
 }
 
@@ -378,7 +383,7 @@ i:hover{
   border-radius: 10px;
 }
 .talkbubble:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 100%;
   top: 26px;
@@ -389,10 +394,15 @@ i:hover{
   border-bottom: 13px solid transparent;
 }
 
-.animationBox{
-  display: flex;
+input:user-invalid {
+  background-color: #ff000033;
+}
 
-  .animationContentBox{
+.animationBox {
+  display: flex;
+  margin-bottom: 3rem;
+
+  .animationContentBox {
     height: 50vh;
     overflow: auto;
     border: solid;

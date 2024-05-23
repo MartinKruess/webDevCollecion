@@ -22,6 +22,10 @@ export const Landingpage = () => {
               <li>CSS-Besonderheiten 20%</li>
               <li>Flex 20%</li>
               <li>Animation 10%</li>
+              <li>Progressiv Enhancment, Gracefull ...</li>
+              <li>@starting-style</li>
+              <li>has, is, where</li>
+              <li>subgrid</li>
             </ul>
           </li>
           <li className='w-1/3'>Javascript</li>
