@@ -24,6 +24,17 @@ export const SASS = () => {
       <pre>
         <code>npm i sass</code>
       </pre>
+      <p>
+        Um SCSS/SASS zu verwenden, muss der Code in einer Datei mit der Endung
+        .scss oder .sass gespeichert werden. Diese Datei wird dann in eine CSS
+        Datei kompiliert, die dann in die Website eingebunden wird. Ein
+        nebötigtes Tool hierfür ist der SASS-Compiler.
+      </p>
+      <img
+        src='./images/liveSassCompiler.png'
+        alt='Live Sass Compiler Extention'
+        className=' sm:w-3/4 md:w-2/4 lg:w-1/3 xl:w-1/3'
+      />
       <h2 className='font-extrabold text-2xl my-5'>Funktionen von SASS/SCSS</h2>
       <div className='flex flex-wrap'>
         <p className='-my-4 md:w-6/12'>
