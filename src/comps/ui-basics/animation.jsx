@@ -104,20 +104,32 @@ export const Animation = () => {
                   src='./images/robby.webp'
                   alt='Robby der kleine Web-Assistant'
                 />
-                <figcaption className='bg-slate-200 text-red-600 w-16 opacity-70 relative -top-4 left-8 z-10'>
+                <figcaption className='bg-slate-200 text-red-600 w-20 opacity-70 relative -top-4 left-2 z-10 text-center'>
                   Hover me!
                 </figcaption>
               </figure>
               <div class='talkbubble'>
                 Hi ich bin Robby. Ich bin dein keine Helfer.
               </div>
+              <p>
+                Hover Effekte lassen sich wunderbar mit Transition animieren.
+                Mit Transition gibt es ein paar Eigenschaften, die animiert
+                werden können.
+              </p>
             </div>
             <p>
               Hover Effekte lassen sich wunderbar mit Transition animieren. Mit
               Transition gibt es ein paar Eigenschaften, die animiert werden
-              können. Hier ein paar Beispiele:
+              können.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              numquam officiis asperiores quas, repellat magnam, possimus hic
+              est expedita reprehenderit itaque nam iste quasi iure nulla in?
+              Quos, veniam porro?
             </p>
           </article>
+
           <article className='text-sm' id='ani4'>
             <div class='helperSpace'>gfdg</div>
             <p>Animationen mit Keyframes sind eine weitere Möglichkeit, um</p>

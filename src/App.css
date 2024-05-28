@@ -354,20 +354,15 @@ i:hover {
 /* Robby */
 
 .helperSpace {
-  width: 50%;
   display: flex;
 }
 
 .helper {
-  width: 8rem;
+  width: 6rem;
 
   img {
     width: 100%;
   }
-}
-
-.helper:hover + .talkbubble {
-  display: block;
 }
 
 .talkbubble {
@@ -378,20 +373,25 @@ i:hover {
   padding: 0.8rem;
   display: none;
   position: relative;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .talkbubble:before {
   content: '';
   position: absolute;
   right: 100%;
-  top: 26px;
+  top: 1.7rem;
   width: 0;
   height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid #ededed;
-  border-bottom: 13px solid transparent;
+  border-top: 0.8rem solid transparent;
+  border-right: 1.6rem solid #ededed;
+  border-bottom: 0.8rem solid transparent;
+}
+
+.helper:hover + .talkbubble {
+  min-width: 10rem;
+  display: block;
 }
 
 input:user-invalid {
