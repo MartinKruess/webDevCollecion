@@ -39,13 +39,14 @@ export const Animation = () => {
         </aside>
         <div className='w-4/5 animationContentBox'>
           <article className=' text-sm' id='ani1'>
-            <p>
+            <h3 className='text-xl my-2 pt-2'>Was sind Animationen?</h3>
+            <p className='py-3'>
               CSS-Animationen sind ein kraftvolles Werkzeug zur Verbesserung der
               Benutzererfahrung auf Websites. Mit CSS können Entwickler visuelle
               Effekte und Bewegungen erstellen, die das Design lebendiger machen
               und Informationen auf ansprechende Weise präsentieren.
             </p>
-            <p>
+            <p className='py-3'>
               Von einfachen Hover-Effekten bis hin zu komplexen Animationen für
               Benachrichtigungen oder Interaktionen bieten CSS-Animationen eine
               Vielzahl von Möglichkeiten, um das Erscheinungsbild einer Website
@@ -54,9 +55,19 @@ export const Animation = () => {
               durchgehen, um zu zeigen, wie sie in der Webentwicklung eingesetzt
               werden können.
             </p>
+            <p className='py-3'>
+              Achte immer darauf, dass deine Animationen die Benutzererfahrung
+              auf deiner Website verbessern und nicht beeinträchtigen. Vermeide
+              übermäßige Animationen oder Effekte, die die Benutzer ablenken
+              oder verwirren könnten. Wenn du dir nicht sicher bist, ob eine
+              Animation angemessen ist, teste sie auf verschiedenen Geräten und
+              Browsern, um sicherzustellen, dass sie ordnungsgemäß funktioniert
+              und die Benutzer nicht stört.
+            </p>
           </article>
           <article className='text-sm max-h-min' id='ani2'>
-            <p>
+            <h3 className='text-xl my-0 pt-4'>Grundlagen von Animationen?</h3>
+            <p className='py-3'>
               Animationen sind eine wirklich tolle Sache, um Webseiten
               lebendiger zu gestalten. Allerdings sollte man immer darauf
               achten, dass die Webseiten nicht zu überladen sind und die
@@ -98,41 +109,59 @@ export const Animation = () => {
             </ul>
           </article>
           <article className='text-sm' id='ani3'>
+            <h3 className='text-xl my-2 pt-2'>
+              Basic Animation mit Transition
+            </h3>
             <div class='helperSpace'>
-              <figure class='helper'>
-                <img
-                  src='./images/robby.webp'
-                  alt='Robby der kleine Web-Assistant'
-                />
-                <figcaption className='bg-slate-200 text-red-600 w-20 opacity-70 relative -top-4 left-2 z-10 text-center'>
-                  Hover me!
-                </figcaption>
-              </figure>
-              <div class='talkbubble'>
-                Hi ich bin Robby. Ich bin dein keine Helfer.
+              <div className='w-7/12 flex'>
+                <figure class='helper'>
+                  <img
+                    src='./images/robby.webp'
+                    alt='Robby der kleine Web-Assistant'
+                  />
+                  <figcaption className='bg-slate-200 text-red-600 w-20 opacity-70 relative -top-4 left-2 z-10 text-center'>
+                    Hover me!
+                  </figcaption>
+                </figure>
+                <div class='talkbubble'>
+                  Hi ich bin Robby. Ich bin dein keine Helfer.
+                </div>
               </div>
-              <p>
+              <p className='w-5/12'>
                 Hover Effekte lassen sich wunderbar mit Transition animieren.
                 Mit Transition gibt es ein paar Eigenschaften, die animiert
                 werden können.
               </p>
             </div>
-            <p>
-              Hover Effekte lassen sich wunderbar mit Transition animieren. Mit
-              Transition gibt es ein paar Eigenschaften, die animiert werden
-              können.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              numquam officiis asperiores quas, repellat magnam, possimus hic
-              est expedita reprehenderit itaque nam iste quasi iure nulla in?
-              Quos, veniam porro?
-            </p>
+            <div className='flex gap-5'>
+              <div className='transAniBG'>
+                <div className='transAniMid'>
+                  <div className='hover'>Hover me</div>
+                </div>
+              </div>
+              <p className='w-8/12 ml-auto'>
+                Hier haben wir beispielsweise eine Reihe von Transition Effekten
+                nacheinander. Als erstes Dreht sich der Hintergrund, dann die
+                Mitte und zuletzt der Text.
+                <br />
+                Hierbei ist zu beachten, dass die Äußeren Elemente die inneren
+                Elemente beeinflussen. Das bedeutet, dass die inneren Elemente
+                ebenfalls gedreht werden. Achte auf den Text und den hellen
+                Schatten im inneren Kreis.
+              </p>
+            </div>
           </article>
 
           <article className='text-sm' id='ani4'>
-            <div class='helperSpace'>gfdg</div>
-            <p>Animationen mit Keyframes sind eine weitere Möglichkeit, um</p>
+            <p class='helperSpace'>
+              Erklärung Keyframe Animationen folgt in Kürze!
+            </p>
+          </article>
+          <article className='text-sm' id='ani5'>
+            <p class='helperSpace'>Keyframe Animationen folgen in Kürze!</p>
+          </article>
+          <article className='text-sm' id='ani6'>
+            <p>Übungen zum Thema Animationen folgen</p>
           </article>
         </div>
       </div>
