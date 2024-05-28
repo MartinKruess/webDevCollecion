@@ -1,4 +1,4 @@
-import { highlights } from "../../App";
+import { highlights } from '../../App';
 
 export const Grid = () => {
   return (
@@ -115,6 +115,13 @@ export const Grid = () => {
           rel='noopener noreferrer'
         >
           Grid in vier Schritten
+        </a>
+        <a
+          href='https://www.spacejam.com/1996/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Veraltetes Tabellen-Layout (siehe DevTools)
         </a>
       </div>
     </article>

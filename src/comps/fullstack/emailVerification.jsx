@@ -63,7 +63,7 @@ export const EmailVerification = () => {
           &#9;&#9;&#9;from: `"Martin"
           &lt;$&#123;process.env.GMAIL_USER&#125;&gt;`,
           <br />
-          &#9;&#9;&#9;to: 'martinkr90@googlemail.com',
+          &#9;&#9;&#9;to: 'martin@mail.com',
           <br />
           &#9;&#9; &#9;subject: 'Verfication Code',
           <br />
