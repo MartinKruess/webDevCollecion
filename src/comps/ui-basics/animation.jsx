@@ -38,7 +38,7 @@ export const Animation = () => {
           </ul>
         </aside>
         <div className='w-4/5 animationContentBox'>
-          <article className=' text-sm' id='ani1'>
+          <article className=' text-sm min-h-full' id='ani1'>
             <h3 className='text-xl my-2 pt-2'>Was sind Animationen?</h3>
             <p className='py-3'>
               CSS-Animationen sind ein kraftvolles Werkzeug zur Verbesserung der
@@ -65,7 +65,7 @@ export const Animation = () => {
               und die Benutzer nicht stört.
             </p>
           </article>
-          <article className='text-sm max-h-min' id='ani2'>
+          <article className='text-sm min-h-full' id='ani2'>
             <h3 className='text-xl my-0 pt-4'>Grundlagen von Animationen?</h3>
             <p className='py-3'>
               Animationen sind eine wirklich tolle Sache, um Webseiten
@@ -108,7 +108,7 @@ export const Animation = () => {
               </li>
             </ul>
           </article>
-          <article className='text-sm' id='ani3'>
+          <article className='text-sm min-h-full' id='ani3'>
             <h3 className='text-xl my-2 pt-2'>
               Basic Animation mit Transition
             </h3>
@@ -151,16 +151,15 @@ export const Animation = () => {
               </p>
             </div>
           </article>
-
-          <article className='text-sm' id='ani4'>
+          <article className='text-sm min-h-full' id='ani4'>
             <p class='helperSpace'>
               Erklärung Keyframe Animationen folgt in Kürze!
             </p>
           </article>
-          <article className='text-sm' id='ani5'>
+          <article className='text-sm min-h-full' id='ani5'>
             <p class='helperSpace'>Keyframe Animationen folgen in Kürze!</p>
           </article>
-          <article className='text-sm' id='ani6'>
+          <article className='text-sm min-h-full' id='ani6'>
             <p>Übungen zum Thema Animationen folgen</p>
           </article>
         </div>

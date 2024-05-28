@@ -3,7 +3,7 @@ export const Console = () => {
   return (
     <article>
       <h2 className='font-extrabold text-2xl'>
-        Console.log styling und Besonderheiten
+        Console.log styling und Besonderheiten (JS in der Console)
       </h2>
       <h3 className='font-extrabold text-xl'>
         Console.log in tabellarischer Form
