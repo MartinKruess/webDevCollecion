@@ -151,7 +151,6 @@ export const Animation = () => {
               </p>
             </div>
           </article>
-
           <article className='text-sm' id='ani4'>
             <p class='helperSpace'>
               Erklärung Keyframe Animationen folgt in Kürze!
