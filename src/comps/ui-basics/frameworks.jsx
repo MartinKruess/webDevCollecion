@@ -1,3 +1,5 @@
+import { highlights } from '../../App';
+
 export const Frameworks = () => {
   return (
     <article>
@@ -38,21 +40,35 @@ export const Frameworks = () => {
           <code>
             &lt;link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            <br />
             rel="stylesheet"
+            <br />
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            <br />
             crossorigin="anonymous"&gt;
           </code>
         </pre>
         <p>
           Bei dem &lt;Script&gt;-Tag sieht das anders aus. Dieser muss sich
-          standartmäßig am Ende des &lt;Body&gt; befinden.
+          standartmäßig am Ende des &lt;Body&gt; befinden, da das JS Zugriff auf
+          das HTML und teilweise auch auf das CSS haben muss. Deshalb muss das
+          JS immer nach dem HTML und CSS geladen werden. Um einen
+          &lt;Script&gt;-Tag ebenfalls im &lt;Head&gt; zu platzieren, gibt es
+          die Möglichkeit das <span className={highlights.code}>defer </span>
+          Attribut zu verwenden. Hierbei ist es wichtig, dass das defer Attribut
+          gesetzt wird, damit das JS erst geladen wird, wenn das HTML und CSS
+          geladen sind.
         </p>
         <pre className='w-10/12 m-auto'>
           <code>
             &lt;script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            <br />
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous" <blink>defer</blink> &gt;&lt;/script&gt;
+            <br />
+            crossorigin="anonymous"
+            <blink className={highlights.blinc}> defer </blink>
+            &gt;&lt;/script&gt;
           </code>
         </pre>
         <div className='linkContainer'>
@@ -154,6 +170,33 @@ export const Frameworks = () => {
             Tailwind Cheat Sheet
           </a>
         </div>
+      </div>
+
+      <div>
+        <h3 className='font-extrabold text-xl my-5'>Sicherhietshinweis</h3>
+        <p>
+          Bei der Verwendung von CDN Links und Scripten sollte man immer darauf
+          achten, dass kein schädlicher Code injekted werden kann. Ein guter
+          Indikator für sichere CDN-Verbindungen ist das Attribut{' '}
+          <span className={highlights.code}>integrity</span>. Dies ist soetwas
+          wie eine Quersumme in Form eines Hashes vom Inhalt der CDN. Durch
+          dieses Attribut wird geprüft ob der Inhalt immer noch diese Quersumme
+          erzeugt oder ob Änderungen vorgenommen wurden.
+        </p>
+        <pre className='w-10/12 m-auto'>
+          <code>
+            &lt;script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            <br />
+            <span className={highlights.code}>
+              integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            </span>
+            <br />
+            crossorigin="anonymous"
+            <blink className={highlights.blinc}> defer </blink>
+            &gt;&lt;/script&gt;
+          </code>
+        </pre>
       </div>
     </article>
   );
