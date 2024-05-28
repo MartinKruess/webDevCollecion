@@ -29,8 +29,10 @@ export const Frameworks = () => {
           <code>npm i bootstrap</code>
         </pre>
         <p>
-          Bei der CDN muss man einen &lt;Link&gt; und ein &lt;Script&gt; in den
-          &lt;Head&gt; einbinden.
+          Den CDN muss man in einem &lt;Link&gt;-Tag und für einige Komponenten
+          ggf. einen &lt;Script&gt;-Tag einbinden. Hierfür gibt es verschiedene
+          Möglichkeiten. Der Link muss sich bei der Einbindung immer im
+          &lt;Head&gt; befinden.
         </p>
         <pre className='w-10/12 m-auto'>
           <code>
@@ -41,12 +43,16 @@ export const Frameworks = () => {
             crossorigin="anonymous"&gt;
           </code>
         </pre>
+        <p>
+          Bei dem &lt;Script&gt;-Tag sieht das anders aus. Dieser muss sich
+          standartmäßig am Ende des &lt;Body&gt; befinden.
+        </p>
         <pre className='w-10/12 m-auto'>
           <code>
             &lt;script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous" &gt;&lt;/script&gt;
+            crossorigin="anonymous" <blink>defer</blink> &gt;&lt;/script&gt;
           </code>
         </pre>
         <div className='linkContainer'>
@@ -111,7 +117,7 @@ export const Frameworks = () => {
           </p>
           <pre className='col-start-1 md:col-start-6 col-end-12'>
             <code>
-              /** @type {import("tailwindcss").Config} */ <br />
+              /** @type {import('tailwindcss').Config} */ <br />
               export default &#123; <br />
               content: [ <br />
               "./index.html", <br />
