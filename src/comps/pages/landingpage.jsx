@@ -17,11 +17,10 @@ export const Landingpage = () => {
         <ul className='flex flex-wrap w-1/2 text-sm m-auto px-10 gap-5'>
           <li className='w-1/3'>CSS</li>
           <li className='w-1/3 text-green-600'>
-            55%
+            75%
             <ul className='w-full'>
-              <li>CSS-Besonderheiten 20%</li>
-              <li>Flex 20%</li>
               <li>Animation 5%</li>
+              <li>CSS-Besonderheiten 20%</li>
               <li>Progressiv Enhancment, Gracefull ...</li>
               <li>@starting-style</li>
               <li>has, is, where</li>
@@ -48,6 +47,7 @@ export const Landingpage = () => {
           <li className='w-1/3 text-green-600'>
             80%
             <ul className='w-full'>
+              <li>useContext update</li>
               <li>useReducer 10%</li>
               <li>useRef (als letztes) 5%</li>
               <li>Formular 5%</li>
