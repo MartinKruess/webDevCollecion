@@ -44,7 +44,7 @@ export const Datentypen = () => {
           <br />
           const myNull = null;
           <br />
-          // Don't do this 😟
+          // Dont do this 😟
           <br />
           const myUndefined = undefined;
         </code>
@@ -104,7 +104,6 @@ export const Datentypen = () => {
           Wert wird ein neuer Speicherplatz angelegt.
         </li>
       </ul>
-
       <div className='imgContainer p-0 my-3'>
         <img
           className='imgHeight'
