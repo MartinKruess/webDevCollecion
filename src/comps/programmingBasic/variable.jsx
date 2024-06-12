@@ -1,4 +1,4 @@
-import { highlights } from "../../App";
+import { highlights } from '../../App';
 
 export const Variable = () => {
   return (
@@ -6,26 +6,37 @@ export const Variable = () => {
       <h2 className='font-extrabold text-2xl'>
         Variablen - Das Speichern von Werten unter einem Namen
       </h2>
+
+      <h3 className='font-extrabold text-xl'>
+        <span class={highlights.directory}>
+          Die Deklaration einer Variable (Die Bennenung!)
+        </span>
+      </h3>
       <p>
         Die Deklaration einer Variablen erfolgt durch die Verwendung eines
-        Schlüsselworts wie <span className={highlights.code}>let</span> oder{" "}
-        <span className={highlights.code}>const</span>, gefolgt von einem
-        Variablennamen. Mit der Deklaration teilen Sie dem
-        JavaScript-Interpreter mit, dass Sie eine Variable mit einem bestimmten
-        Namen verwenden möchten.
+        Schlüsselworts wie <span className={highlights.code}>let</span> oder
+        <span className={highlights.code}> const</span>, gefolgt von einem
+        Variablennamen. Mit der Deklaration wird dem JavaScript-Interpreter
+        mitgeteilt, dass eine Variable mit einem bestimmten Namen verwendet
+        werden soll.
       </p>
       <pre>
         <code>
-          let y;
+          let y
           <br />
-          const z;
+          const z
         </code>
       </pre>
+      <h3 className='font-extrabold text-xl'>
+        <span class={highlights.directory}>
+          Die Initialisierung einer Variable (Zuweisung des Wertes!)
+        </span>
+      </h3>
       <p>
-        Die Initialisierung einer Variablen erfolgt, indem Sie ihr einen Wert
-        zuweisen. Nach der Deklaration können Sie einer Variablen einen
-        Anfangswert zuweisen, damit sie einen Wert enthält, den Sie später
-        verwenden können.
+        Die Initialisierung einer Variablen erfolgt, indem ihr ein Wert
+        zugeweisen wird. Nach der Deklaration kann einer Variablen ein
+        Anfangswert zugeweisen werden, damit sie einen Wert enthält, der später
+        verwendet werden kann.
       </p>
       <pre className='text-sm'>
         <code>
@@ -40,13 +51,13 @@ export const Variable = () => {
         </code>
       </pre>
       <p className='pt-4 pb-2'>
-        Variablen können verschiedene Arten von Werten speichern, wie Zahlen,
-        Zeichenketten <span className={highlights.code}>""</span>, Booleans{" "}
-        <span className={highlights.code}>true/false</span>, Arrays{" "}
-        <span className={highlights.code}>[ ]</span>, Objekte{" "}
-        <span className={highlights.code}>&#123; &#125;</span>. Sie dienen dazu,
-        Daten während der Ausführung eines JavaScript-Programms zu speichern und
-        zu verändern.
+        Variablen können verschiedene Arten von Werten speichern, wie Zahlen 1 2
+        3, Zeichenketten <span className={highlights.code}>"" "A" "ABC"</span>,
+        Booleans <span className={highlights.code}>true/false</span>, Arrays{' '}
+        <span className={highlights.code}>[ ]</span>, Objekte
+        <span className={highlights.code}> &#123; &#125;</span> und einige mehr.
+        Sie dienen dazu, Daten während der Ausführung eines JavaScript-Programms
+        zu speichern und zu verändern.
       </p>
       <pre>
         <code>
@@ -71,7 +82,43 @@ export const Variable = () => {
         Vor ES6 war <span className={highlights.code}>var</span> die übliche
         Art, Variablen zu deklarieren. Sie sind funktions- oder global-sichtbar
         und können mehrmals im selben Gültigkeitsbereich deklariert werden,
-        sowie überall überschrieben werden.
+        sowie überall überschrieben werden.{' '}
+        <span className={highlights.code}>var </span>hat einige seltsame
+        Eigenheiten, weshalb es empfohlen wird, stattdessen{' '}
+        <span className={highlights.code}>let</span> oder{' '}
+        <span className={highlights.code}>const</span> zu verwenden. Als
+        beispiel ist var nicht Scopegebunden sondern global gültig!
+      </p>
+      <h2 className='font-extrabold text-2xl'>Scope Einfach!</h2>
+      <p>
+        Denke an den Scope als den Bereich, in dem eine Variable sichtbar ist.
+        Wir kenne ein ähnliches Verhalten bereits aus CSS. Hierbei werden
+        bestimmte Properties wie beispielsweise color oder font-size an
+        Kindelemente vererbt und andere nicht.
+      </p>
+      <pre className='text-sm'>
+        <code>
+          .container &#123;
+          <br />
+          &nbsp;&nbsp;color: red;
+          <br />
+          &nbsp;&nbsp;border: solid 1px;
+          <br />
+          &#125;
+          <br />
+        </code>
+      </pre>
+      <p>
+        In Javascript ist verhalten sich Variablen wie die color Property.
+        Variablen sind von da aus wo sie deklariert wurden, in allen unteren
+        Scopes sichtbar. Das bedeutet, dass eine Variable die in Zeile 1
+        (Global) erstellt wurde auch in anderen Scopes, die unter ihrem
+        Gültigkeitsbereich liegen sichtbar ist.
+      </p>
+      <p>
+        Die border Property in CSS verhält sich wie eine Variable, die in einem
+        Scope deklariert wurde. Diese ist nur in diesem Scope sichtbar und kann
+        nicht von anderen Scopes aufgerufen werden.
       </p>
       <h2 className='font-extrabold text-2xl'>Was vertseht man unter Scope</h2>
       <p>
