@@ -44,7 +44,7 @@ export const Datentypen = () => {
           <br />
           const myNull = null;
           <br />
-          // Dont do this 😟
+          // Don't do this 😟
           <br />
           const myUndefined = undefined;
         </code>
@@ -71,6 +71,40 @@ export const Datentypen = () => {
         Zu den primitiven Datentypen gehören string, number, boolean, null und
         undefined.
       </p>
+      <h3 className='font-extrabold text-xl'>Was ist ein Pointer?</h3>
+      <p>
+        Ein Pointer ist eine Variable, die die Speicheradresse eines anderen
+        Objekts oder einer anderen Variable enthält. In JavaScript gibt es keine
+        expliziten Pointer wie in C oder C++, aber die Referenz auf ein Objekt
+        ist ein Pointer.
+      </p>
+      <ul>
+        <li>
+          1. Im unteren Beispiel sieht man wie die
+          <span className={highlights.file}> Variable firstPerson </span> auf
+          den im Speicher hinterlegten
+          <span className={highlights.directory}> Wert "Lisa" </span> vom
+          <span className={highlights.errorCode}> Type String </span> verweist.
+        </li>
+        <li>
+          2. Die
+          <span className={highlights.file}> Variable secondPerson </span> zeigt
+          auf <span className={highlights.file}> firstPerson </span> und hat
+          somit den gleichen Wert.
+          <br />
+          <span className={highlights.errorCode}>
+            WICHTIG: Da der Wert bereits im Speicher angelegt wurde, wird dieser
+            nicht erneut angelegt!
+          </span>
+        </li>
+        <li>
+          3. Nun verändern wir den Wert von{' '}
+          <span className={highlights.file}>secondPerson</span> auf
+          <span className={highlights.directory}> "Jacob"</span>. Für diesen
+          Wert wird ein neuer Speicherplatz angelegt.
+        </li>
+      </ul>
+
       <div className='imgContainer p-0 my-3'>
         <img
           className='imgHeight'
@@ -79,6 +113,48 @@ export const Datentypen = () => {
           alt='Image about if and nested if´s'
         />
       </div>
+      <h3 className='font-extrabold text-xl'>Pointer auf Objekte</h3>
+      <p>
+        Zu den referenzierten Datentypen gehören komplexe Typen wie Objekte,
+        Arrays, Funktionen und Reguläre Ausdrücke. Diese Datentypen sind
+        veränderlich und werden als Referenztypen bezeichnet. Das bedeutet, dass
+        die Werte dieser Datentypen als Referenz im Speicher abgelegt werden.
+      </p>
+      <ul>
+        <li>
+          1. Im unteren Beispiel sehen wir verschiedene Objekte.
+          <span className={highlights.file}> Objekt userObj </span>
+          zeigt auf das im Speicher hinterlegte
+          <span className={highlights.directory}> Objekt </span> mit den einigen
+          Eigenschaften.
+        </li>
+        <li>
+          2. Das zweite
+          <span className={highlights.file}> Objekt userObj2 </span> zeigt auf{' '}
+          <span className={highlights.file}> userObj </span> und hat somit das
+          gleiche Objekt als Wert.
+          <br />
+          <span className={highlights.errorCode}>
+            WICHTIG: Hierbei wird wirklich das selbe Objekt referenziert und
+            nicht ein neues Objekt angelegt! Das bedeutet, dass wenn wir das
+            Objekt verändern, die Änderungen in beiden Variablen sichtbar sind.
+          </span>
+        </li>
+        <li>
+          3. Nun verändern wir den Wert von
+          <span className={highlights.file}> userObj2 </span> auf ein neues
+          Objekt mi den selben Werten wie das Objekt von userObj1. Obwohl die
+          Werte im inneren des Objektes gleich sind, wird ein neues Objekt im
+          Speicher angelegt.
+        </li>
+        <li>
+          <span className={highlights.errorCode}>
+            WICHTIG: Auch wenn beide Objekte die gleichen Werte beinhalten, sind
+            es voneinander unabhänge Objekte. Das bedeutet, dass Änderungen in
+            einem Objekt keine Auswirkungen auf das andere Objekt haben!
+          </span>
+        </li>
+      </ul>
       <div className='heightContainer p-0 my-3'>
         <img
           className='imgHeight'
@@ -87,6 +163,7 @@ export const Datentypen = () => {
           alt='Image about if and nested if´s'
         />
       </div>
+      <h3 className='font-extrabold text-xl'>Lösung durch Spread-Operator</h3>
       <div className='imgContainer p-0 my-2'>
         <img
           className='imgHeight'
