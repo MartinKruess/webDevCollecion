@@ -28,7 +28,7 @@ export const JSExercises = () => {
       </p>
       <div className='md:flex justify-between mt-10'>
         <select
-          className='bg-slate-700 px-6 py-2 rounded-xl h-10 w-full md:flex md:justify-between md:w-1/6 font-bold'
+          className='bg-slate-700 px-3 py-2 rounded-lg h-8 w-full outline outline-slate-700 outline-8 md:flex md:justify-between md:w-1/6 font-bold'
           name='exercises'
           id='exercises'
           onChange={(e) => getTypeTarget(e)}
