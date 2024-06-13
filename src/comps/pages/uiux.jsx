@@ -2,7 +2,6 @@ import { useContext, useEffect } from 'react';
 import { ThemeContext } from '../global/loadTheme';
 
 import { VSCode } from '../ui-basics/vsCode';
-import { Console } from '../ui-basics/console';
 import { Grid } from '../ui-basics/grid';
 import { Animation } from '../ui-basics/animation';
 import { SASS } from '../ui-basics/sass';
@@ -59,7 +58,6 @@ export const UIUX = () => {
       </nav>
       <section className='w-full md:w-10/12 m-auto'>
         {theme === 'vs-code' && <VSCode />}
-        {theme === 'console' && <Console />}
         {theme === 'grid' && <Grid />}
         {theme === 'animation' && <Animation />}
         {theme === 'sass' && <SASS />}
