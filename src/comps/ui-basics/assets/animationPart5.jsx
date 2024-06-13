@@ -2,8 +2,6 @@ export const AnimationPart5 = () => {
   return (
     <article className='text-sm min-h-full' id='ani5'>
       <p class='helperSpace'>Keyframe Animationen folgen in Kürze!</p>
-<<<<<<< HEAD
-=======
       <header className='grid grid-cols-3 grid-rows-2 gap-3'>
         <div className='block block1 col-start-1 col-end-2'>
           <div></div>
@@ -33,7 +31,6 @@ export const AnimationPart5 = () => {
           <div></div>
         </div>
       </header>
->>>>>>> 4a3c4b7d29aaa5ec655e6477c108496c4ed16646
     </article>
   );
 };
