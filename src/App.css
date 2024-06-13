@@ -507,6 +507,7 @@ input:user-invalid {
   background: #229922;
   width: 2rem;
   height: 2rem;
+<<<<<<< HEAD
   border-radius: 0.5rem;
   animation: 16s slide linear infinite;
 }
@@ -559,13 +560,110 @@ input:user-invalid {
 }
 
 .sliderContainer:hover .slider {
+=======
+>>>>>>> 4a3c4b7d29aaa5ec655e6477c108496c4ed16646
   border-radius: 0.5rem;
-  translate: 20rem;
+  animation: 16s slide linear infinite;
 }
 
-.con2:hover .jump {
-  background-color: red;
-  width: 2.5rem;
-  height: 3rem;
-  translate: 0.3rem -0.5rem;
+@keyframes slide {
+  0% {
+    background-color: orange;
+    transform: translate(0);
+  }
+  3% {
+    transform: translate(0);
+  }
+  10% {
+    background-color: orange;
+    transform: translate(35vw);
+  }
+  20% {
+    background-color: lightblue;
+    transform: translate(35vw);
+  }
+  70% {
+    background-color: lightblue;
+    transform: translate(55vw);
+  }
+  80% {
+    background-color: #229922;
+    transform: translate(55vw);
+  }
+  95% {
+    background-color: #229922;
+    transform: translate(0);
+  }
+  100% {
+    background-color: orange;
+    transform: translate(0);
+  }
+}
+
+.block {
+  background: linear-gradient(to bottom right, #b7b7b73b, #ececec1b, #b7b7b741);
+  color: red;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #1e1c1c33,
+    inset -0.1rem 0.1rem 0.1rem #1e1c1c33, inset 0.1rem -0.1rem 0.1rem #fcf9f933,
+    inset -0.1rem -0.1rem 0.1rem #1e1c1c33;
+  animation: blend 21s linear infinite;
+
+  div {
+    background: #ededed33;
+    width: 98%;
+    height: 88%;
+    margin: 1% 0 0 0;
+  }
+}
+
+.block5 {
+  animation-delay: 1s;
+}
+
+.block2 {
+  animation-delay: 3s;
+}
+
+.block7 {
+  animation-delay: 5s;
+}
+
+.block1 {
+  animation-delay: 7s;
+}
+
+.block8 {
+  animation-delay: 11s;
+}
+
+.block9 {
+  animation-delay: 13s;
+}
+
+.block3 {
+  animation-delay: 17s;
+}
+
+.block4 {
+  animation-delay: 19s;
+}
+
+@keyframes blend {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.1rem rgb(0, 255, 251),
+      -0.1rem -0.1rem 0.6rem 0.1rem rgb(0, 255, 251);
+  }
 }
