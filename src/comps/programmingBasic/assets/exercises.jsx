@@ -139,12 +139,25 @@ export const jsExercises = [
   {
     header: 'Item Verbesserung in einem Game',
     tasks: [
-      'Ein SPieler hat ein tolles neues Schwert und möchte dieses von Level 1 auf Level 2 verbessern. Da die Schmeide in dieser Stadt leider nicht besonders gut sind, gibt es eine 70% Chance, dass das Schwert verbessert wird. Nutze Math.random() um die Chance zu berechnen. Eine Verbesserung findet immer dann statt, wenn die Zahl größer als die angegebene Chance des Items ist.',
+      'Ein Spieler hat ein tolles neues Schwert und möchte dieses von Level 1 auf Level 2 verbessern. Da die Schmeide in dieser Stadt leider nicht besonders gut sind, gibt es eine 70% Chance, dass das Schwert verbessert wird. Nutze Math.random() um die Chance zu berechnen. Eine Verbesserung findet immer dann statt, wenn die Zahl größer als die angegebene Chance des Items ist.',
     ],
     advancedHeader: 'Bessere Schmiede, höhere Chance',
     advancedTask:
       'Der Spieler hat eine bessere Schmiede gefunden, die eine 90% Chance auf Verbesserung hat. Berechne die Chance und gib aus ob das Schwert verbessert wurde. Achte darauf, dass bei einer Erhöhung der ItemChance die Wahrscheinlichkeit sink, dass das Schwert verbessert wird, da ein Upgrade nur noch bei einer Zahl größer als 0.9 stattfindet.',
     code: '',
+    output: '',
+    tools: [''],
+    type: 'math',
+  },
+  {
+    header: 'Random Picker',
+    tasks: [
+      'Nutzen das unten stehende Code-Beispiel. Baue einen Random Picker, der aus einer Liste von 10 Namen einen zufälligen Namen auswählt und in der Konsole ausgibt.',
+    ],
+    advancedHeader: '',
+    advancedTask:
+      'Der Spieler hat eine bessere Schmiede gefunden, die eine 90% Chance auf Verbesserung hat. Berechne die Chance und gib aus ob das Schwert verbessert wurde. Achte darauf, dass bei einer Erhöhung der ItemChance die Wahrscheinlichkeit sink, dass das Schwert verbessert wird, da ein Upgrade nur noch bei einer Zahl größer als 0.9 stattfindet.',
+    code: 'const classmates = ["Hans Müller", "Peter Schmidt", "Klaus Meier", "Karl-Heinz", "Hans-Peter", "Peter-Klaus", "Klaus-Hans", "Karl-Peter", "Hans-Klaus", "Peter-Hans"]',
     output: '',
     tools: [''],
     type: 'math',

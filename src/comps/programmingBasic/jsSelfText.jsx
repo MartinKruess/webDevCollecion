@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import { TestQuestions as questions } from "./assets/jsTestQuestions";
-import { SelfTestText } from "./assets/selfTestText";
+import { useEffect, useState } from 'react';
+import { TestQuestions as questions } from './assets/jsTestQuestions';
+import { SelfTestText } from './assets/selfTestText';
 
 export const SelfTest = () => {
   const [arr, setArr] = useState([]);
   const [inputs, setInputs] = useState({
-    answer0: "",
-    answer1: "",
-    answer2: "",
-    answer3: "",
-    answer4: "",
-    answer5: "",
-    answer6: "",
-    answer7: "",
-    answer8: "",
-    answer9: "",
+    answer0: '',
+    answer1: '',
+    answer2: '',
+    answer3: '',
+    answer4: '',
+    answer5: '',
+    answer6: '',
+    answer7: '',
+    answer8: '',
+    answer9: '',
   });
   const [toggle, setToggle] = useState(false);
   const [counter, setCounter] = useState(0);
@@ -47,8 +47,8 @@ export const SelfTest = () => {
   }, []);
 
   // useEffect(() => {
-  //   setCounter(count);
-  // }, [toggle]);
+  //   console.log('myArr', arr);
+  // }, [arr]);
 
   const controllAnswers = (e) => {
     e.preventDefault();

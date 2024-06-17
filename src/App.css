@@ -545,7 +545,7 @@ input:user-invalid {
   }
 }
 
-.block {
+.blockBox {
   background: linear-gradient(to bottom right, #b7b7b73b, #ececec1b, #b7b7b741);
   color: red;
   width: 100%;
