@@ -5,22 +5,21 @@ export const NodeInstaller = () => {
       <p>
         Node.js ist eine plattformübergreifende Open - Source- Serverumgebung,
         die unter Windows, Linux, Unix, macOS und mehr ausgeführt werden kann.
-        Node.js ist eine Back-End- JavaScript- Laufzeitumgebung, läuft auf der
-        V8- JavaScript-Engine und führt JavaScript-Code außerhalb eines
-        Webbrowsers aus.
+        Node.js ist eine Backend-JavaScript-Laufzeitumgebung, die auf der V8-
+        JavaScript-Engine läuft und JavaScript-Code außerhalb eines Webbrowsers
+        ausführt.
       </p>
       <div>
-        <p>Node Version überprüfen</p>
+        <h3 className='font-extrabold text-xl'>Node Version überprüfen</h3>
         <pre>
           <code>node -v</code>
           <br />
           <code>node --version</code>
         </pre>
-      </div>
-      <div>
+        <h4 className='font-extrabold text-lg'>Node Version Updaten auf LTS</h4>
         <p>
           Bei vorhandener Node Version, lässt sich diese einfach auf die
-          aktuellest LTS-Version Updaten.
+          aktuellest LTS-Version (LongTimeSupport) Updaten.
         </p>
         <pre>
           <code>npm i -g n lts</code>
@@ -34,7 +33,7 @@ export const NodeInstaller = () => {
         nutzen.
       </p>
       <div>
-        <p>Datei mit Node Ausführen</p>
+        <h4 className='font-extrabold text-lg'>Datei mit Node ausführen</h4>
         <pre>
           <code>node index.js</code>
         </pre>
@@ -50,7 +49,10 @@ export const NodeInstaller = () => {
         verschiedenen anderen Versionen gearbeitet werden.
       </p>
       <div className='linkContainer'>
-        <a href='https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/'>
+        <a
+          href='https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/'
+          target='_blanc'
+        >
           Download Guide
         </a>
       </div>
@@ -71,11 +73,16 @@ export const NodeInstaller = () => {
         </pre>
       </div>
       <div className='linkContainer'>
-        <a href='https://nodejs.org/en/download' className='px-3'>
+        <a
+          href='https://nodejs.org/en/download'
+          target='_blanc'
+          className='px-3'
+        >
           Node
         </a>
         <a
           href='https://github.com/coreybutler/nvm-windows#readme'
+          target='_blanc'
           className='px-3'
         >
           Node Version Manager
