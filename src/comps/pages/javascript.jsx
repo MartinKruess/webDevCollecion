@@ -20,6 +20,7 @@ import { SelfTest } from '../programmingBasic/jsSelfText';
 import { Electron } from '../programmingBasic/electron';
 import { Classes } from '../programmingBasic/classes';
 import { Console } from '../programmingBasic/console';
+import { Sort } from '../programmingBasic/sort';
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -88,6 +89,12 @@ export const PB = () => {
           </li>
           <li
             className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
+            onClick={() => setTheme('sort')}
+          >
+            Sortieralgorithmen
+          </li>
+          <li
+            className='p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800'
             onClick={() => setTheme('function')}
           >
             Functions
@@ -137,6 +144,7 @@ export const PB = () => {
         {theme === 'ifelse' && <IfElse />}
         {theme === 'array' && <Array />}
         {theme === 'loop' && <Loop />}
+        {theme === 'sort' && <Sort />}
         {theme === 'function' && <Function />}
         {theme === 'datatype' && <Datentypen />}
         {theme === 'objects' && <Objects />}

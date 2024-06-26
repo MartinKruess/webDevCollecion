@@ -1,3 +1,5 @@
+import { highlights } from '../../App';
+
 export const NPM = () => {
   return (
     <article>
@@ -28,12 +30,87 @@ export const NPM = () => {
         </pre>
         <p>
           Sollte dir die Version angezeigt werden, ist NPM bereits installiert.
+          Als nächstes kannst du mit dem Befehl{' '}
+          <span className={highlights.code}>npm init</span> ein neues Projekt
+          anlegen. Npm init initialisiert ein neues Projekt und erstellt eine
+          package.json, sowie die node_modules.
         </p>
         <pre>
           <code>npm init</code>
         </pre>
+        <p>
+          In der package.json werden alle Informationen über das Projekt und die
+          verwendeten Packages gespeichert. Das bedeutet unser Projekt hat
+          bestimmte Abhängigkeiten und diese Abhängigkeiten sind in der
+          package.json hinterlegt. Diese Abhängigkeiten sind bisher zwar
+          hinterlegt, aber noch nicht installiert. Um die Abhängigkeiten zu
+          installieren verwenden wir den Befehl{' '}
+          <span className={highlights.code}>npm install</span>.
+        </p>
         <pre>
-          <code>npm -v</code>
+          <code>
+            npm i <br />
+            npm install
+          </code>
+        </pre>
+      </div>
+      <div>
+        <h2 className='font-extrabold text-xl my-5'>
+          Die Package JSON und package-lock.json
+        </h2>
+        <p>
+          Die Package JSON Datei ist eine JSON Datei, doch wofür steht JSON
+          eigentlich? Die Dateiendung
+          <span className={highlights.code}> JSON</span> steht für
+          <span className={highlights.code}> JavaScript Object Notation</span>.
+          Schauen wir uns einfach mal ein Beispiel an.
+        </p>
+        <pre className='flex'>
+          <code>
+            &#123;
+            <br />
+            &#9;"name": "webdevcollecion",
+            <br />
+            &#9;"private": true,
+            <br />
+            &#9;"version": "0.0.0",
+            <br />
+            &#9;"type": "module",
+            <br />
+            &#9;"scripts": &#123;
+            <br />
+            &#9;&#9;"dev": "node index.js",
+            <br />
+            &#9;&#125;,
+            <br />
+            &#9;"dependencies": &#123;
+            <br />
+            &#9;&#9;"readlineSync": "1.4.10",
+            <br />
+            &#9;&#125;,
+            <br />
+            &#9;"devDependencies": &#123;
+            <br />
+            &#9;&#9;"autoprefixer": "^10.4.14",
+            <br />
+            &#9;&#9;"eslint": "^8.38.0",
+            <br />
+            &#9;&#9;"postcss": "^8.4.24",
+            <br />
+            &#9;&#9;"tailwindcss": "^3.3.2",
+            <br />
+            &#9;&#125;,
+            <br />
+            &#125;,
+          </code>
+          <span>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laboriosam pariatur iste incidunt autem eligendi veniam, doloribus
+              laudantium totam nobis quam? Accusantium molestiae eius iste porro
+              praesentium consectetur ratione non officia.
+            </p>
+          </span>
         </pre>
       </div>
       <h3 className='font-extrabold text-xl my-5'>
