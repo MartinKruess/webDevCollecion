@@ -1,4 +1,4 @@
-import { highlights } from "../../App";
+import { highlights } from '../../App';
 
 export const Loop = () => {
   return (
@@ -22,7 +22,7 @@ export const Loop = () => {
       </pre>
       <p className='pt-2 pb-4'>
         Wir unterscheiden zwischen drei verschiedenen Loops. Die wohl
-        verbreiteste Schleife ist die{" "}
+        verbreiteste Schleife ist die{' '}
         <span className={highlights.code}>for-loop</span>, wie im obrigen
         Beispiel. Eine ältere Alternative zur for-loop ist die while loop
         während die do-while loop sich gänzlich anders verhält.
@@ -43,9 +43,11 @@ export const Loop = () => {
         </pre>
         <pre>
           <code>
-            while (let i = 0; i &lt; 5; i++) &#123;
+            while (i &lt; 5;) &#123;
             <br />
             &#9;console.log(i, "ist kleiner als 5!")
+            <br />
+            &#9;i++
             <br />
             &#125;
           </code>
@@ -57,6 +59,8 @@ export const Loop = () => {
             do &#123;
             <br />
             &#9;console.log(i, "ist kleiner als 5!")
+            <br />
+            &#9;i++
             <br />
             &#125; while (i &lt; 5)
             <br />
@@ -99,19 +103,19 @@ export const Loop = () => {
         ForIn und ForOf Loops (Objects)
       </h3>
       <p className='pt-4 pb-2'>
-        Die grundlegendste Art der Iterationsmethode in JavaScript ist die{" "}
+        Die grundlegendste Art der Iterationsmethode in JavaScript ist die{' '}
         <span className={highlights.code}>for-Schleife</span>. Es sind drei
         Ausdrücke erforderlich; eine Variablendeklaration, eine Bedingung, die
         vor jeder Iteration ausgewertet wird, und eine Art Counter. Zusätzlich
-        zu der normalen <span className={highlights.code}>for-Schleife</span>{" "}
+        zu der normalen <span className={highlights.code}>for-Schleife</span>{' '}
         gibt es zwei weitere Arten von for-Iterationsmethoden, die wir verwenden
-        können: <span className={highlights.code}>for-in</span> und{" "}
+        können: <span className={highlights.code}>for-in</span> und{' '}
         <span className={highlights.code}>for-of</span>
       </p>
       <p>
         Die <span className={highlights.code}>for-in Loop</span> achtet auf alle
         aufzählbaren Eigenschaften bei Objekten und Arrays. Eine aufzählbare
-        Eigenschaft eines Arrays sind die Adressen (der Index). So kann ein{" "}
+        Eigenschaft eines Arrays sind die Adressen (der Index). So kann ein{' '}
         <span className={highlights.code}>for-in Loop</span> über den Index
         eines Arrays laufen und die dazugehörigen Werte ausgeben oder
         bearbeiten.
@@ -132,12 +136,12 @@ export const Loop = () => {
         </code>
       </pre>
       <p>
-        Ebenfalls kann ein <span className={highlights.code}>for-in Loop</span>{" "}
+        Ebenfalls kann ein <span className={highlights.code}>for-in Loop</span>{' '}
         auf ein Object angewendet werden, da ein Objet ebenfalls einzigartige
-        aufzählbare Adressen besitzt, diese nennen sich Key. Vor ES5 war die{" "}
+        aufzählbare Adressen besitzt, diese nennen sich Key. Vor ES5 war die{' '}
         <span className={highlights.code}>for-in Loop</span> die einzige
         Möglichkeit ein Object mit einer for-loop zu durchlaufen. Dieses wurde
-        mit ES5 durch die Objectmethode{" "}
+        mit ES5 durch die Objectmethode{' '}
         <span className={highlights.code}>Object.keys(objName)</span> abgelöst.
       </p>
       <pre className='text-sm'>
@@ -167,10 +171,10 @@ export const Loop = () => {
       </pre>
       <p>
         Die <span className={highlights.code}>for-of Loop</span> verhält sich
-        hierbei etwas anders. Die{" "}
+        hierbei etwas anders. Die{' '}
         <span className={highlights.code}>for-of Loop</span> lässt sich, anders
         als die <span className={highlights.code}>for-in Loop</span> nur auf
-        Arrays nicht auf Objects anwenden. Außerdem durchläuft die{" "}
+        Arrays nicht auf Objects anwenden. Außerdem durchläuft die{' '}
         <span className={highlights.code}>for-of Loop</span> die Values eines
         Arrays und nicht die Adressen.
       </p>
@@ -202,7 +206,7 @@ export const Loop = () => {
       <p>
         Bei der Anwendung auf ein Object muss man daher ein wenig Tricksen. Zu
         erst muss das Object zu einem Array umgewandetl werden. Hierfür eignen
-        sich die ObjectMethoden:{" "}
+        sich die ObjectMethoden:{' '}
         <span className={highlights.errorCode}>
           Object.keys(objName), Object.values(objName), Object.entries(objName)
         </span>
@@ -236,9 +240,9 @@ export const Loop = () => {
       </pre>
       <p>
         Die Object.values() Methode generiert ein Array mit den einzelnen Values
-        des Objects. Auf dieses lassen sich anschließend die{" "}
-        <span className={highlights.code}>For-Of und For-In Loop</span>{" "}
-        problemlos anwenden. Näheres hierzu findest du unter{" "}
+        des Objects. Auf dieses lassen sich anschließend die{' '}
+        <span className={highlights.code}>For-Of und For-In Loop</span>{' '}
+        problemlos anwenden. Näheres hierzu findest du unter{' '}
         <span className={highlights.directory}>
           Objects -&gt; Advanced Object Methoden
         </span>
