@@ -52,31 +52,53 @@ export const Sort = () => {
         <p>Ausgabe des sortieren Arrays</p>
         <code>[{(sorted ? newArrOfNums : arrOfNums).join(', ')}]</code>
       </pre>
+      <h3 className='text-xl font-bold'>
+        Warum gibt es verschiedene Algorythmen zum sortieren von Daten?
+      </h3>
+      <p>
+        Es gibt verschiedene Algorythmen zum sortieren von Daten, da es beim
+        sortieren von Daten unterschiedliche Ansprüche gibt. So kann ein
+        Algorythmus für geringe Datenmengen sehr effizient sein, jedoch bei
+        großen Datenmengen sehr langsam. Ebenso gibt es Algorythmen, die bei
+        großen unsortierten Datenmengen sehr effizient sind, jedoch bei kleinen
+        sortierten länger brauchen als andere. Ein weiterer Punkt können die
+        Kosten sein. Ein Algorythmus kann sehr effizient, aber auch sehr teuer
+        in der Umsetzung sein. Das bedeutet, dass bei der Ausführung mehr
+        Speicher benötigt wird als bei anderen Algorythmen. Daher müssen wir bei
+        der Auswahl des Algorythmus immer die Anforderungen, Datenmenge und
+        äußeren Behebenheiten berücksichtigen.
+      </p>
+      <h3 className='text-lg font-bold'>Hier verwendetes Code Beispiel</h3>
       <pre className='text-sm'>
         <code>
-          for (let i = 0; i &lt; arr.length; i++) &#123;
+          11. for (let i = 0; i &lt; arr.length; i++) &#123;
           <br />
-          &#9;let min = i;
+          12. &#9;let min = i;
           <br />
-          &#9;for (let j = i + 1; j &lt; arr.length; j++) &#123;
+          13. &#9;for (let j = i + 1; j &lt; arr.length; j++) &#123;
           <br />
-          &#9;&#9;if (arr[min] &gt; arr[j]) &#123;
+          14. &#9;&#9;if (arr[min] &gt; arr[j]) &#123;
           <br />
-          &#9;&#9;&#9;min = j;
+          15. &#9;&#9;&#9;min = j;
           <br />
-          &#9;&#9;&#125;
+          16. &#9;&#9;&#125;
           <br />
-          &#9;&#125;
+          17. &#9;&#125;
           <br />
-          &#9;if (i != min) &#123;
+          18. &#9;if (i != min) &#123;
           <br />
-          &#9;&#9;[arr[i], arr[min]] = [arr[min], arr[i]];
+          19. &#9;&#9;[arr[i], arr[min]] = [arr[min], arr[i]];
           <br />
-          &#9;&#125;
+          20. &#9;&#125;
           <br />
-          &#125;
+          21. &#125;
         </code>
       </pre>
+      <p>
+        Die Besonderheit an diesem Beispiel ist, dass der Algorythmus nur zwei
+        Loops hat. Der erste Loop geht durch das Array und der zweite Loop
+        vergleicht die Werte. Wenn der Wert des aktuellen Indexes größer ist als
+      </p>
     </article>
   );
 };
