@@ -113,7 +113,12 @@ export const TestQuestions = [
   {
     question: "Wie erzeuge ich eine Zufallszahl zwischen 0 und 10?",
     description: "Schreibe nur die Syntax (Code) auf.",
-    answer: ["Math.floor(Math.random()*10)", "Math.floor(Math.random() * 10)"],
+    answer: [
+      "Math.floor(Math.random()*10)",
+      "Math.floor(Math.random() * 10)",
+      "Math.floor(Math.random()* 10)",
+      "Math.floor(Math.random() *10)",
+    ],
     correct:
       "Mit Math.floor(Math.random() * 10) erzeugen wir eine abgerundete Zufallszahl ZWISCHEN 0 und 10.\n",
   },
@@ -162,7 +167,7 @@ export const TestQuestions = [
   {
     question: "Wie nennt sich folende Syntax (Code)?",
     description: "const {firstName, lastName, ...data} = obj1",
-    answer: ["rest", "rest-operator"],
+    answer: ["destructuring", "destrukturierung", "destrukturieren"],
     correct: "Diese Syntax nennt sich rest Operator.\n",
   },
   {
