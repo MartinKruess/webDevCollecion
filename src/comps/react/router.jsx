@@ -5,7 +5,7 @@ import { RouterTagMain } from "./assets/routerTagsMain";
 export const Router = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>
+      <h2 className="font-extrabold text-2xl">
         Router Version 5-6 - react-router-dom
       </h2>
       <pre>

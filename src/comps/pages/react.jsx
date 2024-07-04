@@ -7,8 +7,11 @@ import { Components } from "../react/components";
 import { Hooks } from "../react/hooks";
 import { Router } from "../react/router";
 import { RouterV6 } from "../react/routerV6";
+<<<<<<< HEAD
 import { Context } from "../react/context";
 import { RouterBonus } from "../react/routerBonus";
+=======
+>>>>>>> router
 
 export const React = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -52,10 +55,23 @@ export const React = () => {
             Hooks & Refs
           </li>
           <li
+<<<<<<< HEAD
             className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
             onClick={() => setTheme("routerV5")}
           >
             React Router v.5
+=======
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("routerV5")}
+          >
+            React Router v.5
+          </li>
+          <li
+            className='px-3 py-2 border rounded-lg hover:bg-red-800'
+            onClick={() => setTheme("routerV6")}
+          >
+            React Router v.6
+>>>>>>> router
           </li>
           <li
             className='p-1 sm:py-1 border rounded-lg hover:bg-red-800'
@@ -92,7 +108,10 @@ export const React = () => {
         {theme === "routerV5" && <Router />}
         {theme === "routerV6" && <RouterV6 />}
         {theme === "routerBonus" && <RouterBonus />}
+<<<<<<< HEAD
         {theme === "context" && <Context />}
+=======
+>>>>>>> router
       </section>
     </>
   );

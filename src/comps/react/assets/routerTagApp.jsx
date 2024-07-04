@@ -3,7 +3,7 @@ import { highlights } from "../../../App";
 export const RouterTagApp = () => {
   return (
     <>
-      <h3 className='font-extrabold text-lg pb-3'>
+      <h3 className="font-extrabold text-lg pb-3">
         <span className={highlights.file}>
           App.jsx (Vite) oder App.js (react-app)
         </span>
