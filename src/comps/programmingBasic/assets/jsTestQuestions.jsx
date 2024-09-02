@@ -15,7 +15,16 @@ export const TestQuestions = [
   {
     question: "Was ist ein Pointer?",
     description: "Wie wird ein Pointer noch genannt?",
-    answer: ["zeiger", "verweis", "verlinkung", "verknüpfung"],
+    answer: [
+      "zeiger",
+      "verweis",
+      "verlinkung",
+      "verknüpfung",
+      "referenz",
+      "ref",
+      "speicherzeiger",
+      "adressvariable",
+    ],
     correct:
       "Ein Pointer ist der 'Zeiger' zwischen dem gespeicherten Namen und dem Wert/Value.\n",
   },
@@ -319,7 +328,15 @@ export const TestQuestions = [
   {
     question: "Wann wird counter +1 gerechnet?",
     description: "toggle && counter++",
-    answer: ["true", "wahr"],
+    answer: [
+      "true",
+      "wahr",
+      "toggle true",
+      "toggle === true",
+      "toggle",
+      "toggle == true",
+      "toggle = true",
+    ],
     correct:
       "Ähnlich einer If Bedingung kann durch diese Syntax die Bedingung toggle gesetzt werden.\n",
   },
@@ -392,6 +409,9 @@ export const TestQuestions = [
       "let veränderbar, const unveränderbar",
       "let = veränderbar, const = unveränderbar",
       "const = constante",
+      "const konstant",
+      "let überschreibbar",
+      "const nicht überschreibbar",
     ],
     correct:
       "let ist überschreibbar und const nicht. Const steht für Constante. \n",
@@ -399,13 +419,24 @@ export const TestQuestions = [
   {
     question: "Was ist der Unterschied zwischen splice und slice?",
     description: "arr.splice(3, 1) vs arr.slice(3, 1)",
-    answer: ["splice verändert", "das original Array", "slice kopiert"],
+    answer: [
+      "splice verändert",
+      "das original Array",
+      "slice kopiert",
+      "splice ändert",
+      "slice kopie",
+      "splice mutates",
+      "slice no mutation",
+      "muates",
+      "mutation",
+      "no mutation",
+    ],
     correct:
       "Splice verändert das original Array, während slice nur eine Kopie der Auswahl erstellt. \n",
   },
   {
     question: "Wie überprüft man ob ein Wert in einem Array vorhanden ist?",
-    description: "",
+    description: "Welche Methode gibt es dafür?",
     answer: ["includes", "includes()"],
     correct:
       "Mit includes kann man überprüfen ob ein Array einen bestimmten Wert beinhaltet. \n",
