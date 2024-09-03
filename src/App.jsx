@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { Navi } from "./comps/reusables/navi";
+import { Navi } from "./comps/navigations/navi";
 import { Landingpage } from "./comps/pages/landingpage";
 import { UIUX } from "./comps/pages/uiux";
 import { PB } from "./comps/pages/javascript";
@@ -25,17 +25,17 @@ function App() {
   return (
     <>
       <Navi />
-      <main className='bg-slate-900 text-slate-300 min-h-screen'>
+      <main className="bg-slate-900 text-slate-300 min-h-screen">
         <Routes>
-          <Route exact path='/' element={<Landingpage />} />
-          <Route exact path='/css' element={<UIUX />} />
-          <Route exact path='/programming-basic' element={<PB />} />
-          <Route exact path='/dom' element={<DOM />} />
-          <Route exact path='/react' element={<React />} />
-          <Route exact path='/backend' element={<Node />} />
-          <Route exact path='/databases' element={<Database />} />
-          <Route exact path='/fullstack' element={<Fullstack />} />
-          <Route exact path='/deployment' element={<Deployment />} />
+          <Route exact path="/" element={<Landingpage />} />
+          <Route exact path="/uib/*" element={<UIUX />} />
+          <Route exact path="/programming-basic/*" element={<PB />} />
+          <Route exact path="/dom/*" element={<DOM />} />
+          <Route exact path="/react/*" element={<React />} />
+          <Route exact path="/backend/*" element={<Node />} />
+          <Route exact path="/databases/*" element={<Database />} />
+          <Route exact path="/fullstack/*" element={<Fullstack />} />
+          <Route exact path="/deployment/*" element={<Deployment />} />
         </Routes>
       </main>
     </>

@@ -1,14 +1,14 @@
-import { highlights } from '../../App';
+import { highlights } from "../../App";
 
-export const Datentypen = () => {
+export const DataTypen = () => {
   return (
-    <article className='p-4'>
-      <h2 className='font-extrabold text-2xl'>
+    <article className="p-4">
+      <h2 className="font-extrabold text-2xl">
         Die unterschiedlichen Datentypen in JS
       </h2>
       <p>
         Bei der Deklaration und Definition von Variablen wurden bereits
-        verschiedene Daten­typen vorgestellt, ebenso wie mit{' '}
+        verschiedene Daten­typen vorgestellt, ebenso wie mit{" "}
         <span className={highlights.code}>typeof</span> der Typ des Wertes einer
         Variable ermittelt werden kann. Im Gegensatz zu einer Programmiersprache
         wie C, geht JavaScript recht locker mit den unterschiedlichen Datentypen
@@ -26,7 +26,7 @@ export const Datentypen = () => {
         spezielle Datentypen, wobei zu letzten die Datentypen Null und Undefined
         gezählt werden.
       </p>
-      <h3 className='font-extrabold text-xl'>Primitive Datentypen</h3>
+      <h3 className="font-extrabold text-xl">Primitive Datentypen</h3>
       <p>
         Zu den primitiven Datentypen gehört einfache Typen wie Zeichenketten
         (String), Zahlen (Number), Wahrheitswerte (Boolean), Null (null) und
@@ -49,7 +49,7 @@ export const Datentypen = () => {
           const myUndefined = undefined;
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl'>Referenzierte Datentypen</h3>
+      <h3 className="font-extrabold text-xl">Referenzierte Datentypen</h3>
       <p>
         Zu den referenzierten Datentypen gehören komplexe Typen wie Objekte,
         Arrays, Funktionen und Reguläre Ausdrücke. Diese Datentypen sind
@@ -66,12 +66,12 @@ export const Datentypen = () => {
           <br />
         </code>
       </pre>
-      <h2 className='font-extrabold text-2xl'>Pointer</h2>
+      <h2 className="font-extrabold text-2xl">Pointer</h2>
       <p>
         Zu den primitiven Datentypen gehören string, number, boolean, null und
         undefined.
       </p>
-      <h3 className='font-extrabold text-xl'>Was ist ein Pointer?</h3>
+      <h3 className="font-extrabold text-xl">Was ist ein Pointer?</h3>
       <p>
         Ein Pointer ist eine Variable, die die Speicheradresse eines anderen
         Objekts oder einer anderen Variable enthält. In JavaScript gibt es keine
@@ -98,21 +98,21 @@ export const Datentypen = () => {
           </span>
         </li>
         <li>
-          3. Nun verändern wir den Wert von{' '}
+          3. Nun verändern wir den Wert von{" "}
           <span className={highlights.file}>secondPerson</span> auf
           <span className={highlights.directory}> "Jacob"</span>. Für diesen
           Wert wird ein neuer Speicherplatz angelegt.
         </li>
       </ul>
-      <div className='imgContainer p-0 my-3'>
+      <div className="imgContainer p-0 my-3">
         <img
-          className='imgHeight'
-          onClick={() => setIsWatched('variable')}
-          src='./images/variablePointer.png'
-          alt='Image about if and nested if´s'
+          className="imgHeight"
+          onClick={() => setIsWatched("variable")}
+          src="./images/variablePointer.png"
+          alt="Image about if and nested if´s"
         />
       </div>
-      <h3 className='font-extrabold text-xl'>Pointer auf Objekte</h3>
+      <h3 className="font-extrabold text-xl">Pointer auf Objekte</h3>
       <p>
         Zu den referenzierten Datentypen gehören komplexe Typen wie Objekte,
         Arrays, Funktionen und Reguläre Ausdrücke. Diese Datentypen sind
@@ -129,7 +129,7 @@ export const Datentypen = () => {
         </li>
         <li>
           2. Das zweite
-          <span className={highlights.file}> Objekt userObj2 </span> zeigt auf{' '}
+          <span className={highlights.file}> Objekt userObj2 </span> zeigt auf{" "}
           <span className={highlights.file}> userObj </span> und hat somit das
           gleiche Objekt als Wert.
           <br />
@@ -154,21 +154,21 @@ export const Datentypen = () => {
           </span>
         </li>
       </ul>
-      <div className='heightContainer p-0 my-3'>
+      <div className="heightContainer p-0 my-3">
         <img
-          className='imgHeight'
-          onClick={() => setIsWatched('object')}
-          src='./images/objectPointer.png'
-          alt='Image about if and nested if´s'
+          className="imgHeight"
+          onClick={() => setIsWatched("object")}
+          src="./images/objectPointer.png"
+          alt="Image about if and nested if´s"
         />
       </div>
-      <h3 className='font-extrabold text-xl'>Lösung durch Spread-Operator</h3>
-      <div className='imgContainer p-0 my-2'>
+      <h3 className="font-extrabold text-xl">Lösung durch Spread-Operator</h3>
+      <div className="imgContainer p-0 my-2">
         <img
-          className='imgHeight'
-          onClick={() => setIsWatched('copy')}
-          src='./images/objectCopyPointer.png'
-          alt='Image about if and nested if´s'
+          className="imgHeight"
+          onClick={() => setIsWatched("copy")}
+          src="./images/objectCopyPointer.png"
+          alt="Image about if and nested if´s"
         />
       </div>
     </article>

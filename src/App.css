@@ -40,6 +40,10 @@ nav ul li {
   text-align: center;
 }
 
+nav ul li a {
+  display: block;
+}
+
 article h2,
 article h3 {
   margin-top: 2.5rem;
@@ -384,7 +388,7 @@ i:hover {
   transition: opacity 2s 1s;
 }
 .talkbubble:before {
-  content: '';
+  content: "";
   position: absolute;
   right: 100%;
   top: 1.7rem;

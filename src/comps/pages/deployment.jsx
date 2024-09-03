@@ -38,8 +38,6 @@ export const Deployment = () => {
         {/* {!theme && <JSText />} */}
         {theme === "ghPages" && <GHPages />}
         {theme === "netlify" && <Netlify />}
-        {theme === "vercel" && <Vercel />}
-        {theme === "cyclic" && <Cyclic />}
         {theme === "tipps&tricks" && <TippsTricks />}
       </section>
     </>
