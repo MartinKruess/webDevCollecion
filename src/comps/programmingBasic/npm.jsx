@@ -1,9 +1,9 @@
-import { highlights } from '../../App';
+import { highlights } from "../../App";
 
 export const NPM = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl my-5'>
+      <h2 className="font-extrabold text-2xl my-5">
         NPM - Der Node package Manager
       </h2>
       <p>
@@ -17,12 +17,12 @@ export const NPM = () => {
         erklären. Jemand hat Bootstrap aufgebaut und alle Dateien auf NPM
         hochgeladen.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>NPM die Installation</h3>
+      <h3 className="font-extrabold text-xl my-5">NPM die Installation</h3>
       <div>
         <p>
           Um NPM nutzen zu können solltest du es global installieren. Solltest
-          du bereits den{' '}
-          <span className='text-green-200'>Node Version Manager</span>{' '}
+          du bereits den{" "}
+          <span className="text-green-200">Node Version Manager</span>{" "}
           installiert haben kannst du damit Probelmlos NPM installieren.
         </p>
         <pre>
@@ -30,7 +30,7 @@ export const NPM = () => {
         </pre>
         <p>
           Sollte dir die Version angezeigt werden, ist NPM bereits installiert.
-          Als nächstes kannst du mit dem Befehl{' '}
+          Als nächstes kannst du mit dem Befehl{" "}
           <span className={highlights.code}>npm init</span> ein neues Projekt
           anlegen. Npm init initialisiert ein neues Projekt und erstellt eine
           package.json, sowie die node_modules.
@@ -44,7 +44,7 @@ export const NPM = () => {
           bestimmte Abhängigkeiten und diese Abhängigkeiten sind in der
           package.json hinterlegt. Diese Abhängigkeiten sind bisher zwar
           hinterlegt, aber noch nicht installiert. Um die Abhängigkeiten zu
-          installieren verwenden wir den Befehl{' '}
+          installieren verwenden wir den Befehl{" "}
           <span className={highlights.code}>npm install</span>.
         </p>
         <pre>
@@ -55,7 +55,7 @@ export const NPM = () => {
         </pre>
       </div>
       <div>
-        <h2 className='font-extrabold text-xl my-5'>
+        <h2 className="font-extrabold text-xl my-5">
           Die Package JSON und package-lock.json
         </h2>
         <p>
@@ -65,7 +65,7 @@ export const NPM = () => {
           <span className={highlights.code}> JavaScript Object Notation</span>.
           Schauen wir uns einfach mal ein Beispiel an.
         </p>
-        <pre className='flex'>
+        <pre className="flex">
           <code>
             &#123;
             <br />
@@ -113,11 +113,11 @@ export const NPM = () => {
           </span>
         </pre>
       </div>
-      <h3 className='font-extrabold text-xl my-5'>
+      <h3 className="font-extrabold text-xl my-5">
         Die Verwendung von NPM-Packages
       </h3>
-      <div className='flex flex-wrap md:flex-nowrap gap-10'>
-        <img className='md:xsmall' src='./images/npmInfos.png' alt='' />
+      <div className="flex flex-wrap md:flex-nowrap gap-10">
+        <img className="md:xsmall" src="/images/npmInfos.png" alt="" />
         <div>
           <p>
             Möchtest du das Bootstrap Paket herunterladen und verwenden,
@@ -139,9 +139,9 @@ export const NPM = () => {
           </p>
         </div>
       </div>
-      <div className='flex gap-5 pb-10 pt-5'>
-        <a href='https://www.npmjs.com/'>NPM</a>{' '}
-        <a href='https://docs.npmjs.com/downloading-and-installing-node-js-and-npm'>
+      <div className="flex gap-5 pb-10 pt-5">
+        <a href="https://www.npmjs.com/">NPM</a>{" "}
+        <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">
           NPM & Node Install
         </a>
       </div>

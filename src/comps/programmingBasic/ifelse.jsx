@@ -9,11 +9,11 @@ export const IfElse = () => {
   useEffect(() => {}, [isWatched]);
 
   return (
-    <article className='p-4'>
-      <h2 className='font-extrabold text-2xl'>
+    <article className="p-4">
+      <h2 className="font-extrabold text-2xl">
         Condiuional Statement (If-Else)
       </h2>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         Das klassische{" "}
         <span className={highlights.code}>If (wenn -&gt; dann)</span> ist ein
         logischer Operator bestehend aus:
@@ -27,13 +27,13 @@ export const IfElse = () => {
           &#125;
         </code>
       </pre>
-      <p className='pt-2 pb-4'>
+      <p className="pt-2 pb-4">
         Wobei die Condition einen{" "}
         <span className={highlights.code}>true/fals</span> Wert zurück gibt.
         Sollte die Condition den Boolian true zurück geben wird der Code im
         inneren des if ausgeführt.
       </p>
-      <div className='pt-4 pb-2'>
+      <div className="pt-4 pb-2">
         Das Gegenstück zum <span className={highlights.code}>if (wenn)</span>{" "}
         ist das <span className={highlights.code}>else (sonst)</span>. Während
         man das if auch ohne ein else Anwenden kann, so kann das else nur
@@ -53,10 +53,10 @@ export const IfElse = () => {
           </code>
         </pre>
       </div>
-      <h3 className='font-extrabold text-xl pt-8'>
+      <h3 className="font-extrabold text-xl pt-8">
         Anwendungsbeispiel von If und If-Else
       </h3>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         In diesem Fall wird geprüft ob du müde bist, wenn das zutrifft (
         <span className={highlights.code}>true</span>), dann kommt die
         Nachricht, "Go to bed!" Hier wird nur auf{" "}
@@ -72,7 +72,7 @@ export const IfElse = () => {
           &#125;
         </code>
       </pre>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         Anders sieht das ganze bei Vergleichen aus. Bist du älter als ich? Ist
         dein Haus größer als meins? Hast du das schnellere Auto? Hierbei gibt es
         immer einen true und einen false Fall. Je nach Rückgabewert wird ein
@@ -91,10 +91,10 @@ export const IfElse = () => {
           &#125;
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl pt-8'>
+      <h3 className="font-extrabold text-xl pt-8">
         If-Else Nesting (Verschachtelung)
       </h3>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         Das Verschachteln von If-Abfragen wird verwendet um Mehrfachabfragen
         umzusetzen, wie im nächsten Beispiel.
         <br />
@@ -110,7 +110,7 @@ export const IfElse = () => {
         <br />
         "Happy Halloween!"(Herbst)
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           if(jahreszeit === "Sommer")&#123;
           <br />
@@ -139,12 +139,12 @@ export const IfElse = () => {
           &#125;
         </code>
       </pre>
-      <p className='pt-2 pb-4'>
+      <p className="pt-2 pb-4">
         Wie man an diesem Beispiel leicht sieht, werden nested If-Abfragen je
         nach Komplexität sehr unübersichtlich. Daher sollte man diese möglichst
         vermeiden.
       </p>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         Vermeiden lassen sidh nested If-Abfragen oft durch die Verwendung einer
         speziellen Syntax
       </p>
@@ -169,25 +169,25 @@ export const IfElse = () => {
           &#125;
         </code>
       </pre>
-      <p className='pt-2 pb-4'>
+      <p className="pt-2 pb-4">
         Durch die Verwendung von{" "}
         <span className={highlights.code}>else if</span> spart man sich das
         Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
       </p>
-      <div className='imgContainer'>
+      <div className="imgContainer">
         {isWatched ? (
           <img
-            className='imgHover'
+            className="imgHover"
             onClick={() => setIsWatched(!isWatched)}
-            src='./images/ifElse.png'
-            alt='Image about if and nested if´s'
+            src="/images/ifElse.png"
+            alt="Image about if and nested if´s"
           />
         ) : (
           <img
-            className='w-full md:w-10/12 lg:w-8/12'
+            className="w-full md:w-10/12 lg:w-8/12"
             onClick={() => setIsWatched(!isWatched)}
-            src='./images/ifElse.png'
-            alt='Image about if and nested if´s'
+            src="/images/ifElse.png"
+            alt="Image about if and nested if´s"
           />
         )}
       </div>

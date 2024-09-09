@@ -2,10 +2,10 @@ export const Console = () => {
   // Strappi
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>
+      <h2 className="font-extrabold text-2xl">
         Console.log styling und Besonderheiten (JS in der Console)
       </h2>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Console.log in tabellarischer Form
       </h3>
       <p>
@@ -28,14 +28,14 @@ export const Console = () => {
           console.table(obj);
         </code>
       </pre>
-      <div className='w-full md:imgContainer mt-5 mb-20'>
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
-          src='./images/consoleTable.png'
-          alt=''
-          className='md:medium m-auto'
+          src="/images/consoleTable.png"
+          alt=""
+          className="md:medium m-auto"
         />
       </div>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Meta Daten aus dem window-Object
       </h3>
       <p>
@@ -70,14 +70,14 @@ export const Console = () => {
           <br />
         </code>
       </pre>
-      <div className='w-full md:imgContainer mt-5 mb-20'>
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
-          src='./images/consoleGroup.png'
-          alt=''
-          className='md:medium m-auto'
+          src="/images/consoleGroup.png"
+          alt=""
+          className="md:medium m-auto"
         />
       </div>
-      <h3 className='font-extrabold text-xl'>Schrift- und Hintergrundfarben</h3>
+      <h3 className="font-extrabold text-xl">Schrift- und Hintergrundfarben</h3>
       <p>
         Um bestimmte console.logs hervorzuheben lassen sich die Schrift- und
         Hintergrundfarbe individuell an passen. Neben der stylischen Aspekt,
@@ -113,14 +113,14 @@ export const Console = () => {
           <br />
         </code>
       </pre>
-      <div className='w-full md:imgContainer mt-5 mb-20'>
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
-          src='./images/coloredConsoleLogs.png'
-          alt=''
-          className='md:imgHeight m-auto'
+          src="/images/coloredConsoleLogs.png"
+          alt=""
+          className="md:imgHeight m-auto"
         />
       </div>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Anwendung von CSS im console.log
       </h3>
       <p>
@@ -132,7 +132,7 @@ export const Console = () => {
       </p>
       <pre>
         <p>Code direkt im Console.log</p>
-        <code className='my-3'>
+        <code className="my-3">
           console.log(
           <br />
           &#9;"%cStylen mit CSS!",
@@ -144,16 +144,16 @@ export const Console = () => {
         <br />
         <br />
       </pre>
-      <div className='w-full md:imgContainer mt-5 mb-20'>
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
-          src='./images/consoleStyling.png'
-          alt=''
-          className='md:medium m-auto'
+          src="/images/consoleStyling.png"
+          alt=""
+          className="md:medium m-auto"
         />
       </div>
       <pre>
         <p>Code in einer Variable gespeichert</p>
-        <code className='my-3'>
+        <code className="my-3">
           const style = [<br />
           &#9;"background-color: #ff0000",
           <br />
@@ -166,18 +166,18 @@ export const Console = () => {
           console.log("%cEin weiterer Text", style);
         </code>
       </pre>
-      <div className='w-full md:imgContainer mt-5 mb-20'>
+      <div className="w-full md:imgContainer mt-5 mb-20">
         <img
-          src='./images/consoleStyling2.png'
-          alt=''
-          className='md:medium m-auto'
+          src="/images/consoleStyling2.png"
+          alt=""
+          className="md:medium m-auto"
         />
       </div>
-      <div className='linkContainer'>
+      <div className="linkContainer">
         <a
-          href='https://stackoverflow.com/questions/43528123/visual-studio-code-debug-console-colors/55493884#55493884'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://stackoverflow.com/questions/43528123/visual-studio-code-debug-console-colors/55493884#55493884"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Console Colors
         </a>

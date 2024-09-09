@@ -10,8 +10,8 @@ export const Array = () => {
   return (
     <article>
       {/* ------------- ARRAY ------------- */}
-      <h2 className='font-extrabold text-3xl my-5'>Array</h2>
-      <div className='my-4'>
+      <h2 className="font-extrabold text-3xl my-5">Array</h2>
+      <div className="my-4">
         Ein Array kann man als eine Art Daten-Container verstehen, der einzelne
         Elemente in einem Cluster zusammenfasst. Der grundaufbau eines Arrays
         wird wie folgt aufgebaut
@@ -43,7 +43,7 @@ export const Array = () => {
       </p>
 
       {/* ------------- METHODS ------------- */}
-      <h3 className='font-extrabold text-2xl my-5'>Array Methods Grundlagen</h3>
+      <h3 className="font-extrabold text-2xl my-5">Array Methods Grundlagen</h3>
       <pre>
         <code>
           const users = ["Sockenrocker83", "Nobody01", "Franzi", "Heardbreaker"]
@@ -58,14 +58,14 @@ export const Array = () => {
       <pre>
         <code>.methodName</code>
       </pre>
-      <div className='my-8'>
+      <div className="my-8">
         <ul>
           {arrayMethods.map((method, i) => (
-            <div className='flex flex-wrap border-b md:border-none' key={i}>
-              <li className='sm:w-2/5 py-2 font-bold'>{method.command}</li>
-              <li className='sm:w-2/5 py-2'>{method.description}</li>
-              <li className='sm:w-1/5 py-2 text-center'>
-                <a href={method.url} target='_blank' rel='noopener noreferrer'>
+            <div className="flex flex-wrap border-b md:border-none" key={i}>
+              <li className="sm:w-2/5 py-2 font-bold">{method.command}</li>
+              <li className="sm:w-2/5 py-2">{method.description}</li>
+              <li className="sm:w-1/5 py-2 text-center">
+                <a href={method.url} target="_blank" rel="noopener noreferrer">
                   {method.urlName}
                 </a>
               </li>
@@ -79,25 +79,25 @@ export const Array = () => {
         </p>
       </div>
       {/* ------------- IMAGE ------------- */}
-      <div className='imgContainer'>
+      <div className="imgContainer">
         {isWatched ? (
           <img
-            className='imgHover'
+            className="imgHover"
             onClick={() => setIsWatched(!isWatched)}
-            src='./images/array.png'
-            alt=''
+            src="/images/array.png"
+            alt=""
           />
         ) : (
           <img
-            className='w-full md:w-10/12 lg:w-8/12'
+            className="w-full md:w-10/12 lg:w-8/12"
             onClick={() => setIsWatched(!isWatched)}
-            src='./images/array.png'
-            alt=''
+            src="/images/array.png"
+            alt=""
           />
         )}
       </div>
       <div>
-        <h3 className='font-extrabold text-xl mt-24'>Die Slice-Methode</h3>
+        <h3 className="font-extrabold text-xl mt-24">Die Slice-Methode</h3>
         <p>
           Die slice Methode wird verwendet um eine Teilkopie als neues Array
           auszugeben. Bei dieser Methode wird das Ausgangs-Array/der
@@ -135,7 +135,7 @@ export const Array = () => {
 
         <p>Hier sind einige Beispiele der Slice Methode.</p>
 
-        <pre className='text-sm'>
+        <pre className="text-sm">
           <code>
             const arrayToSlice = [1, 2, 3, 4, 5]
             <br />
@@ -171,13 +171,13 @@ export const Array = () => {
         </pre>
       </div>
       <div>
-        <h3 className='font-extrabold text-xl'>Die Splice-Methode</h3>
+        <h3 className="font-extrabold text-xl">Die Splice-Methode</h3>
         <p>
           Die splice Methode wird verwendet um ein Array zu bearbeiten. Bei
           dieser Methode wird das Ausgangs-Array verändert!
         </p>
         <p>Hier sind einige Beispiele der Splice Methode.</p>
-        <pre className='text-sm'>
+        <pre className="text-sm">
           <code>
             const arrayToSplice = [Tobi, Lisa, Marc, Nina, Christian]
             <br />
@@ -206,22 +206,22 @@ export const Array = () => {
       </div>
 
       {/* ------------- LINKS ------------- */}
-      <div className='linkContainer'>
+      <div className="linkContainer">
         <a
-          href='https://www.mediaevent.de/javascript/array.html'
-          target='_blank'
+          href="https://www.mediaevent.de/javascript/array.html"
+          target="_blank"
         >
           Array (Infos 1)
         </a>
-        <a href='https://www.programiz.com/javascript/array' target='_blank'>
+        <a href="https://www.programiz.com/javascript/array" target="_blank">
           Array (Infos 2)
         </a>
-        <a href='https://www.youtube.com/watch?v=7W4pQQ20nJg' target='_blank'>
+        <a href="https://www.youtube.com/watch?v=7W4pQQ20nJg" target="_blank">
           Array (Video)
         </a>
         <a
-          href='https://www.youtube.com/watch?v=SXb5LN_opbA&list=PLgBH1CvjOA62PBFIDq55-S6Beivje30A2'
-          target='_blank'
+          href="https://www.youtube.com/watch?v=SXb5LN_opbA&list=PLgBH1CvjOA62PBFIDq55-S6Beivje30A2"
+          target="_blank"
         >
           Array Methods (Video)
         </a>
