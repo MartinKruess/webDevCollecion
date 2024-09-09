@@ -19,18 +19,18 @@ export const VSCode = () => {
       <div className="lg:flex">
         <img
           className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
-          src="../../../public/images/autoSave.png"
+          src="/images/autoSave.png"
           // src="./images/autoSave.png"
           alt="VS-Code AutoSave onFocusChange"
         />
         <img
           className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
-          src="../../../public/images/worldWrap.png"
+          src="/images/worldWrap.png"
           alt="VS-Code worldWrap"
         />
         <img
           className="my-3 w-full md:xsmall lg:w-2/6 md:mx-3"
-          src="../../../public/images/prettierSimi.png"
+          src="/images/prettierSimi.png"
           alt="Prettier automatisch Semikol"
         />
       </div>
@@ -67,7 +67,7 @@ export const VSCode = () => {
       <div className="flex justify-between">
         <img
           className="w-2/5"
-          src="../../../public/images/extension-signin.png"
+          src="/images/extension-signin.png"
           alt="Github Extension preview"
         />
         <p className="w-2/5">
@@ -88,7 +88,7 @@ export const VSCode = () => {
         </p>
         <img
           className="w-6/12"
-          src="../../../public/images/coloredTagName.png"
+          src="/images/coloredTagName.png"
           alt="Github Extension preview"
         />
       </div>
@@ -98,7 +98,7 @@ export const VSCode = () => {
       <div className="flex flex-wrap justify-between">
         <img
           className="w-3/12"
-          src="../../../public/images/tailwindCSS.png"
+          src="/images/tailwindCSS.png"
           alt="Github Extension preview"
         />
         <p className="w-4/12 py-0">
@@ -108,7 +108,7 @@ export const VSCode = () => {
         </p>
         <img
           className="w-3/12"
-          src="../../../public/images/bootstrapAutocomplete.png"
+          src="/images/bootstrapAutocomplete.png"
           alt="Github Extension preview"
         />
         <p>
@@ -133,7 +133,7 @@ export const VSCode = () => {
         </p>
         <img
           className="w-2/6"
-          src="../../../public/images/liveSassCompiler.png"
+          src="/images/liveSassCompiler.png"
           alt="Github Extension preview"
         />
       </div>
@@ -155,7 +155,7 @@ export const VSCode = () => {
       </p>
       <img
         className="w-1/3"
-        src="../../../public/images/prettier.png"
+        src="/images/prettier.png"
         alt="Github Extension preview"
       />
       <h3 className="font-extrabold text-xl pt-10">
@@ -171,7 +171,7 @@ export const VSCode = () => {
         </p>
         <img
           className="w-4/12"
-          src="../../../public/images/loremPicsum.png"
+          src="/images/loremPicsum.png"
           alt="Preview of the Lorem Picsum extension"
         />
       </div>
@@ -188,7 +188,7 @@ export const VSCode = () => {
         </p>
         <img
           className="w-1/3"
-          src="../../../public/images/thunderClient.png"
+          src="/images/thunderClient.png"
           alt="Thunder Client preview"
         />
       </div>
@@ -204,19 +204,19 @@ export const VSCode = () => {
       <div className="flex justify-between p-5">
         <img
           className="w-1/3"
-          src="../../../public/images/drawioIntegration.png"
+          src="/images/drawioIntegration.png"
           alt="Draw IO integration preview"
         />
         <img
           className="w-1/3"
-          src="../../../public/images/drawioPreview.png"
+          src="/images/drawioPreview.png"
           alt="Draw IO preview image"
         />
       </div>
       <figure className="w-1/2 m-auto">
         <img
           className="hover:scale-150 duration-500"
-          src="../../../public/images/drawioExample.png"
+          src="/images/drawioExample.png"
           alt="Draw IO example preview"
         />
         <figcaption>Beispiel eines Logikplanes mit DrawIO</figcaption>
@@ -230,7 +230,7 @@ export const VSCode = () => {
       </p>
       <img
         className="w-1/3"
-        src="../../../public/images/languagePack.png"
+        src="/images/languagePack.png"
         alt="Github Extension preview"
       />
       <h3 className="font-extrabold text-xl pt-10">
@@ -244,7 +244,7 @@ export const VSCode = () => {
       </p>
       <img
         className="w-1/3"
-        src="../../../public/images/quokka.png"
+        src="/images/quokka.png"
         alt="Github Extension preview"
       />
     </article>
