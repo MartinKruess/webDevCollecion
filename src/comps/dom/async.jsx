@@ -10,6 +10,11 @@ export const Async = () => {
         Synchoner und Asynchroner Code (Promise, .then, .try, .catch mit und
         ohne async)
       </h2>
+      <AsyncStart />
+      <AsyncSpecial />
+      <h3 className="font-extrabold text-xl">
+        Wie wird .then, .try, .catch angewendet?
+      </h3>
       <p>
         <span className={highlights.errorCode}>Text folgt in Kürze...</span>
       </p>
