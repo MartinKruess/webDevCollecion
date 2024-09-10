@@ -1,16 +1,16 @@
 export const Cookies = () => {
   return (
     <article>
-      <div className='mt-5 relative'>
-        <img src='./images/cookies.png' alt='' />
-        <div className='bite biteZero text-slate-800'></div>
-        <div className='bite biteOne text-slate-800'></div>
-        <div className='bite biteTwo text-slate-800'></div>
-        <div className='bite biteThree text-slate-800'></div>
-        <div className='bite biteFour text-slate-800'></div>
+      <div className="mt-5 relative">
+        <img src="/images/cookies.png" alt="" />
+        <div className="bite biteZero text-slate-800"></div>
+        <div className="bite biteOne text-slate-800"></div>
+        <div className="bite biteTwo text-slate-800"></div>
+        <div className="bite biteThree text-slate-800"></div>
+        <div className="bite biteFour text-slate-800"></div>
       </div>
-      <h2 className='font-bold text-2xl'>Cookies und Sessions</h2>
-      <p className='p-2'>
+      <h2 className="font-bold text-2xl">Cookies und Sessions</h2>
+      <p className="p-2">
         Cookies und Sessions sind zwei Möglichkeiten, um Daten
         zwischenzuspeichern. Cookies werden auf dem Client gespeichert und
         Sessions werden auf dem Server gespeichert. Cookies werden verwendet, um
@@ -19,7 +19,7 @@ export const Cookies = () => {
         identifizieren und die Informationen, die der Benutzer beim letzten
         Besuch der Seite eingegeben hat, wiederherstellen.
       </p>
-      <p className='p-2'>
+      <p className="p-2">
         Eine Session ist die Lebensdauer einer Verbindung zwischen einem Client
         und einem Server. Eine Session wird erstellt, wenn ein Client eine
         Anfrage an den Server sendet, und bleibt bestehen, bis die Verbindung
@@ -27,7 +27,7 @@ export const Cookies = () => {
         verwendet, um Informationen über mehrere Anfragen hinweg zu speichern.
       </p>
 
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           app.post('/login', (req, res) =&gt; &#123;
           <br />

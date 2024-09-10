@@ -3,7 +3,7 @@ import { highlights } from "../../App";
 export const Netlify = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>Deployment mit Netlify</h2>
+      <h2 className="font-extrabold text-2xl">Deployment mit Netlify</h2>
       <p>
         Netlify ist eine Cloud Hosting Plattform, die Serverlos argiert. Es
         arbeitet mit drei verschiedenen Tiers, das Free Tier ist das was uns
@@ -20,52 +20,52 @@ export const Netlify = () => {
         Auswahl ob man ein bestehendes Projekt importieren, mit einem template
         starten oder manuelles Deployment verwenden möchte.
       </p>
-      <div className='imgContainer'>
+      <div className="imgContainer">
         <img
-          className='imgHeight m-auto'
-          src='./images/netlifyDashboard.png'
-          alt=''
+          className="imgHeight m-auto"
+          src="/images/netlifyDashboard.png"
+          alt=""
         />
       </div>
-      <div className='flex my-5'>
-        <div className='heightContainer small overflow-hidden'>
+      <div className="flex my-5">
+        <div className="heightContainer small overflow-hidden">
           <img
-            className='w-full scale-125'
-            src='./images/netlifyImport.png'
-            alt=''
+            className="w-full scale-125"
+            src="/images/netlifyImport.png"
+            alt=""
           />
         </div>
-        <p className='w-2/6 mx-10 text-center'>
+        <p className="w-2/6 mx-10 text-center">
           Das Importieren ist eine Möglichkeit direkt von Github oder anderen
           Git-basierten Platformen eine Verbindung zwischen dem Repository und
           der veröffentlichten Webseite herzustellen. Nach der Verknüpfung des
           Repos mit Netlify, aktualisiert sich die Veröffentlichte Webseite
           automatisch nach jedem Push.
         </p>
-        <div className='heightContainer small overflow-hidden'>
+        <div className="heightContainer small overflow-hidden">
           <img
-            className='w-full scale-125'
-            src='./images/netlifyRepo.png'
-            alt=''
+            className="w-full scale-125"
+            src="/images/netlifyRepo.png"
+            alt=""
           />
         </div>
       </div>
-      <p className='flex justify-around py-5'>
-        <a href='https://github.com/' target='_blank' rel='noopener noreferrer'>
+      <p className="flex justify-around py-5">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
           Github
         </a>
         <a
-          className='text-red-600'
-          href='https://www.netlify.com/'
-          target='_blank'
-          rel='noopener noreferrer'
+          className="text-red-600"
+          href="https://www.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Netlify
         </a>
-        <a href='https://vercel.com/' target='_blank' rel='noopener noreferrer'>
+        <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
           Vercel
         </a>
-        <a href='https://cyclic.sh/' target='_blank' rel='noopener noreferrer'>
+        <a href="https://cyclic.sh/" target="_blank" rel="noopener noreferrer">
           Cyclic
         </a>
       </p>

@@ -3,8 +3,8 @@ import { highlights } from "../../App";
 export const Middleware = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-xl py-2 my-2'>Middleware</h2>
-      <h3 className='font-extrabold text-lg py-2 my-2'>Was ist Middleware?</h3>
+      <h2 className="font-extrabold text-xl py-2 my-2">Middleware</h2>
+      <h3 className="font-extrabold text-lg py-2 my-2">Was ist Middleware?</h3>
       <p>
         Eine Middelware kann man sich wie eine Art "Zwischenfunktion"
         (Türsteher) vorstellen. Diese Zwischenfunktion wird aufgerufen, bevor
@@ -13,7 +13,7 @@ export const Middleware = () => {
         Beispiele für Middleware sind: Authentifizierung, Validierung,
         Restructuring, Komprimierung, etc.
       </p>
-      <h3 className='font-extrabold text-lg py-2 my-2'>Express Middleware</h3>
+      <h3 className="font-extrabold text-lg py-2 my-2">Express Middleware</h3>
       <p>
         Express Middleware sind Funktionen, die eine Anfrage- und Antwortobjekte
         (req, res) erhalten und entweder eine Antwort senden oder die Anfrage an
@@ -23,7 +23,7 @@ export const Middleware = () => {
         Anwendung gesendet wird, während die Middleware auf Routenebene nur auf
         Anfragen angewendet wird, die an die angegebene Route gesendet werden.
       </p>
-      <h3 className='font-extrabold text-lg py-2 my-2'>
+      <h3 className="font-extrabold text-lg py-2 my-2">
         Express Middleware Beispiel
       </h3>
       <p>
@@ -31,9 +31,9 @@ export const Middleware = () => {
         kann entweder auf der Anwendungsebene oder auf der Routenlayer verwendet
         werden.
       </p>
-      <pre className='text-sm grid columns-4 gap-12'>
-        <code className='col-start-1 col-end-2'>
-          <h4 className='font-extrabold text-md py-2 my-2'>Middleware</h4>
+      <pre className="text-sm grid columns-4 gap-12">
+        <code className="col-start-1 col-end-2">
+          <h4 className="font-extrabold text-md py-2 my-2">Middleware</h4>
           const logger = (req, res, next) =&gt; &#123;
           <br />
           &#32;console.log("Do something...");
@@ -42,8 +42,8 @@ export const Middleware = () => {
           <br />
           &#125;;
         </code>
-        <code className='col-start-2 col-end-3'>
-          <h4 className='font-extrabold text-md py-2 my-2'>
+        <code className="col-start-2 col-end-3">
+          <h4 className="font-extrabold text-md py-2 my-2">
             Routelayer - Nur in dieser Route aufgerufen
           </h4>
           app.get('/', <span className={highlights.code}>logger</span>, (req,
@@ -53,17 +53,17 @@ export const Middleware = () => {
           <br />
           &#125;);
         </code>
-        <code className='col-start-3 col-end-4'>
-          <h4 className='font-extrabold text-md py-2 my-2'>
+        <code className="col-start-3 col-end-4">
+          <h4 className="font-extrabold text-md py-2 my-2">
             Anwendungsebene - Automatsich in jeder Route aufgerufen
           </h4>
           app.use(<span className={highlights.code}>logger</span>);
         </code>
       </pre>
-      <div className='mt-4 w-3/4 m-auto'>
-        <img src='./images/nextInMiddleware.png' alt='' />
+      <div className="mt-4 w-3/4 m-auto">
+        <img src="/images/nextInMiddleware.png" alt="" />
       </div>
-      <h3 className='font-extrabold text-lg py-2 my-2'>
+      <h3 className="font-extrabold text-lg py-2 my-2">
         Express Middleware - <span className={highlights.code}>next()</span>
       </h3>
       <p>

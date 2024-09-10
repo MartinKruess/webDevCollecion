@@ -3,7 +3,7 @@ import { highlights } from "../../App";
 export const Encrypt = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>Bcrypt</h2>
+      <h2 className="font-extrabold text-2xl">Bcrypt</h2>
       <p>
         Wie unter dem Punkt Security bereits steht ist Bcrypt eine
         kryptografische Hashfunktion, das bedeutet es macht aus "Klartext" einen
@@ -21,15 +21,15 @@ export const Encrypt = () => {
         entschlüsseln. Beispielsweise mit dem unten stehenden Tool (eines von
         sehr vielen).
       </p>
-      <a href='https://10015.io/tools/md5-encrypt-decrypt'>MD5-Tool</a>
+      <a href="https://10015.io/tools/md5-encrypt-decrypt">MD5-Tool</a>
       <p>
         Natürlich gibt es solche Bcrypt-Tools ebenfalls, allerdings hat Bcrypt
         mehrere Mechanismen, die Verhindern, dass der Decrypt Vorgang unendlich
         Schnell durchgeführt werden kann. Dadurch ist es mit Bcrypt möglich ein
         Passwort unter gewissen Einstellungen wirklich sicher zu machen.
       </p>
-      <a href='https://bcrypt-generator.com/'>Bcrypt-Tool</a>
-      <h3 className='font-extrabold text-lg'>Schritt 1: Passwort Sicherheit</h3>
+      <a href="https://bcrypt-generator.com/">Bcrypt-Tool</a>
+      <h3 className="font-extrabold text-lg">Schritt 1: Passwort Sicherheit</h3>
       <p>
         es werden gerne Passwörter gewählt, die Kurz, Prgnant und eingängig
         sind. So werden gerne die Namen/Geburtsdaten der Kinder, des Haustieres
@@ -37,8 +37,8 @@ export const Encrypt = () => {
         Problem, ein passwort wie: "Bello2012" ist nicht wirklich sicher.
         Heutztage gibt es strenge Vorschriften zum Thema Passwort-Sicherheit.
       </p>
-      <div className='flex gap-5'>
-        <div className='w-1/2'>
+      <div className="flex gap-5">
+        <div className="w-1/2">
           <p>
             Die Mindestlänge eines Passwortes hängt stark von der Komplexität
             ab. Wie im unteren Bild leicht ersichtlich ist ein Passwort mit 12
@@ -47,8 +47,8 @@ export const Encrypt = () => {
             enthält. Daher sollte es stehts mehr Vorgaben, für ein sicheres
             Passwort, geben.
           </p>
-          <ul className='w-1/2'>
-            <li className='font-extrabold'>Mindest Passwortbedingungen</li>
+          <ul className="w-1/2">
+            <li className="font-extrabold">Mindest Passwortbedingungen</li>
             <li>- Mindestens 1 Nummer</li>
             <li>- Mindestlänge: 14+ (ideal 16+)</li>
             <li>- Groß- und Kleinschreibung</li>
@@ -61,11 +61,11 @@ export const Encrypt = () => {
             </li>
           </ul>
         </div>
-        <div className='w-1/2'>
-          <img src='./images/bf-table.jpg' alt='' />
+        <div className="w-1/2">
+          <img src="/images/bf-table.jpg" alt="" />
         </div>
       </div>
-      <h3 className='font-extrabold text-lg'>Bruteforce</h3>
+      <h3 className="font-extrabold text-lg">Bruteforce</h3>
     </article>
   );
 };

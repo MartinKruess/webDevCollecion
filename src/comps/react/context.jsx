@@ -3,7 +3,7 @@ import { highlights } from "../../App";
 export const Context = () => {
   return (
     <>
-      <h2 className='font-extrabold text-2xl'>
+      <h2 className="font-extrabold text-2xl">
         Globales Daten-Management mit useContext
       </h2>
       <p>
@@ -13,15 +13,15 @@ export const Context = () => {
         Dadurch lässt sich bei der Verwendung von useState innerhalb von
         useContext der State-Lift verwenden.
       </p>
-      <div className='heightContainer'>
-        <img className='imgHeight' src='./images/context.png' alt='' />
+      <div className="heightContainer">
+        <img className="imgHeight" src="/images/context.png" alt="" />
       </div>
       <p>
         Es gibt verschiedene Wege useContext zu verwenden. Die wohl am
         häufigsten angewendete Variante ist die Auslagerung in eine externe
         Datei.
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           import &#123; createContext, useState &#125; from "react";
           <br />
@@ -100,7 +100,7 @@ export const Context = () => {
         innerhalb der runden Klammern anzugeben welcher Context verwendet werden
         soll.
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           import &#123; useContext, useEffect &#125; from "react"
           <br />

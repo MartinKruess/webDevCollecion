@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export const API = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-xl'>Was ist eine API?</h2>
+      <h2 className="font-extrabold text-xl">Was ist eine API?</h2>
       <p>
         Eine API (Application Programming Interface) ist eine
         programmübergreifende Schnittstelle um Daten mit standartisierten
@@ -14,12 +14,12 @@ export const API = () => {
         Logic, die über einen sogeannte Middleware in eine API eingebaut werden
         können.
       </p>
-      <h3 className='font-extrabold text-lg'>
+      <h3 className="font-extrabold text-lg">
         Die Grundstruktur einer
         <span className={highlights.code}> GET-API</span> besteht aus vier
         Teilen.
       </h3>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           // 1. Der Server, der verwendet werden soll (in unserem Fall
           <span className={highlights.errorCode}> app</span>)<br />
@@ -51,7 +51,7 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
-      <h3 className='font-extrabold text-lg'>
+      <h3 className="font-extrabold text-lg">
         Die Grundstruktur einer
         <span className={highlights.code}> POST-API</span> besteht aus vier
         Teilen.
@@ -86,7 +86,7 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
-      <h3 className='font-extrabold text-lg'>
+      <h3 className="font-extrabold text-lg">
         Die Grundstruktur einer
         <span className={highlights.code}> PUT-API</span> besteht aus vier
         Teilen.
@@ -114,7 +114,7 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
-      <h3 className='font-extrabold text-lg'>
+      <h3 className="font-extrabold text-lg">
         Die Grundstruktur einer
         <span className={highlights.code}> PATCH-API</span> besteht aus vier
         Teilen.
@@ -142,7 +142,7 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
-      <h3 className='font-extrabold text-lg'>
+      <h3 className="font-extrabold text-lg">
         Die Grundstruktur einer
         <span className={highlights.code}> DELETE-API</span> besteht aus vier
         Teilen.
@@ -167,14 +167,14 @@ export const API = () => {
           &#125;);
         </code>
       </pre>
-      <p className='text-sm'>
+      <p className="text-sm">
         Die API kann nun mit einem Client (z.B. React) verbunden werden. Dafür
         wird die API in einem Terminal gestartet und der Client in einem
         anderen. Die Kommunikation zwischen beiden erfolgt über den
         <span className={highlights.code}> fetch</span> Befehl.
       </p>
-      <h3 className='font-extrabold text-lg'>Warum nutzen wir REST-API?</h3>
-      <p className='text-sm'>
+      <h3 className="font-extrabold text-lg">Warum nutzen wir REST-API?</h3>
+      <p className="text-sm">
         REST steht für Representational State Transfer und ist ein
         Architekturstil für die Entwicklung von Netzwerkanwendungen. Eine
         RESTful API (Application Programming Interface) basiert auf den
@@ -211,7 +211,7 @@ export const API = () => {
         Protocol) oder XMPP (Extensible Messaging and Presence Protocol)
         verwendet werden.
       </p>
-      <h2 className='font-extrabold text-xl'>Was ist die Middleware?</h2>
+      <h2 className="font-extrabold text-xl">Was ist die Middleware?</h2>
       <p>
         Die Middelware ist eine Logik Function, die sich zwischen dem Client und
         der eigentlichen API befindet. Es gibt verschiedene Bereiche, für die
@@ -223,9 +223,9 @@ export const API = () => {
         - Integration ist ebenfalls ein wichtiges Thema um verschiedene
         Dateiformate aneinander anzupassen.
       </p>
-      <h3 className='font-extrabold text-lg'>Wie arbeitet Middelware?</h3>
-      <div className='flex gap-5'>
-        <div className='w-1/2 text-sm'>
+      <h3 className="font-extrabold text-lg">Wie arbeitet Middelware?</h3>
+      <div className="flex gap-5">
+        <div className="w-1/2 text-sm">
           <pre>
             <code>
               export const authEmployee = (req, res, next) =&gt; &#123;
@@ -242,7 +242,7 @@ export const API = () => {
               &#125;
             </code>
           </pre>
-          <pre className='my-3'>
+          <pre className="my-3">
             <code>
               app.use.(authEmployee)
               <br />
@@ -254,8 +254,8 @@ export const API = () => {
             </code>
           </pre>
         </div>
-        <div className='w-1/2'>
-          <img src='./images/apiMiddelwareFetch.png' alt='' />
+        <div className="w-1/2">
+          <img src="/images/apiMiddelwareFetch.png" alt="" />
         </div>
       </div>
     </article>

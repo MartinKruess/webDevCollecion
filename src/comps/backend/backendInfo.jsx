@@ -3,8 +3,8 @@ import { highlights } from "../../App";
 export const BackendInfo = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>Willkommen im Backend!</h2>
-      <h3 className='font-extrabold text-xl'>
+      <h2 className="font-extrabold text-2xl">Willkommen im Backend!</h2>
+      <h3 className="font-extrabold text-xl">
         Was ist das Backend im gegensatz zum Frontend?
       </h3>
       <p>
@@ -27,7 +27,7 @@ export const BackendInfo = () => {
         Frontend zusammen, um eine vollständige, sichere und leistungsstarke
         Softwarelösung bereitzustellen.
       </p>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Möglichkeiten ein Backend aufzubauen
       </h3>
       <p>
@@ -38,15 +38,11 @@ export const BackendInfo = () => {
         das Frontend bestimmte Daten oder Funktionen nur mit Hilfe eines Servers
         zur Verfügung stellen kann.
       </p>
-      <div className='flex'>
-        <div className='w-1/3 h-88'>
-          <img
-            src='./images/frontBackStructure.PNG'
-            alt=''
-            className='h-full'
-          />
+      <div className="flex">
+        <div className="w-1/3 h-88">
+          <img src="/images/frontBackStructure.PNG" alt="" className="h-full" />
         </div>
-        <div className='w-2/3'>
+        <div className="w-2/3">
           <p>
             Eine gängige Praxis um ein unabhängiges Backend aufzubauen ist die
             Verwendung eines gesonderten Repositorys. Anders als bei Frameworks
@@ -76,10 +72,10 @@ export const BackendInfo = () => {
         Routing sich an der Ordnerstruktur orientiert und es keinen extra Router
         gibt.
       </p>
-      <h4 className='font-extrabold text-lg'>
+      <h4 className="font-extrabold text-lg">
         Ordnerstruktur: NextJS Frontend
       </h4>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           - pages
           <br />
@@ -130,7 +126,7 @@ export const BackendInfo = () => {
           </span>
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl'>Warum lernen wir Node?</h3>
+      <h3 className="font-extrabold text-xl">Warum lernen wir Node?</h3>
       <p>
         Node.js ist eine ideale Backend-Wahl für React-Frontends aus mehreren
         Gründen. Die gemeinsame Nutzung von JavaScript als Sprache in Front- und
@@ -150,7 +146,7 @@ export const BackendInfo = () => {
         APIs, serverseitigen Anwendungen und Microservices, was den
         unterschiedlichen Anforderungen verschiedener Projekte gerecht wird.
       </p>
-      <h3 className='font-extrabold text-xl'>Warum lernen wir Express?</h3>
+      <h3 className="font-extrabold text-xl">Warum lernen wir Express?</h3>
       <p>
         Express ist ein Webanwendungs-Framework für Node.js, das die Entwicklung
         von Serveranwendungen und APIs erleichtert. Mit Express können Sie

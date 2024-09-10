@@ -5,13 +5,13 @@ export const AsyncAdv = () => {
 
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>
+      <h2 className="font-extrabold text-2xl">
         Hintergrundwissen über die Arbeitsweise von Javascript in Bezug auf die
         Verarbeitung von Asynchronen Ereignissen
       </h2>
-      <p className='text-lg'>
+      <p className="text-lg">
         <span className={HE}>
-          <strong className='pr-3'>WARNHINWEIS:</strong>
+          <strong className="pr-3">WARNHINWEIS:</strong>
         </span>
         Diese Themen sind absolut Advanced und nicht Teil des Curriculums.
         Sollte man diese Themen nicht behandeln/verstehen, ist das überhaupt
@@ -22,15 +22,15 @@ export const AsyncAdv = () => {
         guter Programmierer zu sein. Dennoch ist es ein interesantes Thema für
         alle, die ein tieferes Verständnis für JS erlangen wollen.
       </p>
-      <p className='text-lg'>
+      <p className="text-lg">
         <span className={HE}>
-          <strong className='pr-3'>Das Hauptthema ist Event-Loop:</strong>
+          <strong className="pr-3">Das Hauptthema ist Event-Loop:</strong>
         </span>
         Um die Event-Loop richtig verstehen zu können ist es wichtig vorab etwas
         über die Arbeitsweise von Javascript zu verstehen.
       </p>
       <hr />
-      <h3 className='font-extrabold text-xl'>Was ist ein Thread?</h3>
+      <h3 className="font-extrabold text-xl">Was ist ein Thread?</h3>
       <p>
         JavaScript ist eine Single-Thread-Sprache, was bedeutet, dass sie
         standardmäßig nur in einem einzigen Thread (dem sogenannten Hauptthread
@@ -68,7 +68,7 @@ export const AsyncAdv = () => {
         wichtig in modernen Webanwendungen, um reaktive Benutzererfahrungen und
         eine effiziente Verarbeitung von Aufgaben zu gewährleisten.
       </p>
-      <h2 className='font-extrabold text-lg'>
+      <h2 className="font-extrabold text-lg">
         Der Umgang mit Asynchronam Code
       </h2>
       <p>
@@ -103,7 +103,7 @@ export const AsyncAdv = () => {
           die nächste Aufgabe zu warten.
         </li>
       </ul>
-      <h2 className='font-extrabold text-lg'>Was ist der Event-Loop?</h2>
+      <h2 className="font-extrabold text-lg">Was ist der Event-Loop?</h2>
       <p>
         Der Event-Loop ist ein wichtiger Teil vieler Software-Systeme,
         insbesondere in Anwendungen mit grafischer Benutzeroberfläche (GUI) und
@@ -141,7 +141,7 @@ export const AsyncAdv = () => {
         eine Event-Loop-Architektur verwendet, um auf asynchrone Operationen wie
         Dateizugriffe oder Netzwerkkommunikation zu reagieren.
       </p>
-      <h2 className='font-extrabold text-lg'>Zusammenfassung</h2>
+      <h2 className="font-extrabold text-lg">Zusammenfassung</h2>
       <p>
         In JavaScript läuft synchroner Code und asynchroner Code auf demselben
         Haupt-Event-Loop. Der Haupt-Event-Loop ist ein Single-Thread-System, was
@@ -165,18 +165,18 @@ export const AsyncAdv = () => {
         dass er ausgeführt wird, während synchroner Code sequenziell und ohne
         Unterbrechungen im Haupt-Event-Loop ausgeführt wird.
       </p>
-      <div className='w-2/3 m-auto'>
+      <div className="w-2/3 m-auto">
         <img
-          src='./images/eventLoop_async.png'
-          alt='Example for async Code in Event Loop'
-          className='w-full'
+          src="/images/eventLoop_async.png"
+          alt="Example for async Code in Event Loop"
+          className="w-full"
         />
       </div>
-      <div className='linkContainer'>
+      <div className="linkContainer">
         <a
-          href='https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Event Loop
         </a>

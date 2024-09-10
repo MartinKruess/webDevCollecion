@@ -3,30 +3,22 @@ import { highlights } from "../../App";
 export const Async = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>
-        Synchoner und Asynchroner Code (Promise, .then, .try, .catch mit und ohne
-        Aysnc)
+      <h2 className="font-extrabold text-2xl">
+        Synchoner und Asynchroner Code (Promise, .then, .try, .catch mit und
+        ohne async)
       </h2>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Wo ist der Unterschied zwischen Synchoner und Asynchroner Code?
       </h3>
       <p>
         Asynchrone Programmierung ist ein Begriff aus der Webprogrammierung. Die
-        asynchrone Programmierung, die durch Sprachen wie etwa Vue.js oder
-        Angular möglich ist, erlaubt es, Programme zu schreiben, bei denen die
-        einzelnen Aufgaben nicht mehr hintereinander, sondern parallel gelöst
-        werden. Während sich eine Aufgabe in Bearbeitung befindet, laufen
+        asynchrone Programmierung, die durch Sprachen wie etwa Javascript oder
+        Typescript möglich ist, erlaubt es, Programme zu schreiben, bei denen
+        die einzelnen Aufgaben nicht mehr hintereinander, sondern parallel
+        gelöst werden. Während sich eine Aufgabe in Bearbeitung befindet, laufen
         bereits Prozesse an einer anderen. Somit muss nicht abgewartet werden,
         bis eine Aufgabe erledigt ist, um mit einer neuen Aufgabe zu beginnen.
         Das Programm wechselt zwischen den Aufgaben, bis alle beendet sind.
-      </p>
-      <p>
-        Das ist echtes Multitasking und bietet eine enorme Zeitersparnis! Die
-        asynchrone Programmierung setzt auf das Multithreading, dem
-        gleichzeitigen Abarbeiten mit mehreren Threads. Dabei werden die
-        unterschiedlichen Aufgaben des Programms auf verschiedene Threads
-        verteilt, die die Programmierer zuvor definiert haben. Diese Threads
-        arbeiten gemeinsam an der Aufgabe.
       </p>
       <p>
         Beispielsweise wenn ein Programm geschrieben wird, bei dem mit einer
@@ -60,7 +52,7 @@ export const Async = () => {
           <br />
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Besonderheiten von Asynchronem Code?
       </h3>
       <p>
@@ -103,23 +95,24 @@ export const Async = () => {
         Millisekunden ausgelöst werden sollte, dies jedoch erst nach dem Beenden
         der Funktion geschah.
       </p>
-      <h4 className='font-extrabold text-lg'>Doch warum ist das so?</h4>
+      <h4 className="font-extrabold text-lg">Doch warum ist das so?</h4>
       <p>
-        Die Gründe hierfür sind:
         <br />
-        1. Die Funktion (Bürger erster Klasse): Funktionen werden niemals für
-        anderen Code unterbrochen, da diese als 'Bürger erster Klasse' behandelt
+        1. Die Funktion (Code erster Klasse): Funktionen werden niemals für
+        anderen Code unterbrochen, da diese als 'Code erster Klasse' behandelt
         werden und dadurch eine höhere Priorität genießen als nicht
         Funktioneller Code.
+        <br />
         <br />
         2. Der Main-Thread: Auf dem Main-Thread läuft aktuell diese Funktion und
         erst nach der Beendigung dieser, wird der Timer zum neuen Main-Thread.
         Auch wenn es oft so wirkt, als würde unser Code bestimmte Prozesse
         (Async) parallel verarbeiten ist dem nicht so. Der Grund hierfür ist der
-        Callback. In diesem Fall wird der Timer gestarte und sofort über die
+        Callback. In diesem Fall wird der Timer gestartet und sofort über die
         Callback verlassen (Fire and Forget) ab jetzt kümmert sich die
         sogenannte Event Loop darum, dass der Code ausgeführt wird, sobald
         dieser ausgeführt werden kann.
+        <br />
         <br />
         3. Asynchoner Code wird automatisch in die Warteschlange gesetzt bis
         dieser ausgeben werden kann oder getriggert wird. Mit der Beendigung des
@@ -131,15 +124,26 @@ export const Async = () => {
         <span className={highlights.code}> addEventListener</span> und
         <span className={highlights.code}> Fetch</span>.
       </p>
-      <p>
-        <span className={highlights.errorCode}>
-          Daher ist es wichtig zu wissen, dass die 20 Millisekunden des Timers
-          nicht bedeutet, dieser wird nach 20 Millisekunden ausgeführt und
-          beendet, sondern nach frühestens 20 Millisekunden kann der Timer
-          ausgeführt und beendet werden!
-        </span>
+      <h4 className="font-extrabold text-lg">Hinweise</h4>
+      <p className={highlights.errorCode}>
+        Daher ist es wichtig zu wissen, dass die 20 Millisekunden des Timers
+        nicht bedeutet, dieser wird nach 20 Millisekunden ausgeführt und
+        beendet, sondern nach frühestens 20 Millisekunden kann der Timer
+        ausgeführt und beendet werden!
       </p>
-      <h3 className='font-extrabold text-xl'>Was ist ein Promise?</h3>
+      <p>
+        Da sich im sogenannten Main-Thread nicht nur der Javascriptcode, sondern
+        eben so die komplette UI, in Form von HTMl, CSS (DOM), befindet, kann
+        synchoner Code dadurch zu Verzögerungen im Seitenaufbau führen. So kann
+        beispielsweise die Seite nur so weit aufgebaut werden bis eine größere
+        Funktion aufgerufen wird, die teuer (eine längere Verarbeitungsdauer)
+        ist. Erst nach der kompletten Bearbeitung dieser Funktion wird die UI
+        weiter aufgebaut. Um dies zu verhindern können teurere Funktionen, wie
+        Fetch, setTimeout und weitere Funktionen als{" "}
+        <span className={highlights.code}>async</span> markiert und asynchron
+        behandelt werden ohne die UI negativ zu beinflussen.
+      </p>
+      <h3 className="font-extrabold text-xl">Was ist ein Promise?</h3>
       <p>
         Ein <span className={highlights.code}>Promise</span> wird immer dann
         erzeugt, wenn asynchroner Code verwendet wird. Das bedeutet es wird aus
@@ -155,9 +159,9 @@ export const Async = () => {
         anfangen können ist es wichtig, dass dies als Asynchroner-Code behandelt
         wird, bis die Daten da sind.
       </p>
-      <img src='' alt='' />
+      <img src="" alt="" />
       <p></p>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Wie wird .then, .try, .catch angewendet?
       </h3>
       <p>.then ist ...</p>
@@ -191,7 +195,7 @@ export const Async = () => {
           <br />
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Anwendung der Keywords 'async' und 'await'
       </h3>
       <p>
@@ -263,11 +267,11 @@ export const Async = () => {
           &#125;
         </code>
       </pre>
-      <div className='linkContainer'>
+      <div className="linkContainer">
         <a
-          href='https://www.heise.de/hintergrund/Einfuehrung-in-die-asynchrone-JavaScript-Programmierung-2752531.html'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://www.heise.de/hintergrund/Einfuehrung-in-die-asynchrone-JavaScript-Programmierung-2752531.html"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Asynchrone Programmierung (Simple)
         </a>

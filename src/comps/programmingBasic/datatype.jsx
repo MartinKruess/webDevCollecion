@@ -108,7 +108,7 @@ export const DataTypen = () => {
         <img
           className="imgHeight"
           onClick={() => setIsWatched("variable")}
-          src="./images/variablePointer.png"
+          src="/images/variablePointer.png"
           alt="Image about if and nested if´s"
         />
       </div>
@@ -158,7 +158,7 @@ export const DataTypen = () => {
         <img
           className="imgHeight"
           onClick={() => setIsWatched("object")}
-          src="./images/objectPointer.png"
+          src="/images/objectPointer.png"
           alt="Image about if and nested if´s"
         />
       </div>
@@ -167,7 +167,7 @@ export const DataTypen = () => {
         <img
           className="imgHeight"
           onClick={() => setIsWatched("copy")}
-          src="./images/objectCopyPointer.png"
+          src="/images/objectCopyPointer.png"
           alt="Image about if and nested if´s"
         />
       </div>
