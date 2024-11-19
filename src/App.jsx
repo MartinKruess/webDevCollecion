@@ -1,5 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "prismjs";
+import "prismjs/themes/prism.css";
+import "prismjs/components/prism-javascript";
+import "prismjs/components/prism-json";
 
 import { Navi } from "./comps/navigations/navi";
 import { Landingpage } from "./comps/pages/landingpage";

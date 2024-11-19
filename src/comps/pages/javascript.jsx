@@ -23,6 +23,7 @@ import { Classes } from "../programmingBasic/classes";
 import { Console } from "../programmingBasic/console";
 import { Sort } from "../programmingBasic/sort";
 import { JSNavi } from "../navigations/jsNavi";
+import { JSON } from "../programmingBasic/json";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -38,7 +39,7 @@ export const PB = () => {
         <Routes>
           <Route path="node" element={<NodeInstaller />} />
           <Route path="npm" element={<NPM />} />
-          {/* <Route path="json" element={<JSON />} /> */}
+          <Route path="json" element={<JSON />} />
           <Route path="console" element={<Console />} />
           <Route path="variables" element={<Variable />} />
           <Route path="datatype" element={<DataTypen />} />
