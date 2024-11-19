@@ -3,17 +3,17 @@
 ## Themenbereiche
 
 - CSS-Modelle und Frameworks
-    - Flexbox
-    - Grid
-    - SASS/SCSS
-    - Bootstrap
-    - Tailwind
+  - Flexbox
+  - Grid
+  - SASS/SCSS
+  - Bootstrap
+  - Tailwind
 - Javascript
-    - Datentypen
-    - Programmiergrundlagen (Conditions, Loops, Functions)
-    - Higher order Functions und Callback
-    - Themenbezogene Übungen
-    - JS-Selbsttest (Teste dein Wissen über JS)
+  - Datentypen
+  - Programmiergrundlagen (Conditions, Loops, Functions)
+  - Higher order Functions und Callback
+  - Themenbezogene Übungen
+  - JS-Selbsttest (Teste dein Wissen über JS)
 - DOM
 - React
 - Datenbanken
