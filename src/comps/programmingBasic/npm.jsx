@@ -33,19 +33,21 @@ export const NPM = () => {
           Als nächstes kannst du mit dem Befehl{" "}
           <span className={highlights.code}>npm init</span> ein neues Projekt
           anlegen. Npm init initialisiert ein neues Projekt und erstellt eine
-          package.json, sowie die node_modules.
+          <span className={highlights.directory}>package.json</span>, sowie die{" "}
+          <span className={highlights.file}>node_modules</span>.
         </p>
         <pre>
           <code>npm init</code>
         </pre>
         <p>
-          In der package.json werden alle Informationen über das Projekt und die
-          verwendeten Packages gespeichert. Das bedeutet unser Projekt hat
-          bestimmte Abhängigkeiten und diese Abhängigkeiten sind in der
-          package.json hinterlegt. Diese Abhängigkeiten sind bisher zwar
-          hinterlegt, aber noch nicht installiert. Um die Abhängigkeiten zu
-          installieren verwenden wir den Befehl{" "}
-          <span className={highlights.code}>npm install</span>.
+          In der <span className={highlights.directory}>package.json </span>
+          werden alle Informationen über das Projekt und die verwendeten
+          Packages gespeichert. Das bedeutet unser Projekt hat bestimmte
+          Abhängigkeiten und diese Abhängigkeiten sind in der
+          <span className={highlights.directory}>package.json</span> hinterlegt.
+          Diese Abhängigkeiten sind bisher zwar hinterlegt, aber noch nicht
+          installiert. Um die Abhängigkeiten zu installieren verwenden wir den
+          Befehl <span className={highlights.code}>npm install</span>.
         </p>
         <pre>
           <code>
@@ -61,13 +63,35 @@ export const NPM = () => {
         <p>
           Die Package JSON Datei ist eine JSON Datei, doch wofür steht JSON
           eigentlich? Die Dateiendung
-          <span className={highlights.code}> JSON</span> steht für
-          <span className={highlights.code}> JavaScript Object Notation</span>.
-          Schauen wir uns einfach mal ein Beispiel an.
+          <span className={highlights.code}> JSON</span> steht für{" "}
+          <span className={highlights.code}>
+            <a
+              href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              JavaScript Object Notation
+            </a>
+          </span>
+          .
+          <br />
+          Es gibt ein paar Dinge, die bei der JSON-Syntax beachtet werden
+          müssen. Der Key und Value müssen immer in Anführungszeichen sein:
+          <br />
+          <span className={highlights.code}>"key":"value"</span>
+          <br />
+          Einzelne Zeilen werden durch Kommatas getrennt, allerdings darf der
+          letzte Eintrag kein nachstehendes Komma haben.
         </p>
-        <pre className="flex">
+        <pre className="flex text-sm">
           <code>
             &#123;
+            <br />
+            <span className={highlights.directory}>
+              /* Allgemeine Informationen zum Projekt */
+              <br />
+              // Beispiele: Name, Version, Autor, Beschreibung ...
+            </span>
             <br />
             &#9;"name": "webdevcollecion",
             <br />
@@ -77,17 +101,66 @@ export const NPM = () => {
             <br />
             &#9;"type": "module",
             <br />
+            <br />
+            <span className={highlights.directory}>
+              /* Ausführbare Scripts */
+              <br />
+              // Aufbau: "KEY": "VALUE"
+              <br />
+              // Key = der Name, den wir aufrufen um den Befehl auszuführen
+              <br />
+              // Value = Das ist der Befehl, der ausgeführt wird
+              <br />
+              // "starteLiveServer": "node index.js"
+              <br />
+              // Terminal Befehl: npm run starteLiveServer
+            </span>
+            <br />
             &#9;"scripts": &#123;
+            <br />
+            <span className={highlights.directory}>
+              &#9;&#9;/* Starte den Liveserver: "npm run dev" */
+            </span>
             <br />
             &#9;&#9;"dev": "node index.js",
             <br />
+            <span className={highlights.directory}>
+              &#9;&#9;/* Starte den Übersetzer: "npm run watch" */
+            </span>
+            <br />
+            &#9;&#9;"watch":"npx tailwindcss -i ./style.css -o ./dist/style.css
+            --watch",
+            <br />
+            <span className={highlights.directory}>
+              &#9;&#9;/* Starte den Build-Process: "npm run build" */
+            </span>
+            <br />
+            &#9;&#9;"build": "hier kommt der build command"
+            <br />
             &#9;&#125;,
+            <br />
+            <br />
+            <span className={highlights.directory}>
+              /* Liste installierter Programme, die für die Webseite wichtig
+              sind */
+              <br />
+              // Beispiele: ChartJS, Paypal, React, MySQL, MongoDB ...
+            </span>
             <br />
             &#9;"dependencies": &#123;
             <br />
-            &#9;&#9;"readlineSync": "1.4.10",
+            &#9;&#9;"readlineSync": "1.4.10"
             <br />
             &#9;&#125;,
+            <br />
+            <br />
+            <span className={highlights.directory}>
+              /* Liste installierter Programme, die nur für die Entwicklung
+              wichtig sind */
+              <br />
+              // Beispiele: Tailwind, Bootstrap, Programm zum testen des Codes
+              ...
+            </span>
             <br />
             &#9;"devDependencies": &#123;
             <br />
@@ -97,20 +170,12 @@ export const NPM = () => {
             <br />
             &#9;&#9;"postcss": "^8.4.24",
             <br />
-            &#9;&#9;"tailwindcss": "^3.3.2",
+            &#9;&#9;"tailwindcss": "^3.3.2"
             <br />
-            &#9;&#125;,
+            &#9;&#125;
             <br />
-            &#125;,
+            &#125;
           </code>
-          <span>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laboriosam pariatur iste incidunt autem eligendi veniam, doloribus
-              laudantium totam nobis quam? Accusantium molestiae eius iste porro
-              praesentium consectetur ratione non officia.
-            </p>
-          </span>
         </pre>
       </div>
       <h3 className="font-extrabold text-xl my-5">

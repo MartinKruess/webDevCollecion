@@ -3,7 +3,7 @@
 ## Themenbereiche
 
 - CSS-Modelle und Frameworks
-  - Flexbox
+  - Workflow Git und GitHub
   - Grid
   - SASS/SCSS
   - Bootstrap
