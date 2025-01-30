@@ -16,56 +16,70 @@ export const Landingpage = () => {
         </p>
         <ul className="flex flex-wrap w-1/2 text-sm m-auto px-10 gap-5">
           <li className="w-1/3">CSS</li>
-          <li className="w-1/3 text-green-600">
-            75%
+          <li className="w-1/3 text-green-400">
+            65%
             <ul className="w-full">
-              <li>Flex 20%</li>
-              <li>Animation 5%</li>
+              <li>3D Optik 10%</li>
+              <li>Übungen für Animationen 5%</li>
+              <li>Git und Github Workflow 20%</li>
+              <li>VS-Code</li>
             </ul>
           </li>
           <li className="w-1/2">Javascript</li>
-          <li className="w-1/2 text-green-400">
-            92%
+          <li className="w-1/2 text-green-300">
+            67%
             <ul className="w-full">
+              <li>Closure 10%</li>
+              <li>Recursion Function 10%</li>
+              <li>Callstack 5%</li>
               <li>Callback 8%</li>
             </ul>
           </li>
           <li className="w-1/2">DOM</li>
-          <li className="w-1/2 text-yellow-300">
-            60%
+          <li className="w-1/2 text-green-400">
+            70%
             <ul className="w-full">
-              <li>set/get 10%</li>
-              <li>Events 20%</li>
+              <li>Selectoren: set/get 10%</li>
+              <li>Events 10%</li>
               <li>Import/Export/Modules 10%</li>
             </ul>
           </li>
           <li className="w-1/2">React</li>
-          <li className="w-1/2 text-yellow-500">
-            35%
+          <li className="w-1/2 text-green-300">
+            60%
             <ul className="w-full">
               <li>useRef 5%</li>
-              <li>router 6.4 20%</li>
-              <li>privatRoute 10%</li>
-              <li>useContext 15%</li>
+              <li>V6 privatRoute 10%</li>
+              <li>V5 privatRoute 10%</li>
               <li>useReducer 15%</li>
             </ul>
           </li>
           <li className="w-1/2">Node Express</li>
-          <li className="w-1/2 text-red-900">0%</li>
+          <li className="w-1/2 text-green-500">
+            90%
+            <ul>
+              <li>JWT 10%</li>
+            </ul>
+          </li>
           <li className="w-1/2">Database</li>
-          <li className="w-1/2 text-red-900">0%</li>
+          <li className="w-1/2 text-green-500">
+            85%
+            <ul>
+              <li>Populate 10%</li>
+              <li>Populate advanced 5%</li>
+            </ul>
+          </li>
           <li className="w-1/2">Deployment</li>
-          <li className="w-1/2 text-yellow-400">
-            50%
+          <li className="w-1/2 text-green-300">
+            55%
             <ul className="w-full">
               <li>Vercel 5%</li>
-              <li>Cyclic 5%</li>
               <li>Render 5%</li>
               <li>Hetzner 35%</li>
             </ul>
           </li>
 
-          <li>Gesamt: {(75 + 92 + 60 + 80 + 80 + 55 + 65 + 0) / 8}%</li>
+          <li>Gesamt: {(65 + 67 + 70 + 60 + 90 + 85 + 55) / 7}%</li>
         </ul>
       </article>
     </section>
