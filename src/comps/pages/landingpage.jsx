@@ -79,7 +79,9 @@ export const Landingpage = () => {
             </ul>
           </li>
 
-          <li>Gesamt: {(65 + 67 + 70 + 60 + 90 + 85 + 55) / 7}%</li>
+          <li>
+            Gesamt: {((65 + 67 + 70 + 60 + 90 + 85 + 55) / 7).toFixed(2)}%
+          </li>
         </ul>
       </article>
     </section>
