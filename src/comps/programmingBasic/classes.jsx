@@ -1,7 +1,7 @@
 export const Classes = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl my-5'>Was sind Klassen?</h2>
+      <h2 className="font-extrabold text-2xl my-5">Was sind Klassen?</h2>
       <p>
         In JavaScript sind Klassen eine Möglichkeit, Objekte zu erstellen und
         sie zu organisieren. Es gibt sie seit der Einführung von ES6. Eine
@@ -10,7 +10,7 @@ export const Classes = () => {
         eine bessere Möglichkeit zur Organisation und Erstellung von Objekten
         und deren Verhalten.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>
+      <h3 className="font-extrabold text-xl my-5">
         Klassen wichtig oder nicht?
       </h3>
       <p>
@@ -21,51 +21,48 @@ export const Classes = () => {
         Projekt bezogene Vor- und Nachteile und Framework einschränkungen, die
         darüber entscheiden ob du FP oder OOP verwendest.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>
+      <h3 className="font-extrabold text-xl my-5">
         JavaScript-Frameworks, die Klassen verwenden
       </h3>
-      <p className='w-1/4 text-lg'>
+      <p className="w-1/4 text-lg pb-0">
         <strong>REACT</strong>
       </p>
-      <p className='w-3/4'>
+      <p className="w-3/4">
         Die Verwendung von Klassen oder Funktionen ist möglich React ist ein
         Frontend-Framework, das Komponenten als Klassen oder Funktionen
         erstellen kann. Seit React 16.8 hat React Hooks eingeführt, die die
         Verwendung von Funktionen für die Komponentenerstellung fördern.
         Trotzdem können immer noch Klassenkomponenten verwendet werden.
       </p>
-      <p className='w-1/4 text-lg'>
+      <p className="w-1/4 text-lg pb-0">
         <strong>Vue.js</strong>
       </p>
-      <p className='w-3/4'>
+      <p className="w-3/4">
         Ermöglicht die Erstellung von Komponenten sowohl mit Klassen als auch
         mit Objekten, die Eigenschaften und Methoden enthalten. Es besteht die
         Wahl zwischen verschiedenen Ansätzen, je nach Vorlieben.
       </p>
-      <p className='w-1/4 text-lg'>
+      <p className="w-1/4 text-lg pb-0">
         <strong>Angular</strong>
       </p>
-      <p className='w-3/4'>
+      <p className="w-3/4">
         Verwendet Klassen für die Definition von Komponenten und Services. Das
         Framework basiert auf einem komponentenbasierten Ansatz und verwendet
         TypeScript, um Klassen zu definieren.
       </p>
       <p></p>
-      <h3 className='font-extrabold text-xl my-5'>
-        Klassen wichtig oder nicht?
-      </h3>
-      <h3 className='font-extrabold text-xl my-5'>
+      <h3 className="font-extrabold text-xl my-5">
         JavaScript-Framework, die keine Klassen verwenden
       </h3>
-      <p className='w-1/4 text-lg'>
+      <p className="w-1/4 text-lg pb-0">
         <strong>Express</strong>
       </p>
-      <p className='w-3/4'>
+      <p className="w-3/4">
         Express.js ist ein Backend-Framework für Node.js, das auf Funktionen und
         Middleware setzt, um Routen und Endpunkte zu definieren. Es verwendet
         keine Klassen für die Hauptkomponenten.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>Vorteile von Klassen</h3>
+      <h3 className="font-extrabold text-xl my-5">Vorteile von Klassen</h3>
       <ul>
         <li>
           Klare und strukturierte Möglichkeit, Objekte zu erstellen und zu
@@ -103,7 +100,7 @@ export const Classes = () => {
         den Anforderungen des Projektes, dem gewählten Framwork und den
         persönlichen Vorlieben ab.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>
+      <h3 className="font-extrabold text-xl my-5">
         Was ist der "Constructor"?
       </h3>
       <p>
@@ -118,8 +115,8 @@ export const Classes = () => {
         werden, und um eine konsistente Struktur für Objekte innerhalb Ihrer
         Anwendung zu schaffen.
       </p>
-      <h3 className='font-extrabold text-xl my-5'>Constructor-Code Beispiel</h3>
-      <pre className='text-sm'>
+      <h3 className="font-extrabold text-xl my-5">Constructor-Code Beispiel</h3>
+      <pre className="text-sm">
         <code>
           class Person &#123;
           <br />
@@ -144,14 +141,14 @@ export const Classes = () => {
           <br />
         </code>
       </pre>
-      <h3 className='font-extrabold text-xl my-5'>Methoden in Klassen</h3>
+      <h3 className="font-extrabold text-xl my-5">Methoden in Klassen</h3>
       <p>
         Da eine Klasse der Blueprint/Bauplan von Objekten ist, liegt es nahe,
         dass wir in Klassen ebenfalls Methoden aufbauen können, die später an
         die erstellen Objekte vererbt werden. Hierbei werden die Methoden
         einfach als Funktion innerhalb der Klasse Definiert.
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           class Heros &#123;
           <br />

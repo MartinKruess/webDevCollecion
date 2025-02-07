@@ -16,6 +16,7 @@ export const Landingpage = () => {
         </p>
         <ul className="flex flex-wrap w-1/2 text-sm m-auto px-10 gap-5">
           <li className="w-1/3">CSS</li>
+          <br />
           <li className="w-1/3 text-green-400">
             65%
             <ul className="w-full">
@@ -45,12 +46,11 @@ export const Landingpage = () => {
             </ul>
           </li>
           <li className="w-1/2">React</li>
-          <li className="w-1/2 text-green-300">
-            60%
+          <li className="w-1/2 text-green-400">
+            70%
             <ul className="w-full">
               <li>useRef 5%</li>
               <li>V6 privatRoute 10%</li>
-              <li>V5 privatRoute 10%</li>
               <li>useReducer 15%</li>
             </ul>
           </li>
@@ -78,9 +78,9 @@ export const Landingpage = () => {
               <li>Hetzner 35%</li>
             </ul>
           </li>
-
+          <br />
           <li>
-            Gesamt: {((65 + 67 + 70 + 60 + 90 + 85 + 55) / 7).toFixed(2)}%
+            Gesamt: {((65 + 67 + 70 + 70 + 90 + 85 + 55) / 7).toFixed(2)}%
           </li>
         </ul>
       </article>

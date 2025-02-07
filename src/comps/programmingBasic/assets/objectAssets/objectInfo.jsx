@@ -3,20 +3,20 @@ import { highlights } from "../../../../App";
 export const ObjectInfo = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-2xl'>Objekte - Daten in Relation</h2>
-      <div className='py-4'>
+      <h2 className="font-extrabold text-2xl">Objekte - Daten in Relation</h2>
+      <div className="py-4">
         Allgemein gesprochen ist ein Object erstmal ein Datentyp, der entweder
         für das Object selbst spricht oder aber für ein Array. Objekte kann man
         sich in etwa wie eine Sammlung von Eigenschaften vorstellen. Objekte
         bestehen aus zwei Teilen, dem Key und dem Value. Den Key kann man als
         Adresse sehen und der value ist der Wert.
       </div>
-      <p className='pt-4 pb-2'>
+      <p className="pt-4 pb-2">
         Erstellen wir mal ein Objekt zum Thema Grafikkarte. Hierfür stellen wir
         uns als erstes die Frage, was die Eckpunkte einer Grafikkarte sind.
         Beispiel: Chipsatz, Anschlüsse, länge, breite und vieles mehr.
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           const graka = &#123; <br />
           &#9;name: "RTX 3060", <br />
@@ -49,11 +49,11 @@ export const ObjectInfo = () => {
         würde das ganze in etwa so aussehen. Da ist es doch um einiges schöner,
         dass es Objekte gibt, die eine gewisse Datenstruktur bereits mitbringen.
       </p>
-      <div className='imgContainer flex items-center justify-center p-0 h-36 2xl:h-48'>
+      <div className="imgContainer flex items-center justify-center p-0">
         <img
-          className='w-full md:w-8/12 lg:w-6/12'
-          src='./images/arrayRelation.png'
-          alt='Github Extension preview'
+          className="h-full"
+          src="/images/arrayStructure-object.png"
+          alt="array structure before objects"
         />
       </div>
     </article>

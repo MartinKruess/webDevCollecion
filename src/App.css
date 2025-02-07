@@ -84,7 +84,7 @@ pre {
 }
 
 .imgContainer {
-  height: 19rem;
+  height: 28rem;
   padding: 1rem;
   position: relative;
 }
@@ -470,7 +470,6 @@ input:user-invalid {
   flex-wrap: wrap;
   margin-bottom: 3rem;
   padding: 0.5rem;
-  border: solid red 1px;
 
   .animationContentBox {
     height: 100%;
@@ -493,7 +492,6 @@ input:user-invalid {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      border: solid green;
     }
   }
 }

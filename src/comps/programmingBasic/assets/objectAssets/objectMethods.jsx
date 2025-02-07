@@ -3,33 +3,50 @@ import { highlights } from "../../../../App";
 export const ObjectMethods = () => {
   return (
     <article>
-      <h2 className='font-extrabold text-xl'>Arbeiten mit Objekt-Methoden</h2>
+      <h2 className="font-extrabold text-xl">Arbeiten mit Objekt-Methoden</h2>
       <p>
         Der Value eines Objektes kann nicht nur ein fester Wert sondern auch
         eine Variable oder eine Funktion sein. Es gibt allerindgs ein paar
-        Besonderheiten bei der Verwendung von Funktionen in einem Objekt.
+        Besonderheiten bei der Verwendung von Funktionen in einem Objekt. Eine
+        Funktion, innerhalb eines Objektes nennt man Methode, wir kennen bereits
+        einige Methoden, die wir selbst bereits angewendet haben. Ein tolles
+        Beispiel für ein Objekt mit sehr vielen Methoden ist das{" "}
+        <span className={highlights.code}>Math</span> Objekt. Dieses hat diverse
+        Methoden wie{" "}
+        <span className={highlights.directory}>
+          round(), ceil(), floor(), pow()
+        </span>{" "}
+        und viele mehr.
       </p>
       <p>
         Innerhalb von Objekten können nur basic Functions verwendet werden, da
         Arrow-Functions nicht mit <span className={highlights.code}>this</span>{" "}
         arbeiten können. Innerhalb von Arrow-Functions entspricht{" "}
-        <span className={highlights.code}>this -&gt; undefined</span>.
+        <span className={highlights.code}>this -&gt; dem global Object</span>.
+        Das Globale Objekt ist ein anderes je nach Umgebung, so bezieht sich
+        this innerhalb von Node auf das Globale Node Objekt, das meistens leer
+        ist, im Browser hingegen bezieht es sich auf das window Objekt, welches
+        alle möglichen Eingenschaften des Browserfensters beinhaltet.
       </p>
       <p>
-        Doch was genau ist eigl dieses 'this'?{" "}
-        <span className={highlights.code}>this</span> ist ein Verweis auf das
-        Objekt, das die aktuelle Javascript-Funktion aufgerufen hat. 'this' ist
-        ein Segen für die Flexiblität und ein sprudelnder Quell für
+        Doch was genau ist eigl dieses
+        <span className={highlights.code}> this</span>? Es ist ein Verweis auf
+        das Objekt, das die aktuelle Javascript-Funktion aufgerufen hat.
+        <span className={highlights.code}> this </span>
+        ist ein Segen für die Flexiblität und ein sprudelnder Quell für
         Trugschlüsse. Jede Javascript-Funktion hat ein verstecktes Argument
-        namens 'this'.
+        namens <span className={highlights.code}> this</span>.
       </p>
 
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           const graka = &#123; <br />
           &#9;name: "RTX 3060", <br />
           &#9;company: "Gigabyte", <br />
           &#9;title: function()&#123;
+          <br />
+          &#9;&#9;// ähnlich wie: `$&#123;graka.company&#125;
+          $&#123;graka.name&#125;`
           <br />
           &#9;&#9;return `$&#123;this.company&#125; $&#123;this.name&#125;`
           <br />
@@ -44,7 +61,7 @@ export const ObjectMethods = () => {
           console.log(graka.title())
           <br />
           <br />
-          <h3 className='font-extrabold text-xl'>
+          <h3 className="font-extrabold text-xl">
             Kurzschreibweise einer Function in einem Object
           </h3>
           <br />
@@ -101,10 +118,10 @@ export const ObjectMethods = () => {
         beim nächsten mal sagst du: "Los Taubsi!" und 'this' nimmt die
         Eigenschaften des Taubsi-Objektes an.
       </p>
-      <h3 className='font-extrabold text-xl'>
+      <h3 className="font-extrabold text-xl">
         Beispiel mit Arrow-Function (funktioniert nicht!)
       </h3>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           Fehler: this bezieht sich auf global nicht auf das Objekt (zum Testen)
           <br />
