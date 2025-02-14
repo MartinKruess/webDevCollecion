@@ -24,6 +24,7 @@ import { Console } from "../programmingBasic/console";
 import { Sort } from "../programmingBasic/sort";
 import { JSNavi } from "../navigations/jsNavi";
 import { JSON } from "../programmingBasic/json";
+import { Callback } from "../programmingBasic/callback";
 
 export const PB = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -48,6 +49,7 @@ export const PB = () => {
           <Route path="loop" element={<Loop />} />
           <Route path="sort" element={<Sort />} />
           <Route path="function" element={<Function />} />
+          <Route path="callback" element={<Callback />} />
           <Route path="callstack" element={<Callstack />} />
           <Route path="objects" element={<Objects />} />
           <Route path="objectsAdv" element={<ObjectsAdv />} />

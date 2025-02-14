@@ -15,20 +15,19 @@ export const Landingpage = () => {
           kleine Übersicht über den aktuellen Stand der Webseite.
         </p>
         <ul className="grid grid-cols-5 w-full text-sm m-auto px-10 gap-5">
-          <li>CSS (65%)</li>
-          <ul className="col-span-1 text-green-300">
+          <li>CSS (75%)</li>
+          <ul className="col-span-1 text-green-400">
             <li>:has, :isValid, :not 10%</li>
-            <li>3D Optik 10%</li>
+            <li>3D Optik 10%?</li>
             <li>Übungen für Animationen 5%</li>
             <li>Git und Github Workflow 10%</li>
             <li>VS-Code</li>
           </ul>
           <br />
-          <li>Javascript (60%)</li>
-          <ul className="text-green-200">
-            <li>Solutions 5%</li>
+          <li>Javascript (75%)</li>
+          <ul className="text-green-300">
+            <li>Solutions 5%?</li>
             <li>SelfTest neue Fragen 5%</li>
-            <li>Closure 10%</li>
             <li>Recursion Function 10%</li>
             <li>Callback 10%</li>
           </ul>
@@ -60,15 +59,15 @@ export const Landingpage = () => {
             <li>mySQL 15%</li>
             <li>SQL vs NoSQL 10%</li>
           </ul>
-          <li>Deployment (55%)</li>
-          <ul className=" text-yellow-300">
+          <li>Deployment (60%)</li>
+          <ul className=" text-green-200">
             <li>Vercel 5%</li>
             <li>Render 5%</li>
-            <li>Hetzner 35%</li>
+            <li>Hetzner 30%</li>
           </ul>
           <br />
           <li className=" text-yellow-300">
-            Gesamt: {((65 + 55 + 50 + 70 + 70 + 60 + 55) / 7).toFixed(2)}%
+            Gesamt: {((75 + 75 + 50 + 70 + 70 + 60 + 60) / 7).toFixed(2)}%
           </li>
         </ul>
       </article>
