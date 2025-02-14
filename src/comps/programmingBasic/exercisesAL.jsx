@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { jsExercises } from "./assets/exercises";
+import { highlights } from "../../App";
 
 export const JSExercises = () => {
   const [type, setType] = useState("default");
@@ -25,6 +26,14 @@ export const JSExercises = () => {
         index.js/main.js und arbeite so viele Aufgaben durch, wie du magst. Ich
         nehme gerne Spiele als Beispiele, da in der Spiele Entwicklung sehr
         viele Sinnvolle Loops und Functions angewendet werden.
+      </p>
+      <p>
+        Bei einigen Aufgaben findest du die Daten unter
+        <span className={highlights.code}> Download. </span>
+        Dort kannst du oft einfach die Daten kopieren oder gar die Datei
+        herunterladen und in deinen Ordner laden/ziehen. Ebenfalls haben einige
+        Aufgaben einen Link <span className={highlights.code}>Solution</span>,
+        darüber kommst du zum Repo auf Github mit der Lösung.
       </p>
       <div className="md:flex justify-between mt-10">
         <select

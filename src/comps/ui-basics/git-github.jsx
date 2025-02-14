@@ -1,4 +1,3 @@
-import { highlight } from "prismjs";
 import { highlights } from "../../App";
 import { GitList } from "./assets/gitList";
 
