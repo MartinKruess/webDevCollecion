@@ -35,10 +35,14 @@ export const GitFlow = () => {
       <h3 className="font-extrabold text-xl">
         GitHub Workflow - Der Umgang mit einem Repo
       </h3>
+      <p>folgt demnächst...</p>
       <h3 className="font-extrabold text-xl">
         GitHub - Wichtige Einstellungen
       </h3>
+      <p>folgt demnächst...</p>
+
       <h3 className="font-extrabold text-xl">GitHub Projects</h3>
+      <p>folgt demnächst...</p>
     </article>
   );
 };

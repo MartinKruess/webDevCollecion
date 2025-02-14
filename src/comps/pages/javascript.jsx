@@ -11,6 +11,7 @@ import { JSText } from "../programmingBasic/jsText";
 import { Loop } from "../programmingBasic/loop";
 import { NodeInstaller } from "../programmingBasic/node";
 import { Function } from "../programmingBasic/function";
+import { Callstack } from "../programmingBasic/callstacks";
 import { JSExercises } from "../programmingBasic/exercisesAL";
 
 import { Vite } from "../programmingBasic/vite";
@@ -18,7 +19,6 @@ import { Objects } from "../programmingBasic/objects";
 import { ObjectsAdv } from "../programmingBasic/objectsAdv";
 import { DataTypen } from "../programmingBasic/datatype";
 import { SelfTest } from "../programmingBasic/jsSelfText";
-import { Electron } from "../programmingBasic/electron";
 import { Classes } from "../programmingBasic/classes";
 import { Console } from "../programmingBasic/console";
 import { Sort } from "../programmingBasic/sort";
@@ -48,6 +48,7 @@ export const PB = () => {
           <Route path="loop" element={<Loop />} />
           <Route path="sort" element={<Sort />} />
           <Route path="function" element={<Function />} />
+          <Route path="callstack" element={<Callstack />} />
           <Route path="objects" element={<Objects />} />
           <Route path="objectsAdv" element={<ObjectsAdv />} />
           <Route path="classes" element={<Classes />} />

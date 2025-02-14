@@ -38,6 +38,9 @@ export const JSNavi = () => {
           <Link to="function">Functions</Link>
         </li>
         <li className="p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800">
+          <Link to="callstack">Callstack</Link>
+        </li>
+        <li className="p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800">
           <Link to="objects">Objects</Link>
         </li>
         <li className="p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800">
