@@ -161,6 +161,58 @@ td {
   color: #0f53d0;
 }
 
+/* Execise Page */
+
+.execiseContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3rem 1fr 1fr 3rem;
+  grid-template-areas:
+    "header header header type"
+    "text text text text"
+    "code code code code"
+    "download tool tool solution";
+}
+
+.execiseHeader {
+  /* grid-area: 1/1/2/4; */
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+.execiseType {
+  /* grid-area: 1/4/2/5; */
+  grid-area: type;
+  align-self: center;
+  justify-self: center;
+}
+
+.execiseMainText {
+  /* grid-area: 2/1/3/5; */
+  grid-area: text;
+}
+
+.exerciseCodeExample {
+  /* grid-area: 4/1/5/5; */
+  grid-area: code;
+}
+
+.execiseDownload {
+  /* grid-area: 5/1/6/2; */
+  grid-area: download;
+  align-self: center;
+  justify-self: center;
+}
+
+.execiseSolution {
+  /* grid-area: 5/4/6/5; */
+  grid-area: solution;
+  align-self: center;
+  justify-self: center;
+}
+
 /* Live preview */
 
 .fullstackSection {

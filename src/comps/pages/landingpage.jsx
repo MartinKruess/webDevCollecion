@@ -20,16 +20,19 @@ export const Landingpage = () => {
           <li className="w-1/3 text-green-400">
             65%
             <ul className="w-full">
+              <li>:has, :isValid, :not 10%</li>
               <li>3D Optik 10%</li>
               <li>Übungen für Animationen 5%</li>
-              <li>Git und Github Workflow 20%</li>
+              <li>Git und Github Workflow 10%</li>
               <li>VS-Code</li>
             </ul>
           </li>
           <li className="w-1/2">Javascript</li>
-          <li className="w-1/2 text-green-300">
-            67%
+          <li className="w-1/2 text-yellow-300">
+            50%
             <ul className="w-full">
+              <li>Solutions 15%</li>
+              <li>SelfTest neue Fragen 2%</li>
               <li>Closure 10%</li>
               <li>Recursion Function 10%</li>
               <li>Callstack 5%</li>
@@ -43,6 +46,7 @@ export const Landingpage = () => {
               <li>Selectoren: set/get 10%</li>
               <li>Events 10%</li>
               <li>Import/Export/Modules 10%</li>
+              <li>neue Übungen 10%</li>
             </ul>
           </li>
           <li className="w-1/2">React</li>
@@ -56,9 +60,10 @@ export const Landingpage = () => {
           </li>
           <li className="w-1/2">Node Express</li>
           <li className="w-1/2 text-green-500">
-            90%
+            70%
             <ul>
               <li>JWT 10%</li>
+              <li>Web Sockets 20%</li>
             </ul>
           </li>
           <li className="w-1/2">Database</li>
