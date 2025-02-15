@@ -11,8 +11,8 @@ export const Landingpage = () => {
           euch eine Linksammlung zu diversen Themen zur Verfügung steht.
         </p>
         <p className="text-sm">
-          Die Seite befindet sich noch im Aufbau, daher erhaltet ihr hier eine
-          kleine Übersicht über den aktuellen Stand der Webseite.
+          Die Seite befindet sich ständig im Wandel, daher erhaltet ihr hier
+          eine kleine Übersicht über Themen, die noch kommen werden.
         </p>
         <ul className="grid grid-cols-5 w-full text-sm m-auto px-10 gap-5">
           <li>CSS (75%)</li>
