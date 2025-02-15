@@ -24,12 +24,11 @@ export const Landingpage = () => {
             <li>VS-Code</li>
           </ul>
           <br />
-          <li>Javascript (75%)</li>
+          <li>Javascript (85%)</li>
           <ul className="text-green-300">
             <li>Solutions 5%?</li>
             <li>SelfTest neue Fragen 5%</li>
             <li>Recursion Function 10%</li>
-            <li>Callback 10%</li>
           </ul>
           <li>DOM (50%)</li>
           <ul className="text-yellow-500">
@@ -67,7 +66,7 @@ export const Landingpage = () => {
           </ul>
           <br />
           <li className=" text-yellow-300">
-            Gesamt: {((75 + 75 + 50 + 70 + 70 + 60 + 60) / 7).toFixed(2)}%
+            Gesamt: {((75 + 85 + 50 + 70 + 70 + 60 + 60) / 7).toFixed(2)}%
           </li>
         </ul>
       </article>
