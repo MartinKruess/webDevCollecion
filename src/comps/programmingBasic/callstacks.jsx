@@ -10,7 +10,7 @@ export const Callstack = () => {
         veranschaulichung stellen wir uns einen Stapel Notizzettel vor, die nach
         und nach Abgearbeitet werden.
       </p>
-      <pre>
+      <pre className="text-sm">
         <code>
           function func1() &#123;
           <br />
@@ -53,7 +53,7 @@ export const Callstack = () => {
       <h3 className="font-extrabold text-xl">
         Hier ein weiteres kleines Beispiel zur Verdeutlichung des Problems.
       </h3>
-      <pre>
+      <pre className="text-sm">
         <code>
           function printSum() &#123;
           <br />
