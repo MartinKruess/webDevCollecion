@@ -8,7 +8,10 @@ export const UibNavi = () => {
           <Link to="vs-code">VS-Code (Allgemein)</Link>
         </li>
         <li className="p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800">
-          <Link to="git">Git & GitHub Workflow</Link>
+          <Link to="git">Git Workflow</Link>
+        </li>
+        <li className="p-1 sm:py-1 border rounded-lg bg-green-950 hover:bg-red-800">
+          <Link to="github">GitHub Workflow</Link>
         </li>
         <li className="p-1 sm:py-1 border rounded-lg bg-blue-950 hover:bg-red-800">
           <Link to="grid">Grid</Link>

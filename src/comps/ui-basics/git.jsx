@@ -22,6 +22,7 @@ export const GitFlow = () => {
       </p>
       <p></p>
       <h3 className="font-extrabold text-xl">Git Commands</h3>
+      <br />
       <GitList />
       <p>
         Weitere git Befehle sind{" "}
@@ -30,19 +31,6 @@ export const GitFlow = () => {
         <span className={highlights.code}>git shortlog</span>,{" "}
         <span className={highlights.code}>git fetch</span> und viele viele mehr.
       </p>
-
-      <h3 className="font-extrabold text-xl">Was ist GitHub?</h3>
-      <h3 className="font-extrabold text-xl">
-        GitHub Workflow - Der Umgang mit einem Repo
-      </h3>
-      <p>folgt demnächst...</p>
-      <h3 className="font-extrabold text-xl">
-        GitHub - Wichtige Einstellungen
-      </h3>
-      <p>folgt demnächst...</p>
-
-      <h3 className="font-extrabold text-xl">GitHub Projects</h3>
-      <p>folgt demnächst...</p>
     </article>
   );
 };

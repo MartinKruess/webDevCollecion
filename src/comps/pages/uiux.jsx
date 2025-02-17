@@ -8,7 +8,8 @@ import { Animation } from "../ui-basics/animation";
 import { SASS } from "../ui-basics/sass";
 import { Frameworks } from "../ui-basics/frameworks";
 import { UibNavi } from "../navigations/uibNavi";
-import { GitFlow } from "../ui-basics/git-github";
+import { GitFlow } from "../ui-basics/git";
+import { GithubFlow } from "../ui-basics/github";
 
 export const UIUX = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -24,6 +25,7 @@ export const UIUX = () => {
         <Routes>
           <Route exact path="vs-code" element={<VSCode />} />
           <Route exact path="git" element={<GitFlow />} />
+          <Route exact path="github" element={<GithubFlow />} />
           <Route path="grid" element={<Grid />} />
           <Route path="animation" element={<Animation />} />
           <Route path="sass" element={<SASS />} />
