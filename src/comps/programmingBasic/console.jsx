@@ -1,5 +1,4 @@
 export const Console = () => {
-  // Strappi
   return (
     <article>
       <h2 className="font-extrabold text-2xl">
@@ -31,7 +30,7 @@ export const Console = () => {
       <div className="w-full md:imgContainer mt-5 mb-20">
         <img
           src="/images/consoleTable.png"
-          alt=""
+          alt="object as tabel in console"
           className="md:medium m-auto"
         />
       </div>
@@ -75,6 +74,7 @@ export const Console = () => {
           src="/images/consoleGroup.png"
           alt=""
           className="md:medium m-auto"
+          loading="lazy"
         />
       </div>
       <h3 className="font-extrabold text-xl">Schrift- und Hintergrundfarben</h3>
@@ -118,6 +118,7 @@ export const Console = () => {
           src="/images/coloredConsoleLogs.png"
           alt=""
           className="md:imgHeight m-auto"
+          loading="lazy"
         />
       </div>
       <h3 className="font-extrabold text-xl">
@@ -149,6 +150,7 @@ export const Console = () => {
           src="/images/consoleStyling.png"
           alt=""
           className="md:medium m-auto"
+          loading="lazy"
         />
       </div>
       <pre>
@@ -171,6 +173,7 @@ export const Console = () => {
           src="/images/consoleStyling2.png"
           alt=""
           className="md:medium m-auto"
+          loading="lazy"
         />
       </div>
       <div className="linkContainer">

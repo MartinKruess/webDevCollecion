@@ -104,12 +104,12 @@ export const DataTypen = () => {
           Wert wird ein neuer Speicherplatz angelegt.
         </li>
       </ul>
-      <div className="imgContainer p-0 my-3">
+      <div className=" p-0 my-3">
         <img
-          className="imgHeight"
-          onClick={() => setIsWatched("variable")}
+          className="w-64 md:w-2/3"
           src="/images/variablePointer.png"
-          alt="Image about if and nested if´s"
+          alt="pointer of a vairbale"
+          loading="lazy"
         />
       </div>
       <h3 className="font-extrabold text-xl">Pointer auf Objekte</h3>
@@ -154,21 +154,23 @@ export const DataTypen = () => {
           </span>
         </li>
       </ul>
-      <div className="heightContainer p-0 my-3">
+      <div className=" p-0 my-3">
         <img
-          className="imgHeight"
+          className="w-64 md:w-2/3"
           onClick={() => setIsWatched("object")}
           src="/images/objectPointer.png"
-          alt="Image about if and nested if´s"
+          alt="object pointer in ram"
+          loading="lazy"
         />
       </div>
       <h3 className="font-extrabold text-xl">Lösung durch Spread-Operator</h3>
-      <div className="imgContainer p-0 my-2">
+      <div className="pb-5 my-2">
         <img
-          className="imgHeight"
+          className="w-64 md:w-2/3"
           onClick={() => setIsWatched("copy")}
           src="/images/objectCopyPointer.png"
-          alt="Image about if and nested if´s"
+          alt="spread operator is creating a new object"
+          loading="lazy"
         />
       </div>
     </article>

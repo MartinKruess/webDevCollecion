@@ -11,7 +11,7 @@ export const GithubFlow = () => {
       <div className="grid grid-cols-3 grid-rows-3 mb-5">
         <img
           src="/images/gh-menu.png"
-          alt=""
+          alt="Github Profilmenu"
           className="col-start-1 col-end-2 row-start-1 row-end-4"
         />
         <p className="col-start-2 col-end-4 row-start-1 row-end-2">
@@ -42,6 +42,7 @@ export const GithubFlow = () => {
           src="/images/gh-repo.png"
           alt="create new gh repo"
           className="col-span-2 row-span-3"
+          loading="lazy"
         />
         <p className="col-span-4 row-span-1 ml-4">
           Um ein neues Github Repo zu erstellen, musst du zuerst auswählen wer
@@ -86,8 +87,9 @@ export const GithubFlow = () => {
       <div className="grid grid-cols-3 grid-rows-3">
         <img
           src="/images/gh-settings.png"
-          alt=""
+          alt="GH access Settings"
           className="col-start-1 col-end-2 row-start-1 row-end-4"
+          loading="lazy"
         />
         <p className="col-start-2 col-end-4 row-start-1 row-end-2">
           Unter dem Punkt Password and authentication findest du unter anderem
@@ -113,7 +115,7 @@ export const GithubFlow = () => {
         </p>
       </div>
       <h3 className="font-extrabold text-xl">GitHub Projects</h3>
-      <p>folgt demnächst...</p>
+      <p>folgt zum nächsten Projekt!</p>
     </article>
   );
 };

@@ -175,21 +175,13 @@ export const IfElse = () => {
         Nesting und sorgt dadurch für eine größere Übersichtlichkeit.
       </p>
       <div className="imgContainer">
-        {isWatched ? (
-          <img
-            className="imgHover"
-            onClick={() => setIsWatched(!isWatched)}
-            src="/images/ifElse.png"
-            alt="Image about if and nested if´s"
-          />
-        ) : (
-          <img
-            className="w-full md:w-10/12 lg:w-8/12"
-            onClick={() => setIsWatched(!isWatched)}
-            src="/images/ifElse.png"
-            alt="Image about if and nested if´s"
-          />
-        )}
+        <img
+          className={isWatched ? "imgHover" : `w-full md:w-10/12 lg:w-8/12`}
+          onClick={() => setIsWatched(!isWatched)}
+          src="/images/ifElse.png"
+          alt="Image about if and nested if´s"
+          loading="lazy"
+        />
       </div>
       <Ternary />
       <SwitchCase />

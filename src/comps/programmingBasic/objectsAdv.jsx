@@ -201,7 +201,7 @@ export const ObjectsAdv = () => {
           <p>structuredClone auf ein Array angewendet</p>
           <code>const arrDeepCopy = structuredClone(allEmployees)</code>
         </pre>
-        <pre className="col-start-1 col-end-12 text-sm">
+        <pre className="col-start-1 col-end-12 text-sm mb-6">
           <p>structuredClone auf ein Object angewendet</p>
           <code>const objDeepCopy = structuredClone(employee)</code>
         </pre>

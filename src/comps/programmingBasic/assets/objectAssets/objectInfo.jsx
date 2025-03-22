@@ -54,6 +54,7 @@ export const ObjectInfo = () => {
           className="h-full"
           src="/images/arrayStructure-object.png"
           alt="array structure before objects"
+          loading="lazy"
         />
       </div>
     </article>

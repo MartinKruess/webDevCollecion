@@ -34,16 +34,6 @@ article {
   }
 }
 
-nav ul li {
-  min-width: 3.2rem;
-  flex-grow: 1;
-  text-align: center;
-}
-
-nav ul li a {
-  display: block;
-}
-
 article h2,
 article h3 {
   margin-top: 2.5rem;

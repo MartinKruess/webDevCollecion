@@ -2,13 +2,13 @@ export const Vite = () => {
   return (
     <article className="p-4">
       <h2 className="font-extrabold text-2xl">DOM mit Vite Vanilla</h2>
-      <div className="grid grid-cols-12 gap-x-20">
+      <div className="grid grid-cols-6 gap-y-10">
         <img
-          className="col-start-1 col-end-3"
+          className="col-start-3 col-end-5"
           src="/images/viteLogo.png"
           alt=""
         />
-        <p className="col-start-5 col-end-13">
+        <p className="col-start-1 col-end-7">
           Wer in der Vergangenheit Vue- oder React-Anwendungen erstellte, nutzte
           unter der Haube automatisch Webpack. Webpack ist ein
           JavaScript-Bundler, der die zahlreichen für die Anwendung
@@ -18,7 +18,7 @@ export const Vite = () => {
           wird.
         </p>
 
-        <p className="col-start-1 col-end-7">
+        <p className="col-start-1 col-end-4 pr-5">
           Der Haken dabei: Das Auflösen der Abhängigkeiten mit all den Importen
           und Exporten ist ein komplexer Vorgang, der einige Zeit erfordert. Für
           einen gelegentlichen Produktionsbuild (deployment) ist das
@@ -26,14 +26,14 @@ export const Vite = () => {
           ebenfalls Webpack einsetzt) ist eine kleine Änderung am Code bei
           großen Anwendungen erst nach einiger Zeit im Browser sichtbar.
         </p>
-        <p className="col-start-7 col-end-13">
+        <p className="col-start-4 col-end-7 pl-5">
           Deshalb entschloss sich Evan You, der Entwickler hinter Vue.js, ein
           schnelleres Build-Tool für die Frontend-Webentwicklung (nicht nur für
           Vue.js!) zu programmieren. Diese Alternative, inzwischen in Version 2
           verfügbar, heißt Vite und der (französische) Name verspricht nicht zu
           viel.
         </p>
-        <p className="col-start-1 col-end-7">
+        <p className="col-start-1 col-end-4 pr-5">
           Vite ist dramatisch schneller, je nach Größe der Anwendung um den
           Faktor 10 bis 100. Diese Performanceverbesserung wird unter anderem
           durch Nutzung der noch nicht allzu lange verfügbaren nativen
@@ -41,15 +41,15 @@ export const Vite = () => {
           pre-gebundelte Dependencies und dem eigentlichen Quellcode sowie einem
           neuen DevServer mit schnellem Hot Module Replacement (HMR) erreicht.
         </p>
-        <p className="col-start-7 col-end-13">
+        <p className="col-start-4 col-end-7 pl-5">
           Letzteres ermöglicht dem Browser, geänderte Teile einer Seite neu zu
           laden, ohne dabei den Zustand zu verlieren. Da Vite neben den
           Performanceverbesserungen zudem noch tolle Features wie etwa eine
           Out-of-the-Box TypeScript-Unterstützung bietet, ist es auf jeden Fall
           eine interessante Alternative zum altgedienten Vue CLI/react-app.
         </p>
-        <h3 className="col-span-12 font-extrabold text-xl">Fazit</h3>
-        <p className="col-span-12">
+        <h3 className="col-span-7 font-extrabold text-xl">Fazit</h3>
+        <p className="col-span-7">
           Mit der Verwendung von Vite laufen nicht nur die Entwicklungen in
           VueJs, sondern ebenfalls React und Vanilla JS Anwendungen schneller.
           Vite optimiert die Kommunikations-, Compiling- und Building Prozesse
