@@ -80,21 +80,13 @@ export const Array = () => {
       </div>
       {/* ------------- IMAGE ------------- */}
       <div className="imgContainer">
-        {isWatched ? (
-          <img
-            className="imgHover"
-            onClick={() => setIsWatched(!isWatched)}
-            src="/images/array.png"
-            alt=""
-          />
-        ) : (
-          <img
-            className="w-full md:w-10/12 lg:w-8/12"
-            onClick={() => setIsWatched(!isWatched)}
-            src="/images/array.png"
-            alt=""
-          />
-        )}
+        <img
+          className={isWatched ? "imgHover" : `w-full md:w-10/12 lg:w-8/12`}
+          onClick={() => setIsWatched(!isWatched)}
+          src="/images/array.png"
+          alt=""
+          loading="lazy"
+        />
       </div>
       <div>
         <h3 className="font-extrabold text-xl mt-24">Die Slice-Methode</h3>

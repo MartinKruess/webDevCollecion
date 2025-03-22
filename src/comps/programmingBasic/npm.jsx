@@ -117,7 +117,12 @@ export const NPM = () => {
         Die Verwendung von NPM-Packages
       </h3>
       <div className="flex flex-wrap md:flex-nowrap gap-10">
-        <img className="md:xsmall" src="/images/npmInfos.png" alt="" />
+        <img
+          className="md:xsmall"
+          src="/images/npmInfos.png"
+          alt="package infos"
+          loading="lazy"
+        />
         <div>
           <p>
             Möchtest du das Bootstrap Paket herunterladen und verwenden,

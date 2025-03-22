@@ -1,6 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useContext, useEffect } from "react";
-import { ThemeContext } from "../global/loadTheme";
 
 import { NPM } from "../programmingBasic/npm";
 import { Variable } from "../programmingBasic/variable";
@@ -22,21 +20,14 @@ import { SelfTest } from "../programmingBasic/jsSelfText";
 import { Classes } from "../programmingBasic/classes";
 import { Console } from "../programmingBasic/console";
 import { Sort } from "../programmingBasic/sort";
-import { JSNavi } from "../navigations/jsNavi";
+import { SubNavi } from "../navigations/subNavi";
 import { JSON } from "../programmingBasic/json";
 import { Callback } from "../programmingBasic/callback";
 
 export const PB = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    setTheme("");
-  }, []);
-
   return (
     <>
-      <JSNavi />
-      <section className="w-10/12 m-auto">
+      <section className="px-8">
         <Routes>
           <Route path="node" element={<NodeInstaller />} />
           <Route path="npm" element={<NPM />} />

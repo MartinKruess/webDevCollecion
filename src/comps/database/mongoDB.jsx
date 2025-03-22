@@ -1,7 +1,7 @@
 export const MongoDB = () => {
   return (
-    <article className='w-full h-full'>
-      <lg className='text-lg text-center'>Node mit Mongo verbinden</lg>
+    <article className="w-full h-full">
+      <h3 className="text-lg text-center">Node mit Mongo verbinden</h3>
       <p>
         Um eine Verbindung zwischen Node und der Datenbank herzustellen musst
         Mongoose importiert werden und Methode connect() aufgerufen werden.
@@ -18,7 +18,7 @@ export const MongoDB = () => {
         Datei ausgelagert. Das ist der ganze Zauber, der hinter der Verbindung
         zwischen Node und der Datenbank steckt.
       </p>
-      <pre className='text-sm'>
+      <pre className="text-sm">
         <code>
           import mongoose from "mongoose"
           <br />

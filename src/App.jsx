@@ -33,8 +33,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landingpage />} />
           <Route exact path="/uib/*" element={<UIUX />} />
-          <Route exact path="/programming-basic/*" element={<PB />} />
-          <Route exact path="/dom/*" element={<DOM />} />
+          <Route exact path="/js/*" element={<PB />} />
+          <Route exact path="/spa/*" element={<DOM />} />
           <Route exact path="/react/*" element={<React />} />
           <Route exact path="/backend/*" element={<Node />} />
           <Route exact path="/databases/*" element={<Database />} />
